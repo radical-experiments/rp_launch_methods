@@ -1,0 +1,715 @@
+2018-03-15 04:40:47,300: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : INFO    : python.interpreter   version: 2.7.14 (default, Sep 23 2017, 22:06:14) [GCC 7.2.0]
+2018-03-15 04:40:47,300: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : INFO    :                      pid: 13779
+2018-03-15 04:40:47,300: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : INFO    :                      tid: MainThread
+2018-03-15 04:40:47,301: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : INFO    : radical.pilot        version: 0.47-0.47-14-gb1dff8bd@devel
+2018-03-15 04:40:48,330: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : INFO    : initialize umgr.0000.staging.input.0.child
+2018-03-15 04:40:48,335: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : INFO    : cfg: {'agents': {},
+ u'bridges': {u'control_pubsub': {'addr_in': 'tcp://144.76.72.175:44945',
+                                  'addr_out': 'tcp://144.76.72.175:34519',
+                                  u'bulk_size': 0,
+                                  u'log_level': u'debug',
+                                  u'stall_hwm': 1},
+              u'log_pubsub': {'addr_in': 'tcp://144.76.72.175:39599',
+                              'addr_out': 'tcp://144.76.72.175:39159',
+                              u'bulk_size': 0,
+                              u'log_level': u'debug',
+                              u'stall_hwm': 1},
+              u'state_pubsub': {'addr_in': 'tcp://144.76.72.175:38283',
+                                'addr_out': 'tcp://144.76.72.175:37241',
+                                u'bulk_size': 0,
+                                u'log_level': u'debug',
+                                u'stall_hwm': 1},
+              u'umgr_reschedule_pubsub': {'addr_in': 'tcp://144.76.72.175:34571',
+                                          'addr_out': 'tcp://144.76.72.175:36415',
+                                          u'bulk_size': 0,
+                                          u'log_level': u'debug',
+                                          u'stall_hwm': 1},
+              u'umgr_scheduling_queue': {'addr_in': 'tcp://144.76.72.175:38213',
+                                         'addr_out': 'tcp://144.76.72.175:38495',
+                                         u'bulk_size': 0,
+                                         u'log_level': u'debug',
+                                         u'stall_hwm': 1},
+              u'umgr_staging_input_queue': {'addr_in': 'tcp://144.76.72.175:37917',
+                                            'addr_out': 'tcp://144.76.72.175:42113',
+                                            u'bulk_size': 0,
+                                            u'log_level': u'debug',
+                                            u'stall_hwm': 1},
+              u'umgr_staging_output_queue': {'addr_in': 'tcp://144.76.72.175:37123',
+                                             'addr_out': 'tcp://144.76.72.175:40655',
+                                             u'bulk_size': 0,
+                                             u'log_level': u'debug',
+                                             u'stall_hwm': 1},
+              u'umgr_unschedule_pubsub': {'addr_in': 'tcp://144.76.72.175:35367',
+                                          'addr_out': 'tcp://144.76.72.175:45329',
+                                          u'bulk_size': 0,
+                                          u'log_level': u'debug',
+                                          u'stall_hwm': 1}},
+ u'bulk_collection_size': 100,
+ u'bulk_collection_time': 1.0,
+ 'cname': u'UMGRStagingInputComponent',
+ u'components': {},
+ u'count': 1,
+ u'db_poll_sleeptime': 1.0,
+ 'number': 0,
+ 'owner': 'umgr.0000',
+ u'scheduler': u'round_robin',
+ 'uid': 'umgr.0000'}
+2018-03-15 04:40:48,335: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : start components: {}
+2018-03-15 04:40:48,335: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : alive check in term
+2018-03-15 04:40:48,335: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : START: umgr.0000.staging.input.0.child register publisher log_pubsub
+2018-03-15 04:40:48,336: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : using addr tcp://144.76.72.175:39599 for pubsub log_pubsub
+2018-03-15 04:40:48,339: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : registered publisher : log_pubsub : log.pubsub.pub.0003
+2018-03-15 04:40:48,339: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : alive check in term
+2018-03-15 04:40:48,339: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : START: umgr.0000.staging.input.0.child register publisher state_pubsub
+2018-03-15 04:40:48,339: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : using addr tcp://144.76.72.175:38283 for pubsub state_pubsub
+2018-03-15 04:40:48,342: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : registered publisher : state_pubsub : state.pubsub.pub.0003
+2018-03-15 04:40:48,342: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : alive check in term
+2018-03-15 04:40:48,342: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : START: umgr.0000.staging.input.0.child register publisher control_pubsub
+2018-03-15 04:40:48,342: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : using addr tcp://144.76.72.175:44945 for pubsub control_pubsub
+2018-03-15 04:40:48,344: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : registered publisher : control_pubsub : control.pubsub.pub.0003
+2018-03-15 04:40:48,363: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : alive check in term
+2018-03-15 04:40:48,363: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : START: umgr.0000.staging.input.0.child register subscriber umgr.0000.staging.input.0.child.subscriber._cancel_monitor_cb
+2018-03-15 04:40:48,364: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : using addr tcp://144.76.72.175:34519 for pubsub control_pubsub
+2018-03-15 04:40:48,365: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : parent name: umgr.0000.staging.input.0.child.subscriber._cancel_monitor_cb
+2018-03-15 04:40:48,365: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : start thread
+2018-03-15 04:40:48,366: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.subscriber._cancel_monitor_cb: DEBUG   : child name: umgr.0000.staging.input.0.child.subscriber._cancel_monitor_cb.thread
+2018-03-15 04:40:48,366: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.subscriber._cancel_monitor_cb: INFO    : child (me) initializing
+2018-03-15 04:40:48,366: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.subscriber._cancel_monitor_cb: DEBUG   : ru_initialize_common (NOOP)
+2018-03-15 04:40:48,366: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.subscriber._cancel_monitor_cb: DEBUG   : ru_initialize_child (NOOP)
+2018-03-15 04:40:48,366: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.subscriber._cancel_monitor_cb: INFO    : send alive
+2018-03-15 04:40:48,366: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.subscriber._cancel_monitor_cb: INFO    : put message: [umgr.0000.staging.input.0.child.subscriber._cancel_monitor_cb.thread] alive
+2018-03-15 04:40:48,367: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : INFO    : get msg: alive
+2018-03-15 04:40:48,367: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2018-03-15 04:40:48,367: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2018-03-15 04:40:48,367: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : child thread umgr.0000.staging.input.0.child.subscriber._cancel_monitor_cb started
+2018-03-15 04:40:48,367: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : umgr.0000.staging.input.0.child registered control_pubsub subscriber umgr.0000.staging.input.0.child.subscriber._cancel_monitor_cb
+2018-03-15 04:40:48,368: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : alive check in term
+2018-03-15 04:40:48,368: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : using addr tcp://144.76.72.175:42113 for input umgr_staging_input_queue
+2018-03-15 04:40:48,370: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : registered input umgr.0000.staging.input.0.child.work.UMGR_STAGING_INPUT_PENDING
+2018-03-15 04:40:48,370: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : START: umgr.0000.staging.input.0.child register input UMGR_STAGING_INPUT_PENDING: umgr.0000.staging.input.0.child.work.UMGR_STAGING_INPUT_PENDING
+2018-03-15 04:40:48,370: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : registered worker work [UMGR_STAGING_INPUT_PENDING]
+2018-03-15 04:40:48,370: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : alive check in term
+2018-03-15 04:40:48,370: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : START: umgr.0000.staging.input.0.child register output AGENT_STAGING_INPUT_PENDING
+2018-03-15 04:40:48,370: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : alive check in term
+2018-03-15 04:40:48,370: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : START: umgr.0000.staging.input.0.child register subscriber umgr.0000.staging.input.0.child.subscriber._base_command_cb
+2018-03-15 04:40:48,370: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : using addr tcp://144.76.72.175:34519 for pubsub control_pubsub
+2018-03-15 04:40:48,372: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : parent name: umgr.0000.staging.input.0.child.subscriber._base_command_cb
+2018-03-15 04:40:48,373: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : start thread
+2018-03-15 04:40:48,373: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.subscriber._base_command_cb: DEBUG   : child name: umgr.0000.staging.input.0.child.subscriber._base_command_cb.thread
+2018-03-15 04:40:48,373: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.subscriber._base_command_cb: INFO    : child (me) initializing
+2018-03-15 04:40:48,373: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.subscriber._base_command_cb: DEBUG   : ru_initialize_common (NOOP)
+2018-03-15 04:40:48,373: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.subscriber._base_command_cb: DEBUG   : ru_initialize_child (NOOP)
+2018-03-15 04:40:48,373: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.subscriber._base_command_cb: INFO    : send alive
+2018-03-15 04:40:48,373: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.subscriber._base_command_cb: INFO    : put message: [umgr.0000.staging.input.0.child.subscriber._base_command_cb.thread] alive
+2018-03-15 04:40:48,374: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : INFO    : get msg: alive
+2018-03-15 04:40:48,374: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2018-03-15 04:40:48,374: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2018-03-15 04:40:48,374: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : child thread umgr.0000.staging.input.0.child.subscriber._base_command_cb started
+2018-03-15 04:40:48,374: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : umgr.0000.staging.input.0.child registered control_pubsub subscriber umgr.0000.staging.input.0.child.subscriber._base_command_cb
+2018-03-15 04:40:48,375: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : INFO    : child (me) initializing
+2018-03-15 04:40:48,375: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : parent name: umgr.0000.staging.input.0.child.watch
+2018-03-15 04:40:48,375: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : start thread
+2018-03-15 04:40:48,375: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.watch: DEBUG   : child name: umgr.0000.staging.input.0.child.watch.thread
+2018-03-15 04:40:48,375: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.watch: INFO    : child (me) initializing
+2018-03-15 04:40:48,375: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.watch: DEBUG   : ru_initialize_common (NOOP)
+2018-03-15 04:40:48,375: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.watch: DEBUG   : ru_initialize_child (NOOP)
+2018-03-15 04:40:48,376: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.watch: INFO    : send alive
+2018-03-15 04:40:48,376: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.watch: INFO    : put message: [umgr.0000.staging.input.0.child.watch.thread] alive
+2018-03-15 04:40:48,376: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : INFO    : get msg: alive
+2018-03-15 04:40:48,376: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2018-03-15 04:40:48,377: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2018-03-15 04:40:48,377: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : child thread umgr.0000.staging.input.0.child.watch started
+2018-03-15 04:40:48,377: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : INFO    : child (me) is alive
+2018-03-15 04:40:48,377: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : INFO    : send alive
+2018-03-15 04:40:48,377: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : INFO    : send message: [umgr.0000.staging.input.0.child] alive
+2018-03-15 04:40:51,889: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.subscriber._base_command_cb: DEBUG   :  === add pilot pilot.0000
+2018-03-15 04:40:51,891: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.subscriber._cancel_monitor_cb: DEBUG   : command ignored: add_pilots
+2018-03-15 04:40:52,514: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000000)
+2018-03-15 04:40:52,514: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000001)
+2018-03-15 04:40:52,514: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000002)
+2018-03-15 04:40:52,514: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000003)
+2018-03-15 04:40:52,514: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000004)
+2018-03-15 04:40:52,515: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000005)
+2018-03-15 04:40:52,515: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000006)
+2018-03-15 04:40:52,515: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000007)
+2018-03-15 04:40:52,515: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000008)
+2018-03-15 04:40:52,515: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000009)
+2018-03-15 04:40:52,515: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000010)
+2018-03-15 04:40:52,515: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000011)
+2018-03-15 04:40:52,515: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000012)
+2018-03-15 04:40:52,515: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000013)
+2018-03-15 04:40:52,515: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000014)
+2018-03-15 04:40:52,515: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000015)
+2018-03-15 04:40:52,515: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000016)
+2018-03-15 04:40:52,515: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000017)
+2018-03-15 04:40:52,515: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000018)
+2018-03-15 04:40:52,515: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000019)
+2018-03-15 04:40:52,515: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000020)
+2018-03-15 04:40:52,515: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000021)
+2018-03-15 04:40:52,515: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000022)
+2018-03-15 04:40:52,515: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000023)
+2018-03-15 04:40:52,515: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000024)
+2018-03-15 04:40:52,515: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000025)
+2018-03-15 04:40:52,515: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000026)
+2018-03-15 04:40:52,515: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000027)
+2018-03-15 04:40:52,515: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000028)
+2018-03-15 04:40:52,515: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000029)
+2018-03-15 04:40:52,515: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000030)
+2018-03-15 04:40:52,515: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000031)
+2018-03-15 04:40:52,515: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000032)
+2018-03-15 04:40:52,516: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000033)
+2018-03-15 04:40:52,516: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000034)
+2018-03-15 04:40:52,516: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000035)
+2018-03-15 04:40:52,516: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000036)
+2018-03-15 04:40:52,516: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000037)
+2018-03-15 04:40:52,516: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000038)
+2018-03-15 04:40:52,516: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000039)
+2018-03-15 04:40:52,516: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000040)
+2018-03-15 04:40:52,516: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000041)
+2018-03-15 04:40:52,516: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000042)
+2018-03-15 04:40:52,516: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000043)
+2018-03-15 04:40:52,516: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000044)
+2018-03-15 04:40:52,516: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000045)
+2018-03-15 04:40:52,516: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000046)
+2018-03-15 04:40:52,516: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000047)
+2018-03-15 04:40:52,516: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000048)
+2018-03-15 04:40:52,516: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000049)
+2018-03-15 04:40:52,516: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000050)
+2018-03-15 04:40:52,516: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000051)
+2018-03-15 04:40:52,516: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000052)
+2018-03-15 04:40:52,516: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000053)
+2018-03-15 04:40:52,516: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000054)
+2018-03-15 04:40:52,516: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000055)
+2018-03-15 04:40:52,516: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000056)
+2018-03-15 04:40:52,516: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000057)
+2018-03-15 04:40:52,516: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000058)
+2018-03-15 04:40:52,516: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000059)
+2018-03-15 04:40:52,516: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000060)
+2018-03-15 04:40:52,517: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000061)
+2018-03-15 04:40:52,517: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000062)
+2018-03-15 04:40:52,517: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000063)
+2018-03-15 04:40:52,517: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000064)
+2018-03-15 04:40:52,517: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000065)
+2018-03-15 04:40:52,517: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000066)
+2018-03-15 04:40:52,517: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000067)
+2018-03-15 04:40:52,517: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000068)
+2018-03-15 04:40:52,517: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000069)
+2018-03-15 04:40:52,517: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000070)
+2018-03-15 04:40:52,517: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000071)
+2018-03-15 04:40:52,517: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000072)
+2018-03-15 04:40:52,517: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000073)
+2018-03-15 04:40:52,517: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000074)
+2018-03-15 04:40:52,517: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000075)
+2018-03-15 04:40:52,517: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000076)
+2018-03-15 04:40:52,517: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000077)
+2018-03-15 04:40:52,517: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000078)
+2018-03-15 04:40:52,517: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000079)
+2018-03-15 04:40:52,517: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000080)
+2018-03-15 04:40:52,517: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000081)
+2018-03-15 04:40:52,517: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000082)
+2018-03-15 04:40:52,517: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000083)
+2018-03-15 04:40:52,517: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000084)
+2018-03-15 04:40:52,517: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000085)
+2018-03-15 04:40:52,517: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000086)
+2018-03-15 04:40:52,517: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000087)
+2018-03-15 04:40:52,517: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000088)
+2018-03-15 04:40:52,517: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000089)
+2018-03-15 04:40:52,518: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000090)
+2018-03-15 04:40:52,518: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000091)
+2018-03-15 04:40:52,518: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000092)
+2018-03-15 04:40:52,518: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000093)
+2018-03-15 04:40:52,518: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000094)
+2018-03-15 04:40:52,518: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000095)
+2018-03-15 04:40:52,518: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000096)
+2018-03-15 04:40:52,518: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000097)
+2018-03-15 04:40:52,518: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000098)
+2018-03-15 04:40:52,518: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000099)
+2018-03-15 04:40:52,518: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000100)
+2018-03-15 04:40:52,518: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000101)
+2018-03-15 04:40:52,518: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000102)
+2018-03-15 04:40:52,518: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000103)
+2018-03-15 04:40:52,518: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000104)
+2018-03-15 04:40:52,518: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000105)
+2018-03-15 04:40:52,518: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000106)
+2018-03-15 04:40:52,518: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000107)
+2018-03-15 04:40:52,518: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000108)
+2018-03-15 04:40:52,518: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000109)
+2018-03-15 04:40:52,518: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000110)
+2018-03-15 04:40:52,518: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000111)
+2018-03-15 04:40:52,518: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000112)
+2018-03-15 04:40:52,518: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000113)
+2018-03-15 04:40:52,518: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000114)
+2018-03-15 04:40:52,518: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000115)
+2018-03-15 04:40:52,518: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000116)
+2018-03-15 04:40:52,518: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000117)
+2018-03-15 04:40:52,518: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000118)
+2018-03-15 04:40:52,519: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000119)
+2018-03-15 04:40:52,519: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000120)
+2018-03-15 04:40:52,519: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000121)
+2018-03-15 04:40:52,519: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000122)
+2018-03-15 04:40:52,519: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000123)
+2018-03-15 04:40:52,519: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000124)
+2018-03-15 04:40:52,519: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000125)
+2018-03-15 04:40:52,519: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000126)
+2018-03-15 04:40:52,519: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000127)
+2018-03-15 04:40:52,519: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 128 [False, True]
+2018-03-15 04:40:52,534: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : {'pilot.0000': ['gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000000/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000001/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000002/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000003/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000004/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000005/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000006/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000007/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000008/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000009/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000010/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000011/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000012/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000013/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000014/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000015/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000016/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000017/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000018/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000019/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000020/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000021/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000022/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000023/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000024/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000025/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000026/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000027/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000028/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000029/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000030/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000031/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000032/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000033/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000034/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000035/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000036/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000037/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000038/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000039/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000040/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000041/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000042/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000043/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000044/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000045/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000046/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000047/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000048/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000049/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000050/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000051/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000052/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000053/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000054/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000055/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000056/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000057/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000058/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000059/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000060/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000061/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000062/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000063/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000064/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000065/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000066/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000067/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000068/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000069/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000070/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000071/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000072/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000073/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000074/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000075/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000076/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000077/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000078/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000079/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000080/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000081/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000082/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000083/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000084/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000085/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000086/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000087/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000088/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000089/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000090/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000091/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000092/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000093/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000094/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000095/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000096/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000097/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000098/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000099/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000100/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000101/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000102/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000103/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000104/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000105/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000106/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000107/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000108/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000109/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000110/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000111/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000112/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000113/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000114/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000115/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000116/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000117/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000118/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000119/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000120/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000121/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000122/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000123/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000124/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000125/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000126/',
+                'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000//unit.000127/']}
+2018-03-15 04:40:52,534: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :  === pid pilot.0000
+2018-03-15 04:40:52,534: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :  ==== sbox: gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006 [<class 'saga.url.Url'>]
+2018-03-15 04:40:52,534: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :  === 128 >= 128 ?
+2018-03-15 04:40:54,847: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :  === tar
+2018-03-15 04:40:54,871: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :  === tar : cd /tmp/rp_agent_tar_dirtNkjNV && tar zchf /tmp/rp_agent_tar_dirtNkjNV/rp.session.one.george.017605.0006.umgr.0000.staging.input.0.child.tgz *
+2018-03-15 04:40:54,872: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :  === tar : 
+---
+
+---
+0
+2018-03-15 04:40:54,872: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :  === sbox: gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006 [<class 'saga.url.Url'>]
+2018-03-15 04:40:54,872: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :  === copy: file://localhost//tmp/rp_agent_tar_dirtNkjNV/rp.session.one.george.017605.0006.umgr.0000.staging.input.0.child.tgz -> gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/rp.session.one.george.017605.0006.umgr.0000.staging.input.0.child.tgz
+2018-03-15 04:40:57,326: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :  === js  : gsissh://supermic.cct-lsu.xsede.org:2222/
+2018-03-15 04:41:04,867: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :  === untar : tar zmxvf /work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/rp.session.one.george.017605.0006.umgr.0000.staging.input.0.child.tgz -C /
+2018-03-15 04:41:05,852: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :  === untar : work/
+work/gchantzi/
+work/gchantzi/radical.pilot.sandbox/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000049/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000064/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000055/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000110/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000010/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000033/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000005/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000029/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000090/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000063/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000045/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000042/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000114/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000117/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000081/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000120/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000093/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000036/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000040/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000103/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000007/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000027/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000123/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000116/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000106/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000096/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000088/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000099/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000091/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000097/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000104/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000095/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000038/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000021/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000124/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000076/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000037/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000046/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000048/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000092/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000024/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000044/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000059/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000017/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000016/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000009/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000057/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000011/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000109/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000041/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000069/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000025/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000102/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000115/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000020/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000061/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000008/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000013/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000006/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000003/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000050/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000087/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000101/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000107/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000073/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000112/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000084/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000094/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000075/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000085/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000121/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000015/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000065/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000043/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000098/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000052/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000078/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000072/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000105/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000004/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000071/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000054/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000053/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000000/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000032/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000125/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000026/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000030/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000080/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000070/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000062/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000022/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000127/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000122/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000060/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000014/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000083/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000126/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000039/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000051/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000018/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000113/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000119/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000023/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000056/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000034/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000068/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000074/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000082/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000100/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000079/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000111/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000077/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000019/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000067/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000031/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000001/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000028/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000108/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000035/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000047/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000058/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000066/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000086/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000089/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000012/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000002/
+work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000118/
+
+---
+tar: work/gchantzi: Cannot mkdir: Permission denied
+tar: work: Cannot change mode to rwxr-x---: Operation not permitted
+tar: Exiting with failure status due to previous errors
+
+---
+2
+2018-03-15 04:41:05,853: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 128 [True, True]
+2018-03-15 04:41:05,876: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000000 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,876: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000001 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,876: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000002 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,876: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000003 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,877: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000004 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,877: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000005 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,877: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000006 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,877: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000007 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,877: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000008 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,877: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000009 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,877: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000010 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,877: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000011 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,877: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000012 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,877: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000013 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,877: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000014 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,877: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000015 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,877: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000016 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,877: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000017 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,877: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000018 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,877: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000019 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,877: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000020 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,877: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000021 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,877: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000022 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,877: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000023 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,877: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000024 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,878: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000025 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,878: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000026 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,878: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000027 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,878: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000028 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,878: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000029 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,878: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000030 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,878: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000031 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,878: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000032 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,878: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000033 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,878: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000034 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,878: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000035 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,878: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000036 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,878: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000037 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,878: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000038 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,878: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000039 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,878: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000040 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,878: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000041 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,878: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000042 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,878: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000043 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,878: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000044 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,878: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000045 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,878: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000046 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,878: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000047 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,879: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000048 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,879: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000049 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,879: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000050 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,879: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000051 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,879: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000052 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,879: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000053 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,879: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000054 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,879: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000055 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,879: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000056 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,879: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000057 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,879: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000058 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,879: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000059 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,879: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000060 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,879: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000061 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,879: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000062 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,879: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000063 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,879: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000064 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,879: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000065 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,879: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000066 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,879: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000067 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,879: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000068 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,879: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000069 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,880: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000070 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,880: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000071 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,880: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000072 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,880: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000073 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,880: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000074 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,880: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000075 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,880: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000076 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,880: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000077 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,880: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000078 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,880: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000079 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,880: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000080 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,880: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000081 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,880: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000082 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,880: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000083 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,880: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000084 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,880: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000085 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,880: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000086 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,880: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000087 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,880: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000088 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,880: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000089 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,880: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000090 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,880: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000091 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,880: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000092 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,881: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000093 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,881: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000094 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,881: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000095 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,881: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000096 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,881: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000097 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,881: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000098 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,881: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000099 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,881: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000100 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,881: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000101 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,881: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000102 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,881: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000103 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,881: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000104 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,881: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000105 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,881: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000106 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,881: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000107 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,881: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000108 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,881: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000109 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,881: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000110 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,881: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000111 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,881: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000112 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,881: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000113 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,881: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000114 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,882: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000115 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,882: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000116 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,882: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000117 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,882: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000118 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,882: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000119 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,882: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000120 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,882: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000121 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,882: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000122 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,882: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000123 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,882: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000124 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,882: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000125 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,882: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000126 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:05,882: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000127 [AGENT_STAGING_INPUT_PENDING]
+2018-03-15 04:41:58,900: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.watch: INFO    : recv message: STOP
+2018-03-15 04:41:58,900: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.watch: INFO    : message received: STOP
+2018-03-15 04:41:58,901: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.watch: INFO    : STOP received: STOP
+2018-03-15 04:41:58,901: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.watch: INFO    : watcher closes
+2018-03-15 04:41:58,901: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.watch: INFO    : put message: [umgr.0000.staging.input.0.child.watch.thread] work finished
+2018-03-15 04:41:58,901: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.watch: DEBUG   : ru_finalize_child (NOOP)
+2018-03-15 04:41:58,901: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.watch: DEBUG   : ru_finalize_common (NOOP)
+2018-03-15 04:41:58,901: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.watch: INFO    : put message: [umgr.0000.staging.input.0.child.watch.thread] terminating
+2018-03-15 04:41:58,940: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : WARNING : alive check: proc invalid - stop [False - True]
+2018-03-15 04:41:58,977: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : INFO    : stop umgr.0000.staging.input.0.child (13779 : 13779 : MainThread) [radical.utils.process.Default.is_valid]
+2018-03-15 04:41:59,020: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : INFO    : parent stops child  13779 -> 13779 [umgr.0000.staging.input.0.child]
+2018-03-15 04:41:59,020: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : INFO    : send message: [umgr.0000.staging.input.0.child] STOP
+2018-03-15 04:41:59,020: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : WARNING : send failed ([Errno 9] Bad file descriptor) - terminate
+2018-03-15 04:41:59,020: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : TERM : umgr.0000.staging.input.0.child unregister subscriber umgr.0000.staging.input.0.child.subscriber._base_command_cb
+2018-03-15 04:41:59,020: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : unregistered subscriber umgr.0000.staging.input.0.child.subscriber._base_command_cb
+2018-03-15 04:41:59,223: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : ru_finalize_common()
+2018-03-15 04:41:59,223: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : TERM : umgr.0000.staging.input.0.child unregister publisher log_pubsub
+2018-03-15 04:41:59,224: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : unregistered publisher log_pubsub
+2018-03-15 04:41:59,224: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : TERM : umgr.0000.staging.input.0.child unregister publisher state_pubsub
+2018-03-15 04:41:59,225: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : unregistered publisher state_pubsub
+2018-03-15 04:41:59,225: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : TERM : umgr.0000.staging.input.0.child unregister publisher control_pubsub
+2018-03-15 04:41:59,226: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : unregistered publisher control_pubsub
+2018-03-15 04:41:59,226: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : umgr.0000.staging.input.0.child close prof
+2018-03-15 04:41:59,270: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : INFO    : parent stops child
+2018-03-15 04:41:59,270: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : ru_finalize_parent (NOOP)
+2018-03-15 04:41:59,270: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : ru_finalize_common (NOOP)
+2018-03-15 04:41:59,270: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : INFO    : parent stops child
+2018-03-15 04:41:59,270: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : ru_finalize_parent (NOOP)
+2018-03-15 04:41:59,271: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.subscriber._base_command_cb: DEBUG   : ru_finalize_child (NOOP)
+2018-03-15 04:41:59,271: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.subscriber._base_command_cb: INFO    : put message: [umgr.0000.staging.input.0.child.subscriber._base_command_cb.thread] terminating
+2018-03-15 04:41:59,272: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : INFO    : parent stops child
+2018-03-15 04:41:59,273: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : ru_finalize_parent (NOOP)
+2018-03-15 04:41:59,273: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.subscriber._cancel_monitor_cb: DEBUG   : ru_finalize_child (NOOP)
+2018-03-15 04:41:59,273: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.subscriber._cancel_monitor_cb: INFO    : put message: [umgr.0000.staging.input.0.child.subscriber._cancel_monitor_cb.thread] terminating
+2018-03-15 04:41:59,275: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : WARNING : super umgr.0000.staging.input.0.child is invalid
+2018-03-15 04:41:59,275: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : WARNING : component umgr.0000.staging.input.0.child is invalid
+2018-03-15 04:41:59,276: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : INFO    : stop umgr.0000.staging.input.0.child (13779 : 13779 : MainThread) [radical.pilot.utils.component.Default.is_valid]
+2018-03-15 04:41:59,276: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : TERM : umgr.0000.staging.input.0.child unregister subscriber umgr.0000.staging.input.0.child.subscriber._base_command_cb
+2018-03-15 04:41:59,276: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : WARNING : subscriber _base_command_cb is not registered
+2018-03-15 04:41:59,277: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : ru_finalize_common()
+2018-03-15 04:41:59,277: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : WARNING : publisher log_pubsub is not registered
+2018-03-15 04:41:59,277: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : WARNING : publisher state_pubsub is not registered
+2018-03-15 04:41:59,277: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : WARNING : publisher control_pubsub is not registered
+2018-03-15 04:41:59,278: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : umgr.0000.staging.input.0.child close prof
+2018-03-15 04:41:59,278: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : INFO    : send message: [umgr.0000.staging.input.0.child] terminating
+2018-03-15 04:41:59,278: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : WARNING : send failed ([Errno 9] Bad file descriptor) - terminate
+2018-03-15 04:41:59,278: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : INFO    : parent stops child
+2018-03-15 04:41:59,278: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : INFO    : parent stops child

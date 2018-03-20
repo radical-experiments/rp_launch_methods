@@ -1,0 +1,1131 @@
+2018-03-14 22:41:53,484: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : python.interpreter   version: 2.7.7 |Continuum Analytics, Inc.| (default, Jun 2 2014, 12:34:02) [GCC 4.1.2 20080704 (Red Hat 4.1.2-54)]
+2018-03-14 22:41:53,487: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    :                      pid: 73613
+2018-03-14 22:41:53,487: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    :                      tid: MainThread
+2018-03-14 22:41:53,487: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : radical.pilot        version: 0.47-0.47-14-gb1dff8bd@devel
+2018-03-14 22:41:53,564: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : initialize agent_0.executing.0.child
+2018-03-14 22:41:53,571: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : cfg: {'agent_launch_method': 'ORTE',
+ 'agent_name': 'agent_0',
+ 'agents': {},
+ 'bridges': {'agent_executing_queue': {'addr_in': 'tcp://204.90.41.119:44802',
+                                       'addr_out': 'tcp://204.90.41.119:38210',
+                                       'bulk_size': 0,
+                                       'log_level': 'debug',
+                                       'stall_hwm': 1},
+             'agent_reschedule_pubsub': {'addr_in': 'tcp://204.90.41.119:43589',
+                                         'addr_out': 'tcp://204.90.41.119:39209',
+                                         'bulk_size': 0,
+                                         'log_level': 'debug',
+                                         'stall_hwm': 1},
+             'agent_scheduling_queue': {'addr_in': 'tcp://204.90.41.119:35163',
+                                        'addr_out': 'tcp://204.90.41.119:46799',
+                                        'bulk_size': 0,
+                                        'log_level': 'debug',
+                                        'stall_hwm': 1},
+             'agent_staging_input_queue': {'addr_in': 'tcp://204.90.41.119:43051',
+                                           'addr_out': 'tcp://204.90.41.119:33117',
+                                           'bulk_size': 0,
+                                           'log_level': 'debug',
+                                           'stall_hwm': 1},
+             'agent_staging_output_queue': {'addr_in': 'tcp://204.90.41.119:33621',
+                                            'addr_out': 'tcp://204.90.41.119:37465',
+                                            'bulk_size': 0,
+                                            'log_level': 'debug',
+                                            'stall_hwm': 1},
+             'agent_unschedule_pubsub': {'addr_in': 'tcp://204.90.41.119:39671',
+                                         'addr_out': 'tcp://204.90.41.119:41734',
+                                         'bulk_size': 0,
+                                         'log_level': 'debug',
+                                         'stall_hwm': 1},
+             'control_pubsub': {'addr_in': 'tcp://204.90.41.119:34637',
+                                'addr_out': 'tcp://204.90.41.119:42726',
+                                'bulk_size': 0,
+                                'log_level': 'debug',
+                                'stall_hwm': 1},
+             'log_pubsub': {'addr_in': 'tcp://204.90.41.119:41707',
+                            'addr_out': 'tcp://204.90.41.119:41875',
+                            'bulk_size': 0,
+                            'log_level': 'debug',
+                            'stall_hwm': 1},
+             'state_pubsub': {'addr_in': 'tcp://204.90.41.119:41874',
+                              'addr_out': 'tcp://204.90.41.119:36841',
+                              'bulk_size': 0,
+                              'log_level': 'debug',
+                              'stall_hwm': 1}},
+ 'bulk_collection_size': 100,
+ 'bulk_collection_time': 1.0,
+ 'cname': 'AgentExecutingComponent',
+ 'components': {},
+ 'cores': 80,
+ 'cores_per_node': 20,
+ 'count': 1,
+ 'cu_post_exec': None,
+ 'cu_pre_exec': None,
+ 'cu_tmp': None,
+ 'db_poll_sleeptime': 1.0,
+ 'dburl': 'mongodb://rp:rp@ds015335.mlab.com:15335/rp',
+ 'debug': 10,
+ 'export_to_cu': None,
+ 'logdir': '.',
+ 'lrms': 'TORQUE',
+ 'lrms_info': {'agent_nodes': {},
+               'cores_per_node': 20,
+               'lm_info': {'dvm_uri': '582680576.0;tcp://172.17.41.119,204.90.41.119,10.193.41.119:55177;ud://69164.55.1',
+                           'version_info': {'ORTE': {'version': '3.0.0a1',
+                                                     'version_detail': 'v2.x-dev-3504-g6da4dbb'}}},
+               'name': 'Torque',
+               'node_list': ['smic119', 'smic140', 'smic145', 'smic157']},
+ 'max_io_loglength': 1024,
+ 'mode': 'shared',
+ 'mpi_launch_method': 'ORTE',
+ 'number': 0,
+ 'owner': 'agent_0',
+ 'pilot_id': 'pilot.0000',
+ 'pilot_sandbox': '/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/',
+ 'resource_cfg': {'agent_launch_method': 'ORTE',
+                  'agent_scheduler': 'CONTINUOUS',
+                  'agent_spawner': 'POPEN',
+                  'cores_per_node': '20',
+                  'default_queue': 'workq',
+                  'default_remote_workdir': '/work/$USER',
+                  'description': "SuperMIC (pronounced 'Super Mick') is Louisiana State University's (LSU) newest supercomputer funded by the National Science Foundation's (NSF) Major Research Instrumentation (MRI) award to the Center for Computation & Technology. (https://portal.xsede.org/lsu-supermic)",
+                  'filesystem_endpoint': 'gsisftp://supermic.cct-lsu.xsede.org:2222/',
+                  'gsissh': {'filesystem_endpoint': 'gsisftp://supermic.cct-lsu.xsede.org:2222/',
+                             'job_manager_endpoint': 'torque+gsissh://supermic.cct-lsu.xsede.org:2222/'},
+                  'job_manager_endpoint': 'torque+gsissh://supermic.cct-lsu.xsede.org:2222/',
+                  'label': 'xsede.supermic_orte',
+                  'lrms': 'TORQUE',
+                  'mpi_launch_method': 'ORTE',
+                  'notes': 'Partially allocated through XSEDE. Primary access through GSISSH. Allows SSH key authentication too.',
+                  'pre_bootstrap_1': ['module load python/2.7.7-anaconda',
+                                      'module use -a /worka/work/amerzky/radical.pilot.sandbox/openmpi/modules/',
+                                      'module load openmpi/2017_03_13_6da4dbb'],
+                  'pre_bootstrap_2': ['export PATH=$PATH',
+                                      'export LD_LIBRARY_PATH=$LD_LIBRARY_PATH'],
+                  'python_dist': 'default',
+                  'rp_version': 'local',
+                  'schemas': ['gsissh', 'ssh'],
+                  'ssh': {'filesystem_endpoint': 'sftp://supermic.cct-lsu.xsede.org/',
+                          'job_manager_endpoint': 'torque+ssh://supermic.cct-lsu.xsede.org/'},
+                  'task_launch_method': 'ORTE',
+                  'valid_roots': ['/work'],
+                  'virtenv_mode': 'create'},
+ 'resource_sandbox': '/work/gchantzi/radical.pilot.sandbox',
+ 'runtime': 15,
+ 'scheduler': 'CONTINUOUS',
+ 'session_id': 'rp.session.one.george.017605.0006',
+ 'session_sandbox': '/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006',
+ 'spawner': 'POPEN',
+ 'staging_area': 'staging_area',
+ 'staging_schema': 'staging',
+ 'target': 'local',
+ 'task_launch_method': 'ORTE',
+ 'uid': 'agent_0',
+ 'workdir': '/worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000'}
+2018-03-14 22:41:53,572: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : start components: {}
+2018-03-14 22:41:53,572: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : alive check in term
+2018-03-14 22:41:53,572: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : START: agent_0.executing.0.child register publisher log_pubsub
+2018-03-14 22:41:53,572: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : using addr tcp://204.90.41.119:41707 for pubsub log_pubsub
+2018-03-14 22:41:53,578: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : registered publisher : log_pubsub : log.pubsub.pub.0004
+2018-03-14 22:41:53,578: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : alive check in term
+2018-03-14 22:41:53,578: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : START: agent_0.executing.0.child register publisher state_pubsub
+2018-03-14 22:41:53,578: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : using addr tcp://204.90.41.119:41874 for pubsub state_pubsub
+2018-03-14 22:41:53,584: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : registered publisher : state_pubsub : state.pubsub.pub.0004
+2018-03-14 22:41:53,584: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : alive check in term
+2018-03-14 22:41:53,584: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : START: agent_0.executing.0.child register publisher control_pubsub
+2018-03-14 22:41:53,584: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : using addr tcp://204.90.41.119:34637 for pubsub control_pubsub
+2018-03-14 22:41:53,590: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : registered publisher : control_pubsub : control.pubsub.pub.0004
+2018-03-14 22:41:53,592: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : alive check in term
+2018-03-14 22:41:53,592: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : START: agent_0.executing.0.child register subscriber agent_0.executing.0.child.subscriber._cancel_monitor_cb
+2018-03-14 22:41:53,592: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : using addr tcp://204.90.41.119:42726 for pubsub control_pubsub
+2018-03-14 22:41:53,597: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : parent name: agent_0.executing.0.child.subscriber._cancel_monitor_cb
+2018-03-14 22:41:53,598: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : start thread
+2018-03-14 22:41:53,598: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: DEBUG   : child name: agent_0.executing.0.child.subscriber._cancel_monitor_cb.thread
+2018-03-14 22:41:53,598: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: INFO    : child (me) initializing
+2018-03-14 22:41:53,598: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: DEBUG   : ru_initialize_common (NOOP)
+2018-03-14 22:41:53,598: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: DEBUG   : ru_initialize_child (NOOP)
+2018-03-14 22:41:53,598: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: INFO    : send alive
+2018-03-14 22:41:53,598: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: INFO    : put message: [agent_0.executing.0.child.subscriber._cancel_monitor_cb.thread] alive
+2018-03-14 22:41:53,599: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : get msg: alive
+2018-03-14 22:41:53,599: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2018-03-14 22:41:53,599: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2018-03-14 22:41:53,599: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : child thread agent_0.executing.0.child.subscriber._cancel_monitor_cb started
+2018-03-14 22:41:53,599: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : agent_0.executing.0.child registered control_pubsub subscriber agent_0.executing.0.child.subscriber._cancel_monitor_cb
+2018-03-14 22:41:53,599: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : alive check in term
+2018-03-14 22:41:53,600: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : using addr tcp://204.90.41.119:38210 for input agent_executing_queue
+2018-03-14 22:41:53,605: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : registered input agent_0.executing.0.child.work.AGENT_EXECUTING_PENDING
+2018-03-14 22:41:53,606: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : START: agent_0.executing.0.child register input AGENT_EXECUTING_PENDING: agent_0.executing.0.child.work.AGENT_EXECUTING_PENDING
+2018-03-14 22:41:53,606: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : registered worker work [AGENT_EXECUTING_PENDING]
+2018-03-14 22:41:53,606: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : alive check in term
+2018-03-14 22:41:53,606: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : START: agent_0.executing.0.child register output AGENT_STAGING_OUTPUT_PENDING
+2018-03-14 22:41:53,606: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : using addr tcp://204.90.41.119:33621 for output agent_staging_output_queue
+2018-03-14 22:41:53,612: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : registered output    : AGENT_STAGING_OUTPUT_PENDING : agent_staging_output_queue : agent.staging.output.queue.input.0000
+2018-03-14 22:41:53,612: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : alive check in term
+2018-03-14 22:41:53,612: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : START: agent_0.executing.0.child register publisher agent_unschedule_pubsub
+2018-03-14 22:41:53,612: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : using addr tcp://204.90.41.119:39671 for pubsub agent_unschedule_pubsub
+2018-03-14 22:41:53,618: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : registered publisher : agent_unschedule_pubsub : agent.unschedule.pubsub.pub.0000
+2018-03-14 22:41:53,618: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : alive check in term
+2018-03-14 22:41:53,619: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : START: agent_0.executing.0.child register subscriber agent_0.executing.0.child.subscriber.command_cb
+2018-03-14 22:41:53,619: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : using addr tcp://204.90.41.119:42726 for pubsub control_pubsub
+2018-03-14 22:41:53,624: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : parent name: agent_0.executing.0.child.subscriber.command_cb
+2018-03-14 22:41:53,624: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : start thread
+2018-03-14 22:41:53,624: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber.command_cb: DEBUG   : child name: agent_0.executing.0.child.subscriber.command_cb.thread
+2018-03-14 22:41:53,624: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber.command_cb: INFO    : child (me) initializing
+2018-03-14 22:41:53,624: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber.command_cb: DEBUG   : ru_initialize_common (NOOP)
+2018-03-14 22:41:53,625: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber.command_cb: DEBUG   : ru_initialize_child (NOOP)
+2018-03-14 22:41:53,625: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber.command_cb: INFO    : send alive
+2018-03-14 22:41:53,625: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber.command_cb: INFO    : put message: [agent_0.executing.0.child.subscriber.command_cb.thread] alive
+2018-03-14 22:41:53,625: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : get msg: alive
+2018-03-14 22:41:53,626: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2018-03-14 22:41:53,626: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2018-03-14 22:41:53,626: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : child thread agent_0.executing.0.child.subscriber.command_cb started
+2018-03-14 22:41:53,626: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : agent_0.executing.0.child registered control_pubsub subscriber agent_0.executing.0.child.subscriber.command_cb
+2018-03-14 22:41:53,644: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : child (me) initializing
+2018-03-14 22:41:53,644: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : parent name: agent_0.executing.0.child.watch
+2018-03-14 22:41:53,644: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : start thread
+2018-03-14 22:41:53,644: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.watch: DEBUG   : child name: agent_0.executing.0.child.watch.thread
+2018-03-14 22:41:53,644: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.watch: INFO    : child (me) initializing
+2018-03-14 22:41:53,644: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.watch: DEBUG   : ru_initialize_common (NOOP)
+2018-03-14 22:41:53,644: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.watch: DEBUG   : ru_initialize_child (NOOP)
+2018-03-14 22:41:53,644: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.watch: INFO    : send alive
+2018-03-14 22:41:53,644: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.watch: INFO    : put message: [agent_0.executing.0.child.watch.thread] alive
+2018-03-14 22:41:53,645: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : get msg: alive
+2018-03-14 22:41:53,645: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2018-03-14 22:41:53,645: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2018-03-14 22:41:53,646: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : child thread agent_0.executing.0.child.watch started
+2018-03-14 22:41:53,646: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : child (me) is alive
+2018-03-14 22:41:53,646: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : send alive
+2018-03-14 22:41:53,646: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : send message: [agent_0.executing.0.child] alive
+2018-03-14 22:41:54,026: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000000)
+2018-03-14 22:41:54,027: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,027: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,032: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000000 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000000/unit.000000.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000000
+2018-03-14 22:41:54,038: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000001)
+2018-03-14 22:41:54,038: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,038: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,042: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000001 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000001/unit.000001.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000001
+2018-03-14 22:41:54,047: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000002)
+2018-03-14 22:41:54,047: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,047: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,051: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000002 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000002/unit.000002.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000002
+2018-03-14 22:41:54,056: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000003)
+2018-03-14 22:41:54,057: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,057: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,060: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000003 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000003/unit.000003.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000003
+2018-03-14 22:41:54,066: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000004)
+2018-03-14 22:41:54,066: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,066: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,070: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000004 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000004/unit.000004.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000004
+2018-03-14 22:41:54,075: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000005)
+2018-03-14 22:41:54,076: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,076: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,080: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000005 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000005/unit.000005.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000005
+2018-03-14 22:41:54,085: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000006)
+2018-03-14 22:41:54,086: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,086: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,090: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000006 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000006/unit.000006.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000006
+2018-03-14 22:41:54,095: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000007)
+2018-03-14 22:41:54,095: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,095: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,099: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000007 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000007/unit.000007.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000007
+2018-03-14 22:41:54,105: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000008)
+2018-03-14 22:41:54,105: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,105: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,108: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000008 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000008/unit.000008.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000008
+2018-03-14 22:41:54,113: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000009)
+2018-03-14 22:41:54,114: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,114: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,118: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000009 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000009/unit.000009.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000009
+2018-03-14 22:41:54,123: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000010)
+2018-03-14 22:41:54,123: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,123: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,128: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000010 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000010/unit.000010.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000010
+2018-03-14 22:41:54,128: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000000 has return code 0.
+2018-03-14 22:41:54,130: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:54,131: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:54,131: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000002 has return code 0.
+2018-03-14 22:41:54,131: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:54,131: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:54,132: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000001 has return code 0.
+2018-03-14 22:41:54,132: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:54,132: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:54,132: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000003 has return code 0.
+2018-03-14 22:41:54,133: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:54,133: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:54,134: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000011)
+2018-03-14 22:41:54,134: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,134: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,137: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000011 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000011/unit.000011.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000011
+2018-03-14 22:41:54,142: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000012)
+2018-03-14 22:41:54,143: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,143: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,146: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000012 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000012/unit.000012.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000012
+2018-03-14 22:41:54,151: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000013)
+2018-03-14 22:41:54,151: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,151: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,154: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000013 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000013/unit.000013.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000013
+2018-03-14 22:41:54,160: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000014)
+2018-03-14 22:41:54,160: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,160: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,165: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000014 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000014/unit.000014.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000014
+2018-03-14 22:41:54,170: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000015)
+2018-03-14 22:41:54,170: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,170: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,174: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000015 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000015/unit.000015.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000015
+2018-03-14 22:41:54,179: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000016)
+2018-03-14 22:41:54,180: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,180: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,184: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000016 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000016/unit.000016.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000016
+2018-03-14 22:41:54,189: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000017)
+2018-03-14 22:41:54,189: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,189: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,194: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000017 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000017/unit.000017.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000017
+2018-03-14 22:41:54,200: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000018)
+2018-03-14 22:41:54,200: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,200: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,204: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000018 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000018/unit.000018.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000018
+2018-03-14 22:41:54,210: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000019)
+2018-03-14 22:41:54,210: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,210: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,213: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000019 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000019/unit.000019.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000019
+2018-03-14 22:41:54,218: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000020)
+2018-03-14 22:41:54,219: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,219: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,223: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000020 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000020/unit.000020.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000020
+2018-03-14 22:41:54,228: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000021)
+2018-03-14 22:41:54,228: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,229: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,233: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000021 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000021/unit.000021.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000021
+2018-03-14 22:41:54,235: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000004 has return code 0.
+2018-03-14 22:41:54,235: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:54,236: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:54,236: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000006 has return code 0.
+2018-03-14 22:41:54,236: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:54,236: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:54,236: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000008 has return code 0.
+2018-03-14 22:41:54,237: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:54,237: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:54,237: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000010 has return code 0.
+2018-03-14 22:41:54,237: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:54,237: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:54,238: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000005 has return code 0.
+2018-03-14 22:41:54,238: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000022)
+2018-03-14 22:41:54,238: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:54,238: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,239: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:54,239: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,239: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000009 has return code 0.
+2018-03-14 22:41:54,239: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:54,239: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:54,240: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000007 has return code 0.
+2018-03-14 22:41:54,240: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:54,240: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:54,240: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000011 has return code 0.
+2018-03-14 22:41:54,241: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:54,241: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:54,243: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000022 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000022/unit.000022.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000022
+2018-03-14 22:41:54,248: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000023)
+2018-03-14 22:41:54,248: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,249: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,252: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000023 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000023/unit.000023.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000023
+2018-03-14 22:41:54,257: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000024)
+2018-03-14 22:41:54,257: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,257: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,261: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000024 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000024/unit.000024.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000024
+2018-03-14 22:41:54,265: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000025)
+2018-03-14 22:41:54,266: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,266: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,269: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000025 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000025/unit.000025.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000025
+2018-03-14 22:41:54,275: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000026)
+2018-03-14 22:41:54,275: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,275: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,279: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000026 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000026/unit.000026.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000026
+2018-03-14 22:41:54,284: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000027)
+2018-03-14 22:41:54,285: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,285: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,289: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000027 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000027/unit.000027.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000027
+2018-03-14 22:41:54,294: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000028)
+2018-03-14 22:41:54,294: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,295: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,298: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000028 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000028/unit.000028.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000028
+2018-03-14 22:41:54,304: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000029)
+2018-03-14 22:41:54,304: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,304: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,308: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000029 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000029/unit.000029.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000029
+2018-03-14 22:41:54,314: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000030)
+2018-03-14 22:41:54,314: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,315: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,318: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000030 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000030/unit.000030.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000030
+2018-03-14 22:41:54,323: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000031)
+2018-03-14 22:41:54,323: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,323: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,327: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000031 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000031/unit.000031.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000031
+2018-03-14 22:41:54,332: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000032)
+2018-03-14 22:41:54,333: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,333: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,337: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000032 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000032/unit.000032.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000032
+2018-03-14 22:41:54,342: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000033)
+2018-03-14 22:41:54,342: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,342: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000012 has return code 0.
+2018-03-14 22:41:54,342: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:54,342: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,343: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:54,343: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000014 has return code 0.
+2018-03-14 22:41:54,343: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:54,343: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:54,344: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000016 has return code 0.
+2018-03-14 22:41:54,344: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:54,344: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:54,344: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000018 has return code 0.
+2018-03-14 22:41:54,345: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:54,345: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:54,345: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000013 has return code 0.
+2018-03-14 22:41:54,345: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:54,346: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:54,346: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000017 has return code 0.
+2018-03-14 22:41:54,346: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000033 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000033/unit.000033.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000033
+2018-03-14 22:41:54,347: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:54,347: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:54,349: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000015 has return code 0.
+2018-03-14 22:41:54,350: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:54,350: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:54,350: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000019 has return code 0.
+2018-03-14 22:41:54,350: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:54,350: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:54,352: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000034)
+2018-03-14 22:41:54,352: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,353: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,358: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000034 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000034/unit.000034.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000034
+2018-03-14 22:41:54,363: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000035)
+2018-03-14 22:41:54,363: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,363: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,367: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000035 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000035/unit.000035.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000035
+2018-03-14 22:41:54,373: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000036)
+2018-03-14 22:41:54,373: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,373: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,377: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000036 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000036/unit.000036.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000036
+2018-03-14 22:41:54,383: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000037)
+2018-03-14 22:41:54,383: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,383: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,403: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000037 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000037/unit.000037.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000037
+2018-03-14 22:41:54,409: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000038)
+2018-03-14 22:41:54,409: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,409: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,413: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000038 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000038/unit.000038.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000038
+2018-03-14 22:41:54,418: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000039)
+2018-03-14 22:41:54,418: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,418: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,421: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000039 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000039/unit.000039.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000039
+2018-03-14 22:41:54,427: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000040)
+2018-03-14 22:41:54,427: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,427: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,432: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000040 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000040/unit.000040.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000040
+2018-03-14 22:41:54,437: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000041)
+2018-03-14 22:41:54,437: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,438: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,442: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000041 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000041/unit.000041.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000041
+2018-03-14 22:41:54,447: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000042)
+2018-03-14 22:41:54,447: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,448: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,451: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000042 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000042/unit.000042.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000042
+2018-03-14 22:41:54,451: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000020 has return code 0.
+2018-03-14 22:41:54,452: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:54,454: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:54,454: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000022 has return code 0.
+2018-03-14 22:41:54,455: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:54,455: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:54,455: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000024 has return code 0.
+2018-03-14 22:41:54,455: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:54,455: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:54,456: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000026 has return code 0.
+2018-03-14 22:41:54,456: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:54,456: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:54,456: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000028 has return code 0.
+2018-03-14 22:41:54,456: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:54,457: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:54,457: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000043)
+2018-03-14 22:41:54,457: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,457: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,457: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000021 has return code 0.
+2018-03-14 22:41:54,458: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:54,458: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:54,458: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000025 has return code 0.
+2018-03-14 22:41:54,458: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:54,459: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:54,459: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000023 has return code 0.
+2018-03-14 22:41:54,459: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:54,459: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:54,460: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000027 has return code 0.
+2018-03-14 22:41:54,460: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:54,460: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:54,461: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000043 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000043/unit.000043.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000043
+2018-03-14 22:41:54,466: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000044)
+2018-03-14 22:41:54,467: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,467: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,471: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000044 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000044/unit.000044.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000044
+2018-03-14 22:41:54,476: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000045)
+2018-03-14 22:41:54,476: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,476: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,480: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000045 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000045/unit.000045.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000045
+2018-03-14 22:41:54,485: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000046)
+2018-03-14 22:41:54,485: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,485: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,488: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000046 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000046/unit.000046.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000046
+2018-03-14 22:41:54,493: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000047)
+2018-03-14 22:41:54,494: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,494: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,497: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000047 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000047/unit.000047.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000047
+2018-03-14 22:41:54,502: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000048)
+2018-03-14 22:41:54,503: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,503: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,508: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000048 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000048/unit.000048.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000048
+2018-03-14 22:41:54,513: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000049)
+2018-03-14 22:41:54,514: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,514: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,517: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000049 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000049/unit.000049.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000049
+2018-03-14 22:41:54,522: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000050)
+2018-03-14 22:41:54,522: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,522: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,526: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000050 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000050/unit.000050.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000050
+2018-03-14 22:41:54,532: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000051)
+2018-03-14 22:41:54,532: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,532: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,536: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000051 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000051/unit.000051.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000051
+2018-03-14 22:41:54,542: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000052)
+2018-03-14 22:41:54,542: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,542: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,546: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000052 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000052/unit.000052.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000052
+2018-03-14 22:41:54,551: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000053)
+2018-03-14 22:41:54,551: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,552: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,556: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000053 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000053/unit.000053.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000053
+2018-03-14 22:41:54,561: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000029 has return code 0.
+2018-03-14 22:41:54,561: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:54,562: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:54,562: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000054)
+2018-03-14 22:41:54,562: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,562: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000031 has return code 0.
+2018-03-14 22:41:54,562: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:54,563: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,563: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:54,563: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000033 has return code 0.
+2018-03-14 22:41:54,563: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:54,563: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:54,564: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000035 has return code 0.
+2018-03-14 22:41:54,564: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:54,564: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:54,565: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000037 has return code 0.
+2018-03-14 22:41:54,565: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:54,565: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:54,565: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000030 has return code 0.
+2018-03-14 22:41:54,565: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:54,566: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:54,566: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000034 has return code 0.
+2018-03-14 22:41:54,566: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:54,566: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:54,567: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000038 has return code 0.
+2018-03-14 22:41:54,567: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:54,567: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000054 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000054/unit.000054.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000054
+2018-03-14 22:41:54,567: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:54,570: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000032 has return code 0.
+2018-03-14 22:41:54,570: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:54,571: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:54,571: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000036 has return code 0.
+2018-03-14 22:41:54,571: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:54,571: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:54,573: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000055)
+2018-03-14 22:41:54,573: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,573: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,577: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000055 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000055/unit.000055.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000055
+2018-03-14 22:41:54,582: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000056)
+2018-03-14 22:41:54,583: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,583: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,587: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000056 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000056/unit.000056.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000056
+2018-03-14 22:41:54,591: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000057)
+2018-03-14 22:41:54,592: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,592: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,596: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000057 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000057/unit.000057.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000057
+2018-03-14 22:41:54,601: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000058)
+2018-03-14 22:41:54,601: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,602: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,606: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000058 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000058/unit.000058.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000058
+2018-03-14 22:41:54,611: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000059)
+2018-03-14 22:41:54,611: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,611: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,615: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000059 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000059/unit.000059.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000059
+2018-03-14 22:41:54,620: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000060)
+2018-03-14 22:41:54,621: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,621: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,625: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000060 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000060/unit.000060.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000060
+2018-03-14 22:41:54,630: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000061)
+2018-03-14 22:41:54,630: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,630: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,636: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000061 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000061/unit.000061.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000061
+2018-03-14 22:41:54,640: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000062)
+2018-03-14 22:41:54,640: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,641: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,645: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000062 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000062/unit.000062.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000062
+2018-03-14 22:41:54,650: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000063)
+2018-03-14 22:41:54,651: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,651: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,654: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000063 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000063/unit.000063.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000063
+2018-03-14 22:41:54,660: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000064)
+2018-03-14 22:41:54,660: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,661: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,664: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000064 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000064/unit.000064.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000064
+2018-03-14 22:41:54,669: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000065)
+2018-03-14 22:41:54,669: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,669: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,672: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000039 has return code 0.
+2018-03-14 22:41:54,672: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:54,672: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:54,673: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000041 has return code 0.
+2018-03-14 22:41:54,673: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:54,673: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000065 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000065/unit.000065.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000065
+2018-03-14 22:41:54,674: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:54,676: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000043 has return code 0.
+2018-03-14 22:41:54,676: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:54,676: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:54,676: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000045 has return code 0.
+2018-03-14 22:41:54,677: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:54,677: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:54,677: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000040 has return code 0.
+2018-03-14 22:41:54,677: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:54,677: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:54,678: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000044 has return code 0.
+2018-03-14 22:41:54,678: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:54,678: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:54,678: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000042 has return code 0.
+2018-03-14 22:41:54,679: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:54,679: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:54,679: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000066)
+2018-03-14 22:41:54,679: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,679: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,683: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000066 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000066/unit.000066.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000066
+2018-03-14 22:41:54,688: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000067)
+2018-03-14 22:41:54,688: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,689: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,693: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000067 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000067/unit.000067.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000067
+2018-03-14 22:41:54,699: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000068)
+2018-03-14 22:41:54,699: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,699: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,704: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000068 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000068/unit.000068.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000068
+2018-03-14 22:41:54,709: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000069)
+2018-03-14 22:41:54,710: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,710: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,714: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000069 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000069/unit.000069.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000069
+2018-03-14 22:41:54,720: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000070)
+2018-03-14 22:41:54,720: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,720: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,724: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000070 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000070/unit.000070.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000070
+2018-03-14 22:41:54,729: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000071)
+2018-03-14 22:41:54,729: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,730: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,734: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000071 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000071/unit.000071.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000071
+2018-03-14 22:41:54,740: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000072)
+2018-03-14 22:41:54,740: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,740: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,744: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000072 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000072/unit.000072.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000072
+2018-03-14 22:41:54,750: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000073)
+2018-03-14 22:41:54,750: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,750: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,755: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000073 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000073/unit.000073.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000073
+2018-03-14 22:41:54,761: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000074)
+2018-03-14 22:41:54,761: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,762: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,766: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000074 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000074/unit.000074.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000074
+2018-03-14 22:41:54,771: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000075)
+2018-03-14 22:41:54,772: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,772: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,776: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000075 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000075/unit.000075.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000075
+2018-03-14 22:41:54,780: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000046 has return code 0.
+2018-03-14 22:41:54,781: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:54,781: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:54,781: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000048 has return code 0.
+2018-03-14 22:41:54,782: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:54,782: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000076)
+2018-03-14 22:41:54,782: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,782: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:54,782: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000050 has return code 0.
+2018-03-14 22:41:54,782: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,783: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:54,783: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:54,783: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000052 has return code 0.
+2018-03-14 22:41:54,784: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:54,784: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:54,784: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000054 has return code 0.
+2018-03-14 22:41:54,785: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:54,785: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:54,785: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000047 has return code 0.
+2018-03-14 22:41:54,785: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:54,786: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:54,786: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000051 has return code 0.
+2018-03-14 22:41:54,786: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:54,786: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:54,787: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000049 has return code 0.
+2018-03-14 22:41:54,787: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000076 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000076/unit.000076.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000076
+2018-03-14 22:41:54,787: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:54,788: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:54,791: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000053 has return code 0.
+2018-03-14 22:41:54,791: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:54,791: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:54,793: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000077)
+2018-03-14 22:41:54,794: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,794: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,798: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000077 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000077/unit.000077.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000077
+2018-03-14 22:41:54,803: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000078)
+2018-03-14 22:41:54,803: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,804: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,808: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000078 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000078/unit.000078.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000078
+2018-03-14 22:41:54,813: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000079)
+2018-03-14 22:41:54,813: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,814: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,818: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000079 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000079/unit.000079.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000079
+2018-03-14 22:41:54,823: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000080)
+2018-03-14 22:41:54,823: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,823: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,827: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000080 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000080/unit.000080.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000080
+2018-03-14 22:41:54,832: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000081)
+2018-03-14 22:41:54,832: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,832: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,836: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000081 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000081/unit.000081.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000081
+2018-03-14 22:41:54,841: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000082)
+2018-03-14 22:41:54,841: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,842: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,846: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000082 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000082/unit.000082.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000082
+2018-03-14 22:41:54,851: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000083)
+2018-03-14 22:41:54,851: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,851: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,855: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000083 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000083/unit.000083.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000083
+2018-03-14 22:41:54,860: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000084)
+2018-03-14 22:41:54,861: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,861: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,865: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000084 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000084/unit.000084.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000084
+2018-03-14 22:41:54,869: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000085)
+2018-03-14 22:41:54,870: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,870: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,873: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000085 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000085/unit.000085.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000085
+2018-03-14 22:41:54,878: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000086)
+2018-03-14 22:41:54,879: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,879: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,882: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000086 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000086/unit.000086.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000086
+2018-03-14 22:41:54,887: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000087)
+2018-03-14 22:41:54,888: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,888: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,892: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000087 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000087/unit.000087.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000087
+2018-03-14 22:41:54,892: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000055 has return code 0.
+2018-03-14 22:41:54,893: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:54,895: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:54,895: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000057 has return code 0.
+2018-03-14 22:41:54,896: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:54,896: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:54,896: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000059 has return code 0.
+2018-03-14 22:41:54,896: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:54,897: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:54,897: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000061 has return code 0.
+2018-03-14 22:41:54,897: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:54,897: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:54,897: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000063 has return code 0.
+2018-03-14 22:41:54,897: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:54,898: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:54,898: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000088)
+2018-03-14 22:41:54,898: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,899: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,899: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000056 has return code 0.
+2018-03-14 22:41:54,899: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:54,899: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:54,900: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000060 has return code 0.
+2018-03-14 22:41:54,900: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:54,900: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:54,900: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000058 has return code 0.
+2018-03-14 22:41:54,900: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:54,901: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:54,901: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000062 has return code 0.
+2018-03-14 22:41:54,901: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:54,902: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:54,905: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000088 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000088/unit.000088.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000088
+2018-03-14 22:41:54,910: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000089)
+2018-03-14 22:41:54,910: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,910: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,914: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000089 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000089/unit.000089.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000089
+2018-03-14 22:41:54,919: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000090)
+2018-03-14 22:41:54,920: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,920: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,923: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000090 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000090/unit.000090.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000090
+2018-03-14 22:41:54,929: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000091)
+2018-03-14 22:41:54,930: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,930: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,934: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000091 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000091/unit.000091.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000091
+2018-03-14 22:41:54,940: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000092)
+2018-03-14 22:41:54,940: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,940: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,943: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000092 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000092/unit.000092.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000092
+2018-03-14 22:41:54,949: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000093)
+2018-03-14 22:41:54,949: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,949: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,953: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000093 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000093/unit.000093.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000093
+2018-03-14 22:41:54,959: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000094)
+2018-03-14 22:41:54,960: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,960: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,963: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000094 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000094/unit.000094.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000094
+2018-03-14 22:41:54,969: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000095)
+2018-03-14 22:41:54,969: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,969: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,973: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000095 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000095/unit.000095.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000095
+2018-03-14 22:41:54,978: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000096)
+2018-03-14 22:41:54,979: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,979: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,982: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000096 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000096/unit.000096.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000096
+2018-03-14 22:41:54,988: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000097)
+2018-03-14 22:41:54,988: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,988: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:54,992: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000097 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000097/unit.000097.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000097
+2018-03-14 22:41:54,997: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000098)
+2018-03-14 22:41:54,997: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:54,998: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:55,001: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000098 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000098/unit.000098.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000098
+2018-03-14 22:41:55,004: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000064 has return code 0.
+2018-03-14 22:41:55,005: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:55,005: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:55,005: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000066 has return code 0.
+2018-03-14 22:41:55,005: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:55,006: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:55,006: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000068 has return code 0.
+2018-03-14 22:41:55,006: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:55,006: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:55,006: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000070 has return code 0.
+2018-03-14 22:41:55,006: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:55,007: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:55,007: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000072 has return code 0.
+2018-03-14 22:41:55,007: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:55,007: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000099)
+2018-03-14 22:41:55,008: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:55,008: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:55,008: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:55,009: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000065 has return code 0.
+2018-03-14 22:41:55,009: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:55,009: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:55,009: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000069 has return code 0.
+2018-03-14 22:41:55,010: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:55,010: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:55,010: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000067 has return code 0.
+2018-03-14 22:41:55,010: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:55,011: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:55,011: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000071 has return code 0.
+2018-03-14 22:41:55,011: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:55,011: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:55,013: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000099 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000099/unit.000099.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000099
+2018-03-14 22:41:55,019: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000100)
+2018-03-14 22:41:55,019: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:55,020: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:55,024: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000100 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000100/unit.000100.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000100
+2018-03-14 22:41:55,029: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000101)
+2018-03-14 22:41:55,029: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:55,030: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:55,034: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000101 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000101/unit.000101.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000101
+2018-03-14 22:41:55,040: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000102)
+2018-03-14 22:41:55,040: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:55,040: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:55,044: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000102 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000102/unit.000102.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000102
+2018-03-14 22:41:55,049: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000103)
+2018-03-14 22:41:55,050: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:55,050: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:55,055: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000103 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000103/unit.000103.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000103
+2018-03-14 22:41:55,061: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000104)
+2018-03-14 22:41:55,061: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:55,061: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:55,066: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000104 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000104/unit.000104.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000104
+2018-03-14 22:41:55,071: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000105)
+2018-03-14 22:41:55,072: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:55,072: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:55,076: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000105 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000105/unit.000105.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000105
+2018-03-14 22:41:55,081: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000106)
+2018-03-14 22:41:55,082: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:55,082: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:55,086: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000106 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000106/unit.000106.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000106
+2018-03-14 22:41:55,091: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000107)
+2018-03-14 22:41:55,091: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:55,091: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:55,095: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000107 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000107/unit.000107.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000107
+2018-03-14 22:41:55,100: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000108)
+2018-03-14 22:41:55,100: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:55,101: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:55,104: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000108 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000108/unit.000108.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000108
+2018-03-14 22:41:55,110: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000109)
+2018-03-14 22:41:55,110: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:55,110: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:55,112: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000073 has return code 0.
+2018-03-14 22:41:55,112: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:55,112: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:55,113: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000075 has return code 0.
+2018-03-14 22:41:55,113: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:55,113: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:55,113: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000077 has return code 0.
+2018-03-14 22:41:55,114: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:55,114: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:55,114: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000109 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000109/unit.000109.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000109
+2018-03-14 22:41:55,115: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000079 has return code 0.
+2018-03-14 22:41:55,115: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:55,117: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:55,118: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000081 has return code 0.
+2018-03-14 22:41:55,118: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:55,118: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:55,118: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000083 has return code 0.
+2018-03-14 22:41:55,119: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:55,119: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:55,119: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000074 has return code 0.
+2018-03-14 22:41:55,119: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:55,119: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:55,120: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000078 has return code 0.
+2018-03-14 22:41:55,120: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:55,120: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:55,120: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000082 has return code 0.
+2018-03-14 22:41:55,121: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000110)
+2018-03-14 22:41:55,121: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:55,121: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:55,121: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:55,122: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:55,122: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000076 has return code 0.
+2018-03-14 22:41:55,122: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:55,122: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:55,123: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000080 has return code 0.
+2018-03-14 22:41:55,123: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:55,123: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:55,126: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000110 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000110/unit.000110.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000110
+2018-03-14 22:41:55,132: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000111)
+2018-03-14 22:41:55,132: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:55,132: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:55,136: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000111 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000111/unit.000111.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000111
+2018-03-14 22:41:55,142: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000112)
+2018-03-14 22:41:55,142: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:55,142: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:55,146: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000112 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000112/unit.000112.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000112
+2018-03-14 22:41:55,151: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000113)
+2018-03-14 22:41:55,152: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:55,152: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:55,156: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000113 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000113/unit.000113.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000113
+2018-03-14 22:41:55,161: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000114)
+2018-03-14 22:41:55,162: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:55,162: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:55,166: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000114 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000114/unit.000114.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000114
+2018-03-14 22:41:55,171: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000115)
+2018-03-14 22:41:55,171: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:55,172: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:55,176: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000115 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000115/unit.000115.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000115
+2018-03-14 22:41:55,182: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000116)
+2018-03-14 22:41:55,182: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:55,182: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:55,186: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000116 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000116/unit.000116.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000116
+2018-03-14 22:41:55,192: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000117)
+2018-03-14 22:41:55,192: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:55,193: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:55,196: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000117 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000117/unit.000117.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000117
+2018-03-14 22:41:55,202: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000118)
+2018-03-14 22:41:55,202: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:55,202: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:55,206: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000118 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000118/unit.000118.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000118
+2018-03-14 22:41:55,211: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000119)
+2018-03-14 22:41:55,211: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:55,212: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:55,216: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000119 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000119/unit.000119.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000119
+2018-03-14 22:41:55,222: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000120)
+2018-03-14 22:41:55,222: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:55,222: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:55,224: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000084 has return code 0.
+2018-03-14 22:41:55,224: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:55,224: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:55,225: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000086 has return code 0.
+2018-03-14 22:41:55,225: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:55,225: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:55,226: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000088 has return code 0.
+2018-03-14 22:41:55,226: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000120 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000120/unit.000120.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000120
+2018-03-14 22:41:55,226: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:55,227: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:55,229: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000090 has return code 0.
+2018-03-14 22:41:55,229: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:55,229: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:55,230: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000092 has return code 0.
+2018-03-14 22:41:55,230: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:55,230: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:55,230: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000094 has return code 0.
+2018-03-14 22:41:55,230: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:55,231: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:55,231: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000085 has return code 0.
+2018-03-14 22:41:55,231: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:55,231: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:55,232: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000121)
+2018-03-14 22:41:55,232: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:55,232: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000089 has return code 0.
+2018-03-14 22:41:55,232: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:55,233: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:55,233: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:55,233: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000093 has return code 0.
+2018-03-14 22:41:55,233: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:55,234: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:55,234: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000087 has return code 0.
+2018-03-14 22:41:55,234: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:55,234: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:55,234: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000091 has return code 0.
+2018-03-14 22:41:55,235: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:55,235: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:55,237: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000121 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000121/unit.000121.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000121
+2018-03-14 22:41:55,243: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000122)
+2018-03-14 22:41:55,243: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:55,243: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:55,246: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000122 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000122/unit.000122.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000122
+2018-03-14 22:41:55,252: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000123)
+2018-03-14 22:41:55,252: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:55,252: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:55,256: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000123 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000123/unit.000123.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000123
+2018-03-14 22:41:55,261: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000124)
+2018-03-14 22:41:55,261: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:55,262: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:55,265: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000124 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000124/unit.000124.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000124
+2018-03-14 22:41:55,270: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000125)
+2018-03-14 22:41:55,270: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:55,271: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:55,274: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000125 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000125/unit.000125.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000125
+2018-03-14 22:41:55,280: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000126)
+2018-03-14 22:41:55,280: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:55,280: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:55,284: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000126 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000126/unit.000126.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000126
+2018-03-14 22:41:55,289: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000127)
+2018-03-14 22:41:55,289: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-03-14 22:41:55,290: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with ORTE (/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb/bin/orterun).
+2018-03-14 22:41:55,293: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000127 via /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000127/unit.000127.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017605.0006/pilot.0000/unit.000127
+2018-03-14 22:41:55,336: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000095 has return code 0.
+2018-03-14 22:41:55,336: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:55,336: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:55,337: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000097 has return code 0.
+2018-03-14 22:41:55,337: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:55,337: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:55,337: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000099 has return code 0.
+2018-03-14 22:41:55,337: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:55,337: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:55,338: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000101 has return code 0.
+2018-03-14 22:41:55,338: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:55,338: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:55,338: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000103 has return code 0.
+2018-03-14 22:41:55,338: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:55,339: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:55,339: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000096 has return code 0.
+2018-03-14 22:41:55,339: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:55,339: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:55,339: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000100 has return code 0.
+2018-03-14 22:41:55,340: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:55,340: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:55,340: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000098 has return code 0.
+2018-03-14 22:41:55,340: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:55,340: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:55,341: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000102 has return code 0.
+2018-03-14 22:41:55,341: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:55,341: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:55,441: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000104 has return code 0.
+2018-03-14 22:41:55,442: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:55,442: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:55,442: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000106 has return code 0.
+2018-03-14 22:41:55,442: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:55,443: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:55,443: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000108 has return code 0.
+2018-03-14 22:41:55,443: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:55,443: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:55,443: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000110 has return code 0.
+2018-03-14 22:41:55,443: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:55,444: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:55,444: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000112 has return code 0.
+2018-03-14 22:41:55,444: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:55,444: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:55,444: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000114 has return code 0.
+2018-03-14 22:41:55,444: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:55,445: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:55,445: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000116 has return code 0.
+2018-03-14 22:41:55,445: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:55,445: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:55,445: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000118 has return code 0.
+2018-03-14 22:41:55,446: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:55,446: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:55,446: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000120 has return code 0.
+2018-03-14 22:41:55,446: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:55,446: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:55,447: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000122 has return code 0.
+2018-03-14 22:41:55,447: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:55,447: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:55,447: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000124 has return code 0.
+2018-03-14 22:41:55,447: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:55,447: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:55,448: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000126 has return code 0.
+2018-03-14 22:41:55,448: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:55,448: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:55,448: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000105 has return code 0.
+2018-03-14 22:41:55,448: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:55,448: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:55,449: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000109 has return code 0.
+2018-03-14 22:41:55,449: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:55,449: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:55,449: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000113 has return code 0.
+2018-03-14 22:41:55,449: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:55,450: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:55,450: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000117 has return code 0.
+2018-03-14 22:41:55,450: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:55,450: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:55,450: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000121 has return code 0.
+2018-03-14 22:41:55,450: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:55,451: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:55,451: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000125 has return code 0.
+2018-03-14 22:41:55,451: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:55,451: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:55,451: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000107 has return code 0.
+2018-03-14 22:41:55,451: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:55,452: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:55,452: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000115 has return code 0.
+2018-03-14 22:41:55,452: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:55,452: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:55,452: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000123 has return code 0.
+2018-03-14 22:41:55,453: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:55,453: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:55,453: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000111 has return code 0.
+2018-03-14 22:41:55,453: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:55,453: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:55,453: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000127 has return code 0.
+2018-03-14 22:41:55,454: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:55,454: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:41:55,454: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000119 has return code 0.
+2018-03-14 22:41:55,454: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-14 22:41:55,454: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-03-14 22:42:03,042: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber.command_cb: INFO    : command_cb [control_pubsub]: {'cmd': 'terminate', 'arg': None}
+2018-03-14 22:42:03,043: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: INFO    : got termination command
+2018-03-14 22:42:03,218: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: INFO    : stop agent_0.executing.0.child (73613 : 73613 : agent_0.executing.0.child.subscriber._cancel_monitor_cb) [radical.pilot.utils.component.Popen._cancel_monitor_cb]
+2018-03-14 22:42:03,223: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: INFO    : parent stops child  73613 -> 73613 [agent_0.executing.0.child]
+2018-03-14 22:42:03,223: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: INFO    : send message: [agent_0.executing.0.child] STOP
+2018-03-14 22:42:03,223: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: DEBUG   : ru_finalize_common()
+2018-03-14 22:42:03,223: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: DEBUG   : TERM : agent_0.executing.0.child unregister publisher log_pubsub
+2018-03-14 22:42:03,224: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: DEBUG   : unregistered publisher log_pubsub
+2018-03-14 22:42:03,224: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: DEBUG   : TERM : agent_0.executing.0.child unregister publisher state_pubsub
+2018-03-14 22:42:03,224: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: DEBUG   : unregistered publisher state_pubsub
+2018-03-14 22:42:03,224: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: DEBUG   : TERM : agent_0.executing.0.child unregister publisher control_pubsub
+2018-03-14 22:42:03,225: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: DEBUG   : unregistered publisher control_pubsub
+2018-03-14 22:42:03,225: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: DEBUG   : agent_0.executing.0.child close prof
+2018-03-14 22:42:03,232: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: INFO    : signal stop for agent_0.executing.0.child.subscriber._cancel_monitor_cb - do not join
+2018-03-14 22:42:03,232: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: INFO    : child calls stop()
+2018-03-14 22:42:03,232: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: INFO    : signal stop for agent_0.executing.0.child.subscriber._cancel_monitor_cb - do not join
+2018-03-14 22:42:03,232: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: INFO    : signal stop for agent_0.executing.0.child.subscriber._cancel_monitor_cb - do not join
+2018-03-14 22:42:03,232: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: DEBUG   : ru_finalize_child (NOOP)
+2018-03-14 22:42:03,233: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: INFO    : put message: [agent_0.executing.0.child.subscriber._cancel_monitor_cb.thread] terminating
+2018-03-14 22:42:03,261: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.watch: WARNING : %s died
+2018-03-14 22:42:03,261: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.watch: INFO    : watcher closes
+2018-03-14 22:42:03,261: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.watch: INFO    : put message: [agent_0.executing.0.child.watch.thread] work finished
+2018-03-14 22:42:03,261: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.watch: DEBUG   : ru_finalize_child (NOOP)
+2018-03-14 22:42:03,261: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.watch: DEBUG   : ru_finalize_common (NOOP)
+2018-03-14 22:42:03,261: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.watch: INFO    : put message: [agent_0.executing.0.child.watch.thread] terminating
+2018-03-14 22:42:03,306: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : ru_finalize_common()
+2018-03-14 22:42:03,306: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : WARNING : publisher log_pubsub is not registered
+2018-03-14 22:42:03,307: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : WARNING : publisher state_pubsub is not registered
+2018-03-14 22:42:03,307: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : WARNING : publisher control_pubsub is not registered
+2018-03-14 22:42:03,307: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : agent_0.executing.0.child close prof
+2018-03-14 22:42:03,307: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : send message: [agent_0.executing.0.child] terminating
+2018-03-14 22:42:03,307: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : WARNING : send failed ([Errno 9] Bad file descriptor) - terminate
+2018-03-14 22:42:03,307: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : parent stops child
+2018-03-14 22:42:03,307: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : ru_finalize_parent (NOOP)
+2018-03-14 22:42:03,307: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : parent stops child
+2018-03-14 22:42:03,307: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : ru_finalize_parent (NOOP)
+2018-03-14 22:42:03,308: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber.command_cb: DEBUG   : ru_finalize_child (NOOP)
+2018-03-14 22:42:03,308: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber.command_cb: INFO    : put message: [agent_0.executing.0.child.subscriber.command_cb.thread] terminating
