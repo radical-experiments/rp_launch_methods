@@ -1,0 +1,179 @@
+2018-03-28 16:51:46,381: agent_0.scheduling.0: MainProcess                     : MainThread     : INFO    : python.interpreter   version: 2.7.7 |Continuum Analytics, Inc.| (default, Jun 2 2014, 12:34:02) [GCC 4.1.2 20080704 (Red Hat 4.1.2-54)]
+2018-03-28 16:51:46,384: agent_0.scheduling.0: MainProcess                     : MainThread     : INFO    :                      pid: 92217
+2018-03-28 16:51:46,384: agent_0.scheduling.0: MainProcess                     : MainThread     : INFO    :                      tid: MainThread
+2018-03-28 16:51:46,385: agent_0.scheduling.0: MainProcess                     : MainThread     : INFO    : radical.pilot        version: 0.47-0.47-14-gb1dff8bd@devel
+2018-03-28 16:51:46,437: agent_0.scheduling.0: MainProcess                     : MainThread     : DEBUG   : alive check in term
+2018-03-28 16:51:46,438: agent_0.scheduling.0: MainProcess                     : MainThread     : DEBUG   : start process
+2018-03-28 16:51:46,577: agent_0.scheduling.0: MainProcess                     : MainThread     : INFO    : recv message: alive
+2018-03-28 16:51:46,578: agent_0.scheduling.0: MainProcess                     : MainThread     : INFO    : initialize agent_0.scheduling.0
+2018-03-28 16:51:46,587: agent_0.scheduling.0: MainProcess                     : MainThread     : INFO    : cfg: {'agent_launch_method': 'ORTE',
+ 'agent_name': 'agent_0',
+ 'agents': {},
+ 'bridges': {'agent_executing_queue': {'addr_in': 'tcp://204.90.41.16:43704',
+                                       'addr_out': 'tcp://204.90.41.16:40425',
+                                       'bulk_size': 0,
+                                       'log_level': 'debug',
+                                       'stall_hwm': 1},
+             'agent_reschedule_pubsub': {'addr_in': 'tcp://204.90.41.16:43542',
+                                         'addr_out': 'tcp://204.90.41.16:44577',
+                                         'bulk_size': 0,
+                                         'log_level': 'debug',
+                                         'stall_hwm': 1},
+             'agent_scheduling_queue': {'addr_in': 'tcp://204.90.41.16:43486',
+                                        'addr_out': 'tcp://204.90.41.16:33388',
+                                        'bulk_size': 0,
+                                        'log_level': 'debug',
+                                        'stall_hwm': 1},
+             'agent_staging_input_queue': {'addr_in': 'tcp://204.90.41.16:38293',
+                                           'addr_out': 'tcp://204.90.41.16:45245',
+                                           'bulk_size': 0,
+                                           'log_level': 'debug',
+                                           'stall_hwm': 1},
+             'agent_staging_output_queue': {'addr_in': 'tcp://204.90.41.16:41848',
+                                            'addr_out': 'tcp://204.90.41.16:39444',
+                                            'bulk_size': 0,
+                                            'log_level': 'debug',
+                                            'stall_hwm': 1},
+             'agent_unschedule_pubsub': {'addr_in': 'tcp://204.90.41.16:32901',
+                                         'addr_out': 'tcp://204.90.41.16:45207',
+                                         'bulk_size': 0,
+                                         'log_level': 'debug',
+                                         'stall_hwm': 1},
+             'control_pubsub': {'addr_in': 'tcp://204.90.41.16:39392',
+                                'addr_out': 'tcp://204.90.41.16:45809',
+                                'bulk_size': 0,
+                                'log_level': 'debug',
+                                'stall_hwm': 1},
+             'log_pubsub': {'addr_in': 'tcp://204.90.41.16:32999',
+                            'addr_out': 'tcp://204.90.41.16:43483',
+                            'bulk_size': 0,
+                            'log_level': 'debug',
+                            'stall_hwm': 1},
+             'state_pubsub': {'addr_in': 'tcp://204.90.41.16:36935',
+                              'addr_out': 'tcp://204.90.41.16:41093',
+                              'bulk_size': 0,
+                              'log_level': 'debug',
+                              'stall_hwm': 1}},
+ 'bulk_collection_size': 100,
+ 'bulk_collection_time': 1.0,
+ 'cname': 'AgentSchedulingComponent',
+ 'components': {},
+ 'cores': 140,
+ 'cores_per_node': 20,
+ 'count': 1,
+ 'cu_post_exec': None,
+ 'cu_pre_exec': None,
+ 'cu_tmp': None,
+ 'db_poll_sleeptime': 1.0,
+ 'dburl': 'mongodb://rp:rp@ds015335.mlab.com:15335/rp',
+ 'debug': 10,
+ 'export_to_cu': None,
+ 'logdir': '.',
+ 'lrms': 'TORQUE',
+ 'lrms_info': {'agent_nodes': {},
+               'cores_per_node': 20,
+               'lm_info': {'dvm_uri': '1976172544.0;tcp://172.17.41.16,204.90.41.16,10.193.41.16:32967;ud://221788.272.1',
+                           'version_info': {'ORTE': {'version': '3.0.0a1',
+                                                     'version_detail': 'v2.x-dev-3504-g6da4dbb'}}},
+               'name': 'Torque',
+               'node_list': ['smic016',
+                             'smic020',
+                             'smic023',
+                             'smic030',
+                             'smic089',
+                             'smic188',
+                             'smic310']},
+ 'max_io_loglength': 1024,
+ 'mode': 'shared',
+ 'mpi_launch_method': 'ORTE',
+ 'number': 0,
+ 'owner': 'agent_0',
+ 'pilot_id': 'pilot.0000',
+ 'pilot_sandbox': '/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017618.0005/pilot.0000/',
+ 'resource_cfg': {'agent_launch_method': 'ORTE',
+                  'agent_scheduler': 'CONTINUOUS',
+                  'agent_spawner': 'POPEN',
+                  'cores_per_node': '20',
+                  'default_queue': 'workq',
+                  'default_remote_workdir': '/work/$USER',
+                  'description': "SuperMIC (pronounced 'Super Mick') is Louisiana State University's (LSU) newest supercomputer funded by the National Science Foundation's (NSF) Major Research Instrumentation (MRI) award to the Center for Computation & Technology. (https://portal.xsede.org/lsu-supermic)",
+                  'filesystem_endpoint': 'gsisftp://supermic.cct-lsu.xsede.org:2222/',
+                  'gsissh': {'filesystem_endpoint': 'gsisftp://supermic.cct-lsu.xsede.org:2222/',
+                             'job_manager_endpoint': 'torque+gsissh://supermic.cct-lsu.xsede.org:2222/'},
+                  'job_manager_endpoint': 'torque+gsissh://supermic.cct-lsu.xsede.org:2222/',
+                  'label': 'xsede.supermic_orte',
+                  'lrms': 'TORQUE',
+                  'mpi_launch_method': 'ORTE',
+                  'notes': 'Partially allocated through XSEDE. Primary access through GSISSH. Allows SSH key authentication too.',
+                  'pre_bootstrap_1': ['module load python/2.7.7-anaconda',
+                                      'module use -a /worka/work/amerzky/radical.pilot.sandbox/openmpi/modules/',
+                                      'module load openmpi/2017_03_13_6da4dbb'],
+                  'pre_bootstrap_2': ['export PATH=$PATH',
+                                      'export LD_LIBRARY_PATH=$LD_LIBRARY_PATH'],
+                  'python_dist': 'default',
+                  'rp_version': 'local',
+                  'schemas': ['gsissh', 'ssh'],
+                  'ssh': {'filesystem_endpoint': 'sftp://supermic.cct-lsu.xsede.org/',
+                          'job_manager_endpoint': 'torque+ssh://supermic.cct-lsu.xsede.org/'},
+                  'task_launch_method': 'ORTE',
+                  'valid_roots': ['/work'],
+                  'virtenv_mode': 'create'},
+ 'resource_sandbox': '/work/gchantzi/radical.pilot.sandbox',
+ 'runtime': 25,
+ 'scheduler': 'CONTINUOUS',
+ 'session_id': 'rp.session.one.george.017618.0005',
+ 'session_sandbox': '/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017618.0005',
+ 'spawner': 'POPEN',
+ 'staging_area': 'staging_area',
+ 'staging_schema': 'staging',
+ 'target': 'local',
+ 'task_launch_method': 'ORTE',
+ 'uid': 'agent_0',
+ 'workdir': '/worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017618.0005/pilot.0000'}
+2018-03-28 16:51:46,587: agent_0.scheduling.0: MainProcess                     : MainThread     : DEBUG   : alive check in term
+2018-03-28 16:51:46,587: agent_0.scheduling.0: MainProcess                     : MainThread     : DEBUG   : START: agent_0.scheduling.0 register publisher log_pubsub
+2018-03-28 16:51:46,587: agent_0.scheduling.0: MainProcess                     : MainThread     : DEBUG   : using addr tcp://204.90.41.16:32999 for pubsub log_pubsub
+2018-03-28 16:51:46,592: agent_0.scheduling.0: MainProcess                     : MainThread     : DEBUG   : registered publisher : log_pubsub : log.pubsub.pub.0001
+2018-03-28 16:51:46,592: agent_0.scheduling.0: MainProcess                     : MainThread     : DEBUG   : alive check in term
+2018-03-28 16:51:46,592: agent_0.scheduling.0: MainProcess                     : MainThread     : DEBUG   : START: agent_0.scheduling.0 register publisher state_pubsub
+2018-03-28 16:51:46,592: agent_0.scheduling.0: MainProcess                     : MainThread     : DEBUG   : using addr tcp://204.90.41.16:36935 for pubsub state_pubsub
+2018-03-28 16:51:46,597: agent_0.scheduling.0: MainProcess                     : MainThread     : DEBUG   : registered publisher : state_pubsub : state.pubsub.pub.0001
+2018-03-28 16:51:46,597: agent_0.scheduling.0: MainProcess                     : MainThread     : DEBUG   : alive check in term
+2018-03-28 16:51:46,597: agent_0.scheduling.0: MainProcess                     : MainThread     : DEBUG   : START: agent_0.scheduling.0 register publisher control_pubsub
+2018-03-28 16:51:46,597: agent_0.scheduling.0: MainProcess                     : MainThread     : DEBUG   : using addr tcp://204.90.41.16:39392 for pubsub control_pubsub
+2018-03-28 16:51:46,603: agent_0.scheduling.0: MainProcess                     : MainThread     : DEBUG   : registered publisher : control_pubsub : control.pubsub.pub.0001
+2018-03-28 16:51:46,604: agent_0.scheduling.0: MainProcess                     : MainThread     : DEBUG   : parent name: agent_0.scheduling.0.watch
+2018-03-28 16:51:46,604: agent_0.scheduling.0: MainProcess                     : MainThread     : DEBUG   : start thread
+2018-03-28 16:51:46,604: agent_0.scheduling.0: MainProcess                     : agent_0.scheduling.0.watch: DEBUG   : child name: agent_0.scheduling.0.watch.thread
+2018-03-28 16:51:46,604: agent_0.scheduling.0: MainProcess                     : agent_0.scheduling.0.watch: INFO    : child (me) initializing
+2018-03-28 16:51:46,604: agent_0.scheduling.0: MainProcess                     : agent_0.scheduling.0.watch: DEBUG   : ru_initialize_common (NOOP)
+2018-03-28 16:51:46,604: agent_0.scheduling.0: MainProcess                     : agent_0.scheduling.0.watch: DEBUG   : ru_initialize_child (NOOP)
+2018-03-28 16:51:46,605: agent_0.scheduling.0: MainProcess                     : agent_0.scheduling.0.watch: INFO    : send alive
+2018-03-28 16:51:46,605: agent_0.scheduling.0: MainProcess                     : agent_0.scheduling.0.watch: INFO    : put message: [agent_0.scheduling.0.watch.thread] alive
+2018-03-28 16:51:46,605: agent_0.scheduling.0: MainProcess                     : MainThread     : INFO    : get msg: alive
+2018-03-28 16:51:46,605: agent_0.scheduling.0: MainProcess                     : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2018-03-28 16:51:46,606: agent_0.scheduling.0: MainProcess                     : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2018-03-28 16:51:46,606: agent_0.scheduling.0: MainProcess                     : MainThread     : DEBUG   : child thread agent_0.scheduling.0.watch started
+2018-03-28 16:51:46,606: agent_0.scheduling.0: MainProcess                     : MainThread     : INFO    : child is alive
+2018-03-28 16:51:46,606: agent_0.scheduling.0: MainProcess                     : MainThread     : DEBUG   : process class started child
+2018-03-28 17:04:00,169: agent_0.scheduling.0: MainProcess                     : agent_0.scheduling.0.watch: INFO    : recv message: STOP
+2018-03-28 17:04:00,169: agent_0.scheduling.0: MainProcess                     : agent_0.scheduling.0.watch: INFO    : message received: STOP
+2018-03-28 17:04:00,169: agent_0.scheduling.0: MainProcess                     : agent_0.scheduling.0.watch: INFO    : STOP received: STOP
+2018-03-28 17:04:00,169: agent_0.scheduling.0: MainProcess                     : agent_0.scheduling.0.watch: INFO    : watcher closes
+2018-03-28 17:04:00,169: agent_0.scheduling.0: MainProcess                     : agent_0.scheduling.0.watch: INFO    : put message: [agent_0.scheduling.0.watch.thread] work finished
+2018-03-28 17:04:00,169: agent_0.scheduling.0: MainProcess                     : agent_0.scheduling.0.watch: DEBUG   : ru_finalize_child (NOOP)
+2018-03-28 17:04:00,169: agent_0.scheduling.0: MainProcess                     : agent_0.scheduling.0.watch: DEBUG   : ru_finalize_common (NOOP)
+2018-03-28 17:04:00,170: agent_0.scheduling.0: MainProcess                     : agent_0.scheduling.0.watch: INFO    : put message: [agent_0.scheduling.0.watch.thread] terminating
+2018-03-28 17:04:00,594: agent_0.scheduling.0: MainProcess                     : agent_0.idler._check_units_cb: INFO    : stop agent_0.scheduling.0 (92217 : 92359 : agent_0.idler._check_units_cb) [radical.pilot.utils.component.Agent_0.ru_finalize_common]
+2018-03-28 17:04:00,614: agent_0.scheduling.0: MainProcess                     : agent_0.idler._check_units_cb: INFO    : parent stops child  92217 -> 92359 [agent_0.scheduling.0]
+2018-03-28 17:04:00,614: agent_0.scheduling.0: MainProcess                     : agent_0.idler._check_units_cb: INFO    : send message: [agent_0.scheduling.0] STOP
+2018-03-28 17:04:00,614: agent_0.scheduling.0: MainProcess                     : agent_0.idler._check_units_cb: WARNING : send failed ([Errno 9] Bad file descriptor) - terminate
+2018-03-28 17:04:00,614: agent_0.scheduling.0: MainProcess                     : agent_0.idler._check_units_cb: DEBUG   : ru_finalize_common()
+2018-03-28 17:04:00,614: agent_0.scheduling.0: MainProcess                     : agent_0.idler._check_units_cb: DEBUG   : TERM : agent_0.scheduling.0 unregister publisher log_pubsub
+2018-03-28 17:04:00,615: agent_0.scheduling.0: MainProcess                     : agent_0.idler._check_units_cb: DEBUG   : unregistered publisher log_pubsub
+2018-03-28 17:04:00,615: agent_0.scheduling.0: MainProcess                     : agent_0.idler._check_units_cb: DEBUG   : TERM : agent_0.scheduling.0 unregister publisher state_pubsub
+2018-03-28 17:04:00,615: agent_0.scheduling.0: MainProcess                     : agent_0.idler._check_units_cb: DEBUG   : unregistered publisher state_pubsub
+2018-03-28 17:04:00,615: agent_0.scheduling.0: MainProcess                     : agent_0.idler._check_units_cb: DEBUG   : TERM : agent_0.scheduling.0 unregister publisher control_pubsub
+2018-03-28 17:04:00,616: agent_0.scheduling.0: MainProcess                     : agent_0.idler._check_units_cb: DEBUG   : unregistered publisher control_pubsub
+2018-03-28 17:04:00,616: agent_0.scheduling.0: MainProcess                     : agent_0.idler._check_units_cb: DEBUG   : agent_0.scheduling.0 close prof
+2018-03-28 17:04:00,623: agent_0.scheduling.0: MainProcess                     : agent_0.idler._check_units_cb: INFO    : signal stop for agent_0.idler._check_units_cb - do not join

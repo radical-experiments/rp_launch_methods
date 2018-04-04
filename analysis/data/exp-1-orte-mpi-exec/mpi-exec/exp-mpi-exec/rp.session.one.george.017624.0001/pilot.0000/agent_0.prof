@@ -1,0 +1,22 @@
+#time,event,comp,thread,uid,state,msg
+1522726059.3150,sync_abs,agent_0,MainThread,,,smic012:204.90.41.12:1522726059.27:1522726059.2:ntp
+1522726059.3158,config_parser_start,agent_0,MainThread,rp.session.one.george.017624.0001,,
+1522726059.4774,config_parser_stop,agent_0,MainThread,rp.session.one.george.017624.0001,,
+#time,event,comp,thread,uid,state,msg
+1522726060.1807,sync_abs,agent_0,MainThread,,,smic012:204.90.41.12:1522726060.17:1522726060.17:ntp
+1522726060.1812,sync_rel,agent_0,MainThread,pilot.0000,,agent_0 start
+1522726062.6142,advance,agent_0,MainThread,pilot.0000,PMGR_ACTIVE,
+1522726062.6159,publish,agent_0,MainThread,pilot.0000,PMGR_ACTIVE,
+1522726062.6430,hostname,agent_0,MainThread,pilot.0000,,smic012
+1522726062.6430,component_init,agent_0,MainThread,,,
+1522726062.7435,get,agent_0,agent_0.idler._check_units_cb,pilot.0000,,bulk size: 1
+1522726062.7436,get,agent_0,agent_0.idler._check_units_cb,unit.000000,,
+1522726062.7445,advance,agent_0,agent_0.idler._check_units_cb,unit.000000,AGENT_STAGING_INPUT_PENDING,
+1522726062.7448,put,agent_0,agent_0.idler._check_units_cb,unit.000000,AGENT_STAGING_INPUT_PENDING,agent.staging.input.queue.input.0000
+1522726795.2228,cmd,agent_0,agent_0.idler._agent_command_cb,pilot.0000,,cancel_pilot : []
+1522726795.4035,flush,agent_0,MainThread,,,
+1522726795.4068,flush,agent_0,agent_0.idler._check_units_cb,,,
+1522726795.4260,flush,agent_0,MainThread,,,
+1522726795.4341,flush,agent_0,agent_0.idler._check_units_cb,,,
+1522726795.5955,component_final,agent_0,MainThread,,,
+1522726795.5956,END,agent_0,MainThread,,,

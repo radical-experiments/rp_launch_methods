@@ -1,0 +1,16 @@
+#time,event,comp,thread,uid,state,msg
+1522726061.4708,sync_abs,agent_0.scheduling.0.child,MainThread,,,smic012:204.90.41.12:1522726061.46:1522726061.46:ntp
+1522726061.5492,component_init,agent_0.scheduling.0.child,MainThread,,,
+1522726062.7473,get,agent_0.scheduling.0.child,MainThread,unit.000000,AGENT_SCHEDULING_PENDING,
+1522726062.7475,advance,agent_0.scheduling.0.child,MainThread,unit.000000,AGENT_SCHEDULING,
+1522726062.7477,publish,agent_0.scheduling.0.child,MainThread,unit.000000,AGENT_SCHEDULING,
+1522726062.7478,schedule_try,agent_0.scheduling.0.child,MainThread,unit.000000,,
+1522726062.7479,schedule_ok,agent_0.scheduling.0.child,MainThread,unit.000000,,
+1522726062.7483,advance,agent_0.scheduling.0.child,MainThread,unit.000000,AGENT_EXECUTING_PENDING,
+1522726062.7484,publish,agent_0.scheduling.0.child,MainThread,unit.000000,AGENT_EXECUTING_PENDING,
+1522726062.7486,put,agent_0.scheduling.0.child,MainThread,unit.000000,AGENT_EXECUTING_PENDING,agent.executing.queue.input.0000
+1522726783.3967,unschedule_start,agent_0.scheduling.0.child,agent_0.scheduling.0.child.subscriber.unschedule_cb,unit.000000,,
+1522726783.3970,unschedule_stop,agent_0.scheduling.0.child,agent_0.scheduling.0.child.subscriber.unschedule_cb,unit.000000,,
+1522726795.4074,flush,agent_0.scheduling.0.child,agent_0.scheduling.0.child.subscriber._cancel_monitor_cb,,,
+1522726795.4289,component_final,agent_0.scheduling.0.child,agent_0.scheduling.0.child.subscriber._cancel_monitor_cb,,,
+1522726795.4290,END,agent_0.scheduling.0.child,agent_0.scheduling.0.child.subscriber._cancel_monitor_cb,,,

@@ -1,0 +1,230 @@
+bootstrap agent agent_0
+startup agent agent_0
+[92m                                                                              ok
+[39m[0m                Open RTE: 3.0.0a1
+  Open RTE repo revision: v2.x-dev-3504-g6da4dbb
+   Open RTE release date: Unreleased developer copy
+                  Prefix: /worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb
+ Configured architecture: x86_64-unknown-linux-gnu
+          Configure host: smic1
+           Configured by: amerzky
+           Configured on: Fri Mar 17 17:46:12 CDT 2017
+          Configure host: smic1
+  Configure command line: '--enable-orterun-prefix-by-default' '--with-devel-headers' '--disable-debug' '--enable-static' '--disable-pmix-dstore' '--prefix=/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb' '--with-tm=/worka/work/amerzky/radical.pilot.sandbox/openmpi/installed/2017_03_13_6da4dbb'
+                Built by: amerzky
+                Built on: Fri Mar 17 18:01:09 CDT 2017
+              Built host: smic1
+              C compiler: gcc
+     C compiler absolute: /usr/bin/gcc
+  C compiler family name: GNU
+      C compiler version: 4.4.7
+          Thread support: posix (OPAL: yes, ORTE progress: yes, Event lib: yes)
+  Internal debug support: no
+Memory profiling support: no
+Memory debugging support: no
+              dl support: yes
+   Heterogeneous support: no
+orterun default --prefix: yes
+       MPI_WTIME support: native
+     Symbol vis. support: yes
+   FT Checkpoint support: no (checkpoint thread: no)
+           MCA allocator: basic (MCA v2.1, API v2.0, Component v3.0)
+           MCA allocator: bucket (MCA v2.1, API v2.0, Component v3.0)
+           MCA backtrace: execinfo (MCA v2.1, API v2.0, Component v3.0)
+                 MCA btl: self (MCA v2.1, API v3.0, Component v3.0)
+                 MCA btl: openib (MCA v2.1, API v3.0, Component v3.0)
+                 MCA btl: vader (MCA v2.1, API v3.0, Component v3.0)
+                 MCA btl: tcp (MCA v2.1, API v3.0, Component v3.0)
+                 MCA btl: sm (MCA v2.1, API v3.0, Component v3.0)
+            MCA compress: bzip (MCA v2.1, API v2.0, Component v3.0)
+            MCA compress: gzip (MCA v2.1, API v2.0, Component v3.0)
+                 MCA crs: none (MCA v2.1, API v2.0, Component v3.0)
+                  MCA dl: dlopen (MCA v2.1, API v1.0, Component v3.0)
+               MCA event: libevent2022 (MCA v2.1, API v2.0, Component v3.0)
+               MCA hwloc: hwloc1113 (MCA v2.1, API v2.0, Component v3.0)
+                  MCA if: linux_ipv6 (MCA v2.1, API v2.0, Component v3.0)
+                  MCA if: posix_ipv4 (MCA v2.1, API v2.0, Component v3.0)
+         MCA installdirs: env (MCA v2.1, API v2.0, Component v3.0)
+         MCA installdirs: config (MCA v2.1, API v2.0, Component v3.0)
+              MCA memory: patcher (MCA v2.1, API v2.0, Component v3.0)
+               MCA mpool: hugepage (MCA v2.1, API v3.0, Component v3.0)
+             MCA patcher: overwrite (MCA v2.1, API v1.0, Component v3.0)
+                MCA pmix: isolated (MCA v2.1, API v2.0, Component v3.0)
+                MCA pmix: pmix2x (MCA v2.1, API v2.0, Component v3.0)
+               MCA pstat: linux (MCA v2.1, API v2.0, Component v3.0)
+              MCA rcache: grdma (MCA v2.1, API v3.3, Component v3.0)
+           MCA reachable: netlink (MCA v2.1, API v2.0, Component v3.0)
+                 MCA sec: basic (MCA v2.1, API v1.0, Component v3.0)
+               MCA shmem: posix (MCA v2.1, API v2.0, Component v3.0)
+               MCA shmem: sysv (MCA v2.1, API v2.0, Component v3.0)
+               MCA shmem: mmap (MCA v2.1, API v2.0, Component v3.0)
+               MCA timer: linux (MCA v2.1, API v2.0, Component v3.0)
+                 MCA dfs: orted (MCA v2.1, API v1.0, Component v3.0)
+                 MCA dfs: app (MCA v2.1, API v1.0, Component v3.0)
+                 MCA dfs: test (MCA v2.1, API v1.0, Component v3.0)
+              MCA errmgr: default_tool (MCA v2.1, API v3.0, Component v3.0)
+              MCA errmgr: default_app (MCA v2.1, API v3.0, Component v3.0)
+              MCA errmgr: default_hnp (MCA v2.1, API v3.0, Component v3.0)
+              MCA errmgr: dvm (MCA v2.1, API v3.0, Component v3.0)
+              MCA errmgr: default_orted (MCA v2.1, API v3.0, Component v3.0)
+                 MCA ess: env (MCA v2.1, API v3.0, Component v3.0)
+                 MCA ess: pmi (MCA v2.1, API v3.0, Component v3.0)
+                 MCA ess: tool (MCA v2.1, API v3.0, Component v3.0)
+                 MCA ess: hnp (MCA v2.1, API v3.0, Component v3.0)
+                 MCA ess: singleton (MCA v2.1, API v3.0, Component v3.0)
+                 MCA ess: slurm (MCA v2.1, API v3.0, Component v3.0)
+                 MCA ess: tm (MCA v2.1, API v3.0, Component v3.0)
+               MCA filem: raw (MCA v2.1, API v2.0, Component v3.0)
+             MCA grpcomm: direct (MCA v2.1, API v3.0, Component v3.0)
+                 MCA iof: orted (MCA v2.1, API v2.0, Component v3.0)
+                 MCA iof: tool (MCA v2.1, API v2.0, Component v3.0)
+                 MCA iof: hnp (MCA v2.1, API v2.0, Component v3.0)
+            MCA notifier: syslog (MCA v2.1, API v1.0, Component v3.0)
+                MCA odls: default (MCA v2.1, API v2.0, Component v3.0)
+                 MCA oob: tcp (MCA v2.1, API v2.0, Component v3.0)
+                 MCA oob: ud (MCA v2.1, API v2.0, Component v3.0)
+                 MCA plm: isolated (MCA v2.1, API v2.0, Component v3.0)
+                 MCA plm: slurm (MCA v2.1, API v2.0, Component v3.0)
+                 MCA plm: tm (MCA v2.1, API v2.0, Component v3.0)
+                 MCA plm: rsh (MCA v2.1, API v2.0, Component v3.0)
+                 MCA ras: simulator (MCA v2.1, API v2.0, Component v3.0)
+                 MCA ras: loadleveler (MCA v2.1, API v2.0, Component v3.0)
+                 MCA ras: slurm (MCA v2.1, API v2.0, Component v3.0)
+                 MCA ras: tm (MCA v2.1, API v2.0, Component v3.0)
+               MCA rmaps: resilient (MCA v2.1, API v2.0, Component v3.0)
+               MCA rmaps: ppr (MCA v2.1, API v2.0, Component v3.0)
+               MCA rmaps: staged (MCA v2.1, API v2.0, Component v3.0)
+               MCA rmaps: rank_file (MCA v2.1, API v2.0, Component v3.0)
+               MCA rmaps: round_robin (MCA v2.1, API v2.0, Component v3.0)
+               MCA rmaps: mindist (MCA v2.1, API v2.0, Component v3.0)
+               MCA rmaps: seq (MCA v2.1, API v2.0, Component v3.0)
+                 MCA rml: oob (MCA v2.1, API v3.0, Component v3.0)
+              MCA routed: binomial (MCA v2.1, API v3.0, Component v3.0)
+              MCA routed: direct (MCA v2.1, API v3.0, Component v3.0)
+              MCA routed: radix (MCA v2.1, API v3.0, Component v3.0)
+              MCA routed: debruijn (MCA v2.1, API v3.0, Component v3.0)
+                 MCA rtc: hwloc (MCA v2.1, API v1.0, Component v3.0)
+              MCA schizo: flux (MCA v2.1, API v1.0, Component v3.0)
+              MCA schizo: ompi (MCA v2.1, API v1.0, Component v3.0)
+              MCA schizo: orte (MCA v2.1, API v1.0, Component v3.0)
+              MCA schizo: slurm (MCA v2.1, API v1.0, Component v3.0)
+               MCA state: orted (MCA v2.1, API v1.0, Component v3.0)
+               MCA state: app (MCA v2.1, API v1.0, Component v3.0)
+               MCA state: novm (MCA v2.1, API v1.0, Component v3.0)
+               MCA state: tool (MCA v2.1, API v1.0, Component v3.0)
+               MCA state: hnp (MCA v2.1, API v1.0, Component v3.0)
+               MCA state: dvm (MCA v2.1, API v1.0, Component v3.0)
+                Open RTE: 3.0.0a1
+  Open RTE repo revision: v2.x-dev-3504-g6da4dbb
+   Open RTE release date: Unreleased developer copy
+{'agent_launch_method': 'ORTE',
+ 'agent_name': 'agent_0',
+ 'bridges': {'agent_executing_queue': {'addr_in': 'tcp://204.90.41.94:41570',
+                                       'addr_out': 'tcp://204.90.41.94:35365',
+                                       'bulk_size': 0,
+                                       'log_level': 'debug',
+                                       'stall_hwm': 1},
+             'agent_reschedule_pubsub': {'addr_in': 'tcp://204.90.41.94:40934',
+                                         'addr_out': 'tcp://204.90.41.94:35855',
+                                         'bulk_size': 0,
+                                         'log_level': 'debug',
+                                         'stall_hwm': 1},
+             'agent_scheduling_queue': {'addr_in': 'tcp://204.90.41.94:42082',
+                                        'addr_out': 'tcp://204.90.41.94:34781',
+                                        'bulk_size': 0,
+                                        'log_level': 'debug',
+                                        'stall_hwm': 1},
+             'agent_staging_input_queue': {'addr_in': 'tcp://204.90.41.94:46488',
+                                           'addr_out': 'tcp://204.90.41.94:36274',
+                                           'bulk_size': 0,
+                                           'log_level': 'debug',
+                                           'stall_hwm': 1},
+             'agent_staging_output_queue': {'addr_in': 'tcp://204.90.41.94:37517',
+                                            'addr_out': 'tcp://204.90.41.94:40327',
+                                            'bulk_size': 0,
+                                            'log_level': 'debug',
+                                            'stall_hwm': 1},
+             'agent_unschedule_pubsub': {'addr_in': 'tcp://204.90.41.94:44706',
+                                         'addr_out': 'tcp://204.90.41.94:45064',
+                                         'bulk_size': 0,
+                                         'log_level': 'debug',
+                                         'stall_hwm': 1},
+             'control_pubsub': {'addr_in': 'tcp://204.90.41.94:44155',
+                                'addr_out': 'tcp://204.90.41.94:38971',
+                                'bulk_size': 0,
+                                'log_level': 'debug',
+                                'stall_hwm': 1},
+             'log_pubsub': {'addr_in': 'tcp://204.90.41.94:37756',
+                            'addr_out': 'tcp://204.90.41.94:46119',
+                            'bulk_size': 0,
+                            'log_level': 'debug',
+                            'stall_hwm': 1},
+             'state_pubsub': {'addr_in': 'tcp://204.90.41.94:37252',
+                              'addr_out': 'tcp://204.90.41.94:42494',
+                              'bulk_size': 0,
+                              'log_level': 'debug',
+                              'stall_hwm': 1}},
+ 'bulk_collection_size': 100,
+ 'bulk_collection_time': 1.0,
+ 'components': {'AgentExecutingComponent': {'count': 1},
+                'AgentSchedulingComponent': {'count': 1},
+                'AgentStagingInputComponent': {'count': 1},
+                'AgentStagingOutputComponent': {'count': 1},
+                'UpdateWorker': {'count': 1}},
+ 'cores': 20,
+ 'cores_per_node': 20,
+ 'cu_post_exec': None,
+ 'cu_pre_exec': None,
+ 'cu_tmp': None,
+ 'db_poll_sleeptime': 1.0,
+ 'dburl': 'mongodb://rp:rp@ds015335.mlab.com:15335/rp',
+ 'debug': 10,
+ 'export_to_cu': None,
+ 'logdir': '.',
+ 'lrms': 'TORQUE',
+ 'max_io_loglength': 1024,
+ 'mode': 'shared',
+ 'mpi_launch_method': 'ORTE',
+ 'owner': 'agent_0',
+ 'pilot_id': 'pilot.0000',
+ 'pilot_sandbox': '/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017624.0015/pilot.0000/',
+ 'resource_cfg': {'agent_launch_method': 'ORTE',
+                  'agent_scheduler': 'CONTINUOUS',
+                  'agent_spawner': 'POPEN',
+                  'cores_per_node': '20',
+                  'default_queue': 'workq',
+                  'default_remote_workdir': '/work/$USER',
+                  'description': "SuperMIC (pronounced 'Super Mick') is Louisiana State University's (LSU) newest supercomputer funded by the National Science Foundation's (NSF) Major Research Instrumentation (MRI) award to the Center for Computation & Technology. (https://portal.xsede.org/lsu-supermic)",
+                  'filesystem_endpoint': 'gsisftp://supermic.cct-lsu.xsede.org:2222/',
+                  'gsissh': {'filesystem_endpoint': 'gsisftp://supermic.cct-lsu.xsede.org:2222/',
+                             'job_manager_endpoint': 'torque+gsissh://supermic.cct-lsu.xsede.org:2222/'},
+                  'job_manager_endpoint': 'torque+gsissh://supermic.cct-lsu.xsede.org:2222/',
+                  'label': 'xsede.supermic_orte',
+                  'lrms': 'TORQUE',
+                  'mpi_launch_method': 'ORTE',
+                  'notes': 'Partially allocated through XSEDE. Primary access through GSISSH. Allows SSH key authentication too.',
+                  'pre_bootstrap_1': ['module load python/2.7.7-anaconda',
+                                      'module use -a /worka/work/amerzky/radical.pilot.sandbox/openmpi/modules/',
+                                      'module load openmpi/2017_03_13_6da4dbb'],
+                  'pre_bootstrap_2': ['export PATH=$PATH',
+                                      'export LD_LIBRARY_PATH=$LD_LIBRARY_PATH'],
+                  'python_dist': 'default',
+                  'rp_version': 'local',
+                  'schemas': ['gsissh', 'ssh'],
+                  'ssh': {'filesystem_endpoint': 'sftp://supermic.cct-lsu.xsede.org/',
+                          'job_manager_endpoint': 'torque+ssh://supermic.cct-lsu.xsede.org/'},
+                  'task_launch_method': 'ORTE',
+                  'valid_roots': ['/work'],
+                  'virtenv_mode': 'create'},
+ 'resource_sandbox': '/work/gchantzi/radical.pilot.sandbox',
+ 'runtime': 25,
+ 'scheduler': 'CONTINUOUS',
+ 'session_id': 'rp.session.one.george.017624.0015',
+ 'session_sandbox': '/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017624.0015',
+ 'spawner': 'POPEN',
+ 'staging_area': 'staging_area',
+ 'staging_schema': 'staging',
+ 'target': 'local',
+ 'task_launch_method': 'ORTE',
+ 'workdir': '/worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017624.0015/pilot.0000'}
+start   agent_0

@@ -1,0 +1,39 @@
+#time,event,comp,thread,uid,state,msg
+1522287942.1357,sync_abs,update.0.child,MainThread,,,one:144.76.72.175:1522287942.12:1522287942.12:ntp
+1522287942.7862,component_init,update.0.child,MainThread,,,
+1522287949.3439,update_request,update.0.child,update.0.child.subscriber._state_cb,pilot.0000,,PMGR_LAUNCHING_PENDING
+1522287949.4580,update_pushed,update.0.child,update.0.child.subscriber._state_cb,,,bulk size: 1
+1522287949.4580,update_pushed,update.0.child,update.0.child.subscriber._state_cb,pilot.0000,,PMGR_LAUNCHING_PENDING
+1522287949.4582,update_request,update.0.child,update.0.child.subscriber._state_cb,pilot.0000,,PMGR_LAUNCHING
+1522287950.3330,update_request,update.0.child,update.0.child.subscriber._state_cb,unit.000000,,UMGR_SCHEDULING_PENDING
+1522287950.3357,update_request,update.0.child,update.0.child.subscriber._state_cb,unit.000000,,UMGR_SCHEDULING
+1522287950.3371,update_request,update.0.child,update.0.child.subscriber._state_cb,unit.000000,,UMGR_STAGING_INPUT_PENDING
+1522287950.3402,update_request,update.0.child,update.0.child.subscriber._state_cb,unit.000000,,UMGR_STAGING_INPUT
+1522287950.3426,update_request,update.0.child,update.0.child.subscriber._state_cb,unit.000000,,AGENT_STAGING_INPUT_PENDING
+1522287950.9229,update_pushed,update.0.child,update.0.child.idler._idle_cb,,,bulk size: 6
+1522287950.9229,update_pushed,update.0.child,update.0.child.idler._idle_cb,pilot.0000,,PMGR_LAUNCHING
+1522287950.9229,update_pushed,update.0.child,update.0.child.idler._idle_cb,unit.000000,,UMGR_SCHEDULING_PENDING
+1522287950.9230,update_pushed,update.0.child,update.0.child.idler._idle_cb,unit.000000,,UMGR_SCHEDULING
+1522287950.9230,update_pushed,update.0.child,update.0.child.idler._idle_cb,unit.000000,,UMGR_STAGING_INPUT_PENDING
+1522287950.9230,update_pushed,update.0.child,update.0.child.idler._idle_cb,unit.000000,,UMGR_STAGING_INPUT
+1522287950.9230,update_pushed,update.0.child,update.0.child.idler._idle_cb,unit.000000,,AGENT_STAGING_INPUT_PENDING
+1522287965.5270,update_request,update.0.child,update.0.child.subscriber._state_cb,pilot.0000,,PMGR_ACTIVE_PENDING
+1522287965.6461,update_pushed,update.0.child,update.0.child.subscriber._state_cb,,,bulk size: 1
+1522287965.6461,update_pushed,update.0.child,update.0.child.subscriber._state_cb,pilot.0000,,PMGR_ACTIVE_PENDING
+1522288011.9424,update_request,update.0.child,update.0.child.subscriber._state_cb,pilot.0000,,PMGR_ACTIVE
+1522288012.0580,update_pushed,update.0.child,update.0.child.subscriber._state_cb,,,bulk size: 1
+1522288012.0581,update_pushed,update.0.child,update.0.child.subscriber._state_cb,pilot.0000,,PMGR_ACTIVE
+1522288732.5123,update_request,update.0.child,update.0.child.subscriber._state_cb,unit.000000,,UMGR_STAGING_OUTPUT_PENDING
+1522288732.6258,update_pushed,update.0.child,update.0.child.subscriber._state_cb,,,bulk size: 1
+1522288732.6258,update_pushed,update.0.child,update.0.child.subscriber._state_cb,unit.000000,,UMGR_STAGING_OUTPUT_PENDING
+1522288732.6260,update_request,update.0.child,update.0.child.subscriber._state_cb,unit.000000,,UMGR_STAGING_OUTPUT
+1522288732.6267,update_request,update.0.child,update.0.child.subscriber._state_cb,unit.000000,,DONE
+1522288734.3073,update_pushed,update.0.child,update.0.child.idler._idle_cb,,,bulk size: 2
+1522288734.3073,update_pushed,update.0.child,update.0.child.idler._idle_cb,unit.000000,,UMGR_STAGING_OUTPUT
+1522288734.3074,update_pushed,update.0.child,update.0.child.idler._idle_cb,unit.000000,,DONE
+1522288738.2394,update_request,update.0.child,update.0.child.subscriber._state_cb,pilot.0000,,FAILED
+1522288738.3533,update_pushed,update.0.child,update.0.child.subscriber._state_cb,,,bulk size: 1
+1522288738.3533,update_pushed,update.0.child,update.0.child.subscriber._state_cb,pilot.0000,,FAILED
+1522288741.4433,flush,update.0.child,MainThread,,,
+1522288741.5916,component_final,update.0.child,MainThread,,,
+1522288741.5917,END,update.0.child,MainThread,,,

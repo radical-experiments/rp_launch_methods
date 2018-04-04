@@ -1,0 +1,1083 @@
+2018-04-03 12:39:48,153: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : INFO    : python.interpreter   version: 2.7.7 |Continuum Analytics, Inc.| (default, Jun 2 2014, 12:34:02) [GCC 4.1.2 20080704 (Red Hat 4.1.2-54)]
+2018-04-03 12:39:48,157: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : INFO    :                      pid: 14996
+2018-04-03 12:39:48,157: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : INFO    :                      tid: MainThread
+2018-04-03 12:39:48,157: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : INFO    : radical.pilot        version: 0.47-0.47-14-gb1dff8bd@devel
+2018-04-03 12:39:48,243: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : INFO    : initialize agent_0.staging.output.0.child
+2018-04-03 12:39:48,250: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : INFO    : cfg: {'agent_launch_method': 'SSH',
+ 'agent_name': 'agent_0',
+ 'agents': {},
+ 'bridges': {'agent_executing_queue': {'addr_in': 'tcp://204.90.41.70:34718',
+                                       'addr_out': 'tcp://204.90.41.70:41605',
+                                       'bulk_size': 0,
+                                       'log_level': 'debug',
+                                       'stall_hwm': 1},
+             'agent_reschedule_pubsub': {'addr_in': 'tcp://204.90.41.70:38686',
+                                         'addr_out': 'tcp://204.90.41.70:34059',
+                                         'bulk_size': 0,
+                                         'log_level': 'debug',
+                                         'stall_hwm': 1},
+             'agent_scheduling_queue': {'addr_in': 'tcp://204.90.41.70:34979',
+                                        'addr_out': 'tcp://204.90.41.70:41433',
+                                        'bulk_size': 0,
+                                        'log_level': 'debug',
+                                        'stall_hwm': 1},
+             'agent_staging_input_queue': {'addr_in': 'tcp://204.90.41.70:40427',
+                                           'addr_out': 'tcp://204.90.41.70:44027',
+                                           'bulk_size': 0,
+                                           'log_level': 'debug',
+                                           'stall_hwm': 1},
+             'agent_staging_output_queue': {'addr_in': 'tcp://204.90.41.70:36856',
+                                            'addr_out': 'tcp://204.90.41.70:45682',
+                                            'bulk_size': 0,
+                                            'log_level': 'debug',
+                                            'stall_hwm': 1},
+             'agent_unschedule_pubsub': {'addr_in': 'tcp://204.90.41.70:44394',
+                                         'addr_out': 'tcp://204.90.41.70:44785',
+                                         'bulk_size': 0,
+                                         'log_level': 'debug',
+                                         'stall_hwm': 1},
+             'control_pubsub': {'addr_in': 'tcp://204.90.41.70:35133',
+                                'addr_out': 'tcp://204.90.41.70:46635',
+                                'bulk_size': 0,
+                                'log_level': 'debug',
+                                'stall_hwm': 1},
+             'log_pubsub': {'addr_in': 'tcp://204.90.41.70:37819',
+                            'addr_out': 'tcp://204.90.41.70:36285',
+                            'bulk_size': 0,
+                            'log_level': 'debug',
+                            'stall_hwm': 1},
+             'state_pubsub': {'addr_in': 'tcp://204.90.41.70:40907',
+                              'addr_out': 'tcp://204.90.41.70:42528',
+                              'bulk_size': 0,
+                              'log_level': 'debug',
+                              'stall_hwm': 1}},
+ 'bulk_collection_size': 100,
+ 'bulk_collection_time': 1.0,
+ 'cname': 'AgentStagingOutputComponent',
+ 'components': {},
+ 'cores': 40,
+ 'cores_per_node': 20,
+ 'count': 1,
+ 'cu_post_exec': None,
+ 'cu_pre_exec': None,
+ 'cu_tmp': None,
+ 'db_poll_sleeptime': 1.0,
+ 'dburl': 'mongodb://rp:rp@ds015335.mlab.com:15335/rp',
+ 'debug': 10,
+ 'export_to_cu': None,
+ 'logdir': '.',
+ 'lrms': 'TORQUE',
+ 'lrms_info': {'agent_nodes': {},
+               'cores_per_node': 20,
+               'lm_info': {},
+               'name': 'Torque',
+               'node_list': ['smic070', 'smic238']},
+ 'max_io_loglength': 1024,
+ 'mode': 'shared',
+ 'mpi_launch_method': 'MPIEXEC',
+ 'number': 0,
+ 'owner': 'agent_0',
+ 'pilot_id': 'pilot.0000',
+ 'pilot_sandbox': '/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017624.0003/pilot.0000/',
+ 'resource_cfg': {'agent_launch_method': 'SSH',
+                  'agent_scheduler': 'CONTINUOUS',
+                  'agent_spawner': 'POPEN',
+                  'cores_per_node': '20',
+                  'default_queue': 'workq',
+                  'default_remote_workdir': '/work/$USER',
+                  'description': "SuperMIC (pronounced 'Super Mick') is Louisiana State University's (LSU) newest supercomputer funded by the National Science Foundation's (NSF) Major Research Instrumentation (MRI) award to the Center for Computation & Technology. (https://portal.xsede.org/lsu-supermic)",
+                  'filesystem_endpoint': 'gsisftp://supermic.cct-lsu.xsede.org:2222/',
+                  'gsissh': {'filesystem_endpoint': 'gsisftp://supermic.cct-lsu.xsede.org:2222/',
+                             'job_manager_endpoint': 'torque+gsissh://supermic.cct-lsu.xsede.org:2222/'},
+                  'job_manager_endpoint': 'torque+gsissh://supermic.cct-lsu.xsede.org:2222/',
+                  'label': 'xsede.supermic_ssh',
+                  'lrms': 'TORQUE',
+                  'mpi_launch_method': 'MPIEXEC',
+                  'notes': 'Partially allocated through XSEDE. Primary access through GSISSH. Allows SSH key authentication too.',
+                  'pre_bootstrap_1': ['module load python/2.7.7-anaconda'],
+                  'python_dist': 'default',
+                  'rp_version': 'local',
+                  'schemas': ['gsissh', 'ssh'],
+                  'ssh': {'filesystem_endpoint': 'sftp://supermic.cct-lsu.xsede.org/',
+                          'job_manager_endpoint': 'torque+ssh://supermic.cct-lsu.xsede.org/'},
+                  'task_launch_method': 'SSH',
+                  'valid_roots': ['/work'],
+                  'virtenv_mode': 'create'},
+ 'resource_sandbox': '/work/gchantzi/radical.pilot.sandbox',
+ 'runtime': 25,
+ 'scheduler': 'CONTINUOUS',
+ 'session_id': 'rp.session.one.george.017624.0003',
+ 'session_sandbox': '/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017624.0003',
+ 'spawner': 'POPEN',
+ 'staging_area': 'staging_area',
+ 'staging_schema': 'staging',
+ 'target': 'local',
+ 'task_launch_method': 'SSH',
+ 'uid': 'agent_0',
+ 'workdir': '/worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017624.0003/pilot.0000'}
+2018-04-03 12:39:48,250: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : start components: {}
+2018-04-03 12:39:48,250: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : alive check in term
+2018-04-03 12:39:48,250: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : START: agent_0.staging.output.0.child register publisher log_pubsub
+2018-04-03 12:39:48,250: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : using addr tcp://204.90.41.70:37819 for pubsub log_pubsub
+2018-04-03 12:39:48,257: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : registered publisher : log_pubsub : log.pubsub.pub.0000
+2018-04-03 12:39:48,257: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : alive check in term
+2018-04-03 12:39:48,257: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : START: agent_0.staging.output.0.child register publisher state_pubsub
+2018-04-03 12:39:48,257: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : using addr tcp://204.90.41.70:40907 for pubsub state_pubsub
+2018-04-03 12:39:48,263: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : registered publisher : state_pubsub : state.pubsub.pub.0000
+2018-04-03 12:39:48,263: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : alive check in term
+2018-04-03 12:39:48,263: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : START: agent_0.staging.output.0.child register publisher control_pubsub
+2018-04-03 12:39:48,263: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : using addr tcp://204.90.41.70:35133 for pubsub control_pubsub
+2018-04-03 12:39:48,269: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : registered publisher : control_pubsub : control.pubsub.pub.0000
+2018-04-03 12:39:48,270: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : alive check in term
+2018-04-03 12:39:48,271: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : START: agent_0.staging.output.0.child register subscriber agent_0.staging.output.0.child.subscriber._cancel_monitor_cb
+2018-04-03 12:39:48,271: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : using addr tcp://204.90.41.70:46635 for pubsub control_pubsub
+2018-04-03 12:39:48,277: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : parent name: agent_0.staging.output.0.child.subscriber._cancel_monitor_cb
+2018-04-03 12:39:48,278: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : start thread
+2018-04-03 12:39:48,278: agent_0.staging.output.0.child: agent_0.staging.output.0        : agent_0.staging.output.0.child.subscriber._cancel_monitor_cb: DEBUG   : child name: agent_0.staging.output.0.child.subscriber._cancel_monitor_cb.thread
+2018-04-03 12:39:48,278: agent_0.staging.output.0.child: agent_0.staging.output.0        : agent_0.staging.output.0.child.subscriber._cancel_monitor_cb: INFO    : child (me) initializing
+2018-04-03 12:39:48,278: agent_0.staging.output.0.child: agent_0.staging.output.0        : agent_0.staging.output.0.child.subscriber._cancel_monitor_cb: DEBUG   : ru_initialize_common (NOOP)
+2018-04-03 12:39:48,278: agent_0.staging.output.0.child: agent_0.staging.output.0        : agent_0.staging.output.0.child.subscriber._cancel_monitor_cb: DEBUG   : ru_initialize_child (NOOP)
+2018-04-03 12:39:48,278: agent_0.staging.output.0.child: agent_0.staging.output.0        : agent_0.staging.output.0.child.subscriber._cancel_monitor_cb: INFO    : send alive
+2018-04-03 12:39:48,278: agent_0.staging.output.0.child: agent_0.staging.output.0        : agent_0.staging.output.0.child.subscriber._cancel_monitor_cb: INFO    : put message: [agent_0.staging.output.0.child.subscriber._cancel_monitor_cb.thread] alive
+2018-04-03 12:39:48,279: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : INFO    : get msg: alive
+2018-04-03 12:39:48,279: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2018-04-03 12:39:48,279: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2018-04-03 12:39:48,279: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : child thread agent_0.staging.output.0.child.subscriber._cancel_monitor_cb started
+2018-04-03 12:39:48,279: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : agent_0.staging.output.0.child registered control_pubsub subscriber agent_0.staging.output.0.child.subscriber._cancel_monitor_cb
+2018-04-03 12:39:48,279: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : alive check in term
+2018-04-03 12:39:48,280: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : using addr tcp://204.90.41.70:45682 for input agent_staging_output_queue
+2018-04-03 12:39:48,286: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : registered input agent_0.staging.output.0.child.work.AGENT_STAGING_OUTPUT_PENDING
+2018-04-03 12:39:48,286: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : START: agent_0.staging.output.0.child register input AGENT_STAGING_OUTPUT_PENDING: agent_0.staging.output.0.child.work.AGENT_STAGING_OUTPUT_PENDING
+2018-04-03 12:39:48,286: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : registered worker work [AGENT_STAGING_OUTPUT_PENDING]
+2018-04-03 12:39:48,286: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : alive check in term
+2018-04-03 12:39:48,286: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : START: agent_0.staging.output.0.child register output UMGR_STAGING_OUTPUT_PENDING
+2018-04-03 12:39:48,287: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : INFO    : child (me) initializing
+2018-04-03 12:39:48,287: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : parent name: agent_0.staging.output.0.child.watch
+2018-04-03 12:39:48,287: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : start thread
+2018-04-03 12:39:48,287: agent_0.staging.output.0.child: agent_0.staging.output.0        : agent_0.staging.output.0.child.watch: DEBUG   : child name: agent_0.staging.output.0.child.watch.thread
+2018-04-03 12:39:48,287: agent_0.staging.output.0.child: agent_0.staging.output.0        : agent_0.staging.output.0.child.watch: INFO    : child (me) initializing
+2018-04-03 12:39:48,287: agent_0.staging.output.0.child: agent_0.staging.output.0        : agent_0.staging.output.0.child.watch: DEBUG   : ru_initialize_common (NOOP)
+2018-04-03 12:39:48,287: agent_0.staging.output.0.child: agent_0.staging.output.0        : agent_0.staging.output.0.child.watch: DEBUG   : ru_initialize_child (NOOP)
+2018-04-03 12:39:48,287: agent_0.staging.output.0.child: agent_0.staging.output.0        : agent_0.staging.output.0.child.watch: INFO    : send alive
+2018-04-03 12:39:48,287: agent_0.staging.output.0.child: agent_0.staging.output.0        : agent_0.staging.output.0.child.watch: INFO    : put message: [agent_0.staging.output.0.child.watch.thread] alive
+2018-04-03 12:39:48,288: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : INFO    : get msg: alive
+2018-04-03 12:39:48,288: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2018-04-03 12:39:48,288: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2018-04-03 12:39:48,288: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : child thread agent_0.staging.output.0.child.watch started
+2018-04-03 12:39:48,289: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : INFO    : child (me) is alive
+2018-04-03 12:39:48,289: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : INFO    : send alive
+2018-04-03 12:39:48,289: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : INFO    : send message: [agent_0.staging.output.0.child] alive
+2018-04-03 12:51:52,051: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000000)
+2018-04-03 12:51:52,052: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 12:51:52,054: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000000
+2018-04-03 12:51:52,054: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777191.972598,cu_start,unit_script,MainThread,unit.000000,AGENT_EXECUTING,
+2018-04-03 12:51:52,054: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777191.974609,cu_cd_done,unit_script,MainThread,unit.000000,AGENT_EXECUTING,
+2018-04-03 12:51:52,054: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777191.976009,cu_exec_start,unit_script,MainThread,unit.000000,AGENT_EXECUTING,
+2018-04-03 12:51:52,054: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.031323,cu_exec_stop,unit_script,MainThread,unit.000000,AGENT_EXECUTING,
+2018-04-03 12:51:52,054: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.032701,cu_stop,unit_script,MainThread,unit.000000,AGENT_EXECUTING,
+2018-04-03 12:51:52,055: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 12:51:52,055: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 12:51:52,055: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000000 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 12:51:52,055: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000003)
+2018-04-03 12:51:52,055: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 12:51:52,057: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000003
+2018-04-03 12:51:52,057: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777191.953614,cu_start,unit_script,MainThread,unit.000003,AGENT_EXECUTING,
+2018-04-03 12:51:52,057: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777191.958523,cu_cd_done,unit_script,MainThread,unit.000003,AGENT_EXECUTING,
+2018-04-03 12:51:52,058: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777191.960087,cu_exec_start,unit_script,MainThread,unit.000003,AGENT_EXECUTING,
+2018-04-03 12:51:52,058: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777911.990266,cu_exec_stop,unit_script,MainThread,unit.000003,AGENT_EXECUTING,
+2018-04-03 12:51:52,058: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777911.992725,cu_stop,unit_script,MainThread,unit.000003,AGENT_EXECUTING,
+2018-04-03 12:51:52,058: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 12:51:52,058: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 12:51:52,058: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000003 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 12:51:52,059: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000005)
+2018-04-03 12:51:52,059: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 12:51:52,061: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000005
+2018-04-03 12:51:52,061: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777191.962780,cu_start,unit_script,MainThread,unit.000005,AGENT_EXECUTING,
+2018-04-03 12:51:52,061: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777191.964945,cu_cd_done,unit_script,MainThread,unit.000005,AGENT_EXECUTING,
+2018-04-03 12:51:52,061: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777191.966129,cu_exec_start,unit_script,MainThread,unit.000005,AGENT_EXECUTING,
+2018-04-03 12:51:52,061: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777911.990897,cu_exec_stop,unit_script,MainThread,unit.000005,AGENT_EXECUTING,
+2018-04-03 12:51:52,061: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777911.993984,cu_stop,unit_script,MainThread,unit.000005,AGENT_EXECUTING,
+2018-04-03 12:51:52,062: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 12:51:52,062: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 12:51:52,062: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000005 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 12:51:52,062: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000008)
+2018-04-03 12:51:52,062: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 12:51:52,064: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000008
+2018-04-03 12:51:52,064: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777191.953964,cu_start,unit_script,MainThread,unit.000008,AGENT_EXECUTING,
+2018-04-03 12:51:52,065: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777191.958268,cu_cd_done,unit_script,MainThread,unit.000008,AGENT_EXECUTING,
+2018-04-03 12:51:52,065: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777191.959630,cu_exec_start,unit_script,MainThread,unit.000008,AGENT_EXECUTING,
+2018-04-03 12:51:52,065: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777911.993309,cu_exec_stop,unit_script,MainThread,unit.000008,AGENT_EXECUTING,
+2018-04-03 12:51:52,065: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777911.995272,cu_stop,unit_script,MainThread,unit.000008,AGENT_EXECUTING,
+2018-04-03 12:51:52,065: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 12:51:52,065: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 12:51:52,065: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000008 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 12:51:52,066: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000010)
+2018-04-03 12:51:52,066: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 12:51:52,068: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000010
+2018-04-03 12:51:52,068: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777191.969506,cu_start,unit_script,MainThread,unit.000010,AGENT_EXECUTING,
+2018-04-03 12:51:52,068: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777191.972203,cu_cd_done,unit_script,MainThread,unit.000010,AGENT_EXECUTING,
+2018-04-03 12:51:52,068: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777191.973617,cu_exec_start,unit_script,MainThread,unit.000010,AGENT_EXECUTING,
+2018-04-03 12:51:52,068: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.031083,cu_exec_stop,unit_script,MainThread,unit.000010,AGENT_EXECUTING,
+2018-04-03 12:51:52,068: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.032385,cu_stop,unit_script,MainThread,unit.000010,AGENT_EXECUTING,
+2018-04-03 12:51:52,068: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 12:51:52,069: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 12:51:52,069: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000010 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 12:51:52,069: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000012)
+2018-04-03 12:51:52,069: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 12:51:52,071: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000012
+2018-04-03 12:51:52,071: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777191.937747,cu_start,unit_script,MainThread,unit.000012,AGENT_EXECUTING,
+2018-04-03 12:51:52,071: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777191.940967,cu_cd_done,unit_script,MainThread,unit.000012,AGENT_EXECUTING,
+2018-04-03 12:51:52,071: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777191.945315,cu_exec_start,unit_script,MainThread,unit.000012,AGENT_EXECUTING,
+2018-04-03 12:51:52,072: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777911.989889,cu_exec_stop,unit_script,MainThread,unit.000012,AGENT_EXECUTING,
+2018-04-03 12:51:52,072: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777911.992370,cu_stop,unit_script,MainThread,unit.000012,AGENT_EXECUTING,
+2018-04-03 12:51:52,072: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 12:51:52,072: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 12:51:52,072: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000012 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 12:51:52,072: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000014)
+2018-04-03 12:51:52,073: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 12:51:52,074: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000014
+2018-04-03 12:51:52,074: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777191.938127,cu_start,unit_script,MainThread,unit.000014,AGENT_EXECUTING,
+2018-04-03 12:51:52,075: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777191.941735,cu_cd_done,unit_script,MainThread,unit.000014,AGENT_EXECUTING,
+2018-04-03 12:51:52,075: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777191.944318,cu_exec_start,unit_script,MainThread,unit.000014,AGENT_EXECUTING,
+2018-04-03 12:51:52,075: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.017334,cu_exec_stop,unit_script,MainThread,unit.000014,AGENT_EXECUTING,
+2018-04-03 12:51:52,075: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.018756,cu_stop,unit_script,MainThread,unit.000014,AGENT_EXECUTING,
+2018-04-03 12:51:52,075: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 12:51:52,075: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 12:51:52,075: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000014 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 12:51:52,076: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000016)
+2018-04-03 12:51:52,076: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 12:51:52,078: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000016
+2018-04-03 12:51:52,078: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777191.945350,cu_start,unit_script,MainThread,unit.000016,AGENT_EXECUTING,
+2018-04-03 12:51:52,078: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777191.949515,cu_cd_done,unit_script,MainThread,unit.000016,AGENT_EXECUTING,
+2018-04-03 12:51:52,078: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777191.951997,cu_exec_start,unit_script,MainThread,unit.000016,AGENT_EXECUTING,
+2018-04-03 12:51:52,078: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777911.977660,cu_exec_stop,unit_script,MainThread,unit.000016,AGENT_EXECUTING,
+2018-04-03 12:51:52,078: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777911.989060,cu_stop,unit_script,MainThread,unit.000016,AGENT_EXECUTING,
+2018-04-03 12:51:52,079: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 12:51:52,079: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 12:51:52,079: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000016 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 12:51:52,079: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000018)
+2018-04-03 12:51:52,079: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 12:51:52,081: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000018
+2018-04-03 12:51:52,082: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777191.973464,cu_start,unit_script,MainThread,unit.000018,AGENT_EXECUTING,
+2018-04-03 12:51:52,082: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777191.975742,cu_cd_done,unit_script,MainThread,unit.000018,AGENT_EXECUTING,
+2018-04-03 12:51:52,082: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777191.977078,cu_exec_start,unit_script,MainThread,unit.000018,AGENT_EXECUTING,
+2018-04-03 12:51:52,082: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.012581,cu_exec_stop,unit_script,MainThread,unit.000018,AGENT_EXECUTING,
+2018-04-03 12:51:52,082: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.013952,cu_stop,unit_script,MainThread,unit.000018,AGENT_EXECUTING,
+2018-04-03 12:51:52,082: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 12:51:52,083: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 12:51:52,083: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000018 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 12:51:52,083: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000001)
+2018-04-03 12:51:52,083: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 12:51:52,085: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000001
+2018-04-03 12:51:52,085: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777191.959022,cu_start,unit_script,MainThread,unit.000001,AGENT_EXECUTING,
+2018-04-03 12:51:52,085: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777191.961458,cu_cd_done,unit_script,MainThread,unit.000001,AGENT_EXECUTING,
+2018-04-03 12:51:52,086: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777191.963337,cu_exec_start,unit_script,MainThread,unit.000001,AGENT_EXECUTING,
+2018-04-03 12:51:52,086: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777911.995102,cu_exec_stop,unit_script,MainThread,unit.000001,AGENT_EXECUTING,
+2018-04-03 12:51:52,086: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777911.998262,cu_stop,unit_script,MainThread,unit.000001,AGENT_EXECUTING,
+2018-04-03 12:51:52,086: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 12:51:52,086: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 12:51:52,086: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000001 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 12:51:52,087: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000004)
+2018-04-03 12:51:52,087: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 12:51:52,091: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000004
+2018-04-03 12:51:52,091: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777191.963453,cu_start,unit_script,MainThread,unit.000004,AGENT_EXECUTING,
+2018-04-03 12:51:52,091: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777191.965605,cu_cd_done,unit_script,MainThread,unit.000004,AGENT_EXECUTING,
+2018-04-03 12:51:52,091: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777191.967030,cu_exec_start,unit_script,MainThread,unit.000004,AGENT_EXECUTING,
+2018-04-03 12:51:52,091: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777911.993035,cu_exec_stop,unit_script,MainThread,unit.000004,AGENT_EXECUTING,
+2018-04-03 12:51:52,091: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777911.994456,cu_stop,unit_script,MainThread,unit.000004,AGENT_EXECUTING,
+2018-04-03 12:51:52,092: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 12:51:52,092: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 12:51:52,092: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000004 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 12:51:52,092: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000009)
+2018-04-03 12:51:52,092: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 12:51:52,094: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000009
+2018-04-03 12:51:52,095: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777191.943648,cu_start,unit_script,MainThread,unit.000009,AGENT_EXECUTING,
+2018-04-03 12:51:52,095: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777191.947665,cu_cd_done,unit_script,MainThread,unit.000009,AGENT_EXECUTING,
+2018-04-03 12:51:52,095: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777191.950599,cu_exec_start,unit_script,MainThread,unit.000009,AGENT_EXECUTING,
+2018-04-03 12:51:52,095: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777911.966957,cu_exec_stop,unit_script,MainThread,unit.000009,AGENT_EXECUTING,
+2018-04-03 12:51:52,095: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777911.975850,cu_stop,unit_script,MainThread,unit.000009,AGENT_EXECUTING,
+2018-04-03 12:51:52,095: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 12:51:52,096: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 12:51:52,096: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000009 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 12:51:52,096: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000013)
+2018-04-03 12:51:52,096: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 12:51:52,098: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000013
+2018-04-03 12:51:52,098: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777191.943479,cu_start,unit_script,MainThread,unit.000013,AGENT_EXECUTING,
+2018-04-03 12:51:52,098: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777191.946877,cu_cd_done,unit_script,MainThread,unit.000013,AGENT_EXECUTING,
+2018-04-03 12:51:52,099: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777191.950235,cu_exec_start,unit_script,MainThread,unit.000013,AGENT_EXECUTING,
+2018-04-03 12:51:52,099: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.025160,cu_exec_stop,unit_script,MainThread,unit.000013,AGENT_EXECUTING,
+2018-04-03 12:51:52,099: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.026698,cu_stop,unit_script,MainThread,unit.000013,AGENT_EXECUTING,
+2018-04-03 12:51:52,099: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 12:51:52,099: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 12:51:52,099: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000013 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 12:51:52,100: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000017)
+2018-04-03 12:51:52,100: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 12:51:52,101: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000017
+2018-04-03 12:51:52,102: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777191.973095,cu_start,unit_script,MainThread,unit.000017,AGENT_EXECUTING,
+2018-04-03 12:51:52,102: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777191.975123,cu_cd_done,unit_script,MainThread,unit.000017,AGENT_EXECUTING,
+2018-04-03 12:51:52,102: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777191.976418,cu_exec_start,unit_script,MainThread,unit.000017,AGENT_EXECUTING,
+2018-04-03 12:51:52,102: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.041570,cu_exec_stop,unit_script,MainThread,unit.000017,AGENT_EXECUTING,
+2018-04-03 12:51:52,102: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.043098,cu_stop,unit_script,MainThread,unit.000017,AGENT_EXECUTING,
+2018-04-03 12:51:52,102: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 12:51:52,102: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 12:51:52,103: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000017 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 12:51:52,103: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000006)
+2018-04-03 12:51:52,103: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 12:51:52,105: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000006
+2018-04-03 12:51:52,105: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777191.972819,cu_start,unit_script,MainThread,unit.000006,AGENT_EXECUTING,
+2018-04-03 12:51:52,105: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777191.975460,cu_cd_done,unit_script,MainThread,unit.000006,AGENT_EXECUTING,
+2018-04-03 12:51:52,106: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777191.976900,cu_exec_start,unit_script,MainThread,unit.000006,AGENT_EXECUTING,
+2018-04-03 12:51:52,106: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.009200,cu_exec_stop,unit_script,MainThread,unit.000006,AGENT_EXECUTING,
+2018-04-03 12:51:52,106: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.010748,cu_stop,unit_script,MainThread,unit.000006,AGENT_EXECUTING,
+2018-04-03 12:51:52,106: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 12:51:52,106: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 12:51:52,106: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000006 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 12:51:52,107: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000011)
+2018-04-03 12:51:52,107: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 12:51:52,108: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000011
+2018-04-03 12:51:52,109: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777191.958101,cu_start,unit_script,MainThread,unit.000011,AGENT_EXECUTING,
+2018-04-03 12:51:52,109: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777191.960766,cu_cd_done,unit_script,MainThread,unit.000011,AGENT_EXECUTING,
+2018-04-03 12:51:52,109: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777191.962212,cu_exec_start,unit_script,MainThread,unit.000011,AGENT_EXECUTING,
+2018-04-03 12:51:52,109: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777911.991057,cu_exec_stop,unit_script,MainThread,unit.000011,AGENT_EXECUTING,
+2018-04-03 12:51:52,109: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777911.993608,cu_stop,unit_script,MainThread,unit.000011,AGENT_EXECUTING,
+2018-04-03 12:51:52,109: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 12:51:52,109: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 12:51:52,110: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000011 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 12:51:52,110: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000019)
+2018-04-03 12:51:52,110: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 12:51:52,112: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000019
+2018-04-03 12:51:52,112: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777191.943395,cu_start,unit_script,MainThread,unit.000019,AGENT_EXECUTING,
+2018-04-03 12:51:52,112: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777191.947570,cu_cd_done,unit_script,MainThread,unit.000019,AGENT_EXECUTING,
+2018-04-03 12:51:52,112: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777191.950936,cu_exec_start,unit_script,MainThread,unit.000019,AGENT_EXECUTING,
+2018-04-03 12:51:52,112: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777911.982292,cu_exec_stop,unit_script,MainThread,unit.000019,AGENT_EXECUTING,
+2018-04-03 12:51:52,112: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777911.986727,cu_stop,unit_script,MainThread,unit.000019,AGENT_EXECUTING,
+2018-04-03 12:51:52,112: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 12:51:52,113: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 12:51:52,113: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000019 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 12:51:52,113: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000007)
+2018-04-03 12:51:52,113: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 12:51:52,115: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000007
+2018-04-03 12:51:52,115: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777191.957824,cu_start,unit_script,MainThread,unit.000007,AGENT_EXECUTING,
+2018-04-03 12:51:52,115: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777191.960311,cu_cd_done,unit_script,MainThread,unit.000007,AGENT_EXECUTING,
+2018-04-03 12:51:52,115: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777191.961846,cu_exec_start,unit_script,MainThread,unit.000007,AGENT_EXECUTING,
+2018-04-03 12:51:52,116: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.058782,cu_exec_stop,unit_script,MainThread,unit.000007,AGENT_EXECUTING,
+2018-04-03 12:51:52,116: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.060190,cu_stop,unit_script,MainThread,unit.000007,AGENT_EXECUTING,
+2018-04-03 12:51:52,116: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 12:51:52,116: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 12:51:52,116: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000007 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 12:51:52,117: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000015)
+2018-04-03 12:51:52,117: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 12:51:52,118: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000015
+2018-04-03 12:51:52,119: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777191.963035,cu_start,unit_script,MainThread,unit.000015,AGENT_EXECUTING,
+2018-04-03 12:51:52,119: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777191.965325,cu_cd_done,unit_script,MainThread,unit.000015,AGENT_EXECUTING,
+2018-04-03 12:51:52,119: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777191.966735,cu_exec_start,unit_script,MainThread,unit.000015,AGENT_EXECUTING,
+2018-04-03 12:51:52,119: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.043639,cu_exec_stop,unit_script,MainThread,unit.000015,AGENT_EXECUTING,
+2018-04-03 12:51:52,119: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.045107,cu_stop,unit_script,MainThread,unit.000015,AGENT_EXECUTING,
+2018-04-03 12:51:52,119: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 12:51:52,120: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 12:51:52,120: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000015 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 12:51:52,170: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000002)
+2018-04-03 12:51:52,170: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 12:51:52,172: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000002
+2018-04-03 12:51:52,172: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777191.973254,cu_start,unit_script,MainThread,unit.000002,AGENT_EXECUTING,
+2018-04-03 12:51:52,172: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777191.975275,cu_cd_done,unit_script,MainThread,unit.000002,AGENT_EXECUTING,
+2018-04-03 12:51:52,172: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777191.976737,cu_exec_start,unit_script,MainThread,unit.000002,AGENT_EXECUTING,
+2018-04-03 12:51:52,172: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.075567,cu_exec_stop,unit_script,MainThread,unit.000002,AGENT_EXECUTING,
+2018-04-03 12:51:52,172: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.077256,cu_stop,unit_script,MainThread,unit.000002,AGENT_EXECUTING,
+2018-04-03 12:51:52,173: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 12:51:52,173: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 12:51:52,173: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000002 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 12:51:52,173: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000021)
+2018-04-03 12:51:52,173: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 12:51:52,176: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000021
+2018-04-03 12:51:52,195: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777192.069090,cu_start,unit_script,MainThread,unit.000021,AGENT_EXECUTING,
+2018-04-03 12:51:52,196: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777192.072989,cu_cd_done,unit_script,MainThread,unit.000021,AGENT_EXECUTING,
+2018-04-03 12:51:52,196: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777192.075099,cu_exec_start,unit_script,MainThread,unit.000021,AGENT_EXECUTING,
+2018-04-03 12:51:52,196: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.101445,cu_exec_stop,unit_script,MainThread,unit.000021,AGENT_EXECUTING,
+2018-04-03 12:51:52,196: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.103022,cu_stop,unit_script,MainThread,unit.000021,AGENT_EXECUTING,
+2018-04-03 12:51:52,196: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 12:51:52,196: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 12:51:52,197: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000021 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 12:51:52,197: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000023)
+2018-04-03 12:51:52,197: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 12:51:52,199: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000023
+2018-04-03 12:51:52,228: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777192.113802,cu_start,unit_script,MainThread,unit.000023,AGENT_EXECUTING,
+2018-04-03 12:51:52,228: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777192.116031,cu_cd_done,unit_script,MainThread,unit.000023,AGENT_EXECUTING,
+2018-04-03 12:51:52,229: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777192.117387,cu_exec_start,unit_script,MainThread,unit.000023,AGENT_EXECUTING,
+2018-04-03 12:51:52,229: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.146829,cu_exec_stop,unit_script,MainThread,unit.000023,AGENT_EXECUTING,
+2018-04-03 12:51:52,229: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.148361,cu_stop,unit_script,MainThread,unit.000023,AGENT_EXECUTING,
+2018-04-03 12:51:52,229: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 12:51:52,229: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 12:51:52,229: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000023 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 12:51:52,230: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000025)
+2018-04-03 12:51:52,230: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 12:51:52,241: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000025
+2018-04-03 12:51:52,262: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777192.074794,cu_start,unit_script,MainThread,unit.000025,AGENT_EXECUTING,
+2018-04-03 12:51:52,262: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777192.076843,cu_cd_done,unit_script,MainThread,unit.000025,AGENT_EXECUTING,
+2018-04-03 12:51:52,262: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777192.079543,cu_exec_start,unit_script,MainThread,unit.000025,AGENT_EXECUTING,
+2018-04-03 12:51:52,262: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.119683,cu_exec_stop,unit_script,MainThread,unit.000025,AGENT_EXECUTING,
+2018-04-03 12:51:52,262: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.120880,cu_stop,unit_script,MainThread,unit.000025,AGENT_EXECUTING,
+2018-04-03 12:51:52,263: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 12:51:52,263: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 12:51:52,263: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000025 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 12:51:52,263: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000027)
+2018-04-03 12:51:52,264: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 12:51:52,266: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000027
+2018-04-03 12:51:52,285: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777192.085283,cu_start,unit_script,MainThread,unit.000027,AGENT_EXECUTING,
+2018-04-03 12:51:52,285: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777192.090774,cu_cd_done,unit_script,MainThread,unit.000027,AGENT_EXECUTING,
+2018-04-03 12:51:52,285: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777192.095561,cu_exec_start,unit_script,MainThread,unit.000027,AGENT_EXECUTING,
+2018-04-03 12:51:52,285: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.110740,cu_exec_stop,unit_script,MainThread,unit.000027,AGENT_EXECUTING,
+2018-04-03 12:51:52,285: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.112112,cu_stop,unit_script,MainThread,unit.000027,AGENT_EXECUTING,
+2018-04-03 12:51:52,285: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 12:51:52,286: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 12:51:52,286: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000027 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 12:51:52,286: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000029)
+2018-04-03 12:51:52,286: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 12:51:52,289: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000029
+2018-04-03 12:51:52,303: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777192.090005,cu_start,unit_script,MainThread,unit.000029,AGENT_EXECUTING,
+2018-04-03 12:51:52,303: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777192.096043,cu_cd_done,unit_script,MainThread,unit.000029,AGENT_EXECUTING,
+2018-04-03 12:51:52,303: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777192.098571,cu_exec_start,unit_script,MainThread,unit.000029,AGENT_EXECUTING,
+2018-04-03 12:51:52,303: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.153066,cu_exec_stop,unit_script,MainThread,unit.000029,AGENT_EXECUTING,
+2018-04-03 12:51:52,303: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.154520,cu_stop,unit_script,MainThread,unit.000029,AGENT_EXECUTING,
+2018-04-03 12:51:52,303: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 12:51:52,304: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 12:51:52,304: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000029 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 12:51:52,304: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000031)
+2018-04-03 12:51:52,304: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 12:51:52,309: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000031
+2018-04-03 12:51:52,338: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777192.093187,cu_start,unit_script,MainThread,unit.000031,AGENT_EXECUTING,
+2018-04-03 12:51:52,338: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777192.097120,cu_cd_done,unit_script,MainThread,unit.000031,AGENT_EXECUTING,
+2018-04-03 12:51:52,338: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777192.098641,cu_exec_start,unit_script,MainThread,unit.000031,AGENT_EXECUTING,
+2018-04-03 12:51:52,338: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.136322,cu_exec_stop,unit_script,MainThread,unit.000031,AGENT_EXECUTING,
+2018-04-03 12:51:52,338: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.137809,cu_stop,unit_script,MainThread,unit.000031,AGENT_EXECUTING,
+2018-04-03 12:51:52,338: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 12:51:52,339: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 12:51:52,339: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000031 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 12:51:52,339: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000033)
+2018-04-03 12:51:52,339: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 12:51:52,342: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000033
+2018-04-03 12:51:52,359: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777192.080720,cu_start,unit_script,MainThread,unit.000033,AGENT_EXECUTING,
+2018-04-03 12:51:52,359: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777192.086484,cu_cd_done,unit_script,MainThread,unit.000033,AGENT_EXECUTING,
+2018-04-03 12:51:52,359: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777192.091124,cu_exec_start,unit_script,MainThread,unit.000033,AGENT_EXECUTING,
+2018-04-03 12:51:52,359: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.131852,cu_exec_stop,unit_script,MainThread,unit.000033,AGENT_EXECUTING,
+2018-04-03 12:51:52,359: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.133343,cu_stop,unit_script,MainThread,unit.000033,AGENT_EXECUTING,
+2018-04-03 12:51:52,359: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 12:51:52,359: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 12:51:52,360: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000033 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 12:51:52,360: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000035)
+2018-04-03 12:51:52,360: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 12:51:52,362: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000035
+2018-04-03 12:51:52,382: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777192.084456,cu_start,unit_script,MainThread,unit.000035,AGENT_EXECUTING,
+2018-04-03 12:51:52,382: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777192.087298,cu_cd_done,unit_script,MainThread,unit.000035,AGENT_EXECUTING,
+2018-04-03 12:51:52,382: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777192.091598,cu_exec_start,unit_script,MainThread,unit.000035,AGENT_EXECUTING,
+2018-04-03 12:51:52,383: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.122058,cu_exec_stop,unit_script,MainThread,unit.000035,AGENT_EXECUTING,
+2018-04-03 12:51:52,383: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.123362,cu_stop,unit_script,MainThread,unit.000035,AGENT_EXECUTING,
+2018-04-03 12:51:52,383: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 12:51:52,383: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 12:51:52,383: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000035 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 12:51:52,384: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000037)
+2018-04-03 12:51:52,384: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 12:51:52,386: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000037
+2018-04-03 12:51:52,407: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777192.089039,cu_start,unit_script,MainThread,unit.000037,AGENT_EXECUTING,
+2018-04-03 12:51:52,407: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777192.094908,cu_cd_done,unit_script,MainThread,unit.000037,AGENT_EXECUTING,
+2018-04-03 12:51:52,407: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777192.099389,cu_exec_start,unit_script,MainThread,unit.000037,AGENT_EXECUTING,
+2018-04-03 12:51:52,407: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.149888,cu_exec_stop,unit_script,MainThread,unit.000037,AGENT_EXECUTING,
+2018-04-03 12:51:52,407: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.151420,cu_stop,unit_script,MainThread,unit.000037,AGENT_EXECUTING,
+2018-04-03 12:51:52,408: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 12:51:52,408: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 12:51:52,408: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000037 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 12:51:52,408: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000039)
+2018-04-03 12:51:52,408: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 12:51:52,411: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000039
+2018-04-03 12:51:52,431: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777192.093717,cu_start,unit_script,MainThread,unit.000039,AGENT_EXECUTING,
+2018-04-03 12:51:52,431: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777192.097721,cu_cd_done,unit_script,MainThread,unit.000039,AGENT_EXECUTING,
+2018-04-03 12:51:52,431: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777192.099843,cu_exec_start,unit_script,MainThread,unit.000039,AGENT_EXECUTING,
+2018-04-03 12:51:52,432: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.156955,cu_exec_stop,unit_script,MainThread,unit.000039,AGENT_EXECUTING,
+2018-04-03 12:51:52,432: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.158509,cu_stop,unit_script,MainThread,unit.000039,AGENT_EXECUTING,
+2018-04-03 12:51:52,432: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 12:51:52,432: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 12:51:52,432: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000039 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 12:51:52,433: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000020)
+2018-04-03 12:51:52,433: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 12:51:52,435: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000020
+2018-04-03 12:51:52,582: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777192.089305,cu_start,unit_script,MainThread,unit.000020,AGENT_EXECUTING,
+2018-04-03 12:51:52,582: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777192.095155,cu_cd_done,unit_script,MainThread,unit.000020,AGENT_EXECUTING,
+2018-04-03 12:51:52,582: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777192.098179,cu_exec_start,unit_script,MainThread,unit.000020,AGENT_EXECUTING,
+2018-04-03 12:51:52,582: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.152853,cu_exec_stop,unit_script,MainThread,unit.000020,AGENT_EXECUTING,
+2018-04-03 12:51:52,582: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.154313,cu_stop,unit_script,MainThread,unit.000020,AGENT_EXECUTING,
+2018-04-03 12:51:52,582: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 12:51:52,583: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 12:51:52,583: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000020 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 12:51:52,584: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000024)
+2018-04-03 12:51:52,584: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 12:51:52,587: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000024
+2018-04-03 12:51:52,609: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777192.087526,cu_start,unit_script,MainThread,unit.000024,AGENT_EXECUTING,
+2018-04-03 12:51:52,609: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777192.092022,cu_cd_done,unit_script,MainThread,unit.000024,AGENT_EXECUTING,
+2018-04-03 12:51:52,609: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777192.096474,cu_exec_start,unit_script,MainThread,unit.000024,AGENT_EXECUTING,
+2018-04-03 12:51:52,609: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.114747,cu_exec_stop,unit_script,MainThread,unit.000024,AGENT_EXECUTING,
+2018-04-03 12:51:52,610: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.116201,cu_stop,unit_script,MainThread,unit.000024,AGENT_EXECUTING,
+2018-04-03 12:51:52,610: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 12:51:52,610: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 12:51:52,610: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000024 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 12:51:52,611: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000028)
+2018-04-03 12:51:52,611: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 12:51:52,614: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000028
+2018-04-03 12:51:52,630: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777192.074570,cu_start,unit_script,MainThread,unit.000028,AGENT_EXECUTING,
+2018-04-03 12:51:52,630: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777192.077000,cu_cd_done,unit_script,MainThread,unit.000028,AGENT_EXECUTING,
+2018-04-03 12:51:52,630: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777192.080344,cu_exec_start,unit_script,MainThread,unit.000028,AGENT_EXECUTING,
+2018-04-03 12:51:52,631: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.158818,cu_exec_stop,unit_script,MainThread,unit.000028,AGENT_EXECUTING,
+2018-04-03 12:51:52,631: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.160199,cu_stop,unit_script,MainThread,unit.000028,AGENT_EXECUTING,
+2018-04-03 12:51:52,631: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 12:51:52,631: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 12:51:52,631: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000028 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 12:51:52,632: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000032)
+2018-04-03 12:51:52,632: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 12:51:52,637: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000032
+2018-04-03 12:51:52,719: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777192.088731,cu_start,unit_script,MainThread,unit.000032,AGENT_EXECUTING,
+2018-04-03 12:51:52,719: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777192.093568,cu_cd_done,unit_script,MainThread,unit.000032,AGENT_EXECUTING,
+2018-04-03 12:51:52,719: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777192.096893,cu_exec_start,unit_script,MainThread,unit.000032,AGENT_EXECUTING,
+2018-04-03 12:51:52,719: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.120270,cu_exec_stop,unit_script,MainThread,unit.000032,AGENT_EXECUTING,
+2018-04-03 12:51:52,720: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.121656,cu_stop,unit_script,MainThread,unit.000032,AGENT_EXECUTING,
+2018-04-03 12:51:52,720: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 12:51:52,720: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 12:51:52,720: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000032 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 12:51:52,721: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000036)
+2018-04-03 12:51:52,721: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 12:51:52,724: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000036
+2018-04-03 12:51:52,738: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777192.093457,cu_start,unit_script,MainThread,unit.000036,AGENT_EXECUTING,
+2018-04-03 12:51:52,738: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777192.097559,cu_cd_done,unit_script,MainThread,unit.000036,AGENT_EXECUTING,
+2018-04-03 12:51:52,738: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777192.099379,cu_exec_start,unit_script,MainThread,unit.000036,AGENT_EXECUTING,
+2018-04-03 12:51:52,738: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.119912,cu_exec_stop,unit_script,MainThread,unit.000036,AGENT_EXECUTING,
+2018-04-03 12:51:52,738: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.121192,cu_stop,unit_script,MainThread,unit.000036,AGENT_EXECUTING,
+2018-04-03 12:51:52,739: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 12:51:52,739: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 12:51:52,739: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000036 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 12:51:52,739: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000022)
+2018-04-03 12:51:52,739: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 12:51:52,742: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000022
+2018-04-03 12:51:52,761: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777192.085726,cu_start,unit_script,MainThread,unit.000022,AGENT_EXECUTING,
+2018-04-03 12:51:52,761: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777192.091339,cu_cd_done,unit_script,MainThread,unit.000022,AGENT_EXECUTING,
+2018-04-03 12:51:52,761: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777192.096644,cu_exec_start,unit_script,MainThread,unit.000022,AGENT_EXECUTING,
+2018-04-03 12:51:52,761: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.111193,cu_exec_stop,unit_script,MainThread,unit.000022,AGENT_EXECUTING,
+2018-04-03 12:51:52,761: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.112544,cu_stop,unit_script,MainThread,unit.000022,AGENT_EXECUTING,
+2018-04-03 12:51:52,762: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 12:51:52,762: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 12:51:52,762: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000022 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 12:51:52,762: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000030)
+2018-04-03 12:51:52,763: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 12:51:52,765: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000030
+2018-04-03 12:51:52,787: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777192.086780,cu_start,unit_script,MainThread,unit.000030,AGENT_EXECUTING,
+2018-04-03 12:51:52,787: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777192.091828,cu_cd_done,unit_script,MainThread,unit.000030,AGENT_EXECUTING,
+2018-04-03 12:51:52,787: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777192.096143,cu_exec_start,unit_script,MainThread,unit.000030,AGENT_EXECUTING,
+2018-04-03 12:51:52,788: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.125236,cu_exec_stop,unit_script,MainThread,unit.000030,AGENT_EXECUTING,
+2018-04-03 12:51:52,788: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.126678,cu_stop,unit_script,MainThread,unit.000030,AGENT_EXECUTING,
+2018-04-03 12:51:52,788: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 12:51:52,788: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 12:51:52,788: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000030 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 12:51:52,789: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000038)
+2018-04-03 12:51:52,789: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 12:51:52,792: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000038
+2018-04-03 12:51:52,808: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777192.074039,cu_start,unit_script,MainThread,unit.000038,AGENT_EXECUTING,
+2018-04-03 12:51:52,809: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777192.076307,cu_cd_done,unit_script,MainThread,unit.000038,AGENT_EXECUTING,
+2018-04-03 12:51:52,809: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777192.078010,cu_exec_start,unit_script,MainThread,unit.000038,AGENT_EXECUTING,
+2018-04-03 12:51:52,809: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.170286,cu_exec_stop,unit_script,MainThread,unit.000038,AGENT_EXECUTING,
+2018-04-03 12:51:52,809: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.171876,cu_stop,unit_script,MainThread,unit.000038,AGENT_EXECUTING,
+2018-04-03 12:51:52,809: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 12:51:52,809: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 12:51:52,810: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000038 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 12:51:52,810: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000026)
+2018-04-03 12:51:52,810: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 12:51:52,813: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000026
+2018-04-03 12:51:52,829: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777192.075571,cu_start,unit_script,MainThread,unit.000026,AGENT_EXECUTING,
+2018-04-03 12:51:52,830: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777192.078302,cu_cd_done,unit_script,MainThread,unit.000026,AGENT_EXECUTING,
+2018-04-03 12:51:52,830: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777192.080952,cu_exec_start,unit_script,MainThread,unit.000026,AGENT_EXECUTING,
+2018-04-03 12:51:52,830: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.101370,cu_exec_stop,unit_script,MainThread,unit.000026,AGENT_EXECUTING,
+2018-04-03 12:51:52,830: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.102823,cu_stop,unit_script,MainThread,unit.000026,AGENT_EXECUTING,
+2018-04-03 12:51:52,830: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 12:51:52,830: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 12:51:52,830: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000026 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 12:51:52,831: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000034)
+2018-04-03 12:51:52,831: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 12:51:52,834: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000034
+2018-04-03 12:51:52,851: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777192.088105,cu_start,unit_script,MainThread,unit.000034,AGENT_EXECUTING,
+2018-04-03 12:51:52,851: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777192.092666,cu_cd_done,unit_script,MainThread,unit.000034,AGENT_EXECUTING,
+2018-04-03 12:51:52,851: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777192.094359,cu_exec_start,unit_script,MainThread,unit.000034,AGENT_EXECUTING,
+2018-04-03 12:51:52,851: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.164465,cu_exec_stop,unit_script,MainThread,unit.000034,AGENT_EXECUTING,
+2018-04-03 12:51:52,852: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.166016,cu_stop,unit_script,MainThread,unit.000034,AGENT_EXECUTING,
+2018-04-03 12:51:52,852: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 12:51:52,852: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 12:51:52,852: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000034 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 13:03:52,981: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000040)
+2018-04-03 13:03:52,981: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 13:03:52,983: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000040
+2018-04-03 13:03:52,984: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.913516,cu_start,unit_script,MainThread,unit.000040,AGENT_EXECUTING,
+2018-04-03 13:03:52,984: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.915987,cu_cd_done,unit_script,MainThread,unit.000040,AGENT_EXECUTING,
+2018-04-03 13:03:52,984: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.917358,cu_exec_start,unit_script,MainThread,unit.000040,AGENT_EXECUTING,
+2018-04-03 13:03:52,984: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778632.973297,cu_exec_stop,unit_script,MainThread,unit.000040,AGENT_EXECUTING,
+2018-04-03 13:03:52,984: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778632.974898,cu_stop,unit_script,MainThread,unit.000040,AGENT_EXECUTING,
+2018-04-03 13:03:52,984: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 13:03:52,984: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 13:03:52,985: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000040 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 13:03:52,985: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000042)
+2018-04-03 13:03:52,985: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 13:03:52,988: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000042
+2018-04-03 13:03:52,988: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.919313,cu_start,unit_script,MainThread,unit.000042,AGENT_EXECUTING,
+2018-04-03 13:03:52,988: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.921706,cu_cd_done,unit_script,MainThread,unit.000042,AGENT_EXECUTING,
+2018-04-03 13:03:52,989: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.923385,cu_exec_start,unit_script,MainThread,unit.000042,AGENT_EXECUTING,
+2018-04-03 13:03:52,989: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778632.957534,cu_exec_stop,unit_script,MainThread,unit.000042,AGENT_EXECUTING,
+2018-04-03 13:03:52,989: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778632.958890,cu_stop,unit_script,MainThread,unit.000042,AGENT_EXECUTING,
+2018-04-03 13:03:52,989: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 13:03:52,989: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 13:03:52,989: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000042 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 13:03:52,990: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000044)
+2018-04-03 13:03:52,990: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 13:03:52,992: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000044
+2018-04-03 13:03:52,992: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.922074,cu_start,unit_script,MainThread,unit.000044,AGENT_EXECUTING,
+2018-04-03 13:03:52,992: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.924456,cu_cd_done,unit_script,MainThread,unit.000044,AGENT_EXECUTING,
+2018-04-03 13:03:52,992: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.926749,cu_exec_start,unit_script,MainThread,unit.000044,AGENT_EXECUTING,
+2018-04-03 13:03:52,992: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778632.960273,cu_exec_stop,unit_script,MainThread,unit.000044,AGENT_EXECUTING,
+2018-04-03 13:03:52,992: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778632.961886,cu_stop,unit_script,MainThread,unit.000044,AGENT_EXECUTING,
+2018-04-03 13:03:52,992: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 13:03:52,993: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 13:03:52,993: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000044 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 13:03:52,993: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000049)
+2018-04-03 13:03:52,993: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 13:03:52,995: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000049
+2018-04-03 13:03:52,995: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.933659,cu_start,unit_script,MainThread,unit.000049,AGENT_EXECUTING,
+2018-04-03 13:03:52,995: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.937035,cu_cd_done,unit_script,MainThread,unit.000049,AGENT_EXECUTING,
+2018-04-03 13:03:52,996: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.938914,cu_exec_start,unit_script,MainThread,unit.000049,AGENT_EXECUTING,
+2018-04-03 13:03:52,996: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778632.955786,cu_exec_stop,unit_script,MainThread,unit.000049,AGENT_EXECUTING,
+2018-04-03 13:03:52,996: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778632.957613,cu_stop,unit_script,MainThread,unit.000049,AGENT_EXECUTING,
+2018-04-03 13:03:52,996: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 13:03:52,996: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 13:03:52,996: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000049 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 13:03:52,997: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000051)
+2018-04-03 13:03:52,997: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 13:03:52,999: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000051
+2018-04-03 13:03:52,999: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.937901,cu_start,unit_script,MainThread,unit.000051,AGENT_EXECUTING,
+2018-04-03 13:03:52,999: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.940323,cu_cd_done,unit_script,MainThread,unit.000051,AGENT_EXECUTING,
+2018-04-03 13:03:53,000: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.941748,cu_exec_start,unit_script,MainThread,unit.000051,AGENT_EXECUTING,
+2018-04-03 13:03:53,000: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778632.956905,cu_exec_stop,unit_script,MainThread,unit.000051,AGENT_EXECUTING,
+2018-04-03 13:03:53,000: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778632.958395,cu_stop,unit_script,MainThread,unit.000051,AGENT_EXECUTING,
+2018-04-03 13:03:53,000: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 13:03:53,000: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 13:03:53,000: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000051 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 13:03:53,001: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000061)
+2018-04-03 13:03:53,001: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 13:03:53,003: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000061
+2018-04-03 13:03:53,021: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.879029,cu_start,unit_script,MainThread,unit.000061,AGENT_EXECUTING,
+2018-04-03 13:03:53,021: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.882809,cu_cd_done,unit_script,MainThread,unit.000061,AGENT_EXECUTING,
+2018-04-03 13:03:53,021: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.885825,cu_exec_start,unit_script,MainThread,unit.000061,AGENT_EXECUTING,
+2018-04-03 13:03:53,021: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778632.905086,cu_exec_stop,unit_script,MainThread,unit.000061,AGENT_EXECUTING,
+2018-04-03 13:03:53,021: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778632.906502,cu_stop,unit_script,MainThread,unit.000061,AGENT_EXECUTING,
+2018-04-03 13:03:53,021: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 13:03:53,022: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 13:03:53,022: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000061 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 13:03:53,022: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000063)
+2018-04-03 13:03:53,022: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 13:03:53,024: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000063
+2018-04-03 13:03:53,044: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.878710,cu_start,unit_script,MainThread,unit.000063,AGENT_EXECUTING,
+2018-04-03 13:03:53,044: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.880845,cu_cd_done,unit_script,MainThread,unit.000063,AGENT_EXECUTING,
+2018-04-03 13:03:53,044: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.882910,cu_exec_start,unit_script,MainThread,unit.000063,AGENT_EXECUTING,
+2018-04-03 13:03:53,044: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778632.900441,cu_exec_stop,unit_script,MainThread,unit.000063,AGENT_EXECUTING,
+2018-04-03 13:03:53,044: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778632.902069,cu_stop,unit_script,MainThread,unit.000063,AGENT_EXECUTING,
+2018-04-03 13:03:53,044: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 13:03:53,044: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 13:03:53,045: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000063 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 13:03:53,045: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000065)
+2018-04-03 13:03:53,045: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 13:03:53,048: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000065
+2018-04-03 13:03:53,067: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.875256,cu_start,unit_script,MainThread,unit.000065,AGENT_EXECUTING,
+2018-04-03 13:03:53,068: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.878072,cu_cd_done,unit_script,MainThread,unit.000065,AGENT_EXECUTING,
+2018-04-03 13:03:53,068: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.879677,cu_exec_start,unit_script,MainThread,unit.000065,AGENT_EXECUTING,
+2018-04-03 13:03:53,068: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778632.897849,cu_exec_stop,unit_script,MainThread,unit.000065,AGENT_EXECUTING,
+2018-04-03 13:03:53,068: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778632.901169,cu_stop,unit_script,MainThread,unit.000065,AGENT_EXECUTING,
+2018-04-03 13:03:53,068: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 13:03:53,068: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 13:03:53,069: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000065 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 13:03:53,069: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000067)
+2018-04-03 13:03:53,069: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 13:03:53,071: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000067
+2018-04-03 13:03:53,090: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.878799,cu_start,unit_script,MainThread,unit.000067,AGENT_EXECUTING,
+2018-04-03 13:03:53,090: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.881553,cu_cd_done,unit_script,MainThread,unit.000067,AGENT_EXECUTING,
+2018-04-03 13:03:53,090: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.883097,cu_exec_start,unit_script,MainThread,unit.000067,AGENT_EXECUTING,
+2018-04-03 13:03:53,090: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778632.964143,cu_exec_stop,unit_script,MainThread,unit.000067,AGENT_EXECUTING,
+2018-04-03 13:03:53,090: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778632.965687,cu_stop,unit_script,MainThread,unit.000067,AGENT_EXECUTING,
+2018-04-03 13:03:53,090: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 13:03:53,091: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 13:03:53,091: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000067 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 13:03:53,091: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000069)
+2018-04-03 13:03:53,091: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 13:03:53,094: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000069
+2018-04-03 13:03:53,111: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.881273,cu_start,unit_script,MainThread,unit.000069,AGENT_EXECUTING,
+2018-04-03 13:03:53,111: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.884506,cu_cd_done,unit_script,MainThread,unit.000069,AGENT_EXECUTING,
+2018-04-03 13:03:53,111: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.886453,cu_exec_start,unit_script,MainThread,unit.000069,AGENT_EXECUTING,
+2018-04-03 13:03:53,111: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778632.928138,cu_exec_stop,unit_script,MainThread,unit.000069,AGENT_EXECUTING,
+2018-04-03 13:03:53,111: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778632.929720,cu_stop,unit_script,MainThread,unit.000069,AGENT_EXECUTING,
+2018-04-03 13:03:53,111: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 13:03:53,112: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 13:03:53,112: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000069 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 13:03:53,112: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000071)
+2018-04-03 13:03:53,112: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 13:03:53,115: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000071
+2018-04-03 13:03:53,136: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.886230,cu_start,unit_script,MainThread,unit.000071,AGENT_EXECUTING,
+2018-04-03 13:03:53,136: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.888511,cu_cd_done,unit_script,MainThread,unit.000071,AGENT_EXECUTING,
+2018-04-03 13:03:53,136: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.889849,cu_exec_start,unit_script,MainThread,unit.000071,AGENT_EXECUTING,
+2018-04-03 13:03:53,136: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778632.900920,cu_exec_stop,unit_script,MainThread,unit.000071,AGENT_EXECUTING,
+2018-04-03 13:03:53,137: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778632.902802,cu_stop,unit_script,MainThread,unit.000071,AGENT_EXECUTING,
+2018-04-03 13:03:53,137: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 13:03:53,137: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 13:03:53,137: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000071 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 13:03:53,138: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000045)
+2018-04-03 13:03:53,138: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 13:03:53,139: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000045
+2018-04-03 13:03:53,140: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.921854,cu_start,unit_script,MainThread,unit.000045,AGENT_EXECUTING,
+2018-04-03 13:03:53,140: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.923942,cu_cd_done,unit_script,MainThread,unit.000045,AGENT_EXECUTING,
+2018-04-03 13:03:53,140: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.926161,cu_exec_start,unit_script,MainThread,unit.000045,AGENT_EXECUTING,
+2018-04-03 13:03:53,140: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778632.941358,cu_exec_stop,unit_script,MainThread,unit.000045,AGENT_EXECUTING,
+2018-04-03 13:03:53,140: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778632.942997,cu_stop,unit_script,MainThread,unit.000045,AGENT_EXECUTING,
+2018-04-03 13:03:53,140: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 13:03:53,140: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 13:03:53,141: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000045 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 13:03:53,141: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000047)
+2018-04-03 13:03:53,141: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 13:03:53,143: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000047
+2018-04-03 13:03:53,143: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.913148,cu_start,unit_script,MainThread,unit.000047,AGENT_EXECUTING,
+2018-04-03 13:03:53,143: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.915473,cu_cd_done,unit_script,MainThread,unit.000047,AGENT_EXECUTING,
+2018-04-03 13:03:53,143: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.917045,cu_exec_start,unit_script,MainThread,unit.000047,AGENT_EXECUTING,
+2018-04-03 13:03:53,143: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778632.982741,cu_exec_stop,unit_script,MainThread,unit.000047,AGENT_EXECUTING,
+2018-04-03 13:03:53,143: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778632.984224,cu_stop,unit_script,MainThread,unit.000047,AGENT_EXECUTING,
+2018-04-03 13:03:53,143: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 13:03:53,144: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 13:03:53,144: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000047 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 13:03:53,144: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000050)
+2018-04-03 13:03:53,144: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 13:03:53,146: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000050
+2018-04-03 13:03:53,146: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.935062,cu_start,unit_script,MainThread,unit.000050,AGENT_EXECUTING,
+2018-04-03 13:03:53,146: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.938717,cu_cd_done,unit_script,MainThread,unit.000050,AGENT_EXECUTING,
+2018-04-03 13:03:53,146: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.940113,cu_exec_start,unit_script,MainThread,unit.000050,AGENT_EXECUTING,
+2018-04-03 13:03:53,146: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778632.956468,cu_exec_stop,unit_script,MainThread,unit.000050,AGENT_EXECUTING,
+2018-04-03 13:03:53,147: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778632.957826,cu_stop,unit_script,MainThread,unit.000050,AGENT_EXECUTING,
+2018-04-03 13:03:53,147: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 13:03:53,147: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 13:03:53,147: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000050 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 13:03:53,147: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000060)
+2018-04-03 13:03:53,148: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 13:03:53,150: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000060
+2018-04-03 13:03:53,169: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.881973,cu_start,unit_script,MainThread,unit.000060,AGENT_EXECUTING,
+2018-04-03 13:03:53,169: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.885349,cu_cd_done,unit_script,MainThread,unit.000060,AGENT_EXECUTING,
+2018-04-03 13:03:53,169: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.887331,cu_exec_start,unit_script,MainThread,unit.000060,AGENT_EXECUTING,
+2018-04-03 13:03:53,169: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778632.980637,cu_exec_stop,unit_script,MainThread,unit.000060,AGENT_EXECUTING,
+2018-04-03 13:03:53,169: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778632.982324,cu_stop,unit_script,MainThread,unit.000060,AGENT_EXECUTING,
+2018-04-03 13:03:53,169: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 13:03:53,170: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 13:03:53,170: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000060 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 13:03:53,170: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000064)
+2018-04-03 13:03:53,170: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 13:03:53,173: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000064
+2018-04-03 13:03:53,190: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.877450,cu_start,unit_script,MainThread,unit.000064,AGENT_EXECUTING,
+2018-04-03 13:03:53,190: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.880315,cu_cd_done,unit_script,MainThread,unit.000064,AGENT_EXECUTING,
+2018-04-03 13:03:53,190: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.882580,cu_exec_start,unit_script,MainThread,unit.000064,AGENT_EXECUTING,
+2018-04-03 13:03:53,190: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778632.948696,cu_exec_stop,unit_script,MainThread,unit.000064,AGENT_EXECUTING,
+2018-04-03 13:03:53,190: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778632.950479,cu_stop,unit_script,MainThread,unit.000064,AGENT_EXECUTING,
+2018-04-03 13:03:53,190: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 13:03:53,191: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 13:03:53,191: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000064 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 13:03:53,191: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000068)
+2018-04-03 13:03:53,191: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 13:03:53,194: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000068
+2018-04-03 13:03:53,210: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.887094,cu_start,unit_script,MainThread,unit.000068,AGENT_EXECUTING,
+2018-04-03 13:03:53,210: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.889362,cu_cd_done,unit_script,MainThread,unit.000068,AGENT_EXECUTING,
+2018-04-03 13:03:53,210: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.890759,cu_exec_start,unit_script,MainThread,unit.000068,AGENT_EXECUTING,
+2018-04-03 13:03:53,210: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778632.919411,cu_exec_stop,unit_script,MainThread,unit.000068,AGENT_EXECUTING,
+2018-04-03 13:03:53,211: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778632.920867,cu_stop,unit_script,MainThread,unit.000068,AGENT_EXECUTING,
+2018-04-03 13:03:53,211: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 13:03:53,211: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 13:03:53,211: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000068 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 13:03:53,212: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000046)
+2018-04-03 13:03:53,212: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 13:03:53,214: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000046
+2018-04-03 13:03:53,214: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.932359,cu_start,unit_script,MainThread,unit.000046,AGENT_EXECUTING,
+2018-04-03 13:03:53,215: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.934852,cu_cd_done,unit_script,MainThread,unit.000046,AGENT_EXECUTING,
+2018-04-03 13:03:53,215: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.936648,cu_exec_start,unit_script,MainThread,unit.000046,AGENT_EXECUTING,
+2018-04-03 13:03:53,215: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778632.990137,cu_exec_stop,unit_script,MainThread,unit.000046,AGENT_EXECUTING,
+2018-04-03 13:03:53,215: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778632.991562,cu_stop,unit_script,MainThread,unit.000046,AGENT_EXECUTING,
+2018-04-03 13:03:53,215: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 13:03:53,215: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 13:03:53,215: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000046 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 13:03:53,216: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000062)
+2018-04-03 13:03:53,216: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 13:03:53,218: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000062
+2018-04-03 13:03:53,238: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.886036,cu_start,unit_script,MainThread,unit.000062,AGENT_EXECUTING,
+2018-04-03 13:03:53,238: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.888243,cu_cd_done,unit_script,MainThread,unit.000062,AGENT_EXECUTING,
+2018-04-03 13:03:53,238: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.889580,cu_exec_start,unit_script,MainThread,unit.000062,AGENT_EXECUTING,
+2018-04-03 13:03:53,238: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778632.903691,cu_exec_stop,unit_script,MainThread,unit.000062,AGENT_EXECUTING,
+2018-04-03 13:03:53,238: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778632.905296,cu_stop,unit_script,MainThread,unit.000062,AGENT_EXECUTING,
+2018-04-03 13:03:53,238: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 13:03:53,239: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 13:03:53,239: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000062 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 13:03:53,239: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000070)
+2018-04-03 13:03:53,239: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 13:03:53,242: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000070
+2018-04-03 13:03:53,267: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.886796,cu_start,unit_script,MainThread,unit.000070,AGENT_EXECUTING,
+2018-04-03 13:03:53,267: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.888889,cu_cd_done,unit_script,MainThread,unit.000070,AGENT_EXECUTING,
+2018-04-03 13:03:53,267: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.890279,cu_exec_start,unit_script,MainThread,unit.000070,AGENT_EXECUTING,
+2018-04-03 13:03:53,267: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778632.914439,cu_exec_stop,unit_script,MainThread,unit.000070,AGENT_EXECUTING,
+2018-04-03 13:03:53,267: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778632.916041,cu_stop,unit_script,MainThread,unit.000070,AGENT_EXECUTING,
+2018-04-03 13:03:53,267: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 13:03:53,267: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 13:03:53,268: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000070 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 13:03:53,268: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000048)
+2018-04-03 13:03:53,268: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 13:03:53,270: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000048
+2018-04-03 13:03:53,270: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.938487,cu_start,unit_script,MainThread,unit.000048,AGENT_EXECUTING,
+2018-04-03 13:03:53,270: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.940812,cu_cd_done,unit_script,MainThread,unit.000048,AGENT_EXECUTING,
+2018-04-03 13:03:53,270: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.942564,cu_exec_start,unit_script,MainThread,unit.000048,AGENT_EXECUTING,
+2018-04-03 13:03:53,271: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778632.985254,cu_exec_stop,unit_script,MainThread,unit.000048,AGENT_EXECUTING,
+2018-04-03 13:03:53,271: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778632.987908,cu_stop,unit_script,MainThread,unit.000048,AGENT_EXECUTING,
+2018-04-03 13:03:53,271: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 13:03:53,271: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 13:03:53,271: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000048 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 13:03:53,272: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000059)
+2018-04-03 13:03:53,272: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 13:03:53,273: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000059
+2018-04-03 13:03:53,274: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.937554,cu_start,unit_script,MainThread,unit.000059,AGENT_EXECUTING,
+2018-04-03 13:03:53,274: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.940452,cu_cd_done,unit_script,MainThread,unit.000059,AGENT_EXECUTING,
+2018-04-03 13:03:53,274: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.941937,cu_exec_start,unit_script,MainThread,unit.000059,AGENT_EXECUTING,
+2018-04-03 13:03:53,274: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778632.995039,cu_exec_stop,unit_script,MainThread,unit.000059,AGENT_EXECUTING,
+2018-04-03 13:03:53,274: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778632.996413,cu_stop,unit_script,MainThread,unit.000059,AGENT_EXECUTING,
+2018-04-03 13:03:53,274: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 13:03:53,275: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 13:03:53,275: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000059 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 13:03:53,275: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000066)
+2018-04-03 13:03:53,275: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 13:03:53,278: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000066
+2018-04-03 13:03:53,295: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.874396,cu_start,unit_script,MainThread,unit.000066,AGENT_EXECUTING,
+2018-04-03 13:03:53,295: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.878421,cu_cd_done,unit_script,MainThread,unit.000066,AGENT_EXECUTING,
+2018-04-03 13:03:53,295: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.880683,cu_exec_start,unit_script,MainThread,unit.000066,AGENT_EXECUTING,
+2018-04-03 13:03:53,295: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778632.898517,cu_exec_stop,unit_script,MainThread,unit.000066,AGENT_EXECUTING,
+2018-04-03 13:03:53,296: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778632.901604,cu_stop,unit_script,MainThread,unit.000066,AGENT_EXECUTING,
+2018-04-03 13:03:53,296: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 13:03:53,296: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 13:03:53,296: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000066 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 13:03:53,297: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000041)
+2018-04-03 13:03:53,297: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 13:03:53,298: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000041
+2018-04-03 13:03:53,299: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.914282,cu_start,unit_script,MainThread,unit.000041,AGENT_EXECUTING,
+2018-04-03 13:03:53,299: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.916609,cu_cd_done,unit_script,MainThread,unit.000041,AGENT_EXECUTING,
+2018-04-03 13:03:53,299: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.918019,cu_exec_start,unit_script,MainThread,unit.000041,AGENT_EXECUTING,
+2018-04-03 13:03:53,299: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778633.003069,cu_exec_stop,unit_script,MainThread,unit.000041,AGENT_EXECUTING,
+2018-04-03 13:03:53,299: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778633.004521,cu_stop,unit_script,MainThread,unit.000041,AGENT_EXECUTING,
+2018-04-03 13:03:53,299: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 13:03:53,300: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 13:03:53,300: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000041 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 13:03:53,300: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000058)
+2018-04-03 13:03:53,300: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 13:03:53,302: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000058
+2018-04-03 13:03:53,302: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.939191,cu_start,unit_script,MainThread,unit.000058,AGENT_EXECUTING,
+2018-04-03 13:03:53,302: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.941336,cu_cd_done,unit_script,MainThread,unit.000058,AGENT_EXECUTING,
+2018-04-03 13:03:53,302: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.942930,cu_exec_start,unit_script,MainThread,unit.000058,AGENT_EXECUTING,
+2018-04-03 13:03:53,302: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778632.999824,cu_exec_stop,unit_script,MainThread,unit.000058,AGENT_EXECUTING,
+2018-04-03 13:03:53,302: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778633.001310,cu_stop,unit_script,MainThread,unit.000058,AGENT_EXECUTING,
+2018-04-03 13:03:53,303: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 13:03:53,303: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 13:03:53,303: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000058 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 13:03:53,303: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000043)
+2018-04-03 13:03:53,303: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 13:03:53,305: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000043
+2018-04-03 13:03:53,306: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.922639,cu_start,unit_script,MainThread,unit.000043,AGENT_EXECUTING,
+2018-04-03 13:03:53,306: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.925126,cu_cd_done,unit_script,MainThread,unit.000043,AGENT_EXECUTING,
+2018-04-03 13:03:53,306: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777912.926893,cu_exec_start,unit_script,MainThread,unit.000043,AGENT_EXECUTING,
+2018-04-03 13:03:53,306: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778633.003819,cu_exec_stop,unit_script,MainThread,unit.000043,AGENT_EXECUTING,
+2018-04-03 13:03:53,306: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778633.005246,cu_stop,unit_script,MainThread,unit.000043,AGENT_EXECUTING,
+2018-04-03 13:03:53,306: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 13:03:53,306: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 13:03:53,307: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000043 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 13:03:54,712: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000052)
+2018-04-03 13:03:54,713: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 13:03:54,716: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000052
+2018-04-03 13:03:54,716: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777914.559090,cu_start,unit_script,MainThread,unit.000052,AGENT_EXECUTING,
+2018-04-03 13:03:54,717: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777914.561536,cu_cd_done,unit_script,MainThread,unit.000052,AGENT_EXECUTING,
+2018-04-03 13:03:54,717: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777914.562864,cu_exec_start,unit_script,MainThread,unit.000052,AGENT_EXECUTING,
+2018-04-03 13:03:54,717: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778634.615236,cu_exec_stop,unit_script,MainThread,unit.000052,AGENT_EXECUTING,
+2018-04-03 13:03:54,717: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778634.616762,cu_stop,unit_script,MainThread,unit.000052,AGENT_EXECUTING,
+2018-04-03 13:03:54,717: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 13:03:54,717: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 13:03:54,718: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000052 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 13:03:54,718: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000054)
+2018-04-03 13:03:54,718: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 13:03:54,722: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000054
+2018-04-03 13:03:54,722: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777914.568614,cu_start,unit_script,MainThread,unit.000054,AGENT_EXECUTING,
+2018-04-03 13:03:54,722: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777914.571053,cu_cd_done,unit_script,MainThread,unit.000054,AGENT_EXECUTING,
+2018-04-03 13:03:54,722: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777914.572282,cu_exec_start,unit_script,MainThread,unit.000054,AGENT_EXECUTING,
+2018-04-03 13:03:54,722: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778634.630037,cu_exec_stop,unit_script,MainThread,unit.000054,AGENT_EXECUTING,
+2018-04-03 13:03:54,723: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778634.631512,cu_stop,unit_script,MainThread,unit.000054,AGENT_EXECUTING,
+2018-04-03 13:03:54,723: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 13:03:54,723: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 13:03:54,723: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000054 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 13:03:54,724: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000056)
+2018-04-03 13:03:54,724: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 13:03:54,725: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000056
+2018-04-03 13:03:54,726: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777914.604364,cu_start,unit_script,MainThread,unit.000056,AGENT_EXECUTING,
+2018-04-03 13:03:54,726: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777914.608513,cu_cd_done,unit_script,MainThread,unit.000056,AGENT_EXECUTING,
+2018-04-03 13:03:54,726: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777914.615056,cu_exec_start,unit_script,MainThread,unit.000056,AGENT_EXECUTING,
+2018-04-03 13:03:54,726: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778634.648189,cu_exec_stop,unit_script,MainThread,unit.000056,AGENT_EXECUTING,
+2018-04-03 13:03:54,726: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778634.649729,cu_stop,unit_script,MainThread,unit.000056,AGENT_EXECUTING,
+2018-04-03 13:03:54,726: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 13:03:54,727: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 13:03:54,727: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000056 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 13:03:54,727: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000053)
+2018-04-03 13:03:54,727: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 13:03:54,729: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000053
+2018-04-03 13:03:54,729: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777914.590112,cu_start,unit_script,MainThread,unit.000053,AGENT_EXECUTING,
+2018-04-03 13:03:54,729: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777914.592539,cu_cd_done,unit_script,MainThread,unit.000053,AGENT_EXECUTING,
+2018-04-03 13:03:54,729: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777914.593769,cu_exec_start,unit_script,MainThread,unit.000053,AGENT_EXECUTING,
+2018-04-03 13:03:54,729: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778634.655004,cu_exec_stop,unit_script,MainThread,unit.000053,AGENT_EXECUTING,
+2018-04-03 13:03:54,729: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778634.656678,cu_stop,unit_script,MainThread,unit.000053,AGENT_EXECUTING,
+2018-04-03 13:03:54,730: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 13:03:54,730: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 13:03:54,730: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000053 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 13:03:54,731: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000057)
+2018-04-03 13:03:54,731: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 13:03:54,733: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000057
+2018-04-03 13:03:54,733: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777914.632971,cu_start,unit_script,MainThread,unit.000057,AGENT_EXECUTING,
+2018-04-03 13:03:54,733: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777914.635301,cu_cd_done,unit_script,MainThread,unit.000057,AGENT_EXECUTING,
+2018-04-03 13:03:54,733: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777914.644712,cu_exec_start,unit_script,MainThread,unit.000057,AGENT_EXECUTING,
+2018-04-03 13:03:54,733: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778634.668724,cu_exec_stop,unit_script,MainThread,unit.000057,AGENT_EXECUTING,
+2018-04-03 13:03:54,733: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778634.670158,cu_stop,unit_script,MainThread,unit.000057,AGENT_EXECUTING,
+2018-04-03 13:03:54,733: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 13:03:54,734: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 13:03:54,734: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000057 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 13:03:54,734: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000055)
+2018-04-03 13:03:54,735: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 13:03:54,737: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000055
+2018-04-03 13:03:54,737: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777914.592076,cu_start,unit_script,MainThread,unit.000055,AGENT_EXECUTING,
+2018-04-03 13:03:54,737: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777914.599776,cu_cd_done,unit_script,MainThread,unit.000055,AGENT_EXECUTING,
+2018-04-03 13:03:54,737: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777914.601746,cu_exec_start,unit_script,MainThread,unit.000055,AGENT_EXECUTING,
+2018-04-03 13:03:54,738: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778634.689005,cu_exec_stop,unit_script,MainThread,unit.000055,AGENT_EXECUTING,
+2018-04-03 13:03:54,738: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778634.690693,cu_stop,unit_script,MainThread,unit.000055,AGENT_EXECUTING,
+2018-04-03 13:03:54,738: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 13:03:54,738: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 13:03:54,738: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000055 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 13:03:54,817: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000076)
+2018-04-03 13:03:54,817: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 13:03:54,832: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000076
+2018-04-03 13:03:54,853: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777914.777383,cu_start,unit_script,MainThread,unit.000076,AGENT_EXECUTING,
+2018-04-03 13:03:54,853: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777914.781278,cu_cd_done,unit_script,MainThread,unit.000076,AGENT_EXECUTING,
+2018-04-03 13:03:54,853: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777914.782595,cu_exec_start,unit_script,MainThread,unit.000076,AGENT_EXECUTING,
+2018-04-03 13:03:54,853: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778634.796542,cu_exec_stop,unit_script,MainThread,unit.000076,AGENT_EXECUTING,
+2018-04-03 13:03:54,853: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778634.798134,cu_stop,unit_script,MainThread,unit.000076,AGENT_EXECUTING,
+2018-04-03 13:03:54,853: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 13:03:54,854: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 13:03:54,854: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000076 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 13:03:54,919: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000072)
+2018-04-03 13:03:54,919: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 13:03:54,921: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000072
+2018-04-03 13:03:54,939: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777914.771970,cu_start,unit_script,MainThread,unit.000072,AGENT_EXECUTING,
+2018-04-03 13:03:54,940: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777914.775583,cu_cd_done,unit_script,MainThread,unit.000072,AGENT_EXECUTING,
+2018-04-03 13:03:54,940: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777914.777180,cu_exec_start,unit_script,MainThread,unit.000072,AGENT_EXECUTING,
+2018-04-03 13:03:54,940: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778634.832923,cu_exec_stop,unit_script,MainThread,unit.000072,AGENT_EXECUTING,
+2018-04-03 13:03:54,940: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778634.834340,cu_stop,unit_script,MainThread,unit.000072,AGENT_EXECUTING,
+2018-04-03 13:03:54,940: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 13:03:54,940: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 13:03:54,940: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000072 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 13:03:54,941: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000074)
+2018-04-03 13:03:54,941: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 13:03:54,943: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000074
+2018-04-03 13:03:54,954: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777914.810611,cu_start,unit_script,MainThread,unit.000074,AGENT_EXECUTING,
+2018-04-03 13:03:54,954: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777914.815990,cu_cd_done,unit_script,MainThread,unit.000074,AGENT_EXECUTING,
+2018-04-03 13:03:54,954: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777914.817643,cu_exec_start,unit_script,MainThread,unit.000074,AGENT_EXECUTING,
+2018-04-03 13:03:54,954: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778634.874990,cu_exec_stop,unit_script,MainThread,unit.000074,AGENT_EXECUTING,
+2018-04-03 13:03:54,954: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778634.876403,cu_stop,unit_script,MainThread,unit.000074,AGENT_EXECUTING,
+2018-04-03 13:03:54,954: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 13:03:54,955: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 13:03:54,955: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000074 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 13:03:54,955: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000077)
+2018-04-03 13:03:54,955: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 13:03:54,957: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000077
+2018-04-03 13:03:54,973: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777914.816910,cu_start,unit_script,MainThread,unit.000077,AGENT_EXECUTING,
+2018-04-03 13:03:54,973: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777914.819273,cu_cd_done,unit_script,MainThread,unit.000077,AGENT_EXECUTING,
+2018-04-03 13:03:54,974: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777914.820789,cu_exec_start,unit_script,MainThread,unit.000077,AGENT_EXECUTING,
+2018-04-03 13:03:54,974: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778634.885611,cu_exec_stop,unit_script,MainThread,unit.000077,AGENT_EXECUTING,
+2018-04-03 13:03:54,974: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778634.887271,cu_stop,unit_script,MainThread,unit.000077,AGENT_EXECUTING,
+2018-04-03 13:03:54,974: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 13:03:54,974: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 13:03:54,974: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000077 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 13:03:54,975: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000079)
+2018-04-03 13:03:54,975: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 13:03:54,978: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000079
+2018-04-03 13:03:55,016: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777914.868100,cu_start,unit_script,MainThread,unit.000079,AGENT_EXECUTING,
+2018-04-03 13:03:55,016: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777914.870856,cu_cd_done,unit_script,MainThread,unit.000079,AGENT_EXECUTING,
+2018-04-03 13:03:55,016: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777914.880103,cu_exec_start,unit_script,MainThread,unit.000079,AGENT_EXECUTING,
+2018-04-03 13:03:55,016: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778634.891955,cu_exec_stop,unit_script,MainThread,unit.000079,AGENT_EXECUTING,
+2018-04-03 13:03:55,016: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778634.893433,cu_stop,unit_script,MainThread,unit.000079,AGENT_EXECUTING,
+2018-04-03 13:03:55,017: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 13:03:55,017: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 13:03:55,017: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000079 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 13:03:55,018: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000073)
+2018-04-03 13:03:55,018: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 13:03:55,020: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000073
+2018-04-03 13:03:55,039: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777914.772577,cu_start,unit_script,MainThread,unit.000073,AGENT_EXECUTING,
+2018-04-03 13:03:55,039: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777914.774955,cu_cd_done,unit_script,MainThread,unit.000073,AGENT_EXECUTING,
+2018-04-03 13:03:55,040: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777914.778257,cu_exec_start,unit_script,MainThread,unit.000073,AGENT_EXECUTING,
+2018-04-03 13:03:55,040: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778634.830548,cu_exec_stop,unit_script,MainThread,unit.000073,AGENT_EXECUTING,
+2018-04-03 13:03:55,040: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778634.832181,cu_stop,unit_script,MainThread,unit.000073,AGENT_EXECUTING,
+2018-04-03 13:03:55,040: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 13:03:55,040: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 13:03:55,040: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000073 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 13:03:55,041: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000078)
+2018-04-03 13:03:55,041: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 13:03:55,043: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000078
+2018-04-03 13:03:55,063: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777914.833680,cu_start,unit_script,MainThread,unit.000078,AGENT_EXECUTING,
+2018-04-03 13:03:55,063: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777914.835847,cu_cd_done,unit_script,MainThread,unit.000078,AGENT_EXECUTING,
+2018-04-03 13:03:55,063: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777914.837113,cu_exec_start,unit_script,MainThread,unit.000078,AGENT_EXECUTING,
+2018-04-03 13:03:55,063: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778634.896447,cu_exec_stop,unit_script,MainThread,unit.000078,AGENT_EXECUTING,
+2018-04-03 13:03:55,063: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778634.897973,cu_stop,unit_script,MainThread,unit.000078,AGENT_EXECUTING,
+2018-04-03 13:03:55,063: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 13:03:55,064: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 13:03:55,064: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000078 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 13:03:55,065: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : got unit (unit.000075)
+2018-04-03 13:03:55,065: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 13:03:55,067: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === found profile for unit.000075
+2018-04-03 13:03:55,084: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777914.816379,cu_start,unit_script,MainThread,unit.000075,AGENT_EXECUTING,
+2018-04-03 13:03:55,084: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777914.832737,cu_cd_done,unit_script,MainThread,unit.000075,AGENT_EXECUTING,
+2018-04-03 13:03:55,084: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522777914.834288,cu_exec_start,unit_script,MainThread,unit.000075,AGENT_EXECUTING,
+2018-04-03 13:03:55,084: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778634.874369,cu_exec_stop,unit_script,MainThread,unit.000075,AGENT_EXECUTING,
+2018-04-03 13:03:55,084: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 1522778634.875902,cu_stop,unit_script,MainThread,unit.000075,AGENT_EXECUTING,
+2018-04-03 13:03:55,084: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   :  === line: 
+2018-04-03 13:03:55,085: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 13:03:55,085: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : drop  unit.000075 [UMGR_STAGING_OUTPUT_PENDING]
+2018-04-03 13:04:46,807: agent_0.staging.output.0.child: agent_0.staging.output.0        : agent_0.staging.output.0.child.subscriber._cancel_monitor_cb: INFO    : got termination command
+2018-04-03 13:04:46,840: agent_0.staging.output.0.child: agent_0.staging.output.0        : agent_0.staging.output.0.child.watch: INFO    : recv message: STOP
+2018-04-03 13:04:46,840: agent_0.staging.output.0.child: agent_0.staging.output.0        : agent_0.staging.output.0.child.watch: INFO    : message received: STOP
+2018-04-03 13:04:46,840: agent_0.staging.output.0.child: agent_0.staging.output.0        : agent_0.staging.output.0.child.watch: INFO    : STOP received: STOP
+2018-04-03 13:04:46,840: agent_0.staging.output.0.child: agent_0.staging.output.0        : agent_0.staging.output.0.child.watch: INFO    : watcher closes
+2018-04-03 13:04:46,840: agent_0.staging.output.0.child: agent_0.staging.output.0        : agent_0.staging.output.0.child.watch: INFO    : put message: [agent_0.staging.output.0.child.watch.thread] work finished
+2018-04-03 13:04:46,841: agent_0.staging.output.0.child: agent_0.staging.output.0        : agent_0.staging.output.0.child.watch: DEBUG   : ru_finalize_child (NOOP)
+2018-04-03 13:04:46,841: agent_0.staging.output.0.child: agent_0.staging.output.0        : agent_0.staging.output.0.child.watch: DEBUG   : ru_finalize_common (NOOP)
+2018-04-03 13:04:46,841: agent_0.staging.output.0.child: agent_0.staging.output.0        : agent_0.staging.output.0.child.watch: INFO    : put message: [agent_0.staging.output.0.child.watch.thread] terminating
+2018-04-03 13:04:47,017: agent_0.staging.output.0.child: agent_0.staging.output.0        : agent_0.staging.output.0.child.subscriber._cancel_monitor_cb: INFO    : stop agent_0.staging.output.0.child (14996 : 14996 : agent_0.staging.output.0.child.subscriber._cancel_monitor_cb) [radical.pilot.utils.component.Default._cancel_monitor_cb]
+2018-04-03 13:04:47,025: agent_0.staging.output.0.child: agent_0.staging.output.0        : agent_0.staging.output.0.child.subscriber._cancel_monitor_cb: INFO    : parent stops child  14996 -> 14996 [agent_0.staging.output.0.child]
+2018-04-03 13:04:47,026: agent_0.staging.output.0.child: agent_0.staging.output.0        : agent_0.staging.output.0.child.subscriber._cancel_monitor_cb: INFO    : send message: [agent_0.staging.output.0.child] STOP
+2018-04-03 13:04:47,026: agent_0.staging.output.0.child: agent_0.staging.output.0        : agent_0.staging.output.0.child.subscriber._cancel_monitor_cb: WARNING : send failed ([Errno 9] Bad file descriptor) - terminate
+2018-04-03 13:04:47,026: agent_0.staging.output.0.child: agent_0.staging.output.0        : agent_0.staging.output.0.child.subscriber._cancel_monitor_cb: DEBUG   : ru_finalize_common()
+2018-04-03 13:04:47,026: agent_0.staging.output.0.child: agent_0.staging.output.0        : agent_0.staging.output.0.child.subscriber._cancel_monitor_cb: DEBUG   : TERM : agent_0.staging.output.0.child unregister publisher log_pubsub
+2018-04-03 13:04:47,026: agent_0.staging.output.0.child: agent_0.staging.output.0        : agent_0.staging.output.0.child.subscriber._cancel_monitor_cb: DEBUG   : unregistered publisher log_pubsub
+2018-04-03 13:04:47,026: agent_0.staging.output.0.child: agent_0.staging.output.0        : agent_0.staging.output.0.child.subscriber._cancel_monitor_cb: DEBUG   : TERM : agent_0.staging.output.0.child unregister publisher state_pubsub
+2018-04-03 13:04:47,027: agent_0.staging.output.0.child: agent_0.staging.output.0        : agent_0.staging.output.0.child.subscriber._cancel_monitor_cb: DEBUG   : unregistered publisher state_pubsub
+2018-04-03 13:04:47,027: agent_0.staging.output.0.child: agent_0.staging.output.0        : agent_0.staging.output.0.child.subscriber._cancel_monitor_cb: DEBUG   : TERM : agent_0.staging.output.0.child unregister publisher control_pubsub
+2018-04-03 13:04:47,027: agent_0.staging.output.0.child: agent_0.staging.output.0        : agent_0.staging.output.0.child.subscriber._cancel_monitor_cb: DEBUG   : unregistered publisher control_pubsub
+2018-04-03 13:04:47,028: agent_0.staging.output.0.child: agent_0.staging.output.0        : agent_0.staging.output.0.child.subscriber._cancel_monitor_cb: DEBUG   : agent_0.staging.output.0.child close prof
+2018-04-03 13:04:47,036: agent_0.staging.output.0.child: agent_0.staging.output.0        : agent_0.staging.output.0.child.subscriber._cancel_monitor_cb: INFO    : signal stop for agent_0.staging.output.0.child.subscriber._cancel_monitor_cb - do not join
+2018-04-03 13:04:47,036: agent_0.staging.output.0.child: agent_0.staging.output.0        : agent_0.staging.output.0.child.subscriber._cancel_monitor_cb: INFO    : child calls stop()
+2018-04-03 13:04:47,036: agent_0.staging.output.0.child: agent_0.staging.output.0        : agent_0.staging.output.0.child.subscriber._cancel_monitor_cb: DEBUG   : ru_finalize_child (NOOP)
+2018-04-03 13:04:47,036: agent_0.staging.output.0.child: agent_0.staging.output.0        : agent_0.staging.output.0.child.subscriber._cancel_monitor_cb: INFO    : put message: [agent_0.staging.output.0.child.subscriber._cancel_monitor_cb.thread] terminating
+2018-04-03 13:04:47,137: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : ru_finalize_common()
+2018-04-03 13:04:47,137: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : WARNING : publisher log_pubsub is not registered
+2018-04-03 13:04:47,137: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : WARNING : publisher state_pubsub is not registered
+2018-04-03 13:04:47,137: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : WARNING : publisher control_pubsub is not registered
+2018-04-03 13:04:47,137: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : agent_0.staging.output.0.child close prof
+2018-04-03 13:04:47,137: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : INFO    : send message: [agent_0.staging.output.0.child] terminating
+2018-04-03 13:04:47,137: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : WARNING : send failed ([Errno 9] Bad file descriptor) - terminate
+2018-04-03 13:04:47,138: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : INFO    : parent stops child
+2018-04-03 13:04:47,138: agent_0.staging.output.0.child: agent_0.staging.output.0        : MainThread     : DEBUG   : ru_finalize_parent (NOOP)
