@@ -1,0 +1,917 @@
+2018-03-28 23:05:21,892: umgr.0000           : MainProcess                     : MainThread     : INFO    : python.interpreter   version: 2.7.14 (default, Sep 23 2017, 22:06:14) [GCC 7.2.0]
+2018-03-28 23:05:21,893: umgr.0000           : MainProcess                     : MainThread     : INFO    :                      pid: 20514
+2018-03-28 23:05:21,893: umgr.0000           : MainProcess                     : MainThread     : INFO    :                      tid: MainThread
+2018-03-28 23:05:21,893: umgr.0000           : MainProcess                     : MainThread     : INFO    : radical.pilot        version: 0.47-0.47-14-gb1dff8bd@devel
+2018-03-28 23:05:21,899: umgr.0000           : MainProcess                     : MainThread     : DEBUG   : alive check in term
+2018-03-28 23:05:21,899: umgr.0000           : MainProcess                     : MainThread     : DEBUG   : start process
+2018-03-28 23:05:21,899: umgr.0000           : MainProcess                     : MainThread     : INFO    : initialize umgr.0000
+2018-03-28 23:05:21,900: umgr.0000           : MainProcess                     : MainThread     : INFO    : cfg: {u'bridges': {u'umgr_reschedule_pubsub': {u'bulk_size': 0,
+                                          u'log_level': u'debug',
+                                          u'stall_hwm': 1},
+              u'umgr_scheduling_queue': {u'bulk_size': 0,
+                                         u'log_level': u'debug',
+                                         u'stall_hwm': 1},
+              u'umgr_staging_input_queue': {u'bulk_size': 0,
+                                            u'log_level': u'debug',
+                                            u'stall_hwm': 1},
+              u'umgr_staging_output_queue': {u'bulk_size': 0,
+                                             u'log_level': u'debug',
+                                             u'stall_hwm': 1},
+              u'umgr_unschedule_pubsub': {u'bulk_size': 0,
+                                          u'log_level': u'debug',
+                                          u'stall_hwm': 1}},
+ u'bulk_collection_size': 100,
+ u'bulk_collection_time': 1.0,
+ u'components': {u'UMGRSchedulingComponent': {u'count': 1},
+                 u'UMGRStagingInputComponent': {u'count': 1},
+                 u'UMGRStagingOutputComponent': {u'count': 1}},
+ u'db_poll_sleeptime': 1.0,
+ 'owner': 'umgr.0000',
+ u'scheduler': u'round_robin'}
+2018-03-28 23:05:21,901: umgr.0000           : MainProcess                     : MainThread     : DEBUG   : start bridges   : {u'umgr_reschedule_pubsub': {u'bulk_size': 0,
+                             u'log_level': u'debug',
+                             u'stall_hwm': 1},
+ u'umgr_scheduling_queue': {u'bulk_size': 0,
+                            u'log_level': u'debug',
+                            u'stall_hwm': 1},
+ u'umgr_staging_input_queue': {u'bulk_size': 0,
+                               u'log_level': u'debug',
+                               u'stall_hwm': 1},
+ u'umgr_staging_output_queue': {u'bulk_size': 0,
+                                u'log_level': u'debug',
+                                u'stall_hwm': 1},
+ u'umgr_unschedule_pubsub': {u'bulk_size': 0,
+                             u'log_level': u'debug',
+                             u'stall_hwm': 1}}
+2018-03-28 23:05:21,902: umgr.0000           : MainProcess                     : MainThread     : INFO    : create bridge umgr_reschedule_pubsub
+2018-03-28 23:05:21,916: umgr.0000           : MainProcess                     : MainThread     : INFO    : created bridge umgr_reschedule_pubsub (umgr.reschedule.pubsub.bridge.0000)
+2018-03-28 23:05:21,916: umgr.0000           : MainProcess                     : MainThread     : INFO    : create bridge umgr_staging_input_queue
+2018-03-28 23:05:21,930: umgr.0000           : MainProcess                     : MainThread     : INFO    : created bridge umgr_staging_input_queue (umgr.staging.input.queue.bridge.0000)
+2018-03-28 23:05:21,930: umgr.0000           : MainProcess                     : MainThread     : INFO    : create bridge umgr_staging_output_queue
+2018-03-28 23:05:21,945: umgr.0000           : MainProcess                     : MainThread     : INFO    : created bridge umgr_staging_output_queue (umgr.staging.output.queue.bridge.0000)
+2018-03-28 23:05:21,945: umgr.0000           : MainProcess                     : MainThread     : INFO    : create bridge umgr_unschedule_pubsub
+2018-03-28 23:05:21,961: umgr.0000           : MainProcess                     : MainThread     : INFO    : created bridge umgr_unschedule_pubsub (umgr.unschedule.pubsub.bridge.0000)
+2018-03-28 23:05:21,961: umgr.0000           : MainProcess                     : MainThread     : INFO    : create bridge umgr_scheduling_queue
+2018-03-28 23:05:21,978: umgr.0000           : MainProcess                     : MainThread     : INFO    : created bridge umgr_scheduling_queue (umgr.scheduling.queue.bridge.0000)
+2018-03-28 23:05:21,979: umgr.0000           : MainProcess                     : MainThread     : DEBUG   : start components: {u'UMGRSchedulingComponent': {u'count': 1},
+ u'UMGRStagingInputComponent': {u'count': 1},
+ u'UMGRStagingOutputComponent': {u'count': 1}}
+2018-03-28 23:05:21,979: umgr.0000           : MainProcess                     : MainThread     : DEBUG   : start 1 component(s) UMGRStagingInputComponent
+2018-03-28 23:05:22,078: umgr.0000           : MainProcess                     : MainThread     : INFO    : umgr.0000                      starts umgr.0000.staging.input.0
+2018-03-28 23:05:22,078: umgr.0000           : MainProcess                     : MainThread     : DEBUG   : start 1 component(s) UMGRStagingOutputComponent
+2018-03-28 23:05:22,174: umgr.0000           : MainProcess                     : MainThread     : INFO    : umgr.0000                      starts umgr.0000.staging.output.0
+2018-03-28 23:05:22,174: umgr.0000           : MainProcess                     : MainThread     : DEBUG   : start 1 component(s) UMGRSchedulingComponent
+2018-03-28 23:05:22,244: umgr.0000           : MainProcess                     : MainThread     : INFO    : umgr.0000                      starts umgr.0000.scheduling.0
+2018-03-28 23:05:22,244: umgr.0000           : MainProcess                     : MainThread     : DEBUG   : alive check in term
+2018-03-28 23:05:22,244: umgr.0000           : MainProcess                     : MainThread     : DEBUG   : START: umgr.0000 register publisher log_pubsub
+2018-03-28 23:05:22,244: umgr.0000           : MainProcess                     : MainThread     : DEBUG   : using addr tcp://144.76.72.175:45999 for pubsub log_pubsub
+2018-03-28 23:05:22,246: umgr.0000           : MainProcess                     : MainThread     : DEBUG   : registered publisher : log_pubsub : log.pubsub.pub.0006
+2018-03-28 23:05:22,246: umgr.0000           : MainProcess                     : MainThread     : DEBUG   : alive check in term
+2018-03-28 23:05:22,247: umgr.0000           : MainProcess                     : MainThread     : DEBUG   : START: umgr.0000 register publisher state_pubsub
+2018-03-28 23:05:22,247: umgr.0000           : MainProcess                     : MainThread     : DEBUG   : using addr tcp://144.76.72.175:37941 for pubsub state_pubsub
+2018-03-28 23:05:22,248: umgr.0000           : MainProcess                     : MainThread     : DEBUG   : registered publisher : state_pubsub : state.pubsub.pub.0006
+2018-03-28 23:05:22,248: umgr.0000           : MainProcess                     : MainThread     : DEBUG   : alive check in term
+2018-03-28 23:05:22,248: umgr.0000           : MainProcess                     : MainThread     : DEBUG   : START: umgr.0000 register publisher control_pubsub
+2018-03-28 23:05:22,248: umgr.0000           : MainProcess                     : MainThread     : DEBUG   : using addr tcp://144.76.72.175:44101 for pubsub control_pubsub
+2018-03-28 23:05:22,249: umgr.0000           : MainProcess                     : MainThread     : DEBUG   : registered publisher : control_pubsub : control.pubsub.pub.0006
+2018-03-28 23:05:22,249: umgr.0000           : MainProcess                     : MainThread     : DEBUG   : process class started (no child)
+2018-03-28 23:05:22,249: umgr.0000           : MainProcess                     : MainThread     : INFO    : started umgr umgr.0000
+2018-03-28 23:05:22,249: umgr.0000           : MainProcess                     : MainThread     : DEBUG   : START: umgr.0000 register output UMGR_SCHEDULING_PENDING
+2018-03-28 23:05:22,249: umgr.0000           : MainProcess                     : MainThread     : DEBUG   : using addr tcp://144.76.72.175:33589 for output umgr_scheduling_queue
+2018-03-28 23:05:22,250: umgr.0000           : MainProcess                     : MainThread     : DEBUG   : registered output    : UMGR_SCHEDULING_PENDING : umgr_scheduling_queue : umgr.scheduling.queue.input.0000
+2018-03-28 23:05:22,250: umgr.0000           : MainProcess                     : MainThread     : DEBUG   : START: umgr.0000 register output UMGR_STAGING_OUTPUT_PENDING
+2018-03-28 23:05:22,250: umgr.0000           : MainProcess                     : MainThread     : DEBUG   : using addr tcp://144.76.72.175:35993 for output umgr_staging_output_queue
+2018-03-28 23:05:22,251: umgr.0000           : MainProcess                     : MainThread     : DEBUG   : registered output    : UMGR_STAGING_OUTPUT_PENDING : umgr_staging_output_queue : umgr.staging.output.queue.input.0000
+2018-03-28 23:05:22,251: umgr.0000           : MainProcess                     : MainThread     : DEBUG   : START: umgr.0000 register idler umgr.0000.idler._state_pull_cb
+2018-03-28 23:05:22,252: umgr.0000           : MainProcess                     : MainThread     : DEBUG   : parent name: umgr.0000.idler._state_pull_cb
+2018-03-28 23:05:22,252: umgr.0000           : MainProcess                     : MainThread     : DEBUG   : start thread
+2018-03-28 23:05:22,252: umgr.0000           : MainProcess                     : umgr.0000.idler._state_pull_cb: DEBUG   : child name: umgr.0000.idler._state_pull_cb.thread
+2018-03-28 23:05:22,252: umgr.0000           : MainProcess                     : umgr.0000.idler._state_pull_cb: INFO    : child (me) initializing
+2018-03-28 23:05:22,252: umgr.0000           : MainProcess                     : umgr.0000.idler._state_pull_cb: DEBUG   : ru_initialize_common (NOOP)
+2018-03-28 23:05:22,252: umgr.0000           : MainProcess                     : umgr.0000.idler._state_pull_cb: DEBUG   : ru_initialize_child (NOOP)
+2018-03-28 23:05:22,252: umgr.0000           : MainProcess                     : umgr.0000.idler._state_pull_cb: INFO    : send alive
+2018-03-28 23:05:22,252: umgr.0000           : MainProcess                     : umgr.0000.idler._state_pull_cb: INFO    : put message: [umgr.0000.idler._state_pull_cb.thread] alive
+2018-03-28 23:05:22,253: umgr.0000           : MainProcess                     : MainThread     : INFO    : get msg: alive
+2018-03-28 23:05:22,253: umgr.0000           : MainProcess                     : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2018-03-28 23:05:22,253: umgr.0000           : MainProcess                     : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2018-03-28 23:05:22,253: umgr.0000           : MainProcess                     : MainThread     : DEBUG   : child thread umgr.0000.idler._state_pull_cb started
+2018-03-28 23:05:22,253: umgr.0000           : MainProcess                     : MainThread     : DEBUG   : umgr.0000 registered idler umgr.0000.idler._state_pull_cb
+2018-03-28 23:05:22,254: umgr.0000           : MainProcess                     : MainThread     : DEBUG   : START: umgr.0000 register idler umgr.0000.idler._unit_pull_cb
+2018-03-28 23:05:22,362: umgr.0000           : MainProcess                     : MainThread     : DEBUG   : parent name: umgr.0000.idler._unit_pull_cb
+2018-03-28 23:05:22,362: umgr.0000           : MainProcess                     : MainThread     : DEBUG   : start thread
+2018-03-28 23:05:22,362: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: DEBUG   : child name: umgr.0000.idler._unit_pull_cb.thread
+2018-03-28 23:05:22,362: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : child (me) initializing
+2018-03-28 23:05:22,363: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: DEBUG   : ru_initialize_common (NOOP)
+2018-03-28 23:05:22,363: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: DEBUG   : ru_initialize_child (NOOP)
+2018-03-28 23:05:22,363: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : send alive
+2018-03-28 23:05:22,363: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : put message: [umgr.0000.idler._unit_pull_cb.thread] alive
+2018-03-28 23:05:22,363: umgr.0000           : MainProcess                     : MainThread     : INFO    : get msg: alive
+2018-03-28 23:05:22,364: umgr.0000           : MainProcess                     : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2018-03-28 23:05:22,364: umgr.0000           : MainProcess                     : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2018-03-28 23:05:22,364: umgr.0000           : MainProcess                     : MainThread     : DEBUG   : child thread umgr.0000.idler._unit_pull_cb started
+2018-03-28 23:05:22,364: umgr.0000           : MainProcess                     : MainThread     : DEBUG   : umgr.0000 registered idler umgr.0000.idler._unit_pull_cb
+2018-03-28 23:05:22,365: umgr.0000           : MainProcess                     : MainThread     : DEBUG   : START: umgr.0000 register subscriber umgr.0000.subscriber._state_sub_cb
+2018-03-28 23:05:22,365: umgr.0000           : MainProcess                     : MainThread     : DEBUG   : using addr tcp://144.76.72.175:35823 for pubsub state_pubsub
+2018-03-28 23:05:22,368: umgr.0000           : MainProcess                     : MainThread     : DEBUG   : parent name: umgr.0000.subscriber._state_sub_cb
+2018-03-28 23:05:22,368: umgr.0000           : MainProcess                     : MainThread     : DEBUG   : start thread
+2018-03-28 23:05:22,368: umgr.0000           : MainProcess                     : umgr.0000.subscriber._state_sub_cb: DEBUG   : child name: umgr.0000.subscriber._state_sub_cb.thread
+2018-03-28 23:05:22,368: umgr.0000           : MainProcess                     : umgr.0000.subscriber._state_sub_cb: INFO    : child (me) initializing
+2018-03-28 23:05:22,369: umgr.0000           : MainProcess                     : umgr.0000.subscriber._state_sub_cb: DEBUG   : ru_initialize_common (NOOP)
+2018-03-28 23:05:22,369: umgr.0000           : MainProcess                     : umgr.0000.subscriber._state_sub_cb: DEBUG   : ru_initialize_child (NOOP)
+2018-03-28 23:05:22,369: umgr.0000           : MainProcess                     : umgr.0000.subscriber._state_sub_cb: INFO    : send alive
+2018-03-28 23:05:22,369: umgr.0000           : MainProcess                     : umgr.0000.subscriber._state_sub_cb: INFO    : put message: [umgr.0000.subscriber._state_sub_cb.thread] alive
+2018-03-28 23:05:22,370: umgr.0000           : MainProcess                     : MainThread     : INFO    : get msg: alive
+2018-03-28 23:05:22,370: umgr.0000           : MainProcess                     : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2018-03-28 23:05:22,370: umgr.0000           : MainProcess                     : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2018-03-28 23:05:22,370: umgr.0000           : MainProcess                     : MainThread     : DEBUG   : child thread umgr.0000.subscriber._state_sub_cb started
+2018-03-28 23:05:22,469: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:05:22,469: umgr.0000           : MainProcess                     : MainThread     : DEBUG   : umgr.0000 registered state_pubsub subscriber umgr.0000.subscriber._state_sub_cb
+2018-03-28 23:05:22,587: umgr.0000           : MainProcess                     : MainThread     : DEBUG   : advance bulk size: 1 [False, False]
+2018-03-28 23:05:22,692: umgr.0000           : MainProcess                     : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-28 23:05:22,693: umgr.0000           : MainProcess                     : MainThread     : DEBUG   : put bulk UMGR_SCHEDULING_PENDING: 1
+2018-03-28 23:05:22,694: umgr.0000           : MainProcess                     : umgr.0000.subscriber._state_sub_cb: DEBUG   : umgr state cb for unit: unit.000000
+2018-03-28 23:05:22,695: umgr.0000           : MainProcess                     : umgr.0000.subscriber._state_sub_cb: DEBUG   : unit.000000 calls state cb <bound method ComputeUnit._default_state_cb of {'resource_sandbox': None, 'uid': 'unit.000000', 'stdout': None, 'name': None, 'client_sandbox': None, 'umgr': 'umgr.0000', 'description': {'kernel': None, 'executable': 'stress-ng --cpu 1  --timeout 720s', 'name': None, 'restartable': False, 'stdout': None, 'output_staging': [], 'pre_exec': None, 'mpi': False, 'environment': None, 'cleanup': False, 'arguments': None, 'stderr': None, 'cores': 1, 'post_exec': None, 'input_staging': [], 'pilot': None}, 'exit_code': None, 'state': 'UMGR_SCHEDULING_PENDING', 'stderr': None, 'pilot': None, 'type': 'unit', 'unit_sandbox': None, 'pilot_sandbox': None}>
+2018-03-28 23:05:22,695: umgr.0000           : MainProcess                     : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000000 state: UMGR_SCHEDULING_PENDING.
+2018-03-28 23:05:22,697: umgr.0000           : MainProcess                     : umgr.0000.subscriber._state_sub_cb: DEBUG   : umgr state cb for unit: unit.000000
+2018-03-28 23:05:22,698: umgr.0000           : MainProcess                     : umgr.0000.subscriber._state_sub_cb: DEBUG   : unit.000000 calls state cb <bound method ComputeUnit._default_state_cb of {'resource_sandbox': None, 'uid': 'unit.000000', 'stdout': None, 'name': None, 'client_sandbox': None, 'umgr': 'umgr.0000', 'description': {'kernel': None, 'executable': 'stress-ng --cpu 1  --timeout 720s', 'name': None, 'restartable': False, 'stdout': None, 'output_staging': [], 'pre_exec': None, 'mpi': False, 'environment': None, 'cleanup': False, 'arguments': None, 'stderr': None, 'cores': 1, 'post_exec': None, 'input_staging': [], 'pilot': None}, 'exit_code': None, 'state': 'UMGR_SCHEDULING', 'stderr': None, 'pilot': None, 'type': 'unit', 'unit_sandbox': None, 'pilot_sandbox': None}>
+2018-03-28 23:05:22,698: umgr.0000           : MainProcess                     : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000000 state: UMGR_SCHEDULING.
+2018-03-28 23:05:22,699: umgr.0000           : MainProcess                     : umgr.0000.subscriber._state_sub_cb: DEBUG   : umgr state cb for unit: unit.000000
+2018-03-28 23:05:22,699: umgr.0000           : MainProcess                     : umgr.0000.subscriber._state_sub_cb: DEBUG   : unit.000000 calls state cb <bound method ComputeUnit._default_state_cb of {'resource_sandbox': None, 'uid': 'unit.000000', 'stdout': None, 'name': None, 'client_sandbox': None, 'umgr': 'umgr.0000', 'description': {'kernel': None, 'executable': 'stress-ng --cpu 1  --timeout 720s', 'name': None, 'restartable': False, 'stdout': None, 'output_staging': [], 'pre_exec': None, 'mpi': False, 'environment': None, 'cleanup': False, 'arguments': None, 'stderr': None, 'cores': 1, 'post_exec': None, 'input_staging': [], 'pilot': None}, 'exit_code': None, 'state': 'UMGR_STAGING_INPUT_PENDING', 'stderr': None, 'pilot': None, 'type': 'unit', 'unit_sandbox': None, 'pilot_sandbox': None}>
+2018-03-28 23:05:22,700: umgr.0000           : MainProcess                     : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000000 state: UMGR_STAGING_INPUT_PENDING.
+2018-03-28 23:05:22,702: umgr.0000           : MainProcess                     : umgr.0000.subscriber._state_sub_cb: DEBUG   : umgr state cb for unit: unit.000000
+2018-03-28 23:05:22,702: umgr.0000           : MainProcess                     : umgr.0000.subscriber._state_sub_cb: DEBUG   : unit.000000 calls state cb <bound method ComputeUnit._default_state_cb of {'resource_sandbox': None, 'uid': 'unit.000000', 'stdout': None, 'name': None, 'client_sandbox': None, 'umgr': 'umgr.0000', 'description': {'kernel': None, 'executable': 'stress-ng --cpu 1  --timeout 720s', 'name': None, 'restartable': False, 'stdout': None, 'output_staging': [], 'pre_exec': None, 'mpi': False, 'environment': None, 'cleanup': False, 'arguments': None, 'stderr': None, 'cores': 1, 'post_exec': None, 'input_staging': [], 'pilot': None}, 'exit_code': None, 'state': 'UMGR_STAGING_INPUT', 'stderr': None, 'pilot': None, 'type': 'unit', 'unit_sandbox': None, 'pilot_sandbox': None}>
+2018-03-28 23:05:22,702: umgr.0000           : MainProcess                     : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000000 state: UMGR_STAGING_INPUT.
+2018-03-28 23:05:22,704: umgr.0000           : MainProcess                     : umgr.0000.subscriber._state_sub_cb: DEBUG   : umgr state cb for unit: unit.000000
+2018-03-28 23:05:22,704: umgr.0000           : MainProcess                     : umgr.0000.subscriber._state_sub_cb: DEBUG   : unit.000000 calls state cb <bound method ComputeUnit._default_state_cb of {'resource_sandbox': 'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox', 'uid': 'unit.000000', 'stdout': None, 'name': None, 'client_sandbox': '/home/george/launch-methods-project/orte-example', 'umgr': 'umgr.0000', 'description': {'kernel': None, 'executable': 'stress-ng --cpu 1  --timeout 720s', 'name': None, 'restartable': False, 'stdout': None, 'output_staging': [], 'pre_exec': None, 'mpi': False, 'environment': None, 'cleanup': False, 'arguments': None, 'stderr': None, 'cores': 1, 'post_exec': None, 'input_staging': [], 'pilot': None}, 'exit_code': None, 'state': 'AGENT_STAGING_INPUT_PENDING', 'stderr': None, 'pilot': 'pilot.0000', 'type': 'unit', 'unit_sandbox': 'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017618.0003/pilot.0000//unit.000000/', 'pilot_sandbox': 'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017618.0003/pilot.0000/'}>
+2018-03-28 23:05:22,704: umgr.0000           : MainProcess                     : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000000 state: AGENT_STAGING_INPUT_PENDING.
+2018-03-28 23:05:23,580: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:05:24,686: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:05:25,798: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:05:26,905: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:05:28,015: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:05:29,121: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:05:30,233: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:05:31,339: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:05:32,449: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:05:33,562: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:05:34,679: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:05:35,785: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:05:36,895: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:05:38,002: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:05:39,112: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:05:40,219: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:05:41,329: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:05:42,435: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:05:43,551: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:05:44,657: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:05:45,768: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:05:46,874: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:05:47,984: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:05:49,090: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:05:50,206: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:05:50,206: umgr.0000           : MainProcess                     : umgr.0000.subscriber._state_sub_cb: DEBUG   : umgr state cb ignores pilot.0000/PMGR_ACTIVE_PENDING
+2018-03-28 23:05:51,312: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:05:52,423: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:05:53,529: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:05:54,639: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:05:55,746: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:05:56,857: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:05:57,963: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:05:59,073: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:06:00,180: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:06:01,290: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:06:02,397: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:06:03,508: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:06:04,615: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:06:05,726: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:06:06,834: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:06:07,946: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:06:09,053: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:06:10,163: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:06:11,269: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:06:12,380: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:06:13,486: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:06:14,597: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:06:15,703: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:06:16,813: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:06:17,920: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:06:19,030: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:06:20,138: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:06:21,248: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:06:22,355: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:06:23,465: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:06:24,572: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:06:25,682: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:06:26,789: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:06:27,899: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:06:28,868: umgr.0000           : MainProcess                     : umgr.0000.idler._state_pull_cb: DEBUG   : unit.000000 calls state cb <bound method ComputeUnit._default_state_cb of {'resource_sandbox': u'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox', 'uid': 'unit.000000', 'stdout': None, 'name': None, 'client_sandbox': u'/home/george/launch-methods-project/orte-example', 'umgr': 'umgr.0000', 'description': {'kernel': None, 'executable': 'stress-ng --cpu 1  --timeout 720s', 'name': None, 'restartable': False, 'stdout': None, 'output_staging': [], 'pre_exec': None, 'mpi': False, 'environment': None, 'cleanup': False, 'arguments': None, 'stderr': None, 'cores': 1, 'post_exec': None, 'input_staging': [], 'pilot': None}, 'exit_code': None, 'state': 'AGENT_STAGING_INPUT', 'stderr': None, 'pilot': u'pilot.0000', 'type': 'unit', 'unit_sandbox': u'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017618.0003/pilot.0000//unit.000000/', 'pilot_sandbox': u'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017618.0003/pilot.0000/'}>
+2018-03-28 23:06:28,869: umgr.0000           : MainProcess                     : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000000 state: AGENT_STAGING_INPUT.
+2018-03-28 23:06:28,869: umgr.0000           : MainProcess                     : umgr.0000.idler._state_pull_cb: DEBUG   : unit.000000 calls state cb <bound method ComputeUnit._default_state_cb of {'resource_sandbox': u'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox', 'uid': 'unit.000000', 'stdout': None, 'name': None, 'client_sandbox': u'/home/george/launch-methods-project/orte-example', 'umgr': 'umgr.0000', 'description': {'kernel': None, 'executable': 'stress-ng --cpu 1  --timeout 720s', 'name': None, 'restartable': False, 'stdout': None, 'output_staging': [], 'pre_exec': None, 'mpi': False, 'environment': None, 'cleanup': False, 'arguments': None, 'stderr': None, 'cores': 1, 'post_exec': None, 'input_staging': [], 'pilot': None}, 'exit_code': None, 'state': 'AGENT_SCHEDULING_PENDING', 'stderr': None, 'pilot': u'pilot.0000', 'type': 'unit', 'unit_sandbox': u'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017618.0003/pilot.0000//unit.000000/', 'pilot_sandbox': u'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017618.0003/pilot.0000/'}>
+2018-03-28 23:06:28,869: umgr.0000           : MainProcess                     : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000000 state: AGENT_SCHEDULING_PENDING.
+2018-03-28 23:06:28,869: umgr.0000           : MainProcess                     : umgr.0000.idler._state_pull_cb: DEBUG   : unit.000000 calls state cb <bound method ComputeUnit._default_state_cb of {'resource_sandbox': u'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox', 'uid': 'unit.000000', 'stdout': None, 'name': None, 'client_sandbox': u'/home/george/launch-methods-project/orte-example', 'umgr': 'umgr.0000', 'description': {'kernel': None, 'executable': 'stress-ng --cpu 1  --timeout 720s', 'name': None, 'restartable': False, 'stdout': None, 'output_staging': [], 'pre_exec': None, 'mpi': False, 'environment': None, 'cleanup': False, 'arguments': None, 'stderr': None, 'cores': 1, 'post_exec': None, 'input_staging': [], 'pilot': None}, 'exit_code': None, 'state': 'AGENT_SCHEDULING', 'stderr': None, 'pilot': u'pilot.0000', 'type': 'unit', 'unit_sandbox': u'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017618.0003/pilot.0000//unit.000000/', 'pilot_sandbox': u'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017618.0003/pilot.0000/'}>
+2018-03-28 23:06:28,870: umgr.0000           : MainProcess                     : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000000 state: AGENT_SCHEDULING.
+2018-03-28 23:06:28,870: umgr.0000           : MainProcess                     : umgr.0000.idler._state_pull_cb: DEBUG   : unit.000000 calls state cb <bound method ComputeUnit._default_state_cb of {'resource_sandbox': u'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox', 'uid': 'unit.000000', 'stdout': None, 'name': None, 'client_sandbox': u'/home/george/launch-methods-project/orte-example', 'umgr': 'umgr.0000', 'description': {'kernel': None, 'executable': 'stress-ng --cpu 1  --timeout 720s', 'name': None, 'restartable': False, 'stdout': None, 'output_staging': [], 'pre_exec': None, 'mpi': False, 'environment': None, 'cleanup': False, 'arguments': None, 'stderr': None, 'cores': 1, 'post_exec': None, 'input_staging': [], 'pilot': None}, 'exit_code': None, 'state': 'AGENT_EXECUTING_PENDING', 'stderr': None, 'pilot': u'pilot.0000', 'type': 'unit', 'unit_sandbox': u'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017618.0003/pilot.0000//unit.000000/', 'pilot_sandbox': u'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017618.0003/pilot.0000/'}>
+2018-03-28 23:06:28,870: umgr.0000           : MainProcess                     : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000000 state: AGENT_EXECUTING_PENDING.
+2018-03-28 23:06:28,870: umgr.0000           : MainProcess                     : umgr.0000.idler._state_pull_cb: DEBUG   : unit.000000 calls state cb <bound method ComputeUnit._default_state_cb of {'resource_sandbox': u'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox', 'uid': 'unit.000000', 'stdout': None, 'name': None, 'client_sandbox': u'/home/george/launch-methods-project/orte-example', 'umgr': 'umgr.0000', 'description': {'kernel': None, 'executable': 'stress-ng --cpu 1  --timeout 720s', 'name': None, 'restartable': False, 'stdout': None, 'output_staging': [], 'pre_exec': None, 'mpi': False, 'environment': None, 'cleanup': False, 'arguments': None, 'stderr': None, 'cores': 1, 'post_exec': None, 'input_staging': [], 'pilot': None}, 'exit_code': None, 'state': u'AGENT_EXECUTING', 'stderr': None, 'pilot': u'pilot.0000', 'type': 'unit', 'unit_sandbox': u'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017618.0003/pilot.0000//unit.000000/', 'pilot_sandbox': u'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017618.0003/pilot.0000/'}>
+2018-03-28 23:06:28,870: umgr.0000           : MainProcess                     : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000000 state: AGENT_EXECUTING.
+2018-03-28 23:06:28,870: umgr.0000           : MainProcess                     : umgr.0000.subscriber._state_sub_cb: DEBUG   : umgr state cb ignores pilot.0000/PMGR_ACTIVE
+2018-03-28 23:06:29,008: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:06:30,119: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:06:31,225: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:06:32,336: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:06:33,442: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:06:34,552: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:06:35,658: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:06:36,769: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:06:37,875: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:06:38,985: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:06:40,092: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:06:41,202: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:06:42,309: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:06:43,422: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:06:44,529: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:06:45,639: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:06:46,745: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:06:47,857: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:06:48,963: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:06:50,074: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:06:51,180: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:06:52,290: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:06:53,397: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:06:54,508: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:06:55,614: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:06:56,724: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:06:57,831: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:06:58,942: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:07:00,048: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:07:01,159: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:07:02,265: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:07:03,376: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:07:04,482: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:07:05,593: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:07:06,699: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:07:07,809: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:07:08,916: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:07:10,026: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:07:11,132: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:07:12,243: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:07:13,349: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:07:14,460: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:07:15,566: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:07:16,676: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:07:17,789: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:07:18,899: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:07:20,005: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:07:21,116: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:07:22,222: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:07:23,332: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:07:24,439: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:07:25,549: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:07:26,656: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:07:27,766: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:07:28,873: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:07:29,983: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:07:31,090: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:07:32,200: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:07:33,306: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:07:34,417: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:07:35,526: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:07:36,637: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:07:37,743: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:07:38,854: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:07:39,960: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:07:41,071: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:07:42,177: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:07:43,288: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:07:44,394: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:07:45,505: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:07:46,611: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:07:47,722: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:07:48,828: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:07:49,939: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:07:51,045: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:07:52,156: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:07:53,263: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:07:54,373: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:07:55,480: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:07:56,590: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:07:57,696: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:07:58,808: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:07:59,915: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:08:01,025: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:08:02,132: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:08:03,242: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:08:04,350: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:08:05,461: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:08:06,568: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:08:07,679: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:08:08,785: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:08:09,896: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:08:11,002: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:08:12,113: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:08:13,219: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:08:14,330: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:08:15,436: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:08:16,547: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:08:17,653: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:08:18,763: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:08:19,873: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:08:20,985: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:08:22,091: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:08:23,202: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:08:24,308: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:08:25,419: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:08:26,527: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:08:27,638: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:08:28,747: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:08:29,857: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:08:30,964: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:08:32,076: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:08:33,182: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:08:34,293: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:08:35,399: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:08:36,512: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:08:37,620: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:08:38,730: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:08:39,836: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:08:40,947: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:08:42,062: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:08:43,173: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:08:44,279: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:08:45,390: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:08:46,496: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:08:47,609: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:08:48,716: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:08:49,826: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:08:50,932: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:08:52,043: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:08:53,149: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:08:54,259: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:08:55,366: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:08:56,476: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:08:57,582: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:08:58,693: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:08:59,799: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:09:00,910: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:09:02,016: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:09:03,127: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:09:04,233: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:09:05,344: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:09:06,450: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:09:07,561: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:09:08,668: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:09:09,778: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:09:10,884: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:09:11,995: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:09:13,101: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:09:14,212: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:09:15,318: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:09:16,429: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:09:17,535: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:09:18,646: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:09:19,752: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:09:20,863: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:09:21,969: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:09:23,079: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:09:24,186: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:09:25,297: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:09:26,405: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:09:27,515: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:09:28,622: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:09:29,732: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:09:30,839: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:09:31,950: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:09:33,062: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:09:34,173: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:09:35,279: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:09:36,389: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:09:37,498: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:09:38,608: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:09:39,714: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:09:40,825: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:09:41,931: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:09:43,041: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:09:44,148: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:09:45,258: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:09:46,365: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:09:47,475: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:09:48,582: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:09:49,693: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:09:50,799: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:09:51,910: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:09:53,016: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:09:54,127: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:09:55,234: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:09:56,344: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:09:57,450: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:09:58,561: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:09:59,667: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:10:00,778: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:10:01,884: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:10:02,995: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:10:04,101: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:10:05,212: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:10:06,318: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:10:07,428: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:10:08,535: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:10:09,645: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:10:10,751: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:10:11,862: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:10:12,968: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:10:14,079: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:10:15,185: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:10:16,296: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:10:17,403: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:10:18,514: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:10:19,620: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:10:20,731: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:10:21,839: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:10:22,950: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:10:24,063: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:10:25,174: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:10:26,280: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:10:27,391: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:10:28,498: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:10:29,608: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:10:30,714: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:10:31,825: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:10:32,932: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:10:34,042: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:10:35,148: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:10:36,259: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:10:37,366: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:10:38,476: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:10:39,583: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:10:40,693: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:10:41,799: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:10:42,910: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:10:44,016: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:10:45,126: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:10:46,233: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:10:47,344: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:10:48,451: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:10:49,562: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:10:50,671: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:10:51,782: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:10:52,888: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:10:53,998: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:10:55,107: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:10:56,217: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:10:57,324: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:10:58,437: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:10:59,543: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:11:00,654: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:11:01,760: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:11:02,871: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:11:03,977: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:11:05,088: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:11:06,194: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:11:07,304: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:11:08,411: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:11:09,521: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:11:10,628: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:11:11,738: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:11:12,844: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:11:13,959: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:11:15,065: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:11:16,175: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:11:17,282: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:11:18,392: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:11:19,498: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:11:20,616: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:11:21,723: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:11:22,834: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:11:23,940: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:11:25,051: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:11:26,157: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:11:27,267: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:11:28,374: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:11:29,484: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:11:30,591: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:11:31,701: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:11:32,808: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:11:33,918: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:11:35,025: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:11:36,135: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:11:37,241: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:11:38,352: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:11:39,458: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:11:40,569: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:11:41,675: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:11:42,786: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:11:43,892: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:11:45,008: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:11:46,114: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:11:47,227: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:11:48,337: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:11:49,449: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:11:50,561: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:11:51,671: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:11:52,778: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:11:53,888: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:11:54,994: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:11:56,105: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:11:57,211: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:11:58,322: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:11:59,432: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:12:00,543: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:12:01,649: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:12:02,760: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:12:03,870: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:12:04,980: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:12:06,086: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:12:07,197: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:12:08,304: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:12:09,415: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:12:10,521: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:12:11,632: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:12:12,738: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:12:13,849: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:12:14,955: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:12:16,073: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:12:17,183: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:12:18,293: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:12:19,400: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:12:20,511: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:12:21,617: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:12:22,728: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:12:23,835: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:12:24,945: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:12:26,051: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:12:27,163: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:12:28,270: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:12:29,380: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:12:30,486: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:12:31,597: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:12:32,703: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:12:33,814: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:12:34,920: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:12:36,031: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:12:37,138: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:12:38,248: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:12:39,355: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:12:40,465: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:12:41,571: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:12:42,681: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:12:43,788: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:12:44,898: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:12:46,004: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:12:47,120: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:12:48,226: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:12:49,337: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:12:50,443: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:12:51,554: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:12:52,660: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:12:53,771: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:12:54,877: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:12:55,988: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:12:57,098: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:12:58,208: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:12:59,315: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:13:00,425: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:13:01,531: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:13:02,642: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:13:03,748: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:13:04,859: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:13:05,965: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:13:07,076: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:13:08,182: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:13:09,293: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:13:10,399: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:13:11,510: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:13:12,616: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:13:13,727: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:13:14,833: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:13:15,945: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:13:17,052: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:13:18,163: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:13:19,269: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:13:20,380: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:13:21,486: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:13:22,597: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:13:23,703: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:13:24,814: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:13:25,920: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:13:27,031: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:13:28,137: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:13:29,247: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:13:30,354: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:13:31,464: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:13:32,570: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:13:33,681: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:13:34,789: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:13:35,900: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:13:37,006: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:13:38,117: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:13:39,224: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:13:40,334: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:13:41,441: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:13:42,551: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:13:43,659: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:13:44,770: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:13:45,876: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:13:46,987: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:13:48,093: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:13:49,203: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:13:50,309: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:13:51,420: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:13:52,526: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:13:53,637: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:13:54,743: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:13:55,853: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:13:56,960: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:13:58,070: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:13:59,177: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:14:00,287: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:14:01,393: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:14:02,504: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:14:03,610: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:14:04,721: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:14:05,827: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:14:06,938: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:14:08,044: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:14:09,154: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:14:10,261: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:14:11,372: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:14:12,479: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:14:13,589: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:14:14,697: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:14:15,807: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:14:16,916: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:14:18,026: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:14:19,133: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:14:20,243: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:14:21,349: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:14:22,460: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:14:23,567: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:14:24,677: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:14:25,783: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:14:26,894: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:14:28,000: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:14:29,111: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:14:30,217: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:14:31,327: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:14:32,434: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:14:33,545: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:14:34,652: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:14:35,762: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:14:36,870: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:14:37,980: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:14:39,087: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:14:40,197: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:14:41,303: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:14:42,416: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:14:43,524: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:14:44,635: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:14:45,741: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:14:46,852: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:14:47,958: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:14:49,068: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:14:50,175: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:14:51,285: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:14:52,391: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:14:53,502: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:14:54,608: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:14:55,719: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:14:56,825: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:14:57,936: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:14:59,042: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:15:00,153: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:15:01,259: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:15:02,369: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:15:03,476: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:15:04,587: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:15:05,693: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:15:06,804: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:15:07,910: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:15:09,021: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:15:10,127: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:15:11,238: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:15:12,344: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:15:13,457: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:15:14,563: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:15:15,674: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:15:16,780: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:15:17,891: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:15:18,998: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:15:20,108: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:15:21,214: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:15:22,325: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:15:23,431: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:15:24,541: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:15:25,648: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:15:26,758: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:15:27,864: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:15:28,975: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:15:30,081: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:15:31,193: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:15:32,299: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:15:33,409: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:15:34,516: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:15:35,627: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:15:36,733: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:15:37,843: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:15:38,950: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:15:40,061: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:15:41,168: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:15:42,278: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:15:43,390: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:15:44,501: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:15:45,607: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:15:46,718: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:15:47,824: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:15:48,935: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:15:50,042: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:15:51,153: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:15:52,259: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:15:53,369: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:15:54,476: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:15:55,586: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:15:56,693: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:15:57,803: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:15:58,909: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:16:00,020: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:16:01,127: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:16:02,238: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:16:03,345: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:16:04,456: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:16:05,562: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:16:06,673: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:16:07,779: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:16:08,889: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:16:09,996: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:16:11,106: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:16:12,213: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:16:13,323: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:16:14,430: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:16:15,541: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:16:16,647: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:16:17,758: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:16:18,864: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:16:19,975: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:16:21,081: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:16:22,192: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:16:23,298: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:16:24,408: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:16:25,515: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:16:26,625: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:16:27,732: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:16:28,842: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:16:29,949: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:16:31,059: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:16:32,166: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:16:33,277: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:16:34,385: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:16:35,495: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:16:36,602: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:16:37,712: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:16:38,819: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:16:39,929: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:16:41,036: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:16:42,146: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:16:43,252: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:16:44,364: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:16:45,471: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:16:46,581: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:16:47,688: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:16:48,804: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:16:49,910: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:16:51,021: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:16:52,128: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:16:53,242: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:16:54,348: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:16:55,459: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:16:56,566: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:16:57,676: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:16:58,783: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:16:59,893: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:17:01,000: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:17:02,112: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:17:03,218: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:17:04,329: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:17:05,435: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:17:06,546: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:17:07,652: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:17:08,763: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:17:09,875: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:17:10,985: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:17:12,091: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:17:13,202: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:17:14,308: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:17:15,419: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:17:16,526: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:17:17,636: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:17:18,743: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:17:19,853: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:17:20,960: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:17:22,070: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:17:23,177: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:17:24,291: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:17:25,397: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:17:26,508: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:17:27,614: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:17:28,724: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:17:29,831: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:17:30,942: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:17:32,049: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:17:33,163: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:17:34,272: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:17:35,382: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:17:36,489: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:17:37,599: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:17:38,705: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:17:39,816: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:17:40,922: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:17:42,033: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:17:43,149: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:17:44,259: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:17:45,366: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:17:46,476: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:17:47,583: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:17:48,693: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:17:49,800: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:17:50,910: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:17:52,016: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:17:53,126: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:17:54,233: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:17:55,344: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:17:56,451: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:17:57,565: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:17:58,672: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:17:59,782: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:18:00,888: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:18:01,999: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:18:03,105: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:18:04,216: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:18:05,322: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:18:06,433: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:18:07,539: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:18:08,649: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:18:09,756: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:18:10,867: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:18:11,973: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:18:13,083: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:18:14,190: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:18:15,300: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:18:16,407: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:18:17,518: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:18:18,638: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:18:19,749: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:18:20,855: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:18:21,967: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:18:23,073: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:18:24,184: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:18:25,290: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:18:26,401: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:18:27,507: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:18:28,619: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:18:29,416: umgr.0000           : MainProcess                     : umgr.0000.idler._state_pull_cb: DEBUG   : unit.000000 calls state cb <bound method ComputeUnit._default_state_cb of {'resource_sandbox': u'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox', 'uid': 'unit.000000', 'stdout': None, 'name': None, 'client_sandbox': u'/home/george/launch-methods-project/orte-example', 'umgr': 'umgr.0000', 'description': {'kernel': None, 'executable': 'stress-ng --cpu 1  --timeout 720s', 'name': None, 'restartable': False, 'stdout': None, 'output_staging': [], 'pre_exec': None, 'mpi': False, 'environment': None, 'cleanup': False, 'arguments': None, 'stderr': None, 'cores': 1, 'post_exec': None, 'input_staging': [], 'pilot': None}, 'exit_code': None, 'state': u'AGENT_STAGING_OUTPUT_PENDING', 'stderr': None, 'pilot': u'pilot.0000', 'type': 'unit', 'unit_sandbox': u'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017618.0003/pilot.0000//unit.000000/', 'pilot_sandbox': u'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017618.0003/pilot.0000/'}>
+2018-03-28 23:18:29,416: umgr.0000           : MainProcess                     : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000000 state: AGENT_STAGING_OUTPUT_PENDING.
+2018-03-28 23:18:29,725: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    0
+2018-03-28 23:18:30,527: umgr.0000           : MainProcess                     : umgr.0000.idler._state_pull_cb: DEBUG   : unit.000000 calls state cb <bound method ComputeUnit._default_state_cb of {'resource_sandbox': u'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox', 'uid': 'unit.000000', 'stdout': u'[ORTE] Task: 0 is launched! (Job ID: [6065,1])\n[ORTE] Task: 0 returned: 0 (Job ID: [6065,1])\n', 'name': None, 'client_sandbox': u'/home/george/launch-methods-project/orte-example', 'umgr': 'umgr.0000', 'description': {'kernel': None, 'executable': 'stress-ng --cpu 1  --timeout 720s', 'name': None, 'restartable': False, 'stdout': None, 'output_staging': [], 'pre_exec': None, 'mpi': False, 'environment': None, 'cleanup': False, 'arguments': None, 'stderr': None, 'cores': 1, 'post_exec': None, 'input_staging': [], 'pilot': None}, 'exit_code': 0, 'state': 'AGENT_STAGING_OUTPUT', 'stderr': u'stress-ng: info:  [28173] dispatching hogs: 1 cpu\nstress-ng: info:  [28173] successful run completed in 720.00s (12 mins, 0.00 secs)\n', 'pilot': u'pilot.0000', 'type': 'unit', 'unit_sandbox': u'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017618.0003/pilot.0000//unit.000000/', 'pilot_sandbox': u'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017618.0003/pilot.0000/'}>
+2018-03-28 23:18:30,527: umgr.0000           : MainProcess                     : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000000 state: AGENT_STAGING_OUTPUT.
+2018-03-28 23:18:30,527: umgr.0000           : MainProcess                     : umgr.0000.idler._state_pull_cb: DEBUG   : unit.000000 calls state cb <bound method ComputeUnit._default_state_cb of {'resource_sandbox': u'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox', 'uid': 'unit.000000', 'stdout': u'[ORTE] Task: 0 is launched! (Job ID: [6065,1])\n[ORTE] Task: 0 returned: 0 (Job ID: [6065,1])\n', 'name': None, 'client_sandbox': u'/home/george/launch-methods-project/orte-example', 'umgr': 'umgr.0000', 'description': {'kernel': None, 'executable': 'stress-ng --cpu 1  --timeout 720s', 'name': None, 'restartable': False, 'stdout': None, 'output_staging': [], 'pre_exec': None, 'mpi': False, 'environment': None, 'cleanup': False, 'arguments': None, 'stderr': None, 'cores': 1, 'post_exec': None, 'input_staging': [], 'pilot': None}, 'exit_code': 0, 'state': u'UMGR_STAGING_OUTPUT_PENDING', 'stderr': u'stress-ng: info:  [28173] dispatching hogs: 1 cpu\nstress-ng: info:  [28173] successful run completed in 720.00s (12 mins, 0.00 secs)\n', 'pilot': u'pilot.0000', 'type': 'unit', 'unit_sandbox': u'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017618.0003/pilot.0000//unit.000000/', 'pilot_sandbox': u'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017618.0003/pilot.0000/'}>
+2018-03-28 23:18:30,528: umgr.0000           : MainProcess                     : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000000 state: UMGR_STAGING_OUTPUT_PENDING.
+2018-03-28 23:18:31,049: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    1 [u'unit.000000']
+2018-03-28 23:18:31,050: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: DEBUG   : advance bulk size: 1 [True, True]
+2018-03-28 23:18:31,050: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: DEBUG   : put bulk UMGR_STAGING_OUTPUT_PENDING: 1
+2018-03-28 23:18:31,052: umgr.0000           : MainProcess                     : umgr.0000.subscriber._state_sub_cb: DEBUG   : umgr state cb for unit: unit.000000
+2018-03-28 23:18:31,055: umgr.0000           : MainProcess                     : umgr.0000.subscriber._state_sub_cb: DEBUG   : umgr state cb for unit: unit.000000
+2018-03-28 23:18:31,056: umgr.0000           : MainProcess                     : umgr.0000.subscriber._state_sub_cb: DEBUG   : unit.000000 calls state cb <bound method ComputeUnit._default_state_cb of {'resource_sandbox': u'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox', 'uid': 'unit.000000', 'stdout': u'[ORTE] Task: 0 is launched! (Job ID: [6065,1])\n[ORTE] Task: 0 returned: 0 (Job ID: [6065,1])\n', 'name': None, 'client_sandbox': u'/home/george/launch-methods-project/orte-example', 'umgr': 'umgr.0000', 'description': {'kernel': None, 'executable': 'stress-ng --cpu 1  --timeout 720s', 'name': None, 'restartable': False, 'stdout': None, 'output_staging': [], 'pre_exec': None, 'mpi': False, 'environment': None, 'cleanup': False, 'arguments': None, 'stderr': None, 'cores': 1, 'post_exec': None, 'input_staging': [], 'pilot': None}, 'exit_code': 0, 'state': 'UMGR_STAGING_OUTPUT', 'stderr': u'stress-ng: info:  [28173] dispatching hogs: 1 cpu\nstress-ng: info:  [28173] successful run completed in 720.00s (12 mins, 0.00 secs)\n', 'pilot': u'pilot.0000', 'type': 'unit', 'unit_sandbox': u'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017618.0003/pilot.0000//unit.000000/', 'pilot_sandbox': u'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017618.0003/pilot.0000/'}>
+2018-03-28 23:18:31,056: umgr.0000           : MainProcess                     : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000000 state: UMGR_STAGING_OUTPUT.
+2018-03-28 23:18:31,059: umgr.0000           : MainProcess                     : umgr.0000.subscriber._state_sub_cb: DEBUG   : umgr state cb for unit: unit.000000
+2018-03-28 23:18:31,059: umgr.0000           : MainProcess                     : umgr.0000.subscriber._state_sub_cb: DEBUG   : unit.000000 calls state cb <bound method ComputeUnit._default_state_cb of {'resource_sandbox': 'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox', 'uid': 'unit.000000', 'stdout': '[ORTE] Task: 0 is launched! (Job ID: [6065,1])\n[ORTE] Task: 0 returned: 0 (Job ID: [6065,1])\n', 'name': None, 'client_sandbox': '/home/george/launch-methods-project/orte-example', 'umgr': 'umgr.0000', 'description': {'kernel': None, 'executable': 'stress-ng --cpu 1  --timeout 720s', 'name': None, 'restartable': False, 'stdout': None, 'output_staging': [], 'pre_exec': None, 'mpi': False, 'environment': None, 'cleanup': False, 'arguments': None, 'stderr': None, 'cores': 1, 'post_exec': None, 'input_staging': [], 'pilot': None}, 'exit_code': 0, 'state': 'DONE', 'stderr': 'stress-ng: info:  [28173] dispatching hogs: 1 cpu\nstress-ng: info:  [28173] successful run completed in 720.00s (12 mins, 0.00 secs)\n', 'pilot': 'pilot.0000', 'type': 'unit', 'unit_sandbox': 'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017618.0003/pilot.0000//unit.000000/', 'pilot_sandbox': 'gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017618.0003/pilot.0000/'}>
+2018-03-28 23:18:31,060: umgr.0000           : MainProcess                     : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000000 state: DONE.
+2018-03-28 23:18:31,113: umgr.0000           : MainProcess                     : MainThread     : INFO    : stop umgr.0000 (20514 : None : MainThread) [radical.pilot.unit_manager.UnitManager.close]
+2018-03-28 23:18:31,138: umgr.0000           : MainProcess                     : MainThread     : INFO    : parent stops child  20514 -> None [umgr.0000]
+2018-03-28 23:18:31,529: umgr.0000           : MainProcess                     : umgr.0000.idler._state_pull_cb: INFO    : put message: [umgr.0000.idler._state_pull_cb.thread] work finished
+2018-03-28 23:18:31,530: umgr.0000           : MainProcess                     : umgr.0000.idler._state_pull_cb: DEBUG   : ru_finalize_child (NOOP)
+2018-03-28 23:18:31,530: umgr.0000           : MainProcess                     : umgr.0000.idler._state_pull_cb: DEBUG   : ru_finalize_common (NOOP)
+2018-03-28 23:18:31,530: umgr.0000           : MainProcess                     : umgr.0000.idler._state_pull_cb: INFO    : put message: [umgr.0000.idler._state_pull_cb.thread] terminating
+2018-03-28 23:18:32,054: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : put message: [umgr.0000.idler._unit_pull_cb.thread] work finished
+2018-03-28 23:18:32,054: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: DEBUG   : ru_finalize_child (NOOP)
+2018-03-28 23:18:32,054: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: DEBUG   : ru_finalize_common (NOOP)
+2018-03-28 23:18:32,054: umgr.0000           : MainProcess                     : umgr.0000.idler._unit_pull_cb: INFO    : put message: [umgr.0000.idler._unit_pull_cb.thread] terminating
+2018-03-28 23:18:35,583: umgr.0000           : MainProcess                     : MainThread     : DEBUG   : ru_finalize_common()
+2018-03-28 23:18:35,583: umgr.0000           : MainProcess                     : MainThread     : DEBUG   : TERM : umgr.0000 unregister publisher log_pubsub
+2018-03-28 23:18:35,584: umgr.0000           : MainProcess                     : MainThread     : DEBUG   : unregistered publisher log_pubsub
+2018-03-28 23:18:35,584: umgr.0000           : MainProcess                     : MainThread     : DEBUG   : TERM : umgr.0000 unregister publisher state_pubsub
+2018-03-28 23:18:35,585: umgr.0000           : MainProcess                     : MainThread     : DEBUG   : unregistered publisher state_pubsub
+2018-03-28 23:18:35,585: umgr.0000           : MainProcess                     : MainThread     : DEBUG   : TERM : umgr.0000 unregister publisher control_pubsub
+2018-03-28 23:18:35,586: umgr.0000           : MainProcess                     : MainThread     : DEBUG   : unregistered publisher control_pubsub
+2018-03-28 23:18:35,586: umgr.0000           : MainProcess                     : MainThread     : DEBUG   : umgr.0000 close prof
+2018-03-28 23:18:35,622: umgr.0000           : MainProcess                     : MainThread     : INFO    : parent stops child
+2018-03-28 23:18:35,622: umgr.0000           : MainProcess                     : MainThread     : DEBUG   : ru_finalize_parent (NOOP)
+2018-03-28 23:18:35,622: umgr.0000           : MainProcess                     : MainThread     : DEBUG   : ru_finalize_common (NOOP)
+2018-03-28 23:18:35,622: umgr.0000           : MainProcess                     : MainThread     : INFO    : parent stops child
+2018-03-28 23:18:35,622: umgr.0000           : MainProcess                     : MainThread     : DEBUG   : ru_finalize_parent (NOOP)
+2018-03-28 23:18:35,623: umgr.0000           : MainProcess                     : umgr.0000.subscriber._state_sub_cb: DEBUG   : ru_finalize_child (NOOP)
+2018-03-28 23:18:35,623: umgr.0000           : MainProcess                     : umgr.0000.subscriber._state_sub_cb: INFO    : put message: [umgr.0000.subscriber._state_sub_cb.thread] terminating
+2018-03-28 23:18:35,623: umgr.0000           : MainProcess                     : MainThread     : INFO    : parent stops child
+2018-03-28 23:18:35,623: umgr.0000           : MainProcess                     : MainThread     : DEBUG   : ru_finalize_parent (NOOP)
+2018-03-28 23:18:35,624: umgr.0000           : MainProcess                     : MainThread     : DEBUG   : ru_finalize_common (NOOP)
+2018-03-28 23:18:35,624: umgr.0000           : MainProcess                     : MainThread     : INFO    : Closed UnitManager umgr.0000.
+2018-03-28 23:18:41,281: umgr.0000           : MainProcess                     : MainThread     : INFO    : stop umgr.0000 (20514 : None : MainThread) [radical.pilot.session.Session.close]
+2018-03-28 23:18:41,282: umgr.0000           : MainProcess                     : MainThread     : INFO    : parent stops child
+2018-03-28 23:18:41,282: umgr.0000           : MainProcess                     : MainThread     : INFO    : parent stops child
+2018-03-28 23:18:41,282: umgr.0000           : MainProcess                     : MainThread     : INFO    : parent stops child

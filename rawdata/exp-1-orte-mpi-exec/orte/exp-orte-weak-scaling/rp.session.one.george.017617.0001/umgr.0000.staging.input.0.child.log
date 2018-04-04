@@ -1,0 +1,736 @@
+2018-03-27 05:54:29,564: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : INFO    : python.interpreter   version: 2.7.14 (default, Sep 23 2017, 22:06:14) [GCC 7.2.0]
+2018-03-27 05:54:29,564: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : INFO    :                      pid: 25350
+2018-03-27 05:54:29,564: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : INFO    :                      tid: MainThread
+2018-03-27 05:54:29,565: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : INFO    : radical.pilot        version: 0.47-0.47-14-gb1dff8bd@devel
+2018-03-27 05:54:29,617: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : INFO    : initialize umgr.0000.staging.input.0.child
+2018-03-27 05:54:29,621: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : INFO    : cfg: {'agents': {},
+ u'bridges': {u'control_pubsub': {'addr_in': 'tcp://144.76.72.175:37389',
+                                  'addr_out': 'tcp://144.76.72.175:41737',
+                                  u'bulk_size': 0,
+                                  u'log_level': u'debug',
+                                  u'stall_hwm': 1},
+              u'log_pubsub': {'addr_in': 'tcp://144.76.72.175:35115',
+                              'addr_out': 'tcp://144.76.72.175:33499',
+                              u'bulk_size': 0,
+                              u'log_level': u'debug',
+                              u'stall_hwm': 1},
+              u'state_pubsub': {'addr_in': 'tcp://144.76.72.175:42749',
+                                'addr_out': 'tcp://144.76.72.175:41775',
+                                u'bulk_size': 0,
+                                u'log_level': u'debug',
+                                u'stall_hwm': 1},
+              u'umgr_reschedule_pubsub': {'addr_in': 'tcp://144.76.72.175:40131',
+                                          'addr_out': 'tcp://144.76.72.175:35301',
+                                          u'bulk_size': 0,
+                                          u'log_level': u'debug',
+                                          u'stall_hwm': 1},
+              u'umgr_scheduling_queue': {'addr_in': 'tcp://144.76.72.175:34949',
+                                         'addr_out': 'tcp://144.76.72.175:46857',
+                                         u'bulk_size': 0,
+                                         u'log_level': u'debug',
+                                         u'stall_hwm': 1},
+              u'umgr_staging_input_queue': {'addr_in': 'tcp://144.76.72.175:37559',
+                                            'addr_out': 'tcp://144.76.72.175:33453',
+                                            u'bulk_size': 0,
+                                            u'log_level': u'debug',
+                                            u'stall_hwm': 1},
+              u'umgr_staging_output_queue': {'addr_in': 'tcp://144.76.72.175:44119',
+                                             'addr_out': 'tcp://144.76.72.175:38225',
+                                             u'bulk_size': 0,
+                                             u'log_level': u'debug',
+                                             u'stall_hwm': 1},
+              u'umgr_unschedule_pubsub': {'addr_in': 'tcp://144.76.72.175:34363',
+                                          'addr_out': 'tcp://144.76.72.175:41181',
+                                          u'bulk_size': 0,
+                                          u'log_level': u'debug',
+                                          u'stall_hwm': 1}},
+ u'bulk_collection_size': 100,
+ u'bulk_collection_time': 1.0,
+ 'cname': u'UMGRStagingInputComponent',
+ u'components': {},
+ u'count': 1,
+ u'db_poll_sleeptime': 1.0,
+ 'number': 0,
+ 'owner': 'umgr.0000',
+ u'scheduler': u'round_robin',
+ 'uid': 'umgr.0000'}
+2018-03-27 05:54:29,621: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : start components: {}
+2018-03-27 05:54:29,621: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : alive check in term
+2018-03-27 05:54:29,622: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : START: umgr.0000.staging.input.0.child register publisher log_pubsub
+2018-03-27 05:54:29,622: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : using addr tcp://144.76.72.175:35115 for pubsub log_pubsub
+2018-03-27 05:54:29,625: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : registered publisher : log_pubsub : log.pubsub.pub.0003
+2018-03-27 05:54:29,625: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : alive check in term
+2018-03-27 05:54:29,625: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : START: umgr.0000.staging.input.0.child register publisher state_pubsub
+2018-03-27 05:54:29,625: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : using addr tcp://144.76.72.175:42749 for pubsub state_pubsub
+2018-03-27 05:54:29,628: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : registered publisher : state_pubsub : state.pubsub.pub.0003
+2018-03-27 05:54:29,628: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : alive check in term
+2018-03-27 05:54:29,628: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : START: umgr.0000.staging.input.0.child register publisher control_pubsub
+2018-03-27 05:54:29,628: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : using addr tcp://144.76.72.175:37389 for pubsub control_pubsub
+2018-03-27 05:54:29,644: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : registered publisher : control_pubsub : control.pubsub.pub.0003
+2018-03-27 05:54:29,644: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : alive check in term
+2018-03-27 05:54:29,644: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : START: umgr.0000.staging.input.0.child register subscriber umgr.0000.staging.input.0.child.subscriber._cancel_monitor_cb
+2018-03-27 05:54:29,644: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : using addr tcp://144.76.72.175:41737 for pubsub control_pubsub
+2018-03-27 05:54:29,647: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : parent name: umgr.0000.staging.input.0.child.subscriber._cancel_monitor_cb
+2018-03-27 05:54:29,647: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : start thread
+2018-03-27 05:54:29,647: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.subscriber._cancel_monitor_cb: DEBUG   : child name: umgr.0000.staging.input.0.child.subscriber._cancel_monitor_cb.thread
+2018-03-27 05:54:29,647: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.subscriber._cancel_monitor_cb: INFO    : child (me) initializing
+2018-03-27 05:54:29,648: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.subscriber._cancel_monitor_cb: DEBUG   : ru_initialize_common (NOOP)
+2018-03-27 05:54:29,648: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.subscriber._cancel_monitor_cb: DEBUG   : ru_initialize_child (NOOP)
+2018-03-27 05:54:29,648: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.subscriber._cancel_monitor_cb: INFO    : send alive
+2018-03-27 05:54:29,648: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.subscriber._cancel_monitor_cb: INFO    : put message: [umgr.0000.staging.input.0.child.subscriber._cancel_monitor_cb.thread] alive
+2018-03-27 05:54:29,648: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : INFO    : get msg: alive
+2018-03-27 05:54:29,649: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2018-03-27 05:54:29,649: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2018-03-27 05:54:29,649: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : child thread umgr.0000.staging.input.0.child.subscriber._cancel_monitor_cb started
+2018-03-27 05:54:29,649: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : umgr.0000.staging.input.0.child registered control_pubsub subscriber umgr.0000.staging.input.0.child.subscriber._cancel_monitor_cb
+2018-03-27 05:54:29,649: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : alive check in term
+2018-03-27 05:54:29,649: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : using addr tcp://144.76.72.175:33453 for input umgr_staging_input_queue
+2018-03-27 05:54:29,651: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : registered input umgr.0000.staging.input.0.child.work.UMGR_STAGING_INPUT_PENDING
+2018-03-27 05:54:29,651: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : START: umgr.0000.staging.input.0.child register input UMGR_STAGING_INPUT_PENDING: umgr.0000.staging.input.0.child.work.UMGR_STAGING_INPUT_PENDING
+2018-03-27 05:54:29,651: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : registered worker work [UMGR_STAGING_INPUT_PENDING]
+2018-03-27 05:54:29,652: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : alive check in term
+2018-03-27 05:54:29,652: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : START: umgr.0000.staging.input.0.child register output AGENT_STAGING_INPUT_PENDING
+2018-03-27 05:54:29,652: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : alive check in term
+2018-03-27 05:54:29,652: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : START: umgr.0000.staging.input.0.child register subscriber umgr.0000.staging.input.0.child.subscriber._base_command_cb
+2018-03-27 05:54:29,652: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : using addr tcp://144.76.72.175:41737 for pubsub control_pubsub
+2018-03-27 05:54:29,654: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : parent name: umgr.0000.staging.input.0.child.subscriber._base_command_cb
+2018-03-27 05:54:29,654: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : start thread
+2018-03-27 05:54:29,654: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.subscriber._base_command_cb: DEBUG   : child name: umgr.0000.staging.input.0.child.subscriber._base_command_cb.thread
+2018-03-27 05:54:29,655: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.subscriber._base_command_cb: INFO    : child (me) initializing
+2018-03-27 05:54:29,655: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.subscriber._base_command_cb: DEBUG   : ru_initialize_common (NOOP)
+2018-03-27 05:54:29,655: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.subscriber._base_command_cb: DEBUG   : ru_initialize_child (NOOP)
+2018-03-27 05:54:29,655: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.subscriber._base_command_cb: INFO    : send alive
+2018-03-27 05:54:29,655: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.subscriber._base_command_cb: INFO    : put message: [umgr.0000.staging.input.0.child.subscriber._base_command_cb.thread] alive
+2018-03-27 05:54:29,656: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : INFO    : get msg: alive
+2018-03-27 05:54:29,656: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2018-03-27 05:54:29,656: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2018-03-27 05:54:29,656: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : child thread umgr.0000.staging.input.0.child.subscriber._base_command_cb started
+2018-03-27 05:54:29,656: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : umgr.0000.staging.input.0.child registered control_pubsub subscriber umgr.0000.staging.input.0.child.subscriber._base_command_cb
+2018-03-27 05:54:29,656: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : INFO    : child (me) initializing
+2018-03-27 05:54:29,656: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : parent name: umgr.0000.staging.input.0.child.watch
+2018-03-27 05:54:29,656: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : start thread
+2018-03-27 05:54:29,656: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.watch: DEBUG   : child name: umgr.0000.staging.input.0.child.watch.thread
+2018-03-27 05:54:29,656: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.watch: INFO    : child (me) initializing
+2018-03-27 05:54:29,656: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.watch: DEBUG   : ru_initialize_common (NOOP)
+2018-03-27 05:54:29,656: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.watch: DEBUG   : ru_initialize_child (NOOP)
+2018-03-27 05:54:29,656: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.watch: INFO    : send alive
+2018-03-27 05:54:29,656: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.watch: INFO    : put message: [umgr.0000.staging.input.0.child.watch.thread] alive
+2018-03-27 05:54:29,657: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : INFO    : get msg: alive
+2018-03-27 05:54:29,657: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2018-03-27 05:54:29,657: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2018-03-27 05:54:29,657: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : child thread umgr.0000.staging.input.0.child.watch started
+2018-03-27 05:54:29,657: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : INFO    : child (me) is alive
+2018-03-27 05:54:29,658: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : INFO    : send alive
+2018-03-27 05:54:29,658: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : INFO    : send message: [umgr.0000.staging.input.0.child] alive
+2018-03-27 05:54:30,176: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.subscriber._base_command_cb: DEBUG   :  === add pilot pilot.0000
+2018-03-27 05:54:30,176: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.subscriber._cancel_monitor_cb: DEBUG   : command ignored: add_pilots
+2018-03-27 05:54:30,513: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000000)
+2018-03-27 05:54:30,513: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000001)
+2018-03-27 05:54:30,513: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000002)
+2018-03-27 05:54:30,513: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000003)
+2018-03-27 05:54:30,513: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000004)
+2018-03-27 05:54:30,513: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000005)
+2018-03-27 05:54:30,513: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000006)
+2018-03-27 05:54:30,513: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000007)
+2018-03-27 05:54:30,513: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000008)
+2018-03-27 05:54:30,513: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000009)
+2018-03-27 05:54:30,513: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000010)
+2018-03-27 05:54:30,513: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000011)
+2018-03-27 05:54:30,513: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000012)
+2018-03-27 05:54:30,513: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000013)
+2018-03-27 05:54:30,513: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000014)
+2018-03-27 05:54:30,513: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000015)
+2018-03-27 05:54:30,514: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000016)
+2018-03-27 05:54:30,514: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000017)
+2018-03-27 05:54:30,514: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000018)
+2018-03-27 05:54:30,514: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000019)
+2018-03-27 05:54:30,514: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000020)
+2018-03-27 05:54:30,514: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000021)
+2018-03-27 05:54:30,514: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000022)
+2018-03-27 05:54:30,514: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000023)
+2018-03-27 05:54:30,514: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000024)
+2018-03-27 05:54:30,514: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000025)
+2018-03-27 05:54:30,514: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000026)
+2018-03-27 05:54:30,514: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000027)
+2018-03-27 05:54:30,514: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000028)
+2018-03-27 05:54:30,514: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000029)
+2018-03-27 05:54:30,514: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000030)
+2018-03-27 05:54:30,514: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000031)
+2018-03-27 05:54:30,514: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000032)
+2018-03-27 05:54:30,514: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000033)
+2018-03-27 05:54:30,514: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000034)
+2018-03-27 05:54:30,514: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000035)
+2018-03-27 05:54:30,514: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000036)
+2018-03-27 05:54:30,514: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000037)
+2018-03-27 05:54:30,514: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000038)
+2018-03-27 05:54:30,514: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : got unit (unit.000039)
+2018-03-27 05:54:30,514: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 40 [False, True]
+2018-03-27 05:54:30,516: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : {}
+2018-03-27 05:54:30,516: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : key gsisftp://supermic.cct-lsu.xsede.org:2222/ / gsisftp://supermic.cct-lsu.xsede.org:2222/
+2018-03-27 05:54:32,154: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:54:32,154: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:54:32,154: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:54:32,155: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with /home/george/launch-methods-project/orte-example
+2018-03-27 05:54:32,155: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> file:///home/george/launch-methods-project/orte-example/cu_executable.py
+2018-03-27 05:54:32,155: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:54:32,155: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:54:32,155: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:54:32,155: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000//unit.000000/
+2018-03-27 05:54:32,155: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000/unit.000000/cu_executable.py
+2018-03-27 05:54:34,376: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-27 05:54:34,377: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000000 [AGENT_STAGING_INPUT_PENDING]
+2018-03-27 05:54:34,377: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : key gsisftp://supermic.cct-lsu.xsede.org:2222/ / gsisftp://supermic.cct-lsu.xsede.org:2222/
+2018-03-27 05:54:34,630: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:54:34,630: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:54:34,630: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:54:34,630: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with /home/george/launch-methods-project/orte-example
+2018-03-27 05:54:34,630: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> file:///home/george/launch-methods-project/orte-example/cu_executable.py
+2018-03-27 05:54:34,631: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:54:34,631: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:54:34,631: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:54:34,631: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000//unit.000001/
+2018-03-27 05:54:34,631: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000/unit.000001/cu_executable.py
+2018-03-27 05:54:36,016: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-27 05:54:36,016: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000001 [AGENT_STAGING_INPUT_PENDING]
+2018-03-27 05:54:36,017: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : key gsisftp://supermic.cct-lsu.xsede.org:2222/ / gsisftp://supermic.cct-lsu.xsede.org:2222/
+2018-03-27 05:54:36,270: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:54:36,270: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:54:36,270: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:54:36,270: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with /home/george/launch-methods-project/orte-example
+2018-03-27 05:54:36,270: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> file:///home/george/launch-methods-project/orte-example/cu_executable.py
+2018-03-27 05:54:36,271: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:54:36,271: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:54:36,271: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:54:36,271: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000//unit.000002/
+2018-03-27 05:54:36,271: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000/unit.000002/cu_executable.py
+2018-03-27 05:54:37,402: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-27 05:54:37,403: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000002 [AGENT_STAGING_INPUT_PENDING]
+2018-03-27 05:54:37,403: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : key gsisftp://supermic.cct-lsu.xsede.org:2222/ / gsisftp://supermic.cct-lsu.xsede.org:2222/
+2018-03-27 05:54:37,658: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:54:37,658: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:54:37,658: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:54:37,658: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with /home/george/launch-methods-project/orte-example
+2018-03-27 05:54:37,659: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> file:///home/george/launch-methods-project/orte-example/cu_executable.py
+2018-03-27 05:54:37,659: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:54:37,659: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:54:37,659: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:54:37,659: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000//unit.000003/
+2018-03-27 05:54:37,659: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000/unit.000003/cu_executable.py
+2018-03-27 05:54:38,790: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-27 05:54:38,790: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000003 [AGENT_STAGING_INPUT_PENDING]
+2018-03-27 05:54:38,791: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : key gsisftp://supermic.cct-lsu.xsede.org:2222/ / gsisftp://supermic.cct-lsu.xsede.org:2222/
+2018-03-27 05:54:39,045: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:54:39,045: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:54:39,045: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:54:39,045: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with /home/george/launch-methods-project/orte-example
+2018-03-27 05:54:39,046: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> file:///home/george/launch-methods-project/orte-example/cu_executable.py
+2018-03-27 05:54:39,046: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:54:39,046: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:54:39,046: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:54:39,046: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000//unit.000004/
+2018-03-27 05:54:39,046: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000/unit.000004/cu_executable.py
+2018-03-27 05:54:40,174: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-27 05:54:40,175: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000004 [AGENT_STAGING_INPUT_PENDING]
+2018-03-27 05:54:40,175: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : key gsisftp://supermic.cct-lsu.xsede.org:2222/ / gsisftp://supermic.cct-lsu.xsede.org:2222/
+2018-03-27 05:54:40,428: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:54:40,428: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:54:40,428: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:54:40,428: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with /home/george/launch-methods-project/orte-example
+2018-03-27 05:54:40,428: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> file:///home/george/launch-methods-project/orte-example/cu_executable.py
+2018-03-27 05:54:40,429: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:54:40,429: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:54:40,429: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:54:40,429: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000//unit.000005/
+2018-03-27 05:54:40,429: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000/unit.000005/cu_executable.py
+2018-03-27 05:54:41,557: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-27 05:54:41,557: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000005 [AGENT_STAGING_INPUT_PENDING]
+2018-03-27 05:54:41,558: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : key gsisftp://supermic.cct-lsu.xsede.org:2222/ / gsisftp://supermic.cct-lsu.xsede.org:2222/
+2018-03-27 05:54:41,811: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:54:41,811: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:54:41,811: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:54:41,811: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with /home/george/launch-methods-project/orte-example
+2018-03-27 05:54:41,811: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> file:///home/george/launch-methods-project/orte-example/cu_executable.py
+2018-03-27 05:54:41,812: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:54:41,812: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:54:41,812: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:54:41,812: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000//unit.000006/
+2018-03-27 05:54:41,812: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000/unit.000006/cu_executable.py
+2018-03-27 05:54:42,940: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-27 05:54:42,940: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000006 [AGENT_STAGING_INPUT_PENDING]
+2018-03-27 05:54:42,941: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : key gsisftp://supermic.cct-lsu.xsede.org:2222/ / gsisftp://supermic.cct-lsu.xsede.org:2222/
+2018-03-27 05:54:43,193: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:54:43,193: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:54:43,193: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:54:43,193: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with /home/george/launch-methods-project/orte-example
+2018-03-27 05:54:43,193: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> file:///home/george/launch-methods-project/orte-example/cu_executable.py
+2018-03-27 05:54:43,194: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:54:43,194: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:54:43,194: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:54:43,194: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000//unit.000007/
+2018-03-27 05:54:43,194: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000/unit.000007/cu_executable.py
+2018-03-27 05:54:44,367: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-27 05:54:44,368: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000007 [AGENT_STAGING_INPUT_PENDING]
+2018-03-27 05:54:44,368: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : key gsisftp://supermic.cct-lsu.xsede.org:2222/ / gsisftp://supermic.cct-lsu.xsede.org:2222/
+2018-03-27 05:54:44,623: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:54:44,624: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:54:44,624: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:54:44,624: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with /home/george/launch-methods-project/orte-example
+2018-03-27 05:54:44,624: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> file:///home/george/launch-methods-project/orte-example/cu_executable.py
+2018-03-27 05:54:44,624: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:54:44,624: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:54:44,624: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:54:44,625: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000//unit.000008/
+2018-03-27 05:54:44,625: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000/unit.000008/cu_executable.py
+2018-03-27 05:54:45,754: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-27 05:54:45,754: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000008 [AGENT_STAGING_INPUT_PENDING]
+2018-03-27 05:54:45,755: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : key gsisftp://supermic.cct-lsu.xsede.org:2222/ / gsisftp://supermic.cct-lsu.xsede.org:2222/
+2018-03-27 05:54:46,007: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:54:46,007: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:54:46,007: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:54:46,007: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with /home/george/launch-methods-project/orte-example
+2018-03-27 05:54:46,007: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> file:///home/george/launch-methods-project/orte-example/cu_executable.py
+2018-03-27 05:54:46,008: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:54:46,008: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:54:46,008: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:54:46,008: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000//unit.000009/
+2018-03-27 05:54:46,008: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000/unit.000009/cu_executable.py
+2018-03-27 05:54:47,136: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-27 05:54:47,137: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000009 [AGENT_STAGING_INPUT_PENDING]
+2018-03-27 05:54:47,137: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : key gsisftp://supermic.cct-lsu.xsede.org:2222/ / gsisftp://supermic.cct-lsu.xsede.org:2222/
+2018-03-27 05:54:47,390: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:54:47,390: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:54:47,390: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:54:47,390: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with /home/george/launch-methods-project/orte-example
+2018-03-27 05:54:47,390: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> file:///home/george/launch-methods-project/orte-example/cu_executable.py
+2018-03-27 05:54:47,391: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:54:47,391: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:54:47,391: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:54:47,391: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000//unit.000010/
+2018-03-27 05:54:47,391: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000/unit.000010/cu_executable.py
+2018-03-27 05:54:48,519: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-27 05:54:48,520: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000010 [AGENT_STAGING_INPUT_PENDING]
+2018-03-27 05:54:48,520: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : key gsisftp://supermic.cct-lsu.xsede.org:2222/ / gsisftp://supermic.cct-lsu.xsede.org:2222/
+2018-03-27 05:54:48,773: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:54:48,773: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:54:48,773: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:54:48,773: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with /home/george/launch-methods-project/orte-example
+2018-03-27 05:54:48,774: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> file:///home/george/launch-methods-project/orte-example/cu_executable.py
+2018-03-27 05:54:48,774: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:54:48,774: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:54:48,774: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:54:48,774: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000//unit.000011/
+2018-03-27 05:54:48,774: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000/unit.000011/cu_executable.py
+2018-03-27 05:54:49,903: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-27 05:54:49,903: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000011 [AGENT_STAGING_INPUT_PENDING]
+2018-03-27 05:54:49,904: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : key gsisftp://supermic.cct-lsu.xsede.org:2222/ / gsisftp://supermic.cct-lsu.xsede.org:2222/
+2018-03-27 05:54:50,157: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:54:50,157: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:54:50,157: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:54:50,157: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with /home/george/launch-methods-project/orte-example
+2018-03-27 05:54:50,157: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> file:///home/george/launch-methods-project/orte-example/cu_executable.py
+2018-03-27 05:54:50,158: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:54:50,158: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:54:50,158: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:54:50,158: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000//unit.000012/
+2018-03-27 05:54:50,158: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000/unit.000012/cu_executable.py
+2018-03-27 05:54:51,287: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-27 05:54:51,287: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000012 [AGENT_STAGING_INPUT_PENDING]
+2018-03-27 05:54:51,288: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : key gsisftp://supermic.cct-lsu.xsede.org:2222/ / gsisftp://supermic.cct-lsu.xsede.org:2222/
+2018-03-27 05:54:51,573: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:54:51,573: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:54:51,573: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:54:51,573: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with /home/george/launch-methods-project/orte-example
+2018-03-27 05:54:51,573: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> file:///home/george/launch-methods-project/orte-example/cu_executable.py
+2018-03-27 05:54:51,573: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:54:51,574: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:54:51,574: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:54:51,574: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000//unit.000013/
+2018-03-27 05:54:51,574: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000/unit.000013/cu_executable.py
+2018-03-27 05:54:52,728: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-27 05:54:52,729: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000013 [AGENT_STAGING_INPUT_PENDING]
+2018-03-27 05:54:52,729: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : key gsisftp://supermic.cct-lsu.xsede.org:2222/ / gsisftp://supermic.cct-lsu.xsede.org:2222/
+2018-03-27 05:54:52,982: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:54:52,982: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:54:52,982: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:54:52,982: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with /home/george/launch-methods-project/orte-example
+2018-03-27 05:54:52,982: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> file:///home/george/launch-methods-project/orte-example/cu_executable.py
+2018-03-27 05:54:52,983: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:54:52,983: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:54:52,983: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:54:52,983: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000//unit.000014/
+2018-03-27 05:54:52,983: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000/unit.000014/cu_executable.py
+2018-03-27 05:54:54,111: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-27 05:54:54,112: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000014 [AGENT_STAGING_INPUT_PENDING]
+2018-03-27 05:54:54,112: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : key gsisftp://supermic.cct-lsu.xsede.org:2222/ / gsisftp://supermic.cct-lsu.xsede.org:2222/
+2018-03-27 05:54:54,365: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:54:54,365: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:54:54,365: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:54:54,365: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with /home/george/launch-methods-project/orte-example
+2018-03-27 05:54:54,365: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> file:///home/george/launch-methods-project/orte-example/cu_executable.py
+2018-03-27 05:54:54,366: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:54:54,366: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:54:54,366: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:54:54,366: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000//unit.000015/
+2018-03-27 05:54:54,366: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000/unit.000015/cu_executable.py
+2018-03-27 05:54:55,495: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-27 05:54:55,496: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000015 [AGENT_STAGING_INPUT_PENDING]
+2018-03-27 05:54:55,496: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : key gsisftp://supermic.cct-lsu.xsede.org:2222/ / gsisftp://supermic.cct-lsu.xsede.org:2222/
+2018-03-27 05:54:55,749: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:54:55,749: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:54:55,749: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:54:55,749: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with /home/george/launch-methods-project/orte-example
+2018-03-27 05:54:55,749: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> file:///home/george/launch-methods-project/orte-example/cu_executable.py
+2018-03-27 05:54:55,750: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:54:55,750: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:54:55,750: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:54:55,750: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000//unit.000016/
+2018-03-27 05:54:55,750: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000/unit.000016/cu_executable.py
+2018-03-27 05:54:56,879: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-27 05:54:56,880: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000016 [AGENT_STAGING_INPUT_PENDING]
+2018-03-27 05:54:56,880: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : key gsisftp://supermic.cct-lsu.xsede.org:2222/ / gsisftp://supermic.cct-lsu.xsede.org:2222/
+2018-03-27 05:54:57,133: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:54:57,133: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:54:57,133: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:54:57,133: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with /home/george/launch-methods-project/orte-example
+2018-03-27 05:54:57,133: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> file:///home/george/launch-methods-project/orte-example/cu_executable.py
+2018-03-27 05:54:57,134: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:54:57,134: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:54:57,134: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:54:57,134: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000//unit.000017/
+2018-03-27 05:54:57,134: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000/unit.000017/cu_executable.py
+2018-03-27 05:54:58,263: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-27 05:54:58,264: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000017 [AGENT_STAGING_INPUT_PENDING]
+2018-03-27 05:54:58,264: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : key gsisftp://supermic.cct-lsu.xsede.org:2222/ / gsisftp://supermic.cct-lsu.xsede.org:2222/
+2018-03-27 05:54:58,517: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:54:58,517: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:54:58,517: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:54:58,517: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with /home/george/launch-methods-project/orte-example
+2018-03-27 05:54:58,517: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> file:///home/george/launch-methods-project/orte-example/cu_executable.py
+2018-03-27 05:54:58,518: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:54:58,518: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:54:58,518: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:54:58,518: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000//unit.000018/
+2018-03-27 05:54:58,518: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000/unit.000018/cu_executable.py
+2018-03-27 05:54:59,647: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-27 05:54:59,647: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000018 [AGENT_STAGING_INPUT_PENDING]
+2018-03-27 05:54:59,648: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : key gsisftp://supermic.cct-lsu.xsede.org:2222/ / gsisftp://supermic.cct-lsu.xsede.org:2222/
+2018-03-27 05:54:59,901: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:54:59,901: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:54:59,901: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:54:59,901: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with /home/george/launch-methods-project/orte-example
+2018-03-27 05:54:59,901: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> file:///home/george/launch-methods-project/orte-example/cu_executable.py
+2018-03-27 05:54:59,902: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:54:59,902: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:54:59,902: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:54:59,902: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000//unit.000019/
+2018-03-27 05:54:59,902: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000/unit.000019/cu_executable.py
+2018-03-27 05:55:01,030: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-27 05:55:01,031: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000019 [AGENT_STAGING_INPUT_PENDING]
+2018-03-27 05:55:01,031: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : key gsisftp://supermic.cct-lsu.xsede.org:2222/ / gsisftp://supermic.cct-lsu.xsede.org:2222/
+2018-03-27 05:55:01,284: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:55:01,284: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:55:01,284: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:55:01,284: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with /home/george/launch-methods-project/orte-example
+2018-03-27 05:55:01,285: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> file:///home/george/launch-methods-project/orte-example/cu_executable.py
+2018-03-27 05:55:01,285: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:55:01,285: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:55:01,285: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:55:01,285: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000//unit.000020/
+2018-03-27 05:55:01,285: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000/unit.000020/cu_executable.py
+2018-03-27 05:55:02,414: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-27 05:55:02,414: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000020 [AGENT_STAGING_INPUT_PENDING]
+2018-03-27 05:55:02,415: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : key gsisftp://supermic.cct-lsu.xsede.org:2222/ / gsisftp://supermic.cct-lsu.xsede.org:2222/
+2018-03-27 05:55:02,670: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:55:02,670: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:55:02,670: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:55:02,670: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with /home/george/launch-methods-project/orte-example
+2018-03-27 05:55:02,670: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> file:///home/george/launch-methods-project/orte-example/cu_executable.py
+2018-03-27 05:55:02,671: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:55:02,671: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:55:02,671: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:55:02,671: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000//unit.000021/
+2018-03-27 05:55:02,671: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000/unit.000021/cu_executable.py
+2018-03-27 05:55:03,801: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-27 05:55:03,801: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000021 [AGENT_STAGING_INPUT_PENDING]
+2018-03-27 05:55:03,801: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : key gsisftp://supermic.cct-lsu.xsede.org:2222/ / gsisftp://supermic.cct-lsu.xsede.org:2222/
+2018-03-27 05:55:04,054: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:55:04,054: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:55:04,054: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:55:04,054: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with /home/george/launch-methods-project/orte-example
+2018-03-27 05:55:04,054: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> file:///home/george/launch-methods-project/orte-example/cu_executable.py
+2018-03-27 05:55:04,055: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:55:04,055: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:55:04,055: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:55:04,055: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000//unit.000022/
+2018-03-27 05:55:04,055: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000/unit.000022/cu_executable.py
+2018-03-27 05:55:05,184: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-27 05:55:05,184: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000022 [AGENT_STAGING_INPUT_PENDING]
+2018-03-27 05:55:05,185: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : key gsisftp://supermic.cct-lsu.xsede.org:2222/ / gsisftp://supermic.cct-lsu.xsede.org:2222/
+2018-03-27 05:55:05,438: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:55:05,438: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:55:05,438: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:55:05,438: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with /home/george/launch-methods-project/orte-example
+2018-03-27 05:55:05,438: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> file:///home/george/launch-methods-project/orte-example/cu_executable.py
+2018-03-27 05:55:05,439: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:55:05,439: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:55:05,439: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:55:05,439: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000//unit.000023/
+2018-03-27 05:55:05,439: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000/unit.000023/cu_executable.py
+2018-03-27 05:55:06,567: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-27 05:55:06,568: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000023 [AGENT_STAGING_INPUT_PENDING]
+2018-03-27 05:55:06,568: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : key gsisftp://supermic.cct-lsu.xsede.org:2222/ / gsisftp://supermic.cct-lsu.xsede.org:2222/
+2018-03-27 05:55:06,823: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:55:06,823: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:55:06,823: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:55:06,823: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with /home/george/launch-methods-project/orte-example
+2018-03-27 05:55:06,823: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> file:///home/george/launch-methods-project/orte-example/cu_executable.py
+2018-03-27 05:55:06,824: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:55:06,824: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:55:06,824: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:55:06,824: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000//unit.000024/
+2018-03-27 05:55:06,824: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000/unit.000024/cu_executable.py
+2018-03-27 05:55:07,952: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-27 05:55:07,952: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000024 [AGENT_STAGING_INPUT_PENDING]
+2018-03-27 05:55:07,953: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : key gsisftp://supermic.cct-lsu.xsede.org:2222/ / gsisftp://supermic.cct-lsu.xsede.org:2222/
+2018-03-27 05:55:08,203: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:55:08,203: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:55:08,203: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:55:08,203: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with /home/george/launch-methods-project/orte-example
+2018-03-27 05:55:08,204: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> file:///home/george/launch-methods-project/orte-example/cu_executable.py
+2018-03-27 05:55:08,204: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:55:08,204: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:55:08,204: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:55:08,204: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000//unit.000025/
+2018-03-27 05:55:08,204: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000/unit.000025/cu_executable.py
+2018-03-27 05:55:09,332: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-27 05:55:09,333: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000025 [AGENT_STAGING_INPUT_PENDING]
+2018-03-27 05:55:09,333: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : key gsisftp://supermic.cct-lsu.xsede.org:2222/ / gsisftp://supermic.cct-lsu.xsede.org:2222/
+2018-03-27 05:55:09,586: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:55:09,586: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:55:09,586: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:55:09,586: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with /home/george/launch-methods-project/orte-example
+2018-03-27 05:55:09,586: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> file:///home/george/launch-methods-project/orte-example/cu_executable.py
+2018-03-27 05:55:09,587: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:55:09,587: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:55:09,587: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:55:09,587: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000//unit.000026/
+2018-03-27 05:55:09,587: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000/unit.000026/cu_executable.py
+2018-03-27 05:55:10,735: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-27 05:55:10,736: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000026 [AGENT_STAGING_INPUT_PENDING]
+2018-03-27 05:55:10,736: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : key gsisftp://supermic.cct-lsu.xsede.org:2222/ / gsisftp://supermic.cct-lsu.xsede.org:2222/
+2018-03-27 05:55:10,989: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:55:10,989: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:55:10,989: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:55:10,989: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with /home/george/launch-methods-project/orte-example
+2018-03-27 05:55:10,989: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> file:///home/george/launch-methods-project/orte-example/cu_executable.py
+2018-03-27 05:55:10,990: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:55:10,990: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:55:10,990: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:55:10,990: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000//unit.000027/
+2018-03-27 05:55:10,990: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000/unit.000027/cu_executable.py
+2018-03-27 05:55:12,118: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-27 05:55:12,119: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000027 [AGENT_STAGING_INPUT_PENDING]
+2018-03-27 05:55:12,119: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : key gsisftp://supermic.cct-lsu.xsede.org:2222/ / gsisftp://supermic.cct-lsu.xsede.org:2222/
+2018-03-27 05:55:12,372: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:55:12,372: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:55:12,372: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:55:12,372: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with /home/george/launch-methods-project/orte-example
+2018-03-27 05:55:12,372: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> file:///home/george/launch-methods-project/orte-example/cu_executable.py
+2018-03-27 05:55:12,373: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:55:12,373: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:55:12,373: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:55:12,373: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000//unit.000028/
+2018-03-27 05:55:12,373: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000/unit.000028/cu_executable.py
+2018-03-27 05:55:13,502: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-27 05:55:13,503: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000028 [AGENT_STAGING_INPUT_PENDING]
+2018-03-27 05:55:13,503: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : key gsisftp://supermic.cct-lsu.xsede.org:2222/ / gsisftp://supermic.cct-lsu.xsede.org:2222/
+2018-03-27 05:55:13,757: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:55:13,757: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:55:13,757: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:55:13,757: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with /home/george/launch-methods-project/orte-example
+2018-03-27 05:55:13,757: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> file:///home/george/launch-methods-project/orte-example/cu_executable.py
+2018-03-27 05:55:13,758: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:55:13,758: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:55:13,758: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:55:13,758: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000//unit.000029/
+2018-03-27 05:55:13,758: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000/unit.000029/cu_executable.py
+2018-03-27 05:55:14,887: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-27 05:55:14,887: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000029 [AGENT_STAGING_INPUT_PENDING]
+2018-03-27 05:55:14,888: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : key gsisftp://supermic.cct-lsu.xsede.org:2222/ / gsisftp://supermic.cct-lsu.xsede.org:2222/
+2018-03-27 05:55:15,141: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:55:15,141: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:55:15,141: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:55:15,141: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with /home/george/launch-methods-project/orte-example
+2018-03-27 05:55:15,141: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> file:///home/george/launch-methods-project/orte-example/cu_executable.py
+2018-03-27 05:55:15,142: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:55:15,142: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:55:15,142: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:55:15,142: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000//unit.000030/
+2018-03-27 05:55:15,142: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000/unit.000030/cu_executable.py
+2018-03-27 05:55:16,271: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-27 05:55:16,272: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000030 [AGENT_STAGING_INPUT_PENDING]
+2018-03-27 05:55:16,272: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : key gsisftp://supermic.cct-lsu.xsede.org:2222/ / gsisftp://supermic.cct-lsu.xsede.org:2222/
+2018-03-27 05:55:16,525: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:55:16,525: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:55:16,525: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:55:16,525: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with /home/george/launch-methods-project/orte-example
+2018-03-27 05:55:16,525: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> file:///home/george/launch-methods-project/orte-example/cu_executable.py
+2018-03-27 05:55:16,526: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:55:16,526: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:55:16,526: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:55:16,526: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000//unit.000031/
+2018-03-27 05:55:16,526: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000/unit.000031/cu_executable.py
+2018-03-27 05:55:17,655: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-27 05:55:17,655: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000031 [AGENT_STAGING_INPUT_PENDING]
+2018-03-27 05:55:17,656: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : key gsisftp://supermic.cct-lsu.xsede.org:2222/ / gsisftp://supermic.cct-lsu.xsede.org:2222/
+2018-03-27 05:55:17,908: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:55:17,908: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:55:17,908: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:55:17,908: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with /home/george/launch-methods-project/orte-example
+2018-03-27 05:55:17,908: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> file:///home/george/launch-methods-project/orte-example/cu_executable.py
+2018-03-27 05:55:17,909: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:55:17,909: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:55:17,909: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:55:17,909: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000//unit.000032/
+2018-03-27 05:55:17,909: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000/unit.000032/cu_executable.py
+2018-03-27 05:55:19,037: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-27 05:55:19,038: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000032 [AGENT_STAGING_INPUT_PENDING]
+2018-03-27 05:55:19,038: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : key gsisftp://supermic.cct-lsu.xsede.org:2222/ / gsisftp://supermic.cct-lsu.xsede.org:2222/
+2018-03-27 05:55:19,291: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:55:19,291: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:55:19,291: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:55:19,292: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with /home/george/launch-methods-project/orte-example
+2018-03-27 05:55:19,292: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> file:///home/george/launch-methods-project/orte-example/cu_executable.py
+2018-03-27 05:55:19,292: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:55:19,292: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:55:19,292: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:55:19,292: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000//unit.000033/
+2018-03-27 05:55:19,292: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000/unit.000033/cu_executable.py
+2018-03-27 05:55:20,421: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-27 05:55:20,422: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000033 [AGENT_STAGING_INPUT_PENDING]
+2018-03-27 05:55:20,422: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : key gsisftp://supermic.cct-lsu.xsede.org:2222/ / gsisftp://supermic.cct-lsu.xsede.org:2222/
+2018-03-27 05:55:20,675: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:55:20,675: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:55:20,675: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:55:20,675: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with /home/george/launch-methods-project/orte-example
+2018-03-27 05:55:20,675: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> file:///home/george/launch-methods-project/orte-example/cu_executable.py
+2018-03-27 05:55:20,676: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:55:20,676: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:55:20,676: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:55:20,676: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000//unit.000034/
+2018-03-27 05:55:20,676: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000/unit.000034/cu_executable.py
+2018-03-27 05:55:21,804: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-27 05:55:21,805: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000034 [AGENT_STAGING_INPUT_PENDING]
+2018-03-27 05:55:21,805: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : key gsisftp://supermic.cct-lsu.xsede.org:2222/ / gsisftp://supermic.cct-lsu.xsede.org:2222/
+2018-03-27 05:55:22,059: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:55:22,059: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:55:22,059: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:55:22,059: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with /home/george/launch-methods-project/orte-example
+2018-03-27 05:55:22,059: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> file:///home/george/launch-methods-project/orte-example/cu_executable.py
+2018-03-27 05:55:22,060: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:55:22,060: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:55:22,060: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:55:22,060: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000//unit.000035/
+2018-03-27 05:55:22,060: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000/unit.000035/cu_executable.py
+2018-03-27 05:55:23,189: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-27 05:55:23,189: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000035 [AGENT_STAGING_INPUT_PENDING]
+2018-03-27 05:55:23,190: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : key gsisftp://supermic.cct-lsu.xsede.org:2222/ / gsisftp://supermic.cct-lsu.xsede.org:2222/
+2018-03-27 05:55:23,443: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:55:23,443: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:55:23,443: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:55:23,443: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with /home/george/launch-methods-project/orte-example
+2018-03-27 05:55:23,444: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> file:///home/george/launch-methods-project/orte-example/cu_executable.py
+2018-03-27 05:55:23,444: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:55:23,444: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:55:23,444: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:55:23,444: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000//unit.000036/
+2018-03-27 05:55:23,444: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000/unit.000036/cu_executable.py
+2018-03-27 05:55:24,573: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-27 05:55:24,574: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000036 [AGENT_STAGING_INPUT_PENDING]
+2018-03-27 05:55:24,574: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : key gsisftp://supermic.cct-lsu.xsede.org:2222/ / gsisftp://supermic.cct-lsu.xsede.org:2222/
+2018-03-27 05:55:24,827: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:55:24,827: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:55:24,827: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:55:24,827: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with /home/george/launch-methods-project/orte-example
+2018-03-27 05:55:24,828: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> file:///home/george/launch-methods-project/orte-example/cu_executable.py
+2018-03-27 05:55:24,828: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:55:24,828: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:55:24,828: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:55:24,828: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000//unit.000037/
+2018-03-27 05:55:24,828: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000/unit.000037/cu_executable.py
+2018-03-27 05:55:25,958: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-27 05:55:25,959: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000037 [AGENT_STAGING_INPUT_PENDING]
+2018-03-27 05:55:25,959: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : key gsisftp://supermic.cct-lsu.xsede.org:2222/ / gsisftp://supermic.cct-lsu.xsede.org:2222/
+2018-03-27 05:55:26,212: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:55:26,212: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:55:26,212: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:55:26,212: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with /home/george/launch-methods-project/orte-example
+2018-03-27 05:55:26,213: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> file:///home/george/launch-methods-project/orte-example/cu_executable.py
+2018-03-27 05:55:26,213: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:55:26,213: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:55:26,213: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:55:26,213: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000//unit.000038/
+2018-03-27 05:55:26,213: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000/unit.000038/cu_executable.py
+2018-03-27 05:55:27,343: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-27 05:55:27,344: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000038 [AGENT_STAGING_INPUT_PENDING]
+2018-03-27 05:55:27,344: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : key gsisftp://supermic.cct-lsu.xsede.org:2222/ / gsisftp://supermic.cct-lsu.xsede.org:2222/
+2018-03-27 05:55:27,599: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:55:27,599: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:55:27,599: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:55:27,599: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with /home/george/launch-methods-project/orte-example
+2018-03-27 05:55:27,599: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> file:///home/george/launch-methods-project/orte-example/cu_executable.py
+2018-03-27 05:55:27,600: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : <- cu_executable.py (<type 'str'>)
+2018-03-27 05:55:27,600: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    cu_executable.py
+2018-03-27 05:55:27,600: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    pwd
+2018-03-27 05:55:27,600: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   :    expand with gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000//unit.000039/
+2018-03-27 05:55:27,600: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : -> gsisftp://supermic.cct-lsu.xsede.org:2222/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0001/pilot.0000/unit.000039/cu_executable.py
+2018-03-27 05:55:28,728: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2018-03-27 05:55:28,729: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : drop  unit.000039 [AGENT_STAGING_INPUT_PENDING]
+2018-03-27 06:13:41,286: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.watch: INFO    : recv message: STOP
+2018-03-27 06:13:41,286: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.watch: INFO    : message received: STOP
+2018-03-27 06:13:41,286: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.watch: INFO    : STOP received: STOP
+2018-03-27 06:13:41,286: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.watch: INFO    : watcher closes
+2018-03-27 06:13:41,286: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.watch: INFO    : put message: [umgr.0000.staging.input.0.child.watch.thread] work finished
+2018-03-27 06:13:41,286: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.watch: DEBUG   : ru_finalize_child (NOOP)
+2018-03-27 06:13:41,286: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.watch: DEBUG   : ru_finalize_common (NOOP)
+2018-03-27 06:13:41,286: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.watch: INFO    : put message: [umgr.0000.staging.input.0.child.watch.thread] terminating
+2018-03-27 06:13:41,933: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : WARNING : alive check: proc invalid - stop [False - True]
+2018-03-27 06:13:41,966: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : INFO    : stop umgr.0000.staging.input.0.child (25350 : 25350 : MainThread) [radical.utils.process.Default.is_valid]
+2018-03-27 06:13:42,010: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : INFO    : parent stops child  25350 -> 25350 [umgr.0000.staging.input.0.child]
+2018-03-27 06:13:42,011: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : INFO    : send message: [umgr.0000.staging.input.0.child] STOP
+2018-03-27 06:13:42,011: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : WARNING : send failed ([Errno 9] Bad file descriptor) - terminate
+2018-03-27 06:13:42,011: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : TERM : umgr.0000.staging.input.0.child unregister subscriber umgr.0000.staging.input.0.child.subscriber._base_command_cb
+2018-03-27 06:13:42,011: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : unregistered subscriber umgr.0000.staging.input.0.child.subscriber._base_command_cb
+2018-03-27 06:13:42,011: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : ru_finalize_common()
+2018-03-27 06:13:42,011: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : TERM : umgr.0000.staging.input.0.child unregister publisher log_pubsub
+2018-03-27 06:13:42,012: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : unregistered publisher log_pubsub
+2018-03-27 06:13:42,012: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : TERM : umgr.0000.staging.input.0.child unregister publisher state_pubsub
+2018-03-27 06:13:42,013: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : unregistered publisher state_pubsub
+2018-03-27 06:13:42,013: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : TERM : umgr.0000.staging.input.0.child unregister publisher control_pubsub
+2018-03-27 06:13:42,014: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : unregistered publisher control_pubsub
+2018-03-27 06:13:42,014: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : umgr.0000.staging.input.0.child close prof
+2018-03-27 06:13:42,086: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : INFO    : parent stops child
+2018-03-27 06:13:42,086: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : ru_finalize_parent (NOOP)
+2018-03-27 06:13:42,086: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : ru_finalize_common (NOOP)
+2018-03-27 06:13:42,086: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : INFO    : parent stops child
+2018-03-27 06:13:42,086: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : ru_finalize_parent (NOOP)
+2018-03-27 06:13:42,087: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.subscriber._base_command_cb: DEBUG   : ru_finalize_child (NOOP)
+2018-03-27 06:13:42,087: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.subscriber._base_command_cb: INFO    : put message: [umgr.0000.staging.input.0.child.subscriber._base_command_cb.thread] terminating
+2018-03-27 06:13:42,088: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : INFO    : parent stops child
+2018-03-27 06:13:42,088: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : ru_finalize_parent (NOOP)
+2018-03-27 06:13:42,089: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.subscriber._cancel_monitor_cb: DEBUG   : ru_finalize_child (NOOP)
+2018-03-27 06:13:42,089: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : umgr.0000.staging.input.0.child.subscriber._cancel_monitor_cb: INFO    : put message: [umgr.0000.staging.input.0.child.subscriber._cancel_monitor_cb.thread] terminating
+2018-03-27 06:13:42,089: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : WARNING : super umgr.0000.staging.input.0.child is invalid
+2018-03-27 06:13:42,090: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : WARNING : component umgr.0000.staging.input.0.child is invalid
+2018-03-27 06:13:42,091: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : INFO    : stop umgr.0000.staging.input.0.child (25350 : 25350 : MainThread) [radical.pilot.utils.component.Default.is_valid]
+2018-03-27 06:13:42,091: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : TERM : umgr.0000.staging.input.0.child unregister subscriber umgr.0000.staging.input.0.child.subscriber._base_command_cb
+2018-03-27 06:13:42,091: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : WARNING : subscriber _base_command_cb is not registered
+2018-03-27 06:13:42,092: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : ru_finalize_common()
+2018-03-27 06:13:42,092: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : WARNING : publisher log_pubsub is not registered
+2018-03-27 06:13:42,092: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : WARNING : publisher state_pubsub is not registered
+2018-03-27 06:13:42,092: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : WARNING : publisher control_pubsub is not registered
+2018-03-27 06:13:42,092: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : DEBUG   : umgr.0000.staging.input.0.child close prof
+2018-03-27 06:13:42,092: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : INFO    : send message: [umgr.0000.staging.input.0.child] terminating
+2018-03-27 06:13:42,092: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : WARNING : send failed ([Errno 9] Bad file descriptor) - terminate
+2018-03-27 06:13:42,092: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : INFO    : parent stops child
+2018-03-27 06:13:42,092: umgr.0000.staging.input.0.child: umgr.0000.staging.input.0       : MainThread     : INFO    : parent stops child

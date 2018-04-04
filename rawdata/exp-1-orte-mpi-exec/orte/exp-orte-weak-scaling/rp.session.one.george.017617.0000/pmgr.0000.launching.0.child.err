@@ -1,0 +1,479 @@
+2018-03-27 05:31:31,226: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : INFO    : python.interpreter   version: 2.7.14 (default, Sep 23 2017, 22:06:14) [GCC 7.2.0]
+2018-03-27 05:31:31,226: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : INFO    :                      pid: 21801
+2018-03-27 05:31:31,226: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : INFO    :                      tid: MainThread
+2018-03-27 05:31:31,226: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : PTYShell init <saga.utils.pty_shell.PTYShell object at 0x7f54caf2b690>
+2018-03-27 05:31:31,228: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : INFO    : PTY prompt pattern: [\$#%>\]]\s*$
+2018-03-27 05:31:31,229: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : INFO    : ssh copy  mode set to 'sftp'
+2018-03-27 05:31:31,229: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : INFO    : ssh share mode set to 'auto'
+2018-03-27 05:31:31,229: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : INFO    : ssh timeout    set to '10.0'
+2018-03-27 05:31:31,230: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : SSH Connection M_FLAGS: -o ControlMaster=auto -o ControlPath=/tmp/saga_ssh_george_%h_%p.ctrl -o TCPKeepAlive=no  -o ServerAliveInterval=10 -o ServerAliveCountMax=20 -o ConnectTimeout=10
+2018-03-27 05:31:31,230: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : SSH Connection S_FLAGS: -o ControlMaster=auto -o ControlPath=/tmp/saga_ssh_george_%h_%p.ctrl -o TCPKeepAlive=no  -o ServerAliveInterval=10 -o ServerAliveCountMax=20 -o ConnectTimeout=10
+2018-03-27 05:31:31,230: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : open master pty for [ssh] [supermic.cct-lsu.xsede.org] george: /usr/bin/env TERM=vt100 X509_USER_PROXY='/tmp/x509up_u1012'  "/usr/bin/gsissh" -t -o IdentityFile=/home/george/.ssh/id_rsa -o Port=2222  -o ControlMaster=auto -o ControlPath=/tmp/saga_ssh_george_%h_%p.ctrl -o TCPKeepAlive=no  -o ServerAliveInterval=10 -o ServerAliveCountMax=20 -o ConnectTimeout=10 supermic.cct-lsu.xsede.org'
+2018-03-27 05:31:31,230: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : PTYProcess init <saga.utils.pty_process.PTYProcess object at 0x7f54c86bb250>
+2018-03-27 05:31:31,231: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : INFO    : running: /usr/bin/env TERM=vt100 X509_USER_PROXY=/tmp/x509up_u1012 /usr/bin/gsissh -t -o IdentityFile=/home/george/.ssh/id_rsa -o Port=2222 -o ControlMaster=auto -o ControlPath=/tmp/saga_ssh_george_%h_%p.ctrl -o TCPKeepAlive=no -o ServerAliveInterval=10 -o ServerAliveCountMax=20 -o ConnectTimeout=10 supermic.cct-lsu.xsede.org
+2018-03-27 05:31:31,234: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : write: [  141] [   51] ( export PROMPT_COMMAND='' PS1='$' ; set prompt='$'\n)
+2018-03-27 05:31:31,529: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : read : [  141] [ 1569] (Last login: Mon Mar 26 22:31:2 ... **************************\n\n)
+2018-03-27 05:31:31,531: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : got initial shell prompt (6) (Last login: Mon Mar 26 22:31:29 2018 from 144.76.72.175
+##############################################################################)
+2018-03-27 05:31:31,531: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : Got initial shell prompt (6) (Last login: Mon Mar 26 22:31:29 2018 from 144.76.72.175
+##############################################################################)
+2018-03-27 05:31:31,531: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : PTYProcess init <saga.utils.pty_process.PTYProcess object at 0x7f54c86bb3d0>
+2018-03-27 05:31:31,532: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : INFO    : running: /usr/bin/env TERM=vt100 X509_USER_PROXY=/tmp/x509up_u1012 /usr/bin/gsissh -t -o IdentityFile=/home/george/.ssh/id_rsa -o Port=2222 -o ControlMaster=auto -o ControlPath=/tmp/saga_ssh_george_%h_%p.ctrl -o TCPKeepAlive=no -o ServerAliveInterval=10 -o ServerAliveCountMax=20 -o ConnectTimeout=10 supermic.cct-lsu.xsede.org
+2018-03-27 05:31:31,534: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : write: [  143] [   51] ( export PROMPT_COMMAND='' PS1='$' ; set prompt='$'\n)
+2018-03-27 05:31:31,829: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : read : [  143] [ 1569] (Last login: Mon Mar 26 22:31:3 ... **************************\n\n)
+2018-03-27 05:31:31,830: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : got initial shell prompt (6) (Last login: Mon Mar 26 22:31:31 2018 from 144.76.72.175
+##############################################################################)
+2018-03-27 05:31:31,831: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : Got initial shell prompt (6) (Last login: Mon Mar 26 22:31:31 2018 from 144.76.72.175
+##############################################################################)
+2018-03-27 05:31:31,831: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   :  ===     1 : <saga.utils.pty_process.PTYProcess object at 0x7f54c86bb3d0> : init : ['/usr/bin/env', 'TERM=vt100', 'X509_USER_PROXY=/tmp/x509up_u1012', '/usr/bin/gsissh', '-t', '-o', 'IdentityFile=/home/george/.ssh/id_rsa', '-o', 'Port=2222', '-o', 'ControlMaster=auto', '-o', 'ControlPath=/tmp/saga_ssh_george_%h_%p.ctrl', '-o', 'TCPKeepAlive=no', '-o', 'ServerAliveInterval=10', '-o', 'ServerAliveCountMax=20', '-o', 'ConnectTimeout=10', 'supermic.cct-lsu.xsede.org']
+2018-03-27 05:31:31,831: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : running command shell: exec /bin/sh -i
+2018-03-27 05:31:31,831: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : write: [  143] [   30] ( stty -echo ; exec /bin/sh -i\n)
+2018-03-27 05:31:31,831: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   :  ===     1 : <saga.utils.pty_process.PTYProcess object at 0x7f54c86bb3d0> : run async :  set HISTFILE=$HOME/.saga_history; PS1='PROMPT-$?->'; PS2=''; PROMPT_COMMAND=''; export PS1 PS2 PROMPT_COMMAND 2>&1 >/dev/null; cd $HOME 2>&1 >/dev/null
+
+2018-03-27 05:31:31,831: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : flush: [  143] [     ] (flush pty read cache)
+2018-03-27 05:31:31,831: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : WARNING : flush: [  143] [ 1250] (discard data: '
+SuperMIC at LSU (Open for general use) 
+
+23-Sep-2014
+
+SuperMIC is a 1.08 PetaFlop Peak Performance Xeon Phi accelerated cluster.  SuperMIC
+has 360 nodes each with 20 Intel Ivybridge 2.8 GHz cores, 64 GB of RAM, and two 
+Intel Xeon Phi 7120P co-processors. There are 20 nodes that have NVIDIA K20X GPUs.
+This cluster is 40% allocated to the XSEDE user community an 60% dedicated to
+authorized users of the LSU community.  Access is restricted to those who meet 
+the criteria as stated on our website.
+
+Quotas for the /home volume are enabled at 5 GB.  Please do
+not use the /home volume for batch job I/O, use the /work volume 
+instead.  Please limit the number of files per directory to 10,000.
+No disk GB quotas are in effect for the /work volume, but files are purged that 
+are older than 60 days.  There are quotas on file counts.  Manage your files,
+but it is against our policy to blatantly circumvent the purge procedure.  
+Misconfigured jobs that are wasting CPU resources are subject to deletion.
+
+********************************************************************************
+Allocations are required.  Using the -A qsub option to specify your allocation.
+********************************************************************************
+
+')
+2018-03-27 05:31:31,932: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : write: [  143] [  152] (set HISTFILE=$HOME/.saga_history; PS1='PROMPT-$?->'; PS2=''; PROMPT_COMMAND=''; export PS1 PS2 PROMPT_COMMAND 2>&1 >/dev/null; cd $HOME 2>&1 >/dev/null\n)
+2018-03-27 05:31:32,536: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : read : [  143] [   21] ([gchantzi@smic1 ~]$ $)
+2018-03-27 05:31:32,547: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : read : [  143] [    1] ($)
+2018-03-27 05:31:32,548: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : read : [  143] [   10] (PROMPT-0->)
+2018-03-27 05:31:32,548: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : got new shell prompt
+2018-03-27 05:31:32,549: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : flush: [  143] [     ] (flush pty read cache)
+2018-03-27 05:31:32,650: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   :  ===     1 : <saga.utils.pty_process.PTYProcess object at 0x7f54c86bb3d0> : run sync  :  echo "WORKDIR: /work/$USER"
+2018-03-27 05:31:32,650: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : flush: [  143] [     ] (flush pty read cache)
+2018-03-27 05:31:32,751: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : run_sync: echo "WORKDIR: /work/$USER"
+2018-03-27 05:31:32,751: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : write: [  143] [   28] (echo "WORKDIR: /work/$USER"\n)
+2018-03-27 05:31:32,895: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : read : [  143] [   35] (WORKDIR: /work/gchantzi\nPROMPT-0->)
+2018-03-27 05:31:32,895: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : PTYShell del  <saga.utils.pty_shell.PTYShell object at 0x7f54caf2b690>
+2018-03-27 05:31:32,996: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : PTYProcess del  <saga.utils.pty_process.PTYProcess object at 0x7f54c86bb3d0>
+2018-03-27 05:31:33,057: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : PTYProcess init <saga.utils.pty_process.PTYProcess object at 0x7f54cbce8810>
+2018-03-27 05:31:33,058: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : INFO    : running: /usr/bin/env TERM=vt100 X509_USER_PROXY=/tmp/x509up_u1012 /usr/bin/gsissh -t -o IdentityFile=/home/george/.ssh/id_rsa -o Port=2222 -o ControlMaster=auto -o ControlPath=/tmp/saga_ssh_george_%h_%p.ctrl -o TCPKeepAlive=no -o ServerAliveInterval=10 -o ServerAliveCountMax=20 -o ConnectTimeout=10 supermic.cct-lsu.xsede.org
+2018-03-27 05:31:33,059: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : write: [  143] [   51] ( export PROMPT_COMMAND='' PS1='$' ; set prompt='$'\n)
+2018-03-27 05:31:33,352: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : read : [  143] [ 1569] (Last login: Mon Mar 26 22:31:3 ... **************************\n\n)
+2018-03-27 05:31:33,355: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : got initial shell prompt (6) (Last login: Mon Mar 26 22:31:32 2018 from 144.76.72.175
+##############################################################################)
+2018-03-27 05:31:33,355: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : Got initial shell prompt (6) (Last login: Mon Mar 26 22:31:32 2018 from 144.76.72.175
+##############################################################################)
+2018-03-27 05:31:33,356: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : write: [  143] [   30] ( stty -echo ; exec /bin/sh -i\n)
+2018-03-27 05:31:33,356: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : flush: [  143] [     ] (flush pty read cache)
+2018-03-27 05:31:33,356: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : WARNING : flush: [  143] [ 1250] (discard data: '
+SuperMIC at LSU (Open for general use) 
+
+23-Sep-2014
+
+SuperMIC is a 1.08 PetaFlop Peak Performance Xeon Phi accelerated cluster.  SuperMIC
+has 360 nodes each with 20 Intel Ivybridge 2.8 GHz cores, 64 GB of RAM, and two 
+Intel Xeon Phi 7120P co-processors. There are 20 nodes that have NVIDIA K20X GPUs.
+This cluster is 40% allocated to the XSEDE user community an 60% dedicated to
+authorized users of the LSU community.  Access is restricted to those who meet 
+the criteria as stated on our website.
+
+Quotas for the /home volume are enabled at 5 GB.  Please do
+not use the /home volume for batch job I/O, use the /work volume 
+instead.  Please limit the number of files per directory to 10,000.
+No disk GB quotas are in effect for the /work volume, but files are purged that 
+are older than 60 days.  There are quotas on file counts.  Manage your files,
+but it is against our policy to blatantly circumvent the purge procedure.  
+Misconfigured jobs that are wasting CPU resources are subject to deletion.
+
+********************************************************************************
+Allocations are required.  Using the -A qsub option to specify your allocation.
+********************************************************************************
+
+')
+2018-03-27 05:31:33,457: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : write: [  143] [  152] (set HISTFILE=$HOME/.saga_history; PS1='PROMPT-$?->'; PS2=''; PROMPT_COMMAND=''; export PS1 PS2 PROMPT_COMMAND 2>&1 >/dev/null; cd $HOME 2>&1 >/dev/null\n)
+2018-03-27 05:31:34,056: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : read : [  143] [   21] ([gchantzi@smic1 ~]$ $)
+2018-03-27 05:31:34,067: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : read : [  143] [    1] ($)
+2018-03-27 05:31:34,068: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : read : [  143] [   10] (PROMPT-0->)
+2018-03-27 05:31:34,069: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : flush: [  143] [     ] (flush pty read cache)
+2018-03-27 05:31:34,170: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : flush: [  143] [     ] (flush pty read cache)
+2018-03-27 05:31:34,271: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : write: [  143] [   32] (cd / &&  test -d  '/' && cd '/'\n)
+2018-03-27 05:31:34,415: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : read : [  143] [   10] (PROMPT-0->)
+2018-03-27 05:31:34,417: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : flush: [  143] [     ] (flush pty read cache)
+2018-03-27 05:31:34,518: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : write: [  143] [  106] (mkdir -p / && cd / &&  mkdir -p '/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0000/'\n)
+2018-03-27 05:31:34,670: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : read : [  143] [   10] (PROMPT-0->)
+2018-03-27 05:31:34,671: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : flush: [  143] [     ] (flush pty read cache)
+2018-03-27 05:31:34,772: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : PTYProcess init <saga.utils.pty_process.PTYProcess object at 0x7f54b87bf650>
+2018-03-27 05:31:34,773: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : INFO    : running: /usr/bin/env TERM=vt100 X509_USER_PROXY=/tmp/x509up_u1012 /usr/bin/gsisftp -o IdentityFile=/home/george/.ssh/id_rsa -o Port=2222 -o ControlMaster=auto -o ControlPath=/tmp/saga_ssh_george_%h_%p.ctrl -o TCPKeepAlive=no -o ServerAliveInterval=10 -o ServerAliveCountMax=20 -o ConnectTimeout=10 supermic.cct-lsu.xsede.org
+2018-03-27 05:31:35,479: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : read : [  155] [   42] (Connected to supermic.cct-lsu.xsede.org.\n)
+2018-03-27 05:31:35,621: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : read : [  155] [    6] (sftp> )
+2018-03-27 05:31:35,622: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : got initial shell prompt (6) (Connected to supermic.cct-lsu.xsede.org.
+sftp> )
+2018-03-27 05:31:35,622: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : Got initial shell prompt (6) (Connected to supermic.cct-lsu.xsede.org.
+sftp> )
+2018-03-27 05:31:35,622: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : flush: [  155] [     ] (flush pty read cache)
+2018-03-27 05:31:35,723: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : flush: [  155] [     ] (flush pty read cache)
+2018-03-27 05:31:35,824: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : write: [  155] [  241] (mput "//tmp/rp_agent_tar_dirLdvUTG/rp.session.one.george.017617.0000.pmgr.0000.launching.0.child.tgz" "/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0000/rp.session.one.george.017617.0000.pmgr.0000.launching.0.child.tgz"\n)
+2018-03-27 05:31:35,825: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : read : [  155] [    7] (mput "/)
+2018-03-27 05:31:35,825: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : read : [  155] [   66] (/tmp/rp_agent_tar_dirLdvUTG/rp.session.one.george.017617.0000.pmgr)
+2018-03-27 05:31:35,825: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : read : [  155] [   26] (. 0000.launching.0.child.)
+2018-03-27 05:31:35,825: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : read : [  155] [   20] (tgz" "/work/gchantzi)
+2018-03-27 05:31:35,826: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : read : [  155] [   19] (/radical.pilot.sand)
+2018-03-27 05:31:35,826: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : read : [  155] [   21] (box/rp.session.one .)
+2018-03-27 05:31:35,826: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : read : [  155] [   19] (george.017617.0000/)
+2018-03-27 05:31:35,826: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : read : [  155] [   19] (rp.session.one.geor)
+2018-03-27 05:31:35,826: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : read : [  155] [   19] (ge.017617.0000.pmgr)
+2018-03-27 05:31:35,826: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : read : [  155] [   18] (.0000.launching.0.)
+2018-03-27 05:31:35,827: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : read : [  155] [   14] (chil d.tgz"\n)
+2018-03-27 05:31:35,969: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : read : [  155] [  246] (Uploading //tmp/rp_agent_tar_dirLdvUTG/rp.session.one.george.017617.0000.pmgr.0000.launching.0.child.tgz to /work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0000/rp.session.one.george.017617.0000.pmgr.0000.launching.0.child.tgz\n)
+2018-03-27 05:31:36,112: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : read : [  155] [   79] (//tmp/rp_agent_tar_dirLdvUTG/rp.ses   0%    0     0.0KB/s   0.0KB/s   --:-- ETA)
+2018-03-27 05:31:37,112: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : read : [  155] [   79] (//tmp/rp_agent_tar_dirLdvUTG/rp.ses   3%   32KB  32.0KB/s  32.0KB/s   00:30 ETA)
+2018-03-27 05:31:37,541: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : read : [  155] [   81] (//tmp/rp_agent_tar_dirLdvUTG/rp.ses 100% 1011KB 707.0KB/s 978.5KB/s   00:01    \n)
+2018-03-27 05:31:37,684: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : read : [  155] [    6] (sftp> )
+2018-03-27 05:31:37,684: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : copy done: ['mput', 'Uploading', '//tmp/rp_agent_tar_dirLdvUTG/rp.ses', 'sftp>']
+2018-03-27 05:31:37,700: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : PTYProcess init <saga.utils.pty_process.PTYProcess object at 0x7f54cbc942d0>
+2018-03-27 05:31:37,700: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : INFO    : running: /usr/bin/env TERM=vt100 X509_USER_PROXY=/tmp/x509up_u1012 /usr/bin/gsissh -t -o IdentityFile=/home/george/.ssh/id_rsa -o Port=2222 -o ControlMaster=auto -o ControlPath=/tmp/saga_ssh_george_%h_%p.ctrl -o TCPKeepAlive=no -o ServerAliveInterval=10 -o ServerAliveCountMax=20 -o ConnectTimeout=10 supermic.cct-lsu.xsede.org
+2018-03-27 05:31:37,701: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : write: [  156] [   51] ( export PROMPT_COMMAND='' PS1='$' ; set prompt='$'\n)
+2018-03-27 05:31:37,996: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : read : [  156] [ 1569] (Last login: Mon Mar 26 22:31:3 ... **************************\n\n)
+2018-03-27 05:31:37,999: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : got initial shell prompt (6) (Last login: Mon Mar 26 22:31:33 2018 from 144.76.72.175
+##############################################################################)
+2018-03-27 05:31:37,999: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : Got initial shell prompt (6) (Last login: Mon Mar 26 22:31:33 2018 from 144.76.72.175
+##############################################################################)
+2018-03-27 05:31:38,000: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : write: [  156] [   30] ( stty -echo ; exec /bin/sh -i\n)
+2018-03-27 05:31:38,000: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : flush: [  156] [     ] (flush pty read cache)
+2018-03-27 05:31:38,000: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : WARNING : flush: [  156] [ 1250] (discard data: '
+SuperMIC at LSU (Open for general use) 
+
+23-Sep-2014
+
+SuperMIC is a 1.08 PetaFlop Peak Performance Xeon Phi accelerated cluster.  SuperMIC
+has 360 nodes each with 20 Intel Ivybridge 2.8 GHz cores, 64 GB of RAM, and two 
+Intel Xeon Phi 7120P co-processors. There are 20 nodes that have NVIDIA K20X GPUs.
+This cluster is 40% allocated to the XSEDE user community an 60% dedicated to
+authorized users of the LSU community.  Access is restricted to those who meet 
+the criteria as stated on our website.
+
+Quotas for the /home volume are enabled at 5 GB.  Please do
+not use the /home volume for batch job I/O, use the /work volume 
+instead.  Please limit the number of files per directory to 10,000.
+No disk GB quotas are in effect for the /work volume, but files are purged that 
+are older than 60 days.  There are quotas on file counts.  Manage your files,
+but it is against our policy to blatantly circumvent the purge procedure.  
+Misconfigured jobs that are wasting CPU resources are subject to deletion.
+
+********************************************************************************
+Allocations are required.  Using the -A qsub option to specify your allocation.
+********************************************************************************
+
+')
+2018-03-27 05:31:38,101: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : write: [  156] [  152] (set HISTFILE=$HOME/.saga_history; PS1='PROMPT-$?->'; PS2=''; PROMPT_COMMAND=''; export PS1 PS2 PROMPT_COMMAND 2>&1 >/dev/null; cd $HOME 2>&1 >/dev/null\n)
+2018-03-27 05:31:38,696: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : read : [  156] [   21] ([gchantzi@smic1 ~]$ $)
+2018-03-27 05:31:38,707: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : read : [  156] [    1] ($)
+2018-03-27 05:31:38,708: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : read : [  156] [   10] (PROMPT-0->)
+2018-03-27 05:31:38,709: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : flush: [  156] [     ] (flush pty read cache)
+2018-03-27 05:31:38,813: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : PTYProcess init <saga.utils.pty_process.PTYProcess object at 0x7f54cbc94310>
+2018-03-27 05:31:38,814: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : INFO    : running: /usr/bin/env TERM=vt100 X509_USER_PROXY=/tmp/x509up_u1012 /usr/bin/gsissh -t -o IdentityFile=/home/george/.ssh/id_rsa -o Port=2222 -o ControlMaster=auto -o ControlPath=/tmp/saga_ssh_george_%h_%p.ctrl -o TCPKeepAlive=no -o ServerAliveInterval=10 -o ServerAliveCountMax=20 -o ConnectTimeout=10 supermic.cct-lsu.xsede.org
+2018-03-27 05:31:38,816: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : write: [  157] [   51] ( export PROMPT_COMMAND='' PS1='$' ; set prompt='$'\n)
+2018-03-27 05:31:39,151: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : read : [  157] [ 1569] (Last login: Mon Mar 26 22:31:3 ... **************************\n\n)
+2018-03-27 05:31:39,154: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : got initial shell prompt (6) (Last login: Mon Mar 26 22:31:37 2018 from 144.76.72.175
+##############################################################################)
+2018-03-27 05:31:39,154: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : Got initial shell prompt (6) (Last login: Mon Mar 26 22:31:37 2018 from 144.76.72.175
+##############################################################################)
+2018-03-27 05:31:39,155: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : write: [  157] [   30] ( stty -echo ; exec /bin/sh -i\n)
+2018-03-27 05:31:39,155: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : flush: [  157] [     ] (flush pty read cache)
+2018-03-27 05:31:39,155: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : WARNING : flush: [  157] [ 1250] (discard data: '
+SuperMIC at LSU (Open for general use) 
+
+23-Sep-2014
+
+SuperMIC is a 1.08 PetaFlop Peak Performance Xeon Phi accelerated cluster.  SuperMIC
+has 360 nodes each with 20 Intel Ivybridge 2.8 GHz cores, 64 GB of RAM, and two 
+Intel Xeon Phi 7120P co-processors. There are 20 nodes that have NVIDIA K20X GPUs.
+This cluster is 40% allocated to the XSEDE user community an 60% dedicated to
+authorized users of the LSU community.  Access is restricted to those who meet 
+the criteria as stated on our website.
+
+Quotas for the /home volume are enabled at 5 GB.  Please do
+not use the /home volume for batch job I/O, use the /work volume 
+instead.  Please limit the number of files per directory to 10,000.
+No disk GB quotas are in effect for the /work volume, but files are purged that 
+are older than 60 days.  There are quotas on file counts.  Manage your files,
+but it is against our policy to blatantly circumvent the purge procedure.  
+Misconfigured jobs that are wasting CPU resources are subject to deletion.
+
+********************************************************************************
+Allocations are required.  Using the -A qsub option to specify your allocation.
+********************************************************************************
+
+')
+2018-03-27 05:31:39,256: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : write: [  157] [  152] (set HISTFILE=$HOME/.saga_history; PS1='PROMPT-$?->'; PS2=''; PROMPT_COMMAND=''; export PS1 PS2 PROMPT_COMMAND 2>&1 >/dev/null; cd $HOME 2>&1 >/dev/null\n)
+2018-03-27 05:31:39,847: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : read : [  157] [   21] ([gchantzi@smic1 ~]$ $)
+2018-03-27 05:31:39,858: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : read : [  157] [    1] ($)
+2018-03-27 05:31:39,859: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : read : [  157] [   10] (PROMPT-0->)
+2018-03-27 05:31:39,860: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : flush: [  157] [     ] (flush pty read cache)
+2018-03-27 05:31:39,961: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : flush: [  156] [     ] (flush pty read cache)
+2018-03-27 05:31:40,062: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : write: [  156] [   35] (mkdir -p .saga/adaptors/shell_job/\n)
+2018-03-27 05:31:40,210: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : read : [  156] [   10] (PROMPT-0->)
+2018-03-27 05:31:40,211: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : flush: [  156] [     ] (flush pty read cache)
+2018-03-27 05:31:40,312: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : write: [  156] [   45] (test -f .saga/adaptors/shell_job//wrapper.sh\n)
+2018-03-27 05:31:40,455: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : read : [  156] [   10] (PROMPT-0->)
+2018-03-27 05:31:40,456: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : flush: [  156] [     ] (flush pty read cache)
+2018-03-27 05:31:40,557: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : write: [  156] [   71] (/bin/sh .saga/adaptors/shell_job//wrapper.sh .saga/adaptors/shell_job/\n)
+2018-03-27 05:31:40,716: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : read : [  156] [   12] (PID: 16735\n)
+2018-03-27 05:31:40,954: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : read : [  156] [   12] (PROMPT-0->\n)
+2018-03-27 05:31:40,955: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : flush: [  157] [     ] (flush pty read cache)
+2018-03-27 05:31:41,056: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : write: [  157] [   71] (/bin/sh .saga/adaptors/shell_job//wrapper.sh .saga/adaptors/shell_job/\n)
+2018-03-27 05:31:41,215: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : read : [  157] [   12] (PID: 16829\n)
+2018-03-27 05:31:41,268: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : read : [  157] [   12] (PROMPT-0->\n)
+2018-03-27 05:31:41,269: radical.saga.pty    : pmgr.0000.launching.0           : Thread-1       : DEBUG   : flush: [  157] [     ] (flush pty read cache)
+2018-03-27 05:31:41,269: radical.saga.pty    : pmgr.0000.launching.0           : Thread-1       : WARNING : flush: [  157] [    1] (discard data: '
+')
+2018-03-27 05:31:41,275: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : flush: [  156] [     ] (flush pty read cache)
+2018-03-27 05:31:41,275: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : WARNING : flush: [  156] [    1] (discard data: '
+')
+2018-03-27 05:31:41,372: radical.saga.pty    : pmgr.0000.launching.0           : Thread-1       : DEBUG   : write: [  157] [    8] (MONITOR\n)
+2018-03-27 05:31:41,376: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : write: [  156] [  250] (RUN true && ( /bin/sh -c 'tar zmxvf /work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0000/rp.session.one.george.017617.0000.pmgr.0000.launching.0.child.tgz -C /work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0000' )\n)
+2018-03-27 05:31:41,524: radical.saga.pty    : pmgr.0000.launching.0           : Thread-1       : DEBUG   : read : [  157] [ 1144] (48942.0:RUNNING: \n48942.0:DON ... RUNNING: \n38545.0:DONE:0   \n)
+2018-03-27 05:31:41,549: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : read : [  156] [   23] (RUNNING \nOK\n16856.0\n)
+2018-03-27 05:31:41,552: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : read : [  156] [   12] (PROMPT-0->\n)
+2018-03-27 05:31:41,553: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : flush: [  156] [     ] (flush pty read cache)
+2018-03-27 05:31:41,553: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : WARNING : flush: [  156] [    1] (discard data: '
+')
+2018-03-27 05:31:41,654: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : write: [  156] [   14] (STATS 16856.0\n)
+2018-03-27 05:31:41,816: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : read : [  156] [  124] (OK\nSTATE : DONE\n\nSTART  : 1522121501\nSTOP   : 1522121501\n\nSTART_STDERR\n\nEND_STDERR\n\nSTART_STDOUT\n\nEND_STDOUT\n\n)
+2018-03-27 05:31:41,817: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : read : [  156] [   12] (PROMPT-0->\n)
+2018-03-27 05:31:41,818: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : flush: [  156] [     ] (flush pty read cache)
+2018-03-27 05:31:41,818: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : WARNING : flush: [  156] [    1] (discard data: '
+')
+2018-03-27 05:31:41,919: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : write: [  156] [   15] (STDOUT 16856.0\n)
+2018-03-27 05:31:42,072: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : read : [  156] [  482] (OK\n626f6f7473747261705f302e73680a70696c6f742e303030302f0a70696c6f742e303030302f70696c6f742e303030302e6c6f672e74677a0a70696c6f742e303030302f6167656e745f302e6366670a70696c6f742e303030302f70696c6f742e303030302e70726f662e74677a0a7261646963616c2e70696c6f742d302e34372d302e34372d31342d6762316466663862642d646576656c2e7461722e677a0a7261646963616c2e7574696c732d302e34372e312e7461722e677a0a736167612d707974686f6e2d302e34372d76302e34362d34382d6735383235663162302d646576656c2e7461722e677a0a\n)
+2018-03-27 05:31:42,073: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : read : [  156] [   12] (PROMPT-0->\n)
+2018-03-27 05:31:42,074: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : flush: [  156] [     ] (flush pty read cache)
+2018-03-27 05:31:42,074: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : WARNING : flush: [  156] [    1] (discard data: '
+')
+2018-03-27 05:31:42,176: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : write: [  156] [   15] (STDERR 16856.0\n)
+2018-03-27 05:31:42,326: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : read : [  156] [    6] (OK\n\n)
+2018-03-27 05:31:42,328: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : read : [  156] [   12] (PROMPT-0->\n)
+2018-03-27 05:31:42,342: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : PTYShell init <saga.utils.pty_shell.PTYShell object at 0x7f54b87f2ed0>
+2018-03-27 05:31:42,342: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : INFO    : PTY prompt pattern: [\$#%>\]]\s*$
+2018-03-27 05:31:42,342: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : INFO    : ssh copy  mode set to 'sftp'
+2018-03-27 05:31:42,342: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : INFO    : ssh share mode set to 'auto'
+2018-03-27 05:31:42,342: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : INFO    : ssh timeout    set to '10.0'
+2018-03-27 05:31:42,343: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : SSH Connection M_FLAGS: -o ControlMaster=auto -o ControlPath=/tmp/saga_ssh_george_%h_%p.ctrl -o TCPKeepAlive=no  -o ServerAliveInterval=10 -o ServerAliveCountMax=20 -o ConnectTimeout=10
+2018-03-27 05:31:42,343: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : SSH Connection S_FLAGS: -o ControlMaster=auto -o ControlPath=/tmp/saga_ssh_george_%h_%p.ctrl -o TCPKeepAlive=no  -o ServerAliveInterval=10 -o ServerAliveCountMax=20 -o ConnectTimeout=10
+2018-03-27 05:31:42,343: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : PTYProcess init <saga.utils.pty_process.PTYProcess object at 0x7f54cbca6b10>
+2018-03-27 05:31:42,343: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : INFO    : running: /usr/bin/env TERM=vt100 X509_USER_PROXY=/tmp/x509up_u1012 /usr/bin/gsissh -t -o IdentityFile=/home/george/.ssh/id_rsa -o Port=2222 -o ControlMaster=auto -o ControlPath=/tmp/saga_ssh_george_%h_%p.ctrl -o TCPKeepAlive=no -o ServerAliveInterval=10 -o ServerAliveCountMax=20 -o ConnectTimeout=10 supermic.cct-lsu.xsede.org
+2018-03-27 05:31:42,344: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : write: [  158] [   51] ( export PROMPT_COMMAND='' PS1='$' ; set prompt='$'\n)
+2018-03-27 05:31:42,523: radical.saga.pty    : pmgr.0000.launching.0           : Thread-1       : DEBUG   : read : [  157] [   38] (16856.0:RUNNING: \n16856.0:DONE:0   \n)
+2018-03-27 05:31:42,639: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : read : [  158] [ 1569] (Last login: Mon Mar 26 22:31:3 ... **************************\n\n)
+2018-03-27 05:31:42,642: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : got initial shell prompt (6) (Last login: Mon Mar 26 22:31:39 2018 from 144.76.72.175
+##############################################################################)
+2018-03-27 05:31:42,642: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : Got initial shell prompt (6) (Last login: Mon Mar 26 22:31:39 2018 from 144.76.72.175
+##############################################################################)
+2018-03-27 05:31:42,642: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   :  ===     5 : <saga.utils.pty_process.PTYProcess object at 0x7f54cbca6b10> : init : ['/usr/bin/env', 'TERM=vt100', 'X509_USER_PROXY=/tmp/x509up_u1012', '/usr/bin/gsissh', '-t', '-o', 'IdentityFile=/home/george/.ssh/id_rsa', '-o', 'Port=2222', '-o', 'ControlMaster=auto', '-o', 'ControlPath=/tmp/saga_ssh_george_%h_%p.ctrl', '-o', 'TCPKeepAlive=no', '-o', 'ServerAliveInterval=10', '-o', 'ServerAliveCountMax=20', '-o', 'ConnectTimeout=10', 'supermic.cct-lsu.xsede.org']
+2018-03-27 05:31:42,643: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : running command shell: exec /bin/sh -i
+2018-03-27 05:31:42,643: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : write: [  158] [   30] ( stty -echo ; exec /bin/sh -i\n)
+2018-03-27 05:31:42,643: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   :  ===     5 : <saga.utils.pty_process.PTYProcess object at 0x7f54cbca6b10> : run async :  set HISTFILE=$HOME/.saga_history; PS1='PROMPT-$?->'; PS2=''; PROMPT_COMMAND=''; export PS1 PS2 PROMPT_COMMAND 2>&1 >/dev/null; cd $HOME 2>&1 >/dev/null
+
+2018-03-27 05:31:42,643: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : flush: [  158] [     ] (flush pty read cache)
+2018-03-27 05:31:42,643: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : WARNING : flush: [  158] [ 1250] (discard data: '
+SuperMIC at LSU (Open for general use) 
+
+23-Sep-2014
+
+SuperMIC is a 1.08 PetaFlop Peak Performance Xeon Phi accelerated cluster.  SuperMIC
+has 360 nodes each with 20 Intel Ivybridge 2.8 GHz cores, 64 GB of RAM, and two 
+Intel Xeon Phi 7120P co-processors. There are 20 nodes that have NVIDIA K20X GPUs.
+This cluster is 40% allocated to the XSEDE user community an 60% dedicated to
+authorized users of the LSU community.  Access is restricted to those who meet 
+the criteria as stated on our website.
+
+Quotas for the /home volume are enabled at 5 GB.  Please do
+not use the /home volume for batch job I/O, use the /work volume 
+instead.  Please limit the number of files per directory to 10,000.
+No disk GB quotas are in effect for the /work volume, but files are purged that 
+are older than 60 days.  There are quotas on file counts.  Manage your files,
+but it is against our policy to blatantly circumvent the purge procedure.  
+Misconfigured jobs that are wasting CPU resources are subject to deletion.
+
+********************************************************************************
+Allocations are required.  Using the -A qsub option to specify your allocation.
+********************************************************************************
+
+')
+2018-03-27 05:31:42,744: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : write: [  158] [  152] (set HISTFILE=$HOME/.saga_history; PS1='PROMPT-$?->'; PS2=''; PROMPT_COMMAND=''; export PS1 PS2 PROMPT_COMMAND 2>&1 >/dev/null; cd $HOME 2>&1 >/dev/null\n)
+2018-03-27 05:31:43,344: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : read : [  158] [   21] ([gchantzi@smic1 ~]$ $)
+2018-03-27 05:31:43,355: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : read : [  158] [    1] ($)
+2018-03-27 05:31:43,356: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : read : [  158] [   10] (PROMPT-0->)
+2018-03-27 05:31:43,357: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : got new shell prompt
+2018-03-27 05:31:43,357: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : flush: [  158] [     ] (flush pty read cache)
+2018-03-27 05:31:43,458: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   :  ===     5 : <saga.utils.pty_process.PTYProcess object at 0x7f54cbca6b10> : run sync  : qstat --version
+2018-03-27 05:31:43,458: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : flush: [  158] [     ] (flush pty read cache)
+2018-03-27 05:31:43,559: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : run_sync: qstat --version
+2018-03-27 05:31:43,559: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : write: [  158] [   16] (qstat --version\n)
+2018-03-27 05:31:43,708: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : read : [  158] [   26] (version: 3.0.6\nPROMPT-0->)
+2018-03-27 05:31:43,709: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   :  ===     5 : <saga.utils.pty_process.PTYProcess object at 0x7f54cbca6b10> : run sync  : which qdel 
+2018-03-27 05:31:43,709: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : flush: [  158] [     ] (flush pty read cache)
+2018-03-27 05:31:43,810: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : run_sync: which qdel
+2018-03-27 05:31:43,810: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : write: [  158] [   11] (which qdel\n)
+2018-03-27 05:31:43,955: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : read : [  158] [   31] (/usr/local/bin/qdel\nPROMPT-0->)
+2018-03-27 05:31:43,956: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   :  ===     5 : <saga.utils.pty_process.PTYProcess object at 0x7f54cbca6b10> : run sync  : which qsub 
+2018-03-27 05:31:43,956: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : flush: [  158] [     ] (flush pty read cache)
+2018-03-27 05:31:44,057: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : run_sync: which qsub
+2018-03-27 05:31:44,057: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : write: [  158] [   11] (which qsub\n)
+2018-03-27 05:31:44,202: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : read : [  158] [   31] (/usr/local/bin/qsub\nPROMPT-0->)
+2018-03-27 05:31:44,202: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   :  ===     5 : <saga.utils.pty_process.PTYProcess object at 0x7f54cbca6b10> : run sync  : which pbsnodes 
+2018-03-27 05:31:44,202: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : flush: [  158] [     ] (flush pty read cache)
+2018-03-27 05:31:44,304: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : run_sync: which pbsnodes
+2018-03-27 05:31:44,304: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : write: [  158] [   15] (which pbsnodes\n)
+2018-03-27 05:31:44,450: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : read : [  158] [   35] (/usr/local/bin/pbsnodes\nPROMPT-0->)
+2018-03-27 05:31:44,450: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   :  ===     5 : <saga.utils.pty_process.PTYProcess object at 0x7f54cbca6b10> : run sync  : which qstat 
+2018-03-27 05:31:44,450: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : flush: [  158] [     ] (flush pty read cache)
+2018-03-27 05:31:44,551: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : run_sync: which qstat
+2018-03-27 05:31:44,551: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : write: [  158] [   12] (which qstat\n)
+2018-03-27 05:31:44,697: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : read : [  158] [   32] (/usr/local/bin/qstat\nPROMPT-0->)
+2018-03-27 05:31:44,698: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   :  ===     5 : <saga.utils.pty_process.PTYProcess object at 0x7f54cbca6b10> : run sync  : which aprun
+2018-03-27 05:31:44,698: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : flush: [  158] [     ] (flush pty read cache)
+2018-03-27 05:31:44,799: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : run_sync: which aprun
+2018-03-27 05:31:44,799: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : write: [  158] [   12] (which aprun\n)
+2018-03-27 05:31:44,946: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : read : [  158] [  985] (which: no aprun in (/home/gcha ... home/gchantzi/bin)\nPROMPT-1->)
+2018-03-27 05:31:44,947: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   :  ===     5 : <saga.utils.pty_process.PTYProcess object at 0x7f54cbca6b10> : run sync  : unset GREP_OPTIONS; /usr/local/bin/pbsnodes -a | grep -E "(np|pcpu)[[:blank:]]*=" 
+2018-03-27 05:31:44,947: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : flush: [  158] [     ] (flush pty read cache)
+2018-03-27 05:31:45,048: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : run_sync: unset GREP_OPTIONS; /usr/local/bin/pbsnodes -a | grep -E "(np|pcpu)[[:blank:]]*="
+2018-03-27 05:31:45,048: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : write: [  158] [   82] (unset GREP_OPTIONS; /usr/local/bin/pbsnodes -a | grep -E "(np|pcpu)[[:blank:]]*="\n)
+2018-03-27 05:31:45,225: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : read : [  158] [ 1694] (     np = 20\n     np = 20\n   ... \n     np = 20\n     np = 20\n)
+2018-03-27 05:31:45,367: radical.saga.pty    : pmgr.0000.launching.0           : MainThread     : DEBUG   : read : [  158] [ 3678] (     np = 20\n     np = 20\n   ... = 28\n     np = 28\nPROMPT-0->)
+2018-03-27 05:31:45,381: radical.saga.pty    : pmgr.0000.launching.0           : Thread-3       : DEBUG   :  ===     5 : <saga.utils.pty_process.PTYProcess object at 0x7f54cbca6b10> : run sync  : mkdir -p /work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0000/pilot.0000
+2018-03-27 05:31:45,382: radical.saga.pty    : pmgr.0000.launching.0           : Thread-3       : DEBUG   : flush: [  158] [     ] (flush pty read cache)
+2018-03-27 05:31:45,483: radical.saga.pty    : pmgr.0000.launching.0           : Thread-3       : DEBUG   : run_sync: mkdir -p /work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0000/pilot.0000
+2018-03-27 05:31:45,483: radical.saga.pty    : pmgr.0000.launching.0           : Thread-3       : DEBUG   : write: [  158] [   91] (mkdir -p /work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0000/pilot.0000\n)
+2018-03-27 05:31:45,631: radical.saga.pty    : pmgr.0000.launching.0           : Thread-3       : DEBUG   : read : [  158] [   10] (PROMPT-0->)
+2018-03-27 05:31:45,631: radical.saga.pty    : pmgr.0000.launching.0           : Thread-3       : DEBUG   :  ===     5 : <saga.utils.pty_process.PTYProcess object at 0x7f54cbca6b10> : run sync  : SCRIPTFILE=`mktemp -t SAGA-Python-TORQUEJobScript.XXXXXX` &&  echo "
+#!/bin/bash 
+#PBS -N pilot.0000 
+#PBS -V 
+#PBS -v RADICAL_PILOT_PROFILE=TRUE
+#PBS -o /work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0000/pilot.0000/bootstrap_1.out 
+#PBS -e /work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0000/pilot.0000/bootstrap_1.err 
+#PBS -l walltime=0:15:00 
+#PBS -q workq 
+#PBS -A TG-MCB090174 
+#PBS -l nodes=1:ppn=20
+export    PBS_O_WORKDIR=/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0000/pilot.0000 
+mkdir -p  /work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0000/pilot.0000
+cd        /work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0000/pilot.0000
+export SAGA_PPN=20
+/bin/bash -l /work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0000/bootstrap_0.sh  -d 'radical.utils-0.47.1.tar.gz:saga-python-0.47-v0.46-48-g5825f1b0-devel.tar.gz:radical.pilot-0.47-0.47-14-gb1dff8bd-devel.tar.gz' -p 'pilot.0000' -s 'rp.session.one.george.017617.0000' -m 'create' -r 'local' -b 'default' -g 'default' -v '/work/gchantzi/radical.pilot.sandbox/ve.xsede.supermic_orte.0.47' -y '15' -e 'module load python/2.7.7-anaconda' -e 'module use -a /worka/work/amerzky/radical.pilot.sandbox/openmpi/modules/' -e 'module load openmpi/2017_03_13_6da4dbb' -w 'export PATH=\$PATH' -w 'export LD_LIBRARY_PATH=\$LD_LIBRARY_PATH' " > $SCRIPTFILE && /usr/local/bin/qsub $SCRIPTFILE && rm -f $SCRIPTFILE
+2018-03-27 05:31:45,632: radical.saga.pty    : pmgr.0000.launching.0           : Thread-3       : DEBUG   : flush: [  158] [     ] (flush pty read cache)
+2018-03-27 05:31:45,733: radical.saga.pty    : pmgr.0000.launching.0           : Thread-3       : DEBUG   : run_sync: SCRIPTFILE=`mktemp -t SAGA-Python-TORQUEJobScript.XXXXXX` &&  echo "
+#!/bin/bash 
+#PBS -N pilot.0000 
+#PBS -V 
+#PBS -v RADICAL_PILOT_PROFILE=TRUE
+#PBS -o /work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0000/pilot.0000/bootstrap_1.out 
+#PBS -e /work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0000/pilot.0000/bootstrap_1.err 
+#PBS -l walltime=0:15:00 
+#PBS -q workq 
+#PBS -A TG-MCB090174 
+#PBS -l nodes=1:ppn=20
+export    PBS_O_WORKDIR=/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0000/pilot.0000 
+mkdir -p  /work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0000/pilot.0000
+cd        /work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0000/pilot.0000
+export SAGA_PPN=20
+/bin/bash -l /work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017617.0000/bootstrap_0.sh  -d 'radical.utils-0.47.1.tar.gz:saga-python-0.47-v0.46-48-g5825f1b0-devel.tar.gz:radical.pilot-0.47-0.47-14-gb1dff8bd-devel.tar.gz' -p 'pilot.0000' -s 'rp.session.one.george.017617.0000' -m 'create' -r 'local' -b 'default' -g 'default' -v '/work/gchantzi/radical.pilot.sandbox/ve.xsede.supermic_orte.0.47' -y '15' -e 'module load python/2.7.7-anaconda' -e 'module use -a /worka/work/amerzky/radical.pilot.sandbox/openmpi/modules/' -e 'module load openmpi/2017_03_13_6da4dbb' -w 'export PATH=\$PATH' -w 'export LD_LIBRARY_PATH=\$LD_LIBRARY_PATH' " > $SCRIPTFILE && /usr/local/bin/qsub $SCRIPTFILE && rm -f $SCRIPTFILE
+2018-03-27 05:31:45,733: radical.saga.pty    : pmgr.0000.launching.0           : Thread-3       : DEBUG   : write: [  158] [ 1473] (SCRIPTFILE=`mktemp -t SAGA-Pyt ... IPTFILE && rm -f $SCRIPTFILE\n)
+2018-03-27 05:31:46,153: radical.saga.pty    : pmgr.0000.launching.0           : Thread-3       : DEBUG   : read : [  158] [   14] (400999.smic3\n)
+2018-03-27 05:31:46,595: radical.saga.pty    : pmgr.0000.launching.0           : Thread-3       : DEBUG   : read : [  158] [   10] (PROMPT-0->)
+2018-03-27 05:32:42,382: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   :  ===     5 : <saga.utils.pty_process.PTYProcess object at 0x7f54cbca6b10> : run sync  : unset GREP_OPTIONS; /usr/local/bin/qstat -f1 400999 | grep -E -i '(job_state)|(Job_Name)|(exec_host)|(exit_status)|(ctime)|(start_time)|(stime)|(mtime)'
+2018-03-27 05:32:42,382: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   : flush: [  158] [     ] (flush pty read cache)
+2018-03-27 05:32:42,483: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   : run_sync: unset GREP_OPTIONS; /usr/local/bin/qstat -f1 400999 | grep -E -i '(job_state)|(Job_Name)|(exec_host)|(exit_status)|(ctime)|(start_time)|(stime)|(mtime)'
+2018-03-27 05:32:42,483: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   : write: [  158] [  153] (unset GREP_OPTIONS; /usr/local/bin/qstat -f1 400999 | grep -E -i '(job_state)|(Job_Name)|(exec_host)|(exit_status)|(ctime)|(start_time)|(stime)|(mtime)'\n)
+2018-03-27 05:32:42,663: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   : read : [  158] [  132] (    Job_Name = pilot.0000\n    job_state = Q\n    ctime = Mon Mar 26 22:31:46 2018\n    mtime = Mon Mar 26 22:31:46 2018\nPROMPT-0->)
+2018-03-27 05:33:42,724: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   :  ===     5 : <saga.utils.pty_process.PTYProcess object at 0x7f54cbca6b10> : run sync  : unset GREP_OPTIONS; /usr/local/bin/qstat -f1 400999 | grep -E -i '(job_state)|(Job_Name)|(exec_host)|(exit_status)|(ctime)|(start_time)|(stime)|(mtime)'
+2018-03-27 05:33:42,724: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   : flush: [  158] [     ] (flush pty read cache)
+2018-03-27 05:33:42,825: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   : run_sync: unset GREP_OPTIONS; /usr/local/bin/qstat -f1 400999 | grep -E -i '(job_state)|(Job_Name)|(exec_host)|(exit_status)|(ctime)|(start_time)|(stime)|(mtime)'
+2018-03-27 05:33:42,825: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   : write: [  158] [  153] (unset GREP_OPTIONS; /usr/local/bin/qstat -f1 400999 | grep -E -i '(job_state)|(Job_Name)|(exec_host)|(exit_status)|(ctime)|(start_time)|(stime)|(mtime)'\n)
+2018-03-27 05:33:42,999: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   : read : [  158] [  132] (    Job_Name = pilot.0000\n    job_state = Q\n    ctime = Mon Mar 26 22:31:46 2018\n    mtime = Mon Mar 26 22:31:46 2018\nPROMPT-0->)
+2018-03-27 05:34:43,055: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   :  ===     5 : <saga.utils.pty_process.PTYProcess object at 0x7f54cbca6b10> : run sync  : unset GREP_OPTIONS; /usr/local/bin/qstat -f1 400999 | grep -E -i '(job_state)|(Job_Name)|(exec_host)|(exit_status)|(ctime)|(start_time)|(stime)|(mtime)'
+2018-03-27 05:34:43,056: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   : flush: [  158] [     ] (flush pty read cache)
+2018-03-27 05:34:43,157: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   : run_sync: unset GREP_OPTIONS; /usr/local/bin/qstat -f1 400999 | grep -E -i '(job_state)|(Job_Name)|(exec_host)|(exit_status)|(ctime)|(start_time)|(stime)|(mtime)'
+2018-03-27 05:34:43,157: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   : write: [  158] [  153] (unset GREP_OPTIONS; /usr/local/bin/qstat -f1 400999 | grep -E -i '(job_state)|(Job_Name)|(exec_host)|(exit_status)|(ctime)|(start_time)|(stime)|(mtime)'\n)
+2018-03-27 05:34:43,332: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   : read : [  158] [  132] (    Job_Name = pilot.0000\n    job_state = Q\n    ctime = Mon Mar 26 22:31:46 2018\n    mtime = Mon Mar 26 22:31:46 2018\nPROMPT-0->)
+2018-03-27 05:35:43,367: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   :  ===     5 : <saga.utils.pty_process.PTYProcess object at 0x7f54cbca6b10> : run sync  : unset GREP_OPTIONS; /usr/local/bin/qstat -f1 400999 | grep -E -i '(job_state)|(Job_Name)|(exec_host)|(exit_status)|(ctime)|(start_time)|(stime)|(mtime)'
+2018-03-27 05:35:43,367: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   : flush: [  158] [     ] (flush pty read cache)
+2018-03-27 05:35:43,468: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   : run_sync: unset GREP_OPTIONS; /usr/local/bin/qstat -f1 400999 | grep -E -i '(job_state)|(Job_Name)|(exec_host)|(exit_status)|(ctime)|(start_time)|(stime)|(mtime)'
+2018-03-27 05:35:43,468: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   : write: [  158] [  153] (unset GREP_OPTIONS; /usr/local/bin/qstat -f1 400999 | grep -E -i '(job_state)|(Job_Name)|(exec_host)|(exit_status)|(ctime)|(start_time)|(stime)|(mtime)'\n)
+2018-03-27 05:35:43,643: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   : read : [  158] [  132] (    Job_Name = pilot.0000\n    job_state = Q\n    ctime = Mon Mar 26 22:31:46 2018\n    mtime = Mon Mar 26 22:31:46 2018\nPROMPT-0->)
+2018-03-27 05:36:43,701: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   :  ===     5 : <saga.utils.pty_process.PTYProcess object at 0x7f54cbca6b10> : run sync  : unset GREP_OPTIONS; /usr/local/bin/qstat -f1 400999 | grep -E -i '(job_state)|(Job_Name)|(exec_host)|(exit_status)|(ctime)|(start_time)|(stime)|(mtime)'
+2018-03-27 05:36:43,701: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   : flush: [  158] [     ] (flush pty read cache)
+2018-03-27 05:36:43,802: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   : run_sync: unset GREP_OPTIONS; /usr/local/bin/qstat -f1 400999 | grep -E -i '(job_state)|(Job_Name)|(exec_host)|(exit_status)|(ctime)|(start_time)|(stime)|(mtime)'
+2018-03-27 05:36:43,802: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   : write: [  158] [  153] (unset GREP_OPTIONS; /usr/local/bin/qstat -f1 400999 | grep -E -i '(job_state)|(Job_Name)|(exec_host)|(exit_status)|(ctime)|(start_time)|(stime)|(mtime)'\n)
+2018-03-27 05:36:43,976: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   : read : [  158] [  402] (    Job_Name = pilot.0000\n    job_state = R\n    ctime = Mon Mar 26 22:31:46 2018\n    exec_host = smic349/19+smic349/18+smic349/17+smic349/16+smic349/15+smic349/14+smic349/13+smic349/12+smic349/11+smic349/10+smic349/9+smic349/8+smic349/7+smic349/6+smic349/5+smic349/4+smic349/3+smic349/2+smic349/1+smic349/0\n    mtime = Mon Mar 26 22:36:42 2018\n    start_time = Mon Mar 26 22:36:40 2018\nPROMPT-0->)
+2018-03-27 05:37:44,036: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   :  ===     5 : <saga.utils.pty_process.PTYProcess object at 0x7f54cbca6b10> : run sync  : unset GREP_OPTIONS; /usr/local/bin/qstat -f1 400999 | grep -E -i '(job_state)|(Job_Name)|(exec_host)|(exit_status)|(ctime)|(start_time)|(stime)|(mtime)'
+2018-03-27 05:37:44,036: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   : flush: [  158] [     ] (flush pty read cache)
+2018-03-27 05:37:44,137: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   : run_sync: unset GREP_OPTIONS; /usr/local/bin/qstat -f1 400999 | grep -E -i '(job_state)|(Job_Name)|(exec_host)|(exit_status)|(ctime)|(start_time)|(stime)|(mtime)'
+2018-03-27 05:37:44,138: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   : write: [  158] [  153] (unset GREP_OPTIONS; /usr/local/bin/qstat -f1 400999 | grep -E -i '(job_state)|(Job_Name)|(exec_host)|(exit_status)|(ctime)|(start_time)|(stime)|(mtime)'\n)
+2018-03-27 05:37:44,313: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   : read : [  158] [  402] (    Job_Name = pilot.0000\n    job_state = R\n    ctime = Mon Mar 26 22:31:46 2018\n    exec_host = smic349/19+smic349/18+smic349/17+smic349/16+smic349/15+smic349/14+smic349/13+smic349/12+smic349/11+smic349/10+smic349/9+smic349/8+smic349/7+smic349/6+smic349/5+smic349/4+smic349/3+smic349/2+smic349/1+smic349/0\n    mtime = Mon Mar 26 22:36:42 2018\n    start_time = Mon Mar 26 22:36:40 2018\nPROMPT-0->)
+2018-03-27 05:38:44,362: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   :  ===     5 : <saga.utils.pty_process.PTYProcess object at 0x7f54cbca6b10> : run sync  : unset GREP_OPTIONS; /usr/local/bin/qstat -f1 400999 | grep -E -i '(job_state)|(Job_Name)|(exec_host)|(exit_status)|(ctime)|(start_time)|(stime)|(mtime)'
+2018-03-27 05:38:44,362: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   : flush: [  158] [     ] (flush pty read cache)
+2018-03-27 05:38:44,463: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   : run_sync: unset GREP_OPTIONS; /usr/local/bin/qstat -f1 400999 | grep -E -i '(job_state)|(Job_Name)|(exec_host)|(exit_status)|(ctime)|(start_time)|(stime)|(mtime)'
+2018-03-27 05:38:44,463: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   : write: [  158] [  153] (unset GREP_OPTIONS; /usr/local/bin/qstat -f1 400999 | grep -E -i '(job_state)|(Job_Name)|(exec_host)|(exit_status)|(ctime)|(start_time)|(stime)|(mtime)'\n)
+2018-03-27 05:38:44,639: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   : read : [  158] [  402] (    Job_Name = pilot.0000\n    job_state = R\n    ctime = Mon Mar 26 22:31:46 2018\n    exec_host = smic349/19+smic349/18+smic349/17+smic349/16+smic349/15+smic349/14+smic349/13+smic349/12+smic349/11+smic349/10+smic349/9+smic349/8+smic349/7+smic349/6+smic349/5+smic349/4+smic349/3+smic349/2+smic349/1+smic349/0\n    mtime = Mon Mar 26 22:36:42 2018\n    start_time = Mon Mar 26 22:36:40 2018\nPROMPT-0->)
+2018-03-27 05:39:44,697: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   :  ===     5 : <saga.utils.pty_process.PTYProcess object at 0x7f54cbca6b10> : run sync  : unset GREP_OPTIONS; /usr/local/bin/qstat -f1 400999 | grep -E -i '(job_state)|(Job_Name)|(exec_host)|(exit_status)|(ctime)|(start_time)|(stime)|(mtime)'
+2018-03-27 05:39:44,697: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   : flush: [  158] [     ] (flush pty read cache)
+2018-03-27 05:39:44,798: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   : run_sync: unset GREP_OPTIONS; /usr/local/bin/qstat -f1 400999 | grep -E -i '(job_state)|(Job_Name)|(exec_host)|(exit_status)|(ctime)|(start_time)|(stime)|(mtime)'
+2018-03-27 05:39:44,798: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   : write: [  158] [  153] (unset GREP_OPTIONS; /usr/local/bin/qstat -f1 400999 | grep -E -i '(job_state)|(Job_Name)|(exec_host)|(exit_status)|(ctime)|(start_time)|(stime)|(mtime)'\n)
+2018-03-27 05:39:44,974: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   : read : [  158] [  402] (    Job_Name = pilot.0000\n    job_state = R\n    ctime = Mon Mar 26 22:31:46 2018\n    exec_host = smic349/19+smic349/18+smic349/17+smic349/16+smic349/15+smic349/14+smic349/13+smic349/12+smic349/11+smic349/10+smic349/9+smic349/8+smic349/7+smic349/6+smic349/5+smic349/4+smic349/3+smic349/2+smic349/1+smic349/0\n    mtime = Mon Mar 26 22:36:42 2018\n    start_time = Mon Mar 26 22:36:40 2018\nPROMPT-0->)
+2018-03-27 05:40:45,008: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   :  ===     5 : <saga.utils.pty_process.PTYProcess object at 0x7f54cbca6b10> : run sync  : unset GREP_OPTIONS; /usr/local/bin/qstat -f1 400999 | grep -E -i '(job_state)|(Job_Name)|(exec_host)|(exit_status)|(ctime)|(start_time)|(stime)|(mtime)'
+2018-03-27 05:40:45,008: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   : flush: [  158] [     ] (flush pty read cache)
+2018-03-27 05:40:45,109: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   : run_sync: unset GREP_OPTIONS; /usr/local/bin/qstat -f1 400999 | grep -E -i '(job_state)|(Job_Name)|(exec_host)|(exit_status)|(ctime)|(start_time)|(stime)|(mtime)'
+2018-03-27 05:40:45,109: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   : write: [  158] [  153] (unset GREP_OPTIONS; /usr/local/bin/qstat -f1 400999 | grep -E -i '(job_state)|(Job_Name)|(exec_host)|(exit_status)|(ctime)|(start_time)|(stime)|(mtime)'\n)
+2018-03-27 05:40:45,284: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   : read : [  158] [  402] (    Job_Name = pilot.0000\n    job_state = R\n    ctime = Mon Mar 26 22:31:46 2018\n    exec_host = smic349/19+smic349/18+smic349/17+smic349/16+smic349/15+smic349/14+smic349/13+smic349/12+smic349/11+smic349/10+smic349/9+smic349/8+smic349/7+smic349/6+smic349/5+smic349/4+smic349/3+smic349/2+smic349/1+smic349/0\n    mtime = Mon Mar 26 22:36:42 2018\n    start_time = Mon Mar 26 22:36:40 2018\nPROMPT-0->)
+2018-03-27 05:41:45,341: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   :  ===     5 : <saga.utils.pty_process.PTYProcess object at 0x7f54cbca6b10> : run sync  : unset GREP_OPTIONS; /usr/local/bin/qstat -f1 400999 | grep -E -i '(job_state)|(Job_Name)|(exec_host)|(exit_status)|(ctime)|(start_time)|(stime)|(mtime)'
+2018-03-27 05:41:45,341: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   : flush: [  158] [     ] (flush pty read cache)
+2018-03-27 05:41:45,442: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   : run_sync: unset GREP_OPTIONS; /usr/local/bin/qstat -f1 400999 | grep -E -i '(job_state)|(Job_Name)|(exec_host)|(exit_status)|(ctime)|(start_time)|(stime)|(mtime)'
+2018-03-27 05:41:45,442: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   : write: [  158] [  153] (unset GREP_OPTIONS; /usr/local/bin/qstat -f1 400999 | grep -E -i '(job_state)|(Job_Name)|(exec_host)|(exit_status)|(ctime)|(start_time)|(stime)|(mtime)'\n)
+2018-03-27 05:41:45,616: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   : read : [  158] [  402] (    Job_Name = pilot.0000\n    job_state = R\n    ctime = Mon Mar 26 22:31:46 2018\n    exec_host = smic349/19+smic349/18+smic349/17+smic349/16+smic349/15+smic349/14+smic349/13+smic349/12+smic349/11+smic349/10+smic349/9+smic349/8+smic349/7+smic349/6+smic349/5+smic349/4+smic349/3+smic349/2+smic349/1+smic349/0\n    mtime = Mon Mar 26 22:36:42 2018\n    start_time = Mon Mar 26 22:36:40 2018\nPROMPT-0->)
+2018-03-27 05:42:45,667: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   :  ===     5 : <saga.utils.pty_process.PTYProcess object at 0x7f54cbca6b10> : run sync  : unset GREP_OPTIONS; /usr/local/bin/qstat -f1 400999 | grep -E -i '(job_state)|(Job_Name)|(exec_host)|(exit_status)|(ctime)|(start_time)|(stime)|(mtime)'
+2018-03-27 05:42:45,667: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   : flush: [  158] [     ] (flush pty read cache)
+2018-03-27 05:42:45,768: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   : run_sync: unset GREP_OPTIONS; /usr/local/bin/qstat -f1 400999 | grep -E -i '(job_state)|(Job_Name)|(exec_host)|(exit_status)|(ctime)|(start_time)|(stime)|(mtime)'
+2018-03-27 05:42:45,768: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   : write: [  158] [  153] (unset GREP_OPTIONS; /usr/local/bin/qstat -f1 400999 | grep -E -i '(job_state)|(Job_Name)|(exec_host)|(exit_status)|(ctime)|(start_time)|(stime)|(mtime)'\n)
+2018-03-27 05:42:45,944: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   : read : [  158] [  402] (    Job_Name = pilot.0000\n    job_state = R\n    ctime = Mon Mar 26 22:31:46 2018\n    exec_host = smic349/19+smic349/18+smic349/17+smic349/16+smic349/15+smic349/14+smic349/13+smic349/12+smic349/11+smic349/10+smic349/9+smic349/8+smic349/7+smic349/6+smic349/5+smic349/4+smic349/3+smic349/2+smic349/1+smic349/0\n    mtime = Mon Mar 26 22:36:42 2018\n    start_time = Mon Mar 26 22:36:40 2018\nPROMPT-0->)
+2018-03-27 05:43:46,001: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   :  ===     5 : <saga.utils.pty_process.PTYProcess object at 0x7f54cbca6b10> : run sync  : unset GREP_OPTIONS; /usr/local/bin/qstat -f1 400999 | grep -E -i '(job_state)|(Job_Name)|(exec_host)|(exit_status)|(ctime)|(start_time)|(stime)|(mtime)'
+2018-03-27 05:43:46,001: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   : flush: [  158] [     ] (flush pty read cache)
+2018-03-27 05:43:46,103: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   : run_sync: unset GREP_OPTIONS; /usr/local/bin/qstat -f1 400999 | grep -E -i '(job_state)|(Job_Name)|(exec_host)|(exit_status)|(ctime)|(start_time)|(stime)|(mtime)'
+2018-03-27 05:43:46,103: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   : write: [  158] [  153] (unset GREP_OPTIONS; /usr/local/bin/qstat -f1 400999 | grep -E -i '(job_state)|(Job_Name)|(exec_host)|(exit_status)|(ctime)|(start_time)|(stime)|(mtime)'\n)
+2018-03-27 05:43:46,278: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   : read : [  158] [  402] (    Job_Name = pilot.0000\n    job_state = R\n    ctime = Mon Mar 26 22:31:46 2018\n    exec_host = smic349/19+smic349/18+smic349/17+smic349/16+smic349/15+smic349/14+smic349/13+smic349/12+smic349/11+smic349/10+smic349/9+smic349/8+smic349/7+smic349/6+smic349/5+smic349/4+smic349/3+smic349/2+smic349/1+smic349/0\n    mtime = Mon Mar 26 22:36:42 2018\n    start_time = Mon Mar 26 22:36:40 2018\nPROMPT-0->)
+2018-03-27 05:44:46,324: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   :  ===     5 : <saga.utils.pty_process.PTYProcess object at 0x7f54cbca6b10> : run sync  : unset GREP_OPTIONS; /usr/local/bin/qstat -f1 400999 | grep -E -i '(job_state)|(Job_Name)|(exec_host)|(exit_status)|(ctime)|(start_time)|(stime)|(mtime)'
+2018-03-27 05:44:46,324: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   : flush: [  158] [     ] (flush pty read cache)
+2018-03-27 05:44:46,425: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   : run_sync: unset GREP_OPTIONS; /usr/local/bin/qstat -f1 400999 | grep -E -i '(job_state)|(Job_Name)|(exec_host)|(exit_status)|(ctime)|(start_time)|(stime)|(mtime)'
+2018-03-27 05:44:46,425: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   : write: [  158] [  153] (unset GREP_OPTIONS; /usr/local/bin/qstat -f1 400999 | grep -E -i '(job_state)|(Job_Name)|(exec_host)|(exit_status)|(ctime)|(start_time)|(stime)|(mtime)'\n)
+2018-03-27 05:44:46,599: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   : read : [  158] [  402] (    Job_Name = pilot.0000\n    job_state = R\n    ctime = Mon Mar 26 22:31:46 2018\n    exec_host = smic349/19+smic349/18+smic349/17+smic349/16+smic349/15+smic349/14+smic349/13+smic349/12+smic349/11+smic349/10+smic349/9+smic349/8+smic349/7+smic349/6+smic349/5+smic349/4+smic349/3+smic349/2+smic349/1+smic349/0\n    mtime = Mon Mar 26 22:36:42 2018\n    start_time = Mon Mar 26 22:36:40 2018\nPROMPT-0->)
+2018-03-27 05:45:46,634: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   :  ===     5 : <saga.utils.pty_process.PTYProcess object at 0x7f54cbca6b10> : run sync  : unset GREP_OPTIONS; /usr/local/bin/qstat -f1 400999 | grep -E -i '(job_state)|(Job_Name)|(exec_host)|(exit_status)|(ctime)|(start_time)|(stime)|(mtime)'
+2018-03-27 05:45:46,634: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   : flush: [  158] [     ] (flush pty read cache)
+2018-03-27 05:45:46,735: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   : run_sync: unset GREP_OPTIONS; /usr/local/bin/qstat -f1 400999 | grep -E -i '(job_state)|(Job_Name)|(exec_host)|(exit_status)|(ctime)|(start_time)|(stime)|(mtime)'
+2018-03-27 05:45:46,736: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   : write: [  158] [  153] (unset GREP_OPTIONS; /usr/local/bin/qstat -f1 400999 | grep -E -i '(job_state)|(Job_Name)|(exec_host)|(exit_status)|(ctime)|(start_time)|(stime)|(mtime)'\n)
+2018-03-27 05:45:46,910: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   : read : [  158] [  402] (    Job_Name = pilot.0000\n    job_state = R\n    ctime = Mon Mar 26 22:31:46 2018\n    exec_host = smic349/19+smic349/18+smic349/17+smic349/16+smic349/15+smic349/14+smic349/13+smic349/12+smic349/11+smic349/10+smic349/9+smic349/8+smic349/7+smic349/6+smic349/5+smic349/4+smic349/3+smic349/2+smic349/1+smic349/0\n    mtime = Mon Mar 26 22:36:42 2018\n    start_time = Mon Mar 26 22:36:40 2018\nPROMPT-0->)
+2018-03-27 05:46:46,968: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   :  ===     5 : <saga.utils.pty_process.PTYProcess object at 0x7f54cbca6b10> : run sync  : unset GREP_OPTIONS; /usr/local/bin/qstat -f1 400999 | grep -E -i '(job_state)|(Job_Name)|(exec_host)|(exit_status)|(ctime)|(start_time)|(stime)|(mtime)'
+2018-03-27 05:46:46,968: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   : flush: [  158] [     ] (flush pty read cache)
+2018-03-27 05:46:47,069: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   : run_sync: unset GREP_OPTIONS; /usr/local/bin/qstat -f1 400999 | grep -E -i '(job_state)|(Job_Name)|(exec_host)|(exit_status)|(ctime)|(start_time)|(stime)|(mtime)'
+2018-03-27 05:46:47,069: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   : write: [  158] [  153] (unset GREP_OPTIONS; /usr/local/bin/qstat -f1 400999 | grep -E -i '(job_state)|(Job_Name)|(exec_host)|(exit_status)|(ctime)|(start_time)|(stime)|(mtime)'\n)
+2018-03-27 05:46:47,243: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   : read : [  158] [  402] (    Job_Name = pilot.0000\n    job_state = R\n    ctime = Mon Mar 26 22:31:46 2018\n    exec_host = smic349/19+smic349/18+smic349/17+smic349/16+smic349/15+smic349/14+smic349/13+smic349/12+smic349/11+smic349/10+smic349/9+smic349/8+smic349/7+smic349/6+smic349/5+smic349/4+smic349/3+smic349/2+smic349/1+smic349/0\n    mtime = Mon Mar 26 22:36:42 2018\n    start_time = Mon Mar 26 22:36:40 2018\nPROMPT-0->)
+2018-03-27 05:47:47,287: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   :  ===     5 : <saga.utils.pty_process.PTYProcess object at 0x7f54cbca6b10> : run sync  : unset GREP_OPTIONS; /usr/local/bin/qstat -f1 400999 | grep -E -i '(job_state)|(Job_Name)|(exec_host)|(exit_status)|(ctime)|(start_time)|(stime)|(mtime)'
+2018-03-27 05:47:47,287: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   : flush: [  158] [     ] (flush pty read cache)
+2018-03-27 05:47:47,388: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   : run_sync: unset GREP_OPTIONS; /usr/local/bin/qstat -f1 400999 | grep -E -i '(job_state)|(Job_Name)|(exec_host)|(exit_status)|(ctime)|(start_time)|(stime)|(mtime)'
+2018-03-27 05:47:47,388: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   : write: [  158] [  153] (unset GREP_OPTIONS; /usr/local/bin/qstat -f1 400999 | grep -E -i '(job_state)|(Job_Name)|(exec_host)|(exit_status)|(ctime)|(start_time)|(stime)|(mtime)'\n)
+2018-03-27 05:47:47,563: radical.saga.pty    : pmgr.0000.launching.0           : Thread-2       : DEBUG   : read : [  158] [  402] (    Job_Name = pilot.0000\n    job_state = R\n    ctime

@@ -1,0 +1,18 @@
+#time,event,comp,thread,uid,state,msg
+1522271187.8842,sync_abs,agent_0.executing.0.child,MainThread,,,smic204:204.90.41.204:1522271187.85:1522271187.85:ntp
+1522271187.9690,component_init,agent_0.executing.0.child,MainThread,,,
+1522271188.1622,get,agent_0.executing.0.child,MainThread,unit.000000,AGENT_EXECUTING_PENDING,
+1522271188.1625,advance,agent_0.executing.0.child,MainThread,unit.000000,AGENT_EXECUTING,
+1522271188.1627,publish,agent_0.executing.0.child,MainThread,unit.000000,AGENT_EXECUTING,
+1522271188.1629,exec,agent_0.executing.0.child,MainThread,unit.000000,,unit launch
+1522271188.1629,exec_mkdir,agent_0.executing.0.child,MainThread,unit.000000,,
+1522271188.1634,exec_mkdir_done,agent_0.executing.0.child,MainThread,unit.000000,,
+1522271188.1671,exec_start,agent_0.executing.0.child,MainThread,unit.000000,,
+1522271188.1719,exec_ok,agent_0.executing.0.child,MainThread,unit.000000,,
+1522271908.2421,exec_stop,agent_0.executing.0.child,Watcher,unit.000000,,
+1522271908.2450,advance,agent_0.executing.0.child,Watcher,unit.000000,AGENT_STAGING_OUTPUT_PENDING,
+1522271908.2451,publish,agent_0.executing.0.child,Watcher,unit.000000,AGENT_STAGING_OUTPUT_PENDING,
+1522271908.2453,put,agent_0.executing.0.child,Watcher,unit.000000,AGENT_STAGING_OUTPUT_PENDING,agent.staging.output.queue.input.0000
+1522271916.9234,flush,agent_0.executing.0.child,agent_0.executing.0.child.subscriber._cancel_monitor_cb,,,
+1522271916.9455,component_final,agent_0.executing.0.child,agent_0.executing.0.child.subscriber._cancel_monitor_cb,,,
+1522271916.9455,END,agent_0.executing.0.child,agent_0.executing.0.child.subscriber._cancel_monitor_cb,,,

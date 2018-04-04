@@ -1,0 +1,12 @@
+#time,event,comp,thread,uid,state,msg
+1522288009.6128,sync_abs,agent_0.staging.input.0.child,MainThread,,,smic037:204.90.41.37:1522288009.59:1522288009.6:ntp
+1522288009.6660,component_init,agent_0.staging.input.0.child,MainThread,,,
+1522288010.6431,get,agent_0.staging.input.0.child,MainThread,unit.000000,AGENT_STAGING_INPUT_PENDING,
+1522288010.6434,advance,agent_0.staging.input.0.child,MainThread,unit.000000,AGENT_STAGING_INPUT,
+1522288010.6436,publish,agent_0.staging.input.0.child,MainThread,unit.000000,AGENT_STAGING_INPUT,
+1522288010.6437,advance,agent_0.staging.input.0.child,MainThread,unit.000000,AGENT_SCHEDULING_PENDING,
+1522288010.6438,publish,agent_0.staging.input.0.child,MainThread,unit.000000,AGENT_SCHEDULING_PENDING,
+1522288010.6439,put,agent_0.staging.input.0.child,MainThread,unit.000000,AGENT_SCHEDULING_PENDING,agent.scheduling.queue.input.0000
+1522288739.9594,flush,agent_0.staging.input.0.child,agent_0.staging.input.0.child.subscriber._cancel_monitor_cb,,,
+1522288739.9785,component_final,agent_0.staging.input.0.child,agent_0.staging.input.0.child.subscriber._cancel_monitor_cb,,,
+1522288739.9785,END,agent_0.staging.input.0.child,agent_0.staging.input.0.child.subscriber._cancel_monitor_cb,,,

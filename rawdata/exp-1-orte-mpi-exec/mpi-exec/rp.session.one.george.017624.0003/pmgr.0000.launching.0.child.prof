@@ -1,0 +1,15 @@
+#time,event,comp,thread,uid,state,msg
+1522777125.0638,sync_abs,pmgr.0000.launching.0.child,MainThread,,,one:144.76.72.175:1522777125.06:1522777125.06:sys
+1522777125.1364,component_init,pmgr.0000.launching.0.child,MainThread,,,
+1522777130.2707,get,pmgr.0000.launching.0.child,MainThread,pilot.0000,PMGR_LAUNCHING_PENDING,
+1522777130.2709,advance,pmgr.0000.launching.0.child,MainThread,pilot.0000,PMGR_LAUNCHING,
+1522777130.2713,publish,pmgr.0000.launching.0.child,MainThread,pilot.0000,PMGR_LAUNCHING,
+1522777132.0582,staging_in_start,pmgr.0000.launching.0.child,MainThread,pilot.0000,,
+1522777141.3486,staging_in_stop,pmgr.0000.launching.0.child,MainThread,pilot.0000,,
+1522777141.3486,submission_start,pmgr.0000.launching.0.child,MainThread,pilot.0000,,
+1522777145.3487,submission_stop,pmgr.0000.launching.0.child,MainThread,pilot.0000,,
+1522777145.3488,advance,pmgr.0000.launching.0.child,MainThread,pilot.0000,PMGR_ACTIVE_PENDING,
+1522777145.3505,publish,pmgr.0000.launching.0.child,MainThread,pilot.0000,PMGR_ACTIVE_PENDING,
+1522778718.1237,advance,pmgr.0000.launching.0.child,pmgr.0000.launching.0.child.idler._pilot_watcher_cb,pilot.0000,DONE,
+1522778718.1252,publish,pmgr.0000.launching.0.child,pmgr.0000.launching.0.child.idler._pilot_watcher_cb,pilot.0000,DONE,
+1522778724.8011,flush,pmgr.0000.launching.0.child,pmgr.0000.launching.0.child.subscriber._cancel_monitor_cb,,,

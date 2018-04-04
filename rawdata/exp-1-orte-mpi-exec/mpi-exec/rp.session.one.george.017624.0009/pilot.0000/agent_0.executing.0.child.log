@@ -1,0 +1,343 @@
+2018-04-03 15:16:09,671: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : python.interpreter   version: 2.7.7 |Continuum Analytics, Inc.| (default, Jun 2 2014, 12:34:02) [GCC 4.1.2 20080704 (Red Hat 4.1.2-54)]
+2018-04-03 15:16:09,675: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    :                      pid: 74740
+2018-04-03 15:16:09,675: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    :                      tid: MainThread
+2018-04-03 15:16:09,675: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : radical.pilot        version: 0.47-0.47-14-gb1dff8bd@devel
+2018-04-03 15:16:09,675: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : initialize agent_0.executing.0.child
+2018-04-03 15:16:09,682: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : cfg: {'agent_launch_method': 'SSH',
+ 'agent_name': 'agent_0',
+ 'agents': {},
+ 'bridges': {'agent_executing_queue': {'addr_in': 'tcp://204.90.42.8:42110',
+                                       'addr_out': 'tcp://204.90.42.8:33604',
+                                       'bulk_size': 0,
+                                       'log_level': 'debug',
+                                       'stall_hwm': 1},
+             'agent_reschedule_pubsub': {'addr_in': 'tcp://204.90.42.8:39055',
+                                         'addr_out': 'tcp://204.90.42.8:36325',
+                                         'bulk_size': 0,
+                                         'log_level': 'debug',
+                                         'stall_hwm': 1},
+             'agent_scheduling_queue': {'addr_in': 'tcp://204.90.42.8:45442',
+                                        'addr_out': 'tcp://204.90.42.8:42582',
+                                        'bulk_size': 0,
+                                        'log_level': 'debug',
+                                        'stall_hwm': 1},
+             'agent_staging_input_queue': {'addr_in': 'tcp://204.90.42.8:35744',
+                                           'addr_out': 'tcp://204.90.42.8:38659',
+                                           'bulk_size': 0,
+                                           'log_level': 'debug',
+                                           'stall_hwm': 1},
+             'agent_staging_output_queue': {'addr_in': 'tcp://204.90.42.8:36102',
+                                            'addr_out': 'tcp://204.90.42.8:36785',
+                                            'bulk_size': 0,
+                                            'log_level': 'debug',
+                                            'stall_hwm': 1},
+             'agent_unschedule_pubsub': {'addr_in': 'tcp://204.90.42.8:33511',
+                                         'addr_out': 'tcp://204.90.42.8:40671',
+                                         'bulk_size': 0,
+                                         'log_level': 'debug',
+                                         'stall_hwm': 1},
+             'control_pubsub': {'addr_in': 'tcp://204.90.42.8:44766',
+                                'addr_out': 'tcp://204.90.42.8:35441',
+                                'bulk_size': 0,
+                                'log_level': 'debug',
+                                'stall_hwm': 1},
+             'log_pubsub': {'addr_in': 'tcp://204.90.42.8:44020',
+                            'addr_out': 'tcp://204.90.42.8:37214',
+                            'bulk_size': 0,
+                            'log_level': 'debug',
+                            'stall_hwm': 1},
+             'state_pubsub': {'addr_in': 'tcp://204.90.42.8:39526',
+                              'addr_out': 'tcp://204.90.42.8:45625',
+                              'bulk_size': 0,
+                              'log_level': 'debug',
+                              'stall_hwm': 1}},
+ 'bulk_collection_size': 100,
+ 'bulk_collection_time': 1.0,
+ 'cname': 'AgentExecutingComponent',
+ 'components': {},
+ 'cores': 20,
+ 'cores_per_node': 20,
+ 'count': 1,
+ 'cu_post_exec': None,
+ 'cu_pre_exec': None,
+ 'cu_tmp': None,
+ 'db_poll_sleeptime': 1.0,
+ 'dburl': 'mongodb://rp:rp@ds015335.mlab.com:15335/rp',
+ 'debug': 10,
+ 'export_to_cu': None,
+ 'logdir': '.',
+ 'lrms': 'TORQUE',
+ 'lrms_info': {'agent_nodes': {},
+               'cores_per_node': 20,
+               'lm_info': {},
+               'name': 'Torque',
+               'node_list': ['smic262']},
+ 'max_io_loglength': 1024,
+ 'mode': 'shared',
+ 'mpi_launch_method': 'MPIEXEC',
+ 'number': 0,
+ 'owner': 'agent_0',
+ 'pilot_id': 'pilot.0000',
+ 'pilot_sandbox': '/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017624.0009/pilot.0000/',
+ 'resource_cfg': {'agent_launch_method': 'SSH',
+                  'agent_scheduler': 'CONTINUOUS',
+                  'agent_spawner': 'POPEN',
+                  'cores_per_node': '20',
+                  'default_queue': 'workq',
+                  'default_remote_workdir': '/work/$USER',
+                  'description': "SuperMIC (pronounced 'Super Mick') is Louisiana State University's (LSU) newest supercomputer funded by the National Science Foundation's (NSF) Major Research Instrumentation (MRI) award to the Center for Computation & Technology. (https://portal.xsede.org/lsu-supermic)",
+                  'filesystem_endpoint': 'gsisftp://supermic.cct-lsu.xsede.org:2222/',
+                  'gsissh': {'filesystem_endpoint': 'gsisftp://supermic.cct-lsu.xsede.org:2222/',
+                             'job_manager_endpoint': 'torque+gsissh://supermic.cct-lsu.xsede.org:2222/'},
+                  'job_manager_endpoint': 'torque+gsissh://supermic.cct-lsu.xsede.org:2222/',
+                  'label': 'xsede.supermic_ssh',
+                  'lrms': 'TORQUE',
+                  'mpi_launch_method': 'MPIEXEC',
+                  'notes': 'Partially allocated through XSEDE. Primary access through GSISSH. Allows SSH key authentication too.',
+                  'pre_bootstrap_1': ['module load python/2.7.7-anaconda'],
+                  'python_dist': 'default',
+                  'rp_version': 'local',
+                  'schemas': ['gsissh', 'ssh'],
+                  'ssh': {'filesystem_endpoint': 'sftp://supermic.cct-lsu.xsede.org/',
+                          'job_manager_endpoint': 'torque+ssh://supermic.cct-lsu.xsede.org/'},
+                  'task_launch_method': 'SSH',
+                  'valid_roots': ['/work'],
+                  'virtenv_mode': 'create'},
+ 'resource_sandbox': '/work/gchantzi/radical.pilot.sandbox',
+ 'runtime': 25,
+ 'scheduler': 'CONTINUOUS',
+ 'session_id': 'rp.session.one.george.017624.0009',
+ 'session_sandbox': '/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017624.0009',
+ 'spawner': 'POPEN',
+ 'staging_area': 'staging_area',
+ 'staging_schema': 'staging',
+ 'target': 'local',
+ 'task_launch_method': 'SSH',
+ 'uid': 'agent_0',
+ 'workdir': '/worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017624.0009/pilot.0000'}
+2018-04-03 15:16:09,682: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : start components: {}
+2018-04-03 15:16:09,682: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : alive check in term
+2018-04-03 15:16:09,682: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : START: agent_0.executing.0.child register publisher log_pubsub
+2018-04-03 15:16:09,682: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : using addr tcp://204.90.42.8:44020 for pubsub log_pubsub
+2018-04-03 15:16:09,689: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : registered publisher : log_pubsub : log.pubsub.pub.0004
+2018-04-03 15:16:09,689: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : alive check in term
+2018-04-03 15:16:09,689: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : START: agent_0.executing.0.child register publisher state_pubsub
+2018-04-03 15:16:09,689: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : using addr tcp://204.90.42.8:39526 for pubsub state_pubsub
+2018-04-03 15:16:09,695: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : registered publisher : state_pubsub : state.pubsub.pub.0004
+2018-04-03 15:16:09,695: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : alive check in term
+2018-04-03 15:16:09,696: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : START: agent_0.executing.0.child register publisher control_pubsub
+2018-04-03 15:16:09,696: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : using addr tcp://204.90.42.8:44766 for pubsub control_pubsub
+2018-04-03 15:16:09,702: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : registered publisher : control_pubsub : control.pubsub.pub.0004
+2018-04-03 15:16:09,703: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : alive check in term
+2018-04-03 15:16:09,704: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : START: agent_0.executing.0.child register subscriber agent_0.executing.0.child.subscriber._cancel_monitor_cb
+2018-04-03 15:16:09,704: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : using addr tcp://204.90.42.8:35441 for pubsub control_pubsub
+2018-04-03 15:16:09,709: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : parent name: agent_0.executing.0.child.subscriber._cancel_monitor_cb
+2018-04-03 15:16:09,709: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : start thread
+2018-04-03 15:16:09,709: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: DEBUG   : child name: agent_0.executing.0.child.subscriber._cancel_monitor_cb.thread
+2018-04-03 15:16:09,710: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: INFO    : child (me) initializing
+2018-04-03 15:16:09,710: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: DEBUG   : ru_initialize_common (NOOP)
+2018-04-03 15:16:09,710: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: DEBUG   : ru_initialize_child (NOOP)
+2018-04-03 15:16:09,710: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: INFO    : send alive
+2018-04-03 15:16:09,710: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: INFO    : put message: [agent_0.executing.0.child.subscriber._cancel_monitor_cb.thread] alive
+2018-04-03 15:16:09,711: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : get msg: alive
+2018-04-03 15:16:09,711: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2018-04-03 15:16:09,711: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2018-04-03 15:16:09,711: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : child thread agent_0.executing.0.child.subscriber._cancel_monitor_cb started
+2018-04-03 15:16:09,711: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : agent_0.executing.0.child registered control_pubsub subscriber agent_0.executing.0.child.subscriber._cancel_monitor_cb
+2018-04-03 15:16:09,711: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : alive check in term
+2018-04-03 15:16:09,711: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : using addr tcp://204.90.42.8:33604 for input agent_executing_queue
+2018-04-03 15:16:09,718: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : registered input agent_0.executing.0.child.work.AGENT_EXECUTING_PENDING
+2018-04-03 15:16:09,718: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : START: agent_0.executing.0.child register input AGENT_EXECUTING_PENDING: agent_0.executing.0.child.work.AGENT_EXECUTING_PENDING
+2018-04-03 15:16:09,718: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : registered worker work [AGENT_EXECUTING_PENDING]
+2018-04-03 15:16:09,718: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : alive check in term
+2018-04-03 15:16:09,718: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : START: agent_0.executing.0.child register output AGENT_STAGING_OUTPUT_PENDING
+2018-04-03 15:16:09,718: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : using addr tcp://204.90.42.8:36102 for output agent_staging_output_queue
+2018-04-03 15:16:09,724: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : registered output    : AGENT_STAGING_OUTPUT_PENDING : agent_staging_output_queue : agent.staging.output.queue.input.0000
+2018-04-03 15:16:09,725: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : alive check in term
+2018-04-03 15:16:09,725: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : START: agent_0.executing.0.child register publisher agent_unschedule_pubsub
+2018-04-03 15:16:09,725: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : using addr tcp://204.90.42.8:33511 for pubsub agent_unschedule_pubsub
+2018-04-03 15:16:09,731: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : registered publisher : agent_unschedule_pubsub : agent.unschedule.pubsub.pub.0000
+2018-04-03 15:16:09,731: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : alive check in term
+2018-04-03 15:16:09,731: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : START: agent_0.executing.0.child register subscriber agent_0.executing.0.child.subscriber.command_cb
+2018-04-03 15:16:09,731: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : using addr tcp://204.90.42.8:35441 for pubsub control_pubsub
+2018-04-03 15:16:09,737: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : parent name: agent_0.executing.0.child.subscriber.command_cb
+2018-04-03 15:16:09,737: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : start thread
+2018-04-03 15:16:09,738: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber.command_cb: DEBUG   : child name: agent_0.executing.0.child.subscriber.command_cb.thread
+2018-04-03 15:16:09,738: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber.command_cb: INFO    : child (me) initializing
+2018-04-03 15:16:09,738: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber.command_cb: DEBUG   : ru_initialize_common (NOOP)
+2018-04-03 15:16:09,738: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber.command_cb: DEBUG   : ru_initialize_child (NOOP)
+2018-04-03 15:16:09,738: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber.command_cb: INFO    : send alive
+2018-04-03 15:16:09,738: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber.command_cb: INFO    : put message: [agent_0.executing.0.child.subscriber.command_cb.thread] alive
+2018-04-03 15:16:09,739: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : get msg: alive
+2018-04-03 15:16:09,739: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2018-04-03 15:16:09,739: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2018-04-03 15:16:09,739: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : child thread agent_0.executing.0.child.subscriber.command_cb started
+2018-04-03 15:16:09,739: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : agent_0.executing.0.child registered control_pubsub subscriber agent_0.executing.0.child.subscriber.command_cb
+2018-04-03 15:16:09,762: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : child (me) initializing
+2018-04-03 15:16:09,762: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : parent name: agent_0.executing.0.child.watch
+2018-04-03 15:16:09,762: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : start thread
+2018-04-03 15:16:09,762: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.watch: DEBUG   : child name: agent_0.executing.0.child.watch.thread
+2018-04-03 15:16:09,763: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.watch: INFO    : child (me) initializing
+2018-04-03 15:16:09,763: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.watch: DEBUG   : ru_initialize_common (NOOP)
+2018-04-03 15:16:09,763: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.watch: DEBUG   : ru_initialize_child (NOOP)
+2018-04-03 15:16:09,763: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.watch: INFO    : send alive
+2018-04-03 15:16:09,763: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.watch: INFO    : put message: [agent_0.executing.0.child.watch.thread] alive
+2018-04-03 15:16:09,764: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : get msg: alive
+2018-04-03 15:16:09,764: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2018-04-03 15:16:09,764: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2018-04-03 15:16:09,764: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : child thread agent_0.executing.0.child.watch started
+2018-04-03 15:16:09,764: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : child (me) is alive
+2018-04-03 15:16:09,764: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : send alive
+2018-04-03 15:16:09,764: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : send message: [agent_0.executing.0.child] alive
+2018-04-03 15:16:10,042: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000000)
+2018-04-03 15:16:10,042: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 15:16:10,042: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2018-04-03 15:16:10,046: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000000 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic262  /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017624.0009/pilot.0000/unit.000000/unit.000000.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017624.0009/pilot.0000/unit.000000
+2018-04-03 15:16:10,051: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000001)
+2018-04-03 15:16:10,051: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 15:16:10,051: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2018-04-03 15:16:10,055: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000001 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic262  /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017624.0009/pilot.0000/unit.000001/unit.000001.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017624.0009/pilot.0000/unit.000001
+2018-04-03 15:16:10,060: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000002)
+2018-04-03 15:16:10,060: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 15:16:10,060: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2018-04-03 15:16:10,071: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000002 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic262  /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017624.0009/pilot.0000/unit.000002/unit.000002.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017624.0009/pilot.0000/unit.000002
+2018-04-03 15:16:10,077: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000003)
+2018-04-03 15:16:10,077: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 15:16:10,077: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2018-04-03 15:16:10,081: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000003 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic262  /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017624.0009/pilot.0000/unit.000003/unit.000003.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017624.0009/pilot.0000/unit.000003
+2018-04-03 15:16:10,086: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000004)
+2018-04-03 15:16:10,086: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 15:16:10,087: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2018-04-03 15:16:10,090: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000004 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic262  /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017624.0009/pilot.0000/unit.000004/unit.000004.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017624.0009/pilot.0000/unit.000004
+2018-04-03 15:16:10,095: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000005)
+2018-04-03 15:16:10,095: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 15:16:10,095: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2018-04-03 15:16:10,099: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000005 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic262  /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017624.0009/pilot.0000/unit.000005/unit.000005.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017624.0009/pilot.0000/unit.000005
+2018-04-03 15:16:10,104: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000006)
+2018-04-03 15:16:10,104: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 15:16:10,104: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2018-04-03 15:16:10,107: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000006 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic262  /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017624.0009/pilot.0000/unit.000006/unit.000006.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017624.0009/pilot.0000/unit.000006
+2018-04-03 15:16:10,113: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000007)
+2018-04-03 15:16:10,113: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 15:16:10,113: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2018-04-03 15:16:10,117: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000007 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic262  /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017624.0009/pilot.0000/unit.000007/unit.000007.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017624.0009/pilot.0000/unit.000007
+2018-04-03 15:16:10,122: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000008)
+2018-04-03 15:16:10,122: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 15:16:10,123: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2018-04-03 15:16:10,126: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000008 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic262  /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017624.0009/pilot.0000/unit.000008/unit.000008.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017624.0009/pilot.0000/unit.000008
+2018-04-03 15:16:10,131: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000009)
+2018-04-03 15:16:10,131: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 15:16:10,131: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2018-04-03 15:16:10,134: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000009 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic262  /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017624.0009/pilot.0000/unit.000009/unit.000009.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017624.0009/pilot.0000/unit.000009
+2018-04-03 15:16:10,140: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000010)
+2018-04-03 15:16:10,140: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 15:16:10,140: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2018-04-03 15:16:10,143: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000010 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic262  /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017624.0009/pilot.0000/unit.000010/unit.000010.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017624.0009/pilot.0000/unit.000010
+2018-04-03 15:16:10,149: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000011)
+2018-04-03 15:16:10,149: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 15:16:10,149: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2018-04-03 15:16:10,152: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000011 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic262  /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017624.0009/pilot.0000/unit.000011/unit.000011.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017624.0009/pilot.0000/unit.000011
+2018-04-03 15:16:10,157: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000012)
+2018-04-03 15:16:10,158: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 15:16:10,158: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2018-04-03 15:16:10,161: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000012 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic262  /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017624.0009/pilot.0000/unit.000012/unit.000012.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017624.0009/pilot.0000/unit.000012
+2018-04-03 15:16:10,166: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000013)
+2018-04-03 15:16:10,167: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 15:16:10,167: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2018-04-03 15:16:10,170: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000013 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic262  /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017624.0009/pilot.0000/unit.000013/unit.000013.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017624.0009/pilot.0000/unit.000013
+2018-04-03 15:16:10,175: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000014)
+2018-04-03 15:16:10,175: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 15:16:10,175: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2018-04-03 15:16:10,179: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000014 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic262  /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017624.0009/pilot.0000/unit.000014/unit.000014.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017624.0009/pilot.0000/unit.000014
+2018-04-03 15:16:10,184: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : got unit (unit.000015)
+2018-04-03 15:16:10,184: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2018-04-03 15:16:10,184: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : Launching unit with SSH (/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto).
+2018-04-03 15:16:10,189: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : Launching unit unit.000015 via /usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto smic262  /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017624.0009/pilot.0000/unit.000015/unit.000015.sh in /worka/work/gchantzi/radical.pilot.sandbox/rp.session.one.george.017624.0009/pilot.0000/unit.000015
+2018-04-03 15:28:10,950: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000000 has return code 0.
+2018-04-03 15:28:10,950: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 15:28:10,950: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-04-03 15:28:10,951: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000002 has return code 0.
+2018-04-03 15:28:10,951: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 15:28:10,951: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-04-03 15:28:10,951: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000004 has return code 0.
+2018-04-03 15:28:10,951: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 15:28:10,951: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-04-03 15:28:10,951: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000006 has return code 0.
+2018-04-03 15:28:10,952: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 15:28:10,952: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-04-03 15:28:10,952: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000008 has return code 0.
+2018-04-03 15:28:10,952: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 15:28:10,952: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-04-03 15:28:10,952: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000011 has return code 0.
+2018-04-03 15:28:10,952: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 15:28:10,953: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-04-03 15:28:10,953: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000013 has return code 0.
+2018-04-03 15:28:10,953: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 15:28:10,953: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-04-03 15:28:10,953: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000001 has return code 0.
+2018-04-03 15:28:10,953: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 15:28:10,953: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-04-03 15:28:10,954: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000005 has return code 0.
+2018-04-03 15:28:10,954: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 15:28:10,954: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-04-03 15:28:10,954: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000012 has return code 0.
+2018-04-03 15:28:10,954: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 15:28:10,954: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-04-03 15:28:10,954: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000003 has return code 0.
+2018-04-03 15:28:10,955: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 15:28:10,955: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-04-03 15:28:10,955: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000014 has return code 0.
+2018-04-03 15:28:10,955: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 15:28:10,955: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-04-03 15:28:10,955: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000007 has return code 0.
+2018-04-03 15:28:10,955: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 15:28:10,955: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-04-03 15:28:11,056: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000009 has return code 0.
+2018-04-03 15:28:11,056: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 15:28:11,056: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-04-03 15:28:11,056: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000015 has return code 0.
+2018-04-03 15:28:11,056: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 15:28:11,057: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-04-03 15:28:11,057: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : INFO    : Unit unit.000010 has return code 0.
+2018-04-03 15:28:11,057: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : advance bulk size: 1 [True, True]
+2018-04-03 15:28:11,057: agent_0.executing.0.child: agent_0.executing.0             : Watcher        : DEBUG   : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+2018-04-03 15:28:19,861: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: INFO    : got termination command
+2018-04-03 15:28:20,045: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: INFO    : stop agent_0.executing.0.child (74740 : 74740 : agent_0.executing.0.child.subscriber._cancel_monitor_cb) [radical.pilot.utils.component.Popen._cancel_monitor_cb]
+2018-04-03 15:28:20,045: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: INFO    : parent stops child  74740 -> 74740 [agent_0.executing.0.child]
+2018-04-03 15:28:20,045: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: INFO    : send message: [agent_0.executing.0.child] STOP
+2018-04-03 15:28:20,046: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: DEBUG   : ru_finalize_common()
+2018-04-03 15:28:20,046: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: DEBUG   : TERM : agent_0.executing.0.child unregister publisher log_pubsub
+2018-04-03 15:28:20,046: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: DEBUG   : unregistered publisher log_pubsub
+2018-04-03 15:28:20,046: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: DEBUG   : TERM : agent_0.executing.0.child unregister publisher state_pubsub
+2018-04-03 15:28:20,047: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: DEBUG   : unregistered publisher state_pubsub
+2018-04-03 15:28:20,047: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: DEBUG   : TERM : agent_0.executing.0.child unregister publisher control_pubsub
+2018-04-03 15:28:20,047: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: DEBUG   : unregistered publisher control_pubsub
+2018-04-03 15:28:20,048: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: DEBUG   : agent_0.executing.0.child close prof
+2018-04-03 15:28:20,048: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: INFO    : signal stop for agent_0.executing.0.child.subscriber._cancel_monitor_cb - do not join
+2018-04-03 15:28:20,048: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: INFO    : child calls stop()
+2018-04-03 15:28:20,048: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.watch: INFO    : recv message: 
+2018-04-03 15:28:20,048: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: INFO    : signal stop for agent_0.executing.0.child.subscriber._cancel_monitor_cb - do not join
+2018-04-03 15:28:20,048: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.watch: INFO    : message received: 
+2018-04-03 15:28:20,048: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: INFO    : signal stop for agent_0.executing.0.child.subscriber._cancel_monitor_cb - do not join
+2018-04-03 15:28:20,048: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.watch: WARNING : received empty string, parent closed ep
+2018-04-03 15:28:20,049: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: DEBUG   : ru_finalize_child (NOOP)
+2018-04-03 15:28:20,049: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber.command_cb: INFO    : command_cb [control_pubsub]: {'cmd': 'terminate', 'arg': None}
+2018-04-03 15:28:20,049: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.watch: INFO    : watcher closes
+2018-04-03 15:28:20,049: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber.command_cb: DEBUG   : ru_finalize_child (NOOP)
+2018-04-03 15:28:20,049: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.watch: INFO    : put message: [agent_0.executing.0.child.watch.thread] work finished
+2018-04-03 15:28:20,049: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber._cancel_monitor_cb: INFO    : put message: [agent_0.executing.0.child.subscriber._cancel_monitor_cb.thread] terminating
+2018-04-03 15:28:20,050: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.watch: DEBUG   : ru_finalize_child (NOOP)
+2018-04-03 15:28:20,050: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.watch: DEBUG   : ru_finalize_common (NOOP)
+2018-04-03 15:28:20,050: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.subscriber.command_cb: INFO    : put message: [agent_0.executing.0.child.subscriber.command_cb.thread] terminating
+2018-04-03 15:28:20,050: agent_0.executing.0.child: agent_0.executing.0             : agent_0.executing.0.child.watch: INFO    : put message: [agent_0.executing.0.child.watch.thread] terminating
+2018-04-03 15:28:20,641: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : ru_finalize_common()
+2018-04-03 15:28:20,641: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : WARNING : publisher log_pubsub is not registered
+2018-04-03 15:28:20,641: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : WARNING : publisher state_pubsub is not registered
+2018-04-03 15:28:20,641: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : WARNING : publisher control_pubsub is not registered
+2018-04-03 15:28:20,641: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : agent_0.executing.0.child close prof
+2018-04-03 15:28:20,642: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : send message: [agent_0.executing.0.child] terminating
+2018-04-03 15:28:20,642: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : WARNING : send failed ([Errno 9] Bad file descriptor) - terminate
+2018-04-03 15:28:20,642: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : parent stops child
+2018-04-03 15:28:20,642: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : ru_finalize_parent (NOOP)
+2018-04-03 15:28:20,642: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : INFO    : parent stops child
+2018-04-03 15:28:20,642: agent_0.executing.0.child: agent_0.executing.0             : MainThread     : DEBUG   : ru_finalize_parent (NOOP)

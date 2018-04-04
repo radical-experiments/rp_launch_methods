@@ -1,0 +1,15 @@
+#time,event,comp,thread,uid,state,msg
+1522271121.8987,sync_abs,umgr.0000,MainThread,,,one:144.76.72.175:1522271121.9:1522271121.9:ntp
+1522271122.2495,component_init,umgr.0000,MainThread,,,
+1522271122.5811,setup_done,umgr.0000,MainThread,umgr.0000,,
+1522271122.5878,advance,umgr.0000,MainThread,unit.000000,NEW,
+1522271122.6929,advance,umgr.0000,MainThread,unit.000000,UMGR_SCHEDULING_PENDING,
+1522271122.6933,publish,umgr.0000,MainThread,unit.000000,UMGR_SCHEDULING_PENDING,
+1522271122.6938,put,umgr.0000,MainThread,unit.000000,UMGR_SCHEDULING_PENDING,umgr.scheduling.queue.input.0000
+1522271911.0500,get,umgr.0000,umgr.0000.idler._unit_pull_cb,umgr.0000,,bulk size: 1
+1522271911.0500,get,umgr.0000,umgr.0000.idler._unit_pull_cb,unit.000000,,
+1522271911.0506,publish,umgr.0000,umgr.0000.idler._unit_pull_cb,unit.000000,UMGR_STAGING_OUTPUT_PENDING,
+1522271911.0523,put,umgr.0000,umgr.0000.idler._unit_pull_cb,unit.000000,UMGR_STAGING_OUTPUT_PENDING,umgr.staging.output.queue.input.0000
+1522271911.1134,flush,umgr.0000,MainThread,,,
+1522271915.5865,component_final,umgr.0000,MainThread,,,
+1522271915.5865,END,umgr.0000,MainThread,,,
